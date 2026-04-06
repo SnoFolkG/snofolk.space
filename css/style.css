@@ -55,8 +55,10 @@ body {
   color: var(--text-main);
   user-select: none;
   position: relative;
+  background-attachment: scroll;
   background: url('https://images.pexels.com/photos/4547587/pexels-photo-4547587.jpeg?_gl=1*1y2415h*_ga*MTI4MTk5OTg3LjE3NzU0MDI2NzY.*_ga_8JE65Q40S6*czE3NzU0MDI2NzYkbzEkZzEkdDE3NzU0MDI3MjAkajE2JGwwJGgw') center/cover no-repeat;
 }
+
 
 /* ==========================
    TYPOGRAPHY
