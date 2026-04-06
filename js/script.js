@@ -1,3 +1,12 @@
+const img = new Image();
+img.onload = () => {
+  document.body.style.backgroundImage = "url('https://images.pexels.com/photos/4547587/pexels-photo-4547587.jpeg?_gl=1*1y2415h*_ga*MTI4MTk5OTg3LjE3NzU0MDI2NzY.*_ga_8JE65Q40S6*czE3NzU0MDI2NzYkbzEkZzEkdDE3NzU0MDI3MjAkajE2JGwwJGgw')";
+};
+img.onerror = () => {
+  document.body.style.backgroundImage = "url('../img/back.jpg')";
+};
+img.src = "https://images.pexels.com/...";
+
 // ====================== COLLECTION VERSIONS ======================
 const collectionVersions = [
   { version: "v4.2.0", date: "29.03.2026", file: "https://drive.google.com/file/d/1PWQM4fC2Rwnbmr6mFG2Chvbk4w3wFXPg/view?usp=drive_link" },
