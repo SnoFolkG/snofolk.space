@@ -526,13 +526,10 @@ const albums = [
       "Where It Ends", "Live @ The Anthrax, March 18th, 1988"
     ]
   }
-];
 
 // ====================== ALBUM PAGE ======================
 const albumDetail = document.getElementById("album-detail");
 if (albumDetail) {
-  
-  // Чтение ID из URL
   let id = null;
 
   if (window.location.search) {
@@ -540,13 +537,12 @@ if (albumDetail) {
     id = params.get("id");
   }
 
-  // Запасной вариант (если вдруг ID в пути)
   if (!id) {
     const pathSegments = window.location.pathname.split('/');
     id = pathSegments[pathSegments.length - 1];
   }
 
-  console.log('Extracted album ID:', id);   // ← для отладки
+  console.log('Extracted album ID:', id);
 
   const album = albums.find(a => a.id === id);
 
@@ -603,13 +599,13 @@ if (albumDetail) {
 // ====================== OTHER PAGES ======================
 // Highlight active nav link
 document.querySelectorAll("nav a").forEach(link => {
-  if (link.getAttribute("href") === location.pathname.split("/").pop() || 
-      location.pathname.includes(link.getAttribute("href"))) {
+  const href = link.getAttribute("href");
+  if (href && (location.pathname.includes(href) || location.href.includes(href))) {
     link.classList.add("active");
   }
 });
 
-// Downloads page — album cards
+// Downloads, About, Homepage — оставляем как у тебя (они уже правильные)
 const container = document.getElementById("albums");
 if (container) {
   albums.forEach(album => {
@@ -626,7 +622,6 @@ if (container) {
   });
 }
 
-// About page — album list
 const albumList = document.getElementById("album-list");
 if (albumList) {
   albums.forEach(album => {
@@ -636,7 +631,6 @@ if (albumList) {
   });
 }
 
-// Homepage — last 5 albums
 const newAlbumsContainer = document.getElementById("new-albums");
 if (newAlbumsContainer) {
   const last5 = albums.slice(-5);
