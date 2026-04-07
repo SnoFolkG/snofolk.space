@@ -528,16 +528,29 @@ const albums = [
   }
 ];
 
-// ====================== ALBUM PAGE (album.html) ======================
+// ====================== ALBUM DETAIL PAGE ======================
 const albumDetail = document.getElementById("album-detail");
-
 if (albumDetail) {
- const pathSegments = window.location.pathname.split('/');
- const id = pathSegments[2]; // /albums/ID -> берёшь индекс 2
+  // Универсальное извлечение ID — работает и с /album/xxx и со старым ?id=
+  let id = null;
+  const pathname = window.location.pathname;
+
+  if (pathname.startsWith('/album/') || pathname.startsWith('/albums/')) {
+    id = pathname.split('/').filter(Boolean).pop();   // берём последний сегмент
+  }
+
+  if (!id && window.location.search) {
+    const params = new URLSearchParams(window.location.search);
+    id = params.get('id');
+  }
+
+  console.log('Extracted album ID:', id); // для отладки
+
   const album = albums.find(a => a.id === id);
 
   if (!album) {
     albumDetail.innerHTML = `<p class="error">Album not found.</p>`;
+    console.error('Album with id "' + id + '" not found');
   } else {
     document.title = `${album.title} – snofolk.space`;
 
@@ -555,22 +568,17 @@ if (albumDetail) {
       <div class="album-detail-wrap">
         <div class="album-cover-col">
           <img src="${album.img}" alt="${album.title}" class="album-cover-big">
-
           ${downloadUrl
             ? `
-            <a href="${downloadUrl}"
-               class="download-btn download-btn-cover"
-               download>
+            <a href="${downloadUrl}" class="download-btn download-btn-cover" download>
               Download Album (.rar)
             </a>
             <p class="download-hint">
               If Google shows a warning — click "Download anyway"
             </p>`
-            : `
-            <p class="no-download">Download link will be added later</p>`
+            : `<p class="no-download">Download link will be added later</p>`
           }
         </div>
-
         <div class="album-info-col">
           <h2 class="album-title">${album.title}</h2>
           <p class="album-artist">${album.artist}</p>
@@ -593,10 +601,10 @@ if (albumDetail) {
 }
 
 // ====================== OTHER PAGES ======================
-
 // Highlight active nav link
 document.querySelectorAll("nav a").forEach(link => {
-  if (link.getAttribute("href") === location.pathname.split("/").pop()) {
+  if (link.getAttribute("href") === location.pathname.split("/").pop() || 
+      location.pathname.includes(link.getAttribute("href"))) {
     link.classList.add("active");
   }
 });
@@ -608,7 +616,7 @@ if (container) {
     const div = document.createElement("div");
     div.className = "album";
     div.innerHTML = `
-      <a href="/albums/${album.id}" class="album-link">
+      <a href="/album/${album.id}" class="album-link">
         <img src="${album.img}" alt="${album.title}">
         <h3>${album.title}</h3>
         <p>${album.artist} • ${album.year}</p>
@@ -636,7 +644,7 @@ if (newAlbumsContainer) {
     const div = document.createElement("div");
     div.className = "album-mini";
     div.innerHTML = `
-      <a href="/albums/${album.id}">
+      <a href="/album/${album.id}">
         <img src="${album.img}" alt="${album.title}">
       </a>
       <p>${album.title} • ${album.artist}</p>
