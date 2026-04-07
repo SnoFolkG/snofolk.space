@@ -79,12 +79,21 @@ function renderAlbumDetail(albums) {
     `;
 }
 
-// 5. СЕТКА АЛЬБОМОВ (downloads.html)
-function renderDownloadsGrid(albums) {
+// 5. ОБНОВЛЕННАЯ СЕТКА АЛЬБОМОВ (с очисткой контейнера)
+function renderDownloadsGrid(albumsToRender) {
     const container = document.getElementById("albums");
     if (!container) return;
 
-    albums.forEach(album => {
+    // КРИТИЧНО: Очищаем контейнер перед тем, как рисовать отфильтрованные данные
+    container.innerHTML = ""; 
+
+    // Если ничего не найдено, можно вывести сообщение
+    if (albumsToRender.length === 0) {
+        container.innerHTML = `<p class="no-results">No albums found matching your criteria.</p>`;
+        return;
+    }
+
+    albumsToRender.forEach(album => {
         const div = document.createElement("div");
         div.className = "album";
         div.innerHTML = `
