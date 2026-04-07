@@ -530,14 +530,28 @@ const albums = [
 
 // ====================== ALBUM PAGE (album.html) ======================
 const albumDetail = document.getElementById("album-detail");
-
 if (albumDetail) {
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
+  
+  // Улучшенное чтение ID — работает надёжнее на кастомном домене
+  let id = null;
+  
+  // Вариант 1: из query string (?id=...)
+  if (window.location.search) {
+    const params = new URLSearchParams(window.location.search);
+    id = params.get("id");
+  }
+  
+  // Вариант 2: если вдруг ID пришёл в пути (редко, но бывает)
+  if (!id) {
+    const pathSegments = window.location.pathname.split('/');
+    id = pathSegments[pathSegments.length - 1];
+  }
+
   const album = albums.find(a => a.id === id);
 
   if (!album) {
     albumDetail.innerHTML = `<p class="error">Album not found.</p>`;
+    console.error("Album not found for id:", id);
   } else {
     document.title = `${album.title} – snofolk.space`;
 
@@ -555,22 +569,15 @@ if (albumDetail) {
       <div class="album-detail-wrap">
         <div class="album-cover-col">
           <img src="${album.img}" alt="${album.title}" class="album-cover-big">
-
           ${downloadUrl
             ? `
-            <a href="${downloadUrl}"
-               class="download-btn download-btn-cover"
-               download>
+            <a href="${downloadUrl}" class="download-btn download-btn-cover" download>
               Download Album (.rar)
             </a>
-            <p class="download-hint">
-              If Google shows a warning — click "Download anyway"
-            </p>`
-            : `
-            <p class="no-download">Download link will be added later</p>`
+            <p class="download-hint">If Google shows a warning — click "Download anyway"</p>`
+            : `<p class="no-download">Download link will be added later</p>`
           }
         </div>
-
         <div class="album-info-col">
           <h2 class="album-title">${album.title}</h2>
           <p class="album-artist">${album.artist}</p>
