@@ -608,7 +608,7 @@ if (container) {
     const div = document.createElement("div");
     div.className = "album";
     div.innerHTML = `
-      <a href="album.html?id=${album.id}" class="album-link">
+      <a href="/albums/${album.id}" class="album-link">
         <img src="${album.img}" alt="${album.title}">
         <h3>${album.title}</h3>
         <p>${album.artist} • ${album.year}</p>
@@ -636,7 +636,7 @@ if (newAlbumsContainer) {
     const div = document.createElement("div");
     div.className = "album-mini";
     div.innerHTML = `
-      <a href="album.html?id=${album.id}">
+      <a href="/albums/${album.id}">
         <img src="${album.img}" alt="${album.title}">
       </a>
       <p>${album.title} • ${album.artist}</p>
