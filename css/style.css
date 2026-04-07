@@ -656,3 +656,32 @@ footer {
 .controls input {
     flex-grow: 1; /* Поиск занимает больше места */
 }
+
+/* Контейнер фильтров */
+.controls {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    padding: 15px;
+    background: #111; /* Темный фон */
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.controls input, .controls select {
+    background: #222;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.controls input {
+    flex: 2; /* Поиск длиннее */
+}
+
+.controls select {
+    flex: 1;
+    cursor: pointer;
+}
