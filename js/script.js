@@ -528,24 +528,25 @@ const albums = [
   }
 ];
 
-// ====================== ALBUM PAGE (album.html) ======================
+// ====================== ALBUM PAGE ======================
 const albumDetail = document.getElementById("album-detail");
 if (albumDetail) {
   
-  // Улучшенное чтение ID — работает надёжнее на кастомном домене
+  // Чтение ID из URL
   let id = null;
-  
-  // Вариант 1: из query string (?id=...)
+
   if (window.location.search) {
     const params = new URLSearchParams(window.location.search);
     id = params.get("id");
   }
-  
-  // Вариант 2: если вдруг ID пришёл в пути (редко, но бывает)
+
+  // Запасной вариант (если вдруг ID в пути)
   if (!id) {
     const pathSegments = window.location.pathname.split('/');
     id = pathSegments[pathSegments.length - 1];
   }
+
+  console.log('Extracted album ID:', id);   // ← для отладки
 
   const album = albums.find(a => a.id === id);
 
@@ -600,10 +601,10 @@ if (albumDetail) {
 }
 
 // ====================== OTHER PAGES ======================
-
 // Highlight active nav link
 document.querySelectorAll("nav a").forEach(link => {
-  if (link.getAttribute("href") === location.pathname.split("/").pop()) {
+  if (link.getAttribute("href") === location.pathname.split("/").pop() || 
+      location.pathname.includes(link.getAttribute("href"))) {
     link.classList.add("active");
   }
 });
