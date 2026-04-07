@@ -526,6 +526,7 @@ const albums = [
       "Where It Ends", "Live @ The Anthrax, March 18th, 1988"
     ]
   }
+];
 
 // ====================== ALBUM PAGE ======================
 const albumDetail = document.getElementById("album-detail");
