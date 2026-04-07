@@ -532,8 +532,8 @@ const albums = [
 const albumDetail = document.getElementById("album-detail");
 
 if (albumDetail) {
-  const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
+ const pathSegments = window.location.pathname.split('/');
+ const id = pathSegments[2]; // /albums/ID -> берёшь индекс 2
   const album = albums.find(a => a.id === id);
 
   if (!album) {
