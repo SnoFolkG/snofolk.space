@@ -39,6 +39,55 @@
     </section>
     <section>
       <h2>Albums</h2>
+      
+      <div class="filters-section">
+        <div class="filter-group">
+          <label for="filter-year-from">Year From</label>
+          <input type="number" id="filter-year-from" placeholder="1978" min="1978" max="2026">
+        </div>
+        
+        <div class="filter-group">
+          <label for="filter-year-to">Year To</label>
+          <input type="number" id="filter-year-to" placeholder="2026" min="1978" max="2026">
+        </div>
+        
+        <div class="filter-group">
+          <label for="filter-genre">Genre</label>
+          <select id="filter-genre">
+            <option value="">All Genres</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="filter-artist">Artist</label>
+          <select id="filter-artist">
+            <option value="">All Artists</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="filter-city">City</label>
+          <select id="filter-city">
+            <option value="">All Cities</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="sort-by">Sort By</label>
+          <select id="sort-by">
+            <option value="date-added-desc">Date Added (Newest)</option>
+            <option value="year-desc">Year (Newest First)</option>
+            <option value="year-asc">Year (Oldest First)</option>
+            <option value="title-asc">Title (A-Z)</option>
+            <option value="title-desc">Title (Z-A)</option>
+            <option value="artist-asc">Artist (A-Z)</option>
+            <option value="artist-desc">Artist (Z-A)</option>
+          </select>
+        </div>
+        
+        <button id="reset-filters" class="download-btn">Reset Filters</button>
+      </div>
+
       <div class="albums" id="albums"></div>
     </section>
   </main>
