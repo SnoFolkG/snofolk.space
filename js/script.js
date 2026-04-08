@@ -79,32 +79,114 @@ function renderAlbumDetail(albums) {
     `;
 }
 
-// 5. ОБНОВЛЕННАЯ СЕТКА АЛЬБОМОВ (с очисткой контейнера)
-function renderDownloadsGrid(albumsToRender) {
-    const container = document.getElementById("albums");
-    if (!container) return;
+// 5. ИНИЦИАЛИЗАЦИЯ ФИЛЬТРОВ И СОРТИРОВКИ (downloads.html)
+function initFilters(albums) {
+    const filterYearFrom = document.getElementById("filter-year-from");
+    const filterYearTo = document.getElementById("filter-year-to");
+    const filterGenre = document.getElementById("filter-genre");
+    const filterArtist = document.getElementById("filter-artist");
+    const filterCity = document.getElementById("filter-city");
+    const sortBy = document.getElementById("sort-by");
+    const resetFiltersBtn = document.getElementById("reset-filters");
 
-    // КРИТИЧНО: Очищаем контейнер перед тем, как рисовать отфильтрованные данные
-    container.innerHTML = ""; 
+    // Если элементов нет — мы не на downloads.html
+    if (!filterYearFrom) return;
 
-    // Если ничего не найдено, можно вывести сообщение
-    if (albumsToRender.length === 0) {
-        container.innerHTML = `<p class="no-results">No albums found matching your criteria.</p>`;
-        return;
+    // Заполняем селекты уникальными значениями
+    const genres = [...new Set(albums.map(a => a.genre))].sort();
+    const artists = [...new Set(albums.map(a => a.artist))].sort();
+    const cities = [...new Set(albums.map(a => a.city))].sort();
+
+    genres.forEach(genre => {
+        const option = document.createElement("option");
+        option.value = genre;
+        option.textContent = genre;
+        filterGenre.appendChild(option);
+    });
+
+    artists.forEach(artist => {
+        const option = document.createElement("option");
+        option.value = artist;
+        option.textContent = artist;
+        filterArtist.appendChild(option);
+    });
+
+    cities.forEach(city => {
+        const option = document.createElement("option");
+        option.value = city;
+        option.textContent = city;
+        filterCity.appendChild(option);
+    });
+
+    // Функция фильтрации и сортировки
+    function applyFiltersAndSort() {
+        let filtered = [...albums];
+
+        // Применяем фильтры
+        const yearFrom = filterYearFrom.value ? parseInt(filterYearFrom.value) : null;
+        const yearTo = filterYearTo.value ? parseInt(filterYearTo.value) : null;
+        const genre = filterGenre.value;
+        const artist = filterArtist.value;
+        const city = filterCity.value;
+
+        if (yearFrom) filtered = filtered.filter(a => a.year >= yearFrom);
+        if (yearTo) filtered = filtered.filter(a => a.year <= yearTo);
+        if (genre) filtered = filtered.filter(a => a.genre === genre);
+        if (artist) filtered = filtered.filter(a => a.artist === artist);
+        if (city) filtered = filtered.filter(a => a.city === city);
+
+        // Применяем сортировку
+        const sortValue = sortBy.value;
+
+        switch (sortValue) {
+            case "year-desc":
+                filtered.sort((a, b) => b.year - a.year);
+                break;
+            case "year-asc":
+                filtered.sort((a, b) => a.year - b.year);
+                break;
+            case "title-asc":
+                filtered.sort((a, b) => a.title.localeCompare(b.title));
+                break;
+            case "title-desc":
+                filtered.sort((a, b) => b.title.localeCompare(a.title));
+                break;
+            case "artist-asc":
+                filtered.sort((a, b) => a.artist.localeCompare(b.artist));
+                break;
+            case "artist-desc":
+                filtered.sort((a, b) => b.artist.localeCompare(a.artist));
+                break;
+            case "date-added-desc":
+            default:
+                // Default order (по массиву, новые в конце)
+                break;
+        }
+
+        // Рендерим альбомы
+        renderDownloadsGrid(filtered);
     }
 
-    albumsToRender.forEach(album => {
-        const div = document.createElement("div");
-        div.className = "album";
-        div.innerHTML = `
-          <a href="album.html?id=${album.id}" class="album-link">
-            <img src="${album.img}" alt="${album.title}" loading="lazy">
-            <h3>${album.title}</h3>
-            <p>${album.artist} • ${album.year}</p>
-          </a>
-        `;
-        container.appendChild(div);
+    // Обработчики событий
+    filterYearFrom.addEventListener("change", applyFiltersAndSort);
+    filterYearTo.addEventListener("change", applyFiltersAndSort);
+    filterGenre.addEventListener("change", applyFiltersAndSort);
+    filterArtist.addEventListener("change", applyFiltersAndSort);
+    filterCity.addEventListener("change", applyFiltersAndSort);
+    sortBy.addEventListener("change", applyFiltersAndSort);
+
+    resetFiltersBtn.addEventListener("click", () => {
+        filterYearFrom.value = "";
+        filterYearTo.value = "";
+        filterGenre.value = "";
+        filterArtist.value = "";
+        filterCity.value = "";
+        sortBy.value = "date-added-desc";
+        applyFiltersAndSort();
     });
+
+    // Первый рендер
+    applyFiltersAndSort();
 }
 
 // 6. НОВИНКИ (На главной)
