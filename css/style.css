@@ -630,58 +630,73 @@ footer {
   color: var(--text-dim);
 }
 
-.controls {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 15px;
-    border-radius: 8px;
+/* ==========================
+   FILTERS SECTION
+========================== */
+.filters-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: var(--glass);
+  border: 1px solid var(--border);
 }
 
-.controls input, .controls select {
-    padding: 8px 12px;
-    background: #1a1a1a;
-    border: 1px solid #333;
-    color: white;
-    border-radius: 4px;
-    outline: none;
+.filter-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.controls input:focus {
-    border-color: #007bff; /* Или твой акцентный цвет */
+.filter-group label {
+  font-size: 12px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  font-weight: 600;
 }
 
-.controls input {
-    flex-grow: 1; /* Поиск занимает больше места */
+.filter-group input,
+.filter-group select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.3);
+  color: var(--text-main);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  transition: background var(--transition), border-color var(--transition);
 }
 
-/* Контейнер фильтров */
-.controls {
-    display: flex;
-    gap: 15px;
-    margin: 20px 0;
-    padding: 15px;
-    background: #111; /* Темный фон */
-    border: 1px solid #333;
-    border-radius: 8px;
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  background: rgba(0,0,0,0.5);
+  border-color: var(--accent-border);
 }
 
-.controls input, .controls select {
-    background: #222;
-    color: #fff;
-    border: 1px solid #444;
-    padding: 10px;
-    border-radius: 4px;
-    font-family: 'Montserrat', sans-serif;
+.filter-group select option {
+  background: #1a1a1a;
+  color: var(--text-main);
 }
 
-.controls input {
-    flex: 2; /* Поиск длиннее */
+#reset-filters {
+  align-self: flex-end;
+  font-size: 12px;
+  padding: 8px 12px;
+  height: fit-content;
+  margin-top: 18px;
 }
 
-.controls select {
-    flex: 1;
-    cursor: pointer;
+@media (max-width: 600px) {
+  .filters-section {
+    grid-template-columns: 1fr;
+  }
+  
+  #reset-filters {
+    width: 100%;
+    margin-top: 0;
+  }
 }
