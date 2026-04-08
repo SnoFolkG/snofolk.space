@@ -26,7 +26,7 @@ async function fetchAlbums() {
     }
 }
 
-// 4. СТРАНИЦА АЛЬБОМА (album.html)
+// 4. ALBUM DETAIL PAGE (album.html)
 function renderAlbumDetail(albums) {
     const albumDetail = document.getElementById("album-detail");
     if (!albumDetail) return;
@@ -40,9 +40,20 @@ function renderAlbumDetail(albums) {
         return;
     }
 
-    document.title = `${album.title} – snofolk.space`;
+    // --- SEO & META DATA START ---
+    // 1. Update Title
+    document.title = `${album.artist} - ${album.title} (${album.year}) | snofolk.space`;
 
-    // Формируем прямую ссылку на скачивание
+    // 2. Update Description Meta Tag
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+        metaDesc.setAttribute("content", `Listen to ${album.title} by ${album.artist} (${album.year}). Genre: ${album.genre}. City: ${album.city}. Explore the full tracklist and download on snofolk.space.`);
+    }
+
+    // 3. Inject Schema.org JSON-LD (For Google "Rich Results")
+    injectAlbumSchema(album);
+    // --- SEO & META DATA END ---
+
     let downloadUrl = '';
     if (album.download) {
         const fileId = album.download.match(/[-\w]{25,}/)?.[0];
@@ -54,7 +65,7 @@ function renderAlbumDetail(albums) {
     albumDetail.innerHTML = `
       <div class="album-detail-wrap">
         <div class="album-cover-col">
-          <img src="${album.img}" alt="${album.title}" class="album-cover-big">
+          <img src="${album.img}" alt="${album.artist} - ${album.title}" class="album-cover-big">
           ${downloadUrl 
             ? `<a href="${downloadUrl}" class="download-btn download-btn-cover" download>Download Album (.rar)</a>
                <p class="download-hint">If Google shows a warning — click "Download anyway"</p>`
@@ -79,6 +90,37 @@ function renderAlbumDetail(albums) {
     `;
 }
 
+// NEW HELPER FUNCTION FOR SEO
+function injectAlbumSchema(album) {
+    // Remove existing schema if any (to avoid duplicates when navigating)
+    const oldSchema = document.getElementById('album-schema');
+    if (oldSchema) oldSchema.remove();
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "MusicAlbum",
+        "name": album.title,
+        "byArtist": {
+            "@type": "MusicGroup",
+            "name": album.artist
+        },
+        "genre": album.genre,
+        "datePublished": album.year.toString(),
+        "image": `https://snofolk.space/${album.img}`,
+        "numTracks": album.tracks.length,
+        "track": album.tracks.map((track, index) => ({
+            "@type": "MusicRecording",
+            "position": index + 1,
+            "name": track
+        }))
+    };
+
+    const script = document.createElement('script');
+    script.id = 'album-schema';
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+}
 // 5. ОБНОВЛЕННАЯ СЕТКА АЛЬБОМОВ (с очисткой контейнера)
 function renderDownloadsGrid(albumsToRender) {
     const container = document.getElementById("albums");
