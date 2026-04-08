@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /data/
+
+Disallow: /_redirects
+
+Sitemap: https://snofolk.space/sitemap.xml
