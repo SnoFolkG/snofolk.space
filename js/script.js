@@ -7,7 +7,7 @@ async function init() {
     if (albums.length === 0) return;
 
     renderCollectionVersions(); // Версии коллекции
-    initSorting(albums);        // Сортировка на downloads.html
+    renderDownloadsGrid(albums); // Сетка на странице downloads.html
     renderAlbumDetail(albums);  // Страница конкретного альбома album.html
     renderNewAlbums(albums);    // Секция "Новинки" на главной
     renderSimpleList(albums);   // Простой текстовый список
@@ -84,10 +84,12 @@ function renderDownloadsGrid(albumsToRender) {
     const container = document.getElementById("albums");
     if (!container) return;
 
+    // КРИТИЧНО: Очищаем контейнер перед тем, как рисовать отфильтрованные данные
     container.innerHTML = ""; 
 
+    // Если ничего не найдено, можно вывести сообщение
     if (albumsToRender.length === 0) {
-        container.innerHTML = `<p class="no-results">No albums found.</p>`;
+        container.innerHTML = `<p class="no-results">No albums found matching your criteria.</p>`;
         return;
     }
 
@@ -95,7 +97,7 @@ function renderDownloadsGrid(albumsToRender) {
         const div = document.createElement("div");
         div.className = "album";
         div.innerHTML = `
-          <a href="/albums/${album.id}" class="album-link">
+          <a href="album.html?id=${album.id}" class="album-link">
             <img src="${album.img}" alt="${album.title}" loading="lazy">
             <h3>${album.title}</h3>
             <p>${album.artist} • ${album.year}</p>
@@ -105,64 +107,7 @@ function renderDownloadsGrid(albumsToRender) {
     });
 }
 
-// 6. ИНИЦИАЛИЗАЦИЯ СОРТИРОВКИ (downloads.html)
-function initSorting(albums) {
-    const sortBy = document.getElementById("sort-by");
-    const resetSortBtn = document.getElementById("reset-sort");
-
-    // Если элементов нет — мы не на downloads.html
-    if (!sortBy) return;
-
-    // Показываем все альбомы по умолчанию
-    renderDownloadsGrid(albums);
-
-    // Функция сортировки
-    function applySorting() {
-        let sorted = [...albums];
-
-        const sortValue = sortBy.value;
-
-        switch (sortValue) {
-            case "year-desc":
-                sorted.sort((a, b) => b.year - a.year);
-                break;
-            case "year-asc":
-                sorted.sort((a, b) => a.year - b.year);
-                break;
-            case "title-asc":
-                sorted.sort((a, b) => a.title.localeCompare(b.title));
-                break;
-            case "title-desc":
-                sorted.sort((a, b) => b.title.localeCompare(a.title));
-                break;
-            case "artist-asc":
-                sorted.sort((a, b) => a.artist.localeCompare(b.artist));
-                break;
-            case "artist-desc":
-                sorted.sort((a, b) => b.artist.localeCompare(a.artist));
-                break;
-            case "date-added-desc":
-            default:
-                // Default order
-                break;
-        }
-
-        renderDownloadsGrid(sorted);
-    }
-
-    // Обработчик сортировки — срабатывает сразу при изменении
-    sortBy.addEventListener("change", applySorting);
-
-    // Обработчик кнопки "Reset"
-    if (resetSortBtn) {
-        resetSortBtn.addEventListener("click", () => {
-            sortBy.value = "date-added-desc";
-            renderDownloadsGrid(albums); // Показываем все в исходном порядке
-        });
-    }
-}
-
-// 7. НОВИНКИ (На главной)
+// 6. НОВИНКИ (На главной)
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container) return;
@@ -172,7 +117,7 @@ function renderNewAlbums(albums) {
         const div = document.createElement("div");
         div.className = "album-mini";
         div.innerHTML = `
-          <a href="/albums/${album.id}">
+          <a href="album.html?id=${album.id}">
             <img src="${album.img}" alt="${album.title}">
           </a>
           <p><strong>${album.artist}</strong><br>${album.title}</p>
@@ -181,7 +126,7 @@ function renderNewAlbums(albums) {
     });
 }
 
-// 8. ВЕРСИИ КОЛЛЕКЦИИ (about.html / index.html)
+// 7. ВЕРСИИ КОЛЛЕКЦИИ (about.html / index.html)
 function renderCollectionVersions() {
     const versionsContainer = document.getElementById("old-versions");
     if (!versionsContainer) return;
@@ -202,7 +147,7 @@ function renderCollectionVersions() {
     });
 }
 
-// 9. ПРОСТОЙ СПИСОК (если нужен)
+// 8. ПРОСТОЙ СПИСОК (если нужен)
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
@@ -213,7 +158,7 @@ function renderSimpleList(albums) {
     });
 }
 
-// 10. ПОДСВЕТКА МЕНЮ
+// 9. ПОДСВЕТКА МЕНЮ
 function highlightActiveNav() {
     document.querySelectorAll("nav a").forEach(link => {
         const href = link.getAttribute("href");
