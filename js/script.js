@@ -7,7 +7,7 @@ async function init() {
     if (albums.length === 0) return;
 
     renderCollectionVersions(); // Версии коллекции
-    initFilters(albums);        // Фильтры на downloads.html + показать все альбомы
+    initSorting(albums);        // Сортировка на downloads.html
     renderAlbumDetail(albums);  // Страница конкретного альбома album.html
     renderNewAlbums(albums);    // Секция "Новинки" на главной
     renderSimpleList(albums);   // Простой текстовый список
@@ -87,7 +87,7 @@ function renderDownloadsGrid(albumsToRender) {
     container.innerHTML = ""; 
 
     if (albumsToRender.length === 0) {
-        container.innerHTML = `<p class="no-results">No albums found matching your criteria.</p>`;
+        container.innerHTML = `<p class="no-results">No albums found.</p>`;
         return;
     }
 
@@ -105,87 +105,41 @@ function renderDownloadsGrid(albumsToRender) {
     });
 }
 
-// 6. ИНИЦИАЛИЗАЦИЯ ФИЛЬТРОВ И СОРТИРОВКИ (downloads.html)
-function initFilters(albums) {
-    const filterYearFrom = document.getElementById("filter-year-from");
-    const filterYearTo = document.getElementById("filter-year-to");
-    const filterGenre = document.getElementById("filter-genre");
-    const filterArtist = document.getElementById("filter-artist");
-    const filterCity = document.getElementById("filter-city");
+// 6. ИНИЦИАЛИЗАЦИЯ СОРТИРОВКИ (downloads.html)
+function initSorting(albums) {
     const sortBy = document.getElementById("sort-by");
-    const resetFiltersBtn = document.getElementById("reset-filters");
-    const applyFiltersBtn = document.getElementById("apply-filters");
+    const resetSortBtn = document.getElementById("reset-sort");
 
     // Если элементов нет — мы не на downloads.html
-    if (!filterYearFrom) return;
+    if (!sortBy) return;
 
     // Показываем все альбомы по умолчанию
     renderDownloadsGrid(albums);
 
-    // Заполняем селекты уникальными значениями
-    const genres = [...new Set(albums.map(a => a.genre))].sort();
-    const artists = [...new Set(albums.map(a => a.artist))].sort();
-    const cities = [...new Set(albums.map(a => a.city))].sort();
+    // Функция сортировки
+    function applySorting() {
+        let sorted = [...albums];
 
-    genres.forEach(genre => {
-        const option = document.createElement("option");
-        option.value = genre;
-        option.textContent = genre;
-        filterGenre.appendChild(option);
-    });
-
-    artists.forEach(artist => {
-        const option = document.createElement("option");
-        option.value = artist;
-        option.textContent = artist;
-        filterArtist.appendChild(option);
-    });
-
-    cities.forEach(city => {
-        const option = document.createElement("option");
-        option.value = city;
-        option.textContent = city;
-        filterCity.appendChild(option);
-    });
-
-    // Функция фильтрации и сортировки
-    function applyFiltersAndSort() {
-        let filtered = [...albums];
-
-        // Применяем фильтры
-        const yearFrom = filterYearFrom.value ? parseInt(filterYearFrom.value) : null;
-        const yearTo = filterYearTo.value ? parseInt(filterYearTo.value) : null;
-        const genre = filterGenre.value;
-        const artist = filterArtist.value;
-        const city = filterCity.value;
-
-        if (yearFrom) filtered = filtered.filter(a => a.year >= yearFrom);
-        if (yearTo) filtered = filtered.filter(a => a.year <= yearTo);
-        if (genre) filtered = filtered.filter(a => a.genre === genre);
-        if (artist) filtered = filtered.filter(a => a.artist === artist);
-        if (city) filtered = filtered.filter(a => a.city === city);
-
-        // Применяем сортировку
         const sortValue = sortBy.value;
 
         switch (sortValue) {
             case "year-desc":
-                filtered.sort((a, b) => b.year - a.year);
+                sorted.sort((a, b) => b.year - a.year);
                 break;
             case "year-asc":
-                filtered.sort((a, b) => a.year - b.year);
+                sorted.sort((a, b) => a.year - b.year);
                 break;
             case "title-asc":
-                filtered.sort((a, b) => a.title.localeCompare(b.title));
+                sorted.sort((a, b) => a.title.localeCompare(b.title));
                 break;
             case "title-desc":
-                filtered.sort((a, b) => b.title.localeCompare(a.title));
+                sorted.sort((a, b) => b.title.localeCompare(a.title));
                 break;
             case "artist-asc":
-                filtered.sort((a, b) => a.artist.localeCompare(b.artist));
+                sorted.sort((a, b) => a.artist.localeCompare(b.artist));
                 break;
             case "artist-desc":
-                filtered.sort((a, b) => b.artist.localeCompare(a.artist));
+                sorted.sort((a, b) => b.artist.localeCompare(a.artist));
                 break;
             case "date-added-desc":
             default:
@@ -193,25 +147,19 @@ function initFilters(albums) {
                 break;
         }
 
-        // Рендерим альбомы
-        renderDownloadsGrid(filtered);
+        renderDownloadsGrid(sorted);
     }
 
-    // Обработчик кнопки "Apply"
-    if (applyFiltersBtn) {
-        applyFiltersBtn.addEventListener("click", applyFiltersAndSort);
-    }
+    // Обработчик сортировки — срабатывает сразу при изменении
+    sortBy.addEventListener("change", applySorting);
 
     // Обработчик кнопки "Reset"
-    resetFiltersBtn.addEventListener("click", () => {
-        filterYearFrom.value = "";
-        filterYearTo.value = "";
-        filterGenre.value = "";
-        filterArtist.value = "";
-        filterCity.value = "";
-        sortBy.value = "date-added-desc";
-        renderDownloadsGrid(albums); // Показываем все альбомы
-    });
+    if (resetSortBtn) {
+        resetSortBtn.addEventListener("click", () => {
+            sortBy.value = "date-added-desc";
+            renderDownloadsGrid(albums); // Показываем все в исходном порядке
+        });
+    }
 }
 
 // 7. НОВИНКИ (На главной)
