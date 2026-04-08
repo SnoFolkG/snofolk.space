@@ -7,7 +7,7 @@ async function init() {
     if (albums.length === 0) return;
 
     renderCollectionVersions(); // Версии коллекции
-    renderDownloadsGrid(albums); // Сетка на странице downloads.html
+    initFilters(albums);        // Фильтры на downloads.html + показать все альбомы
     renderAlbumDetail(albums);  // Страница конкретного альбома album.html
     renderNewAlbums(albums);    // Секция "Новинки" на главной
     renderSimpleList(albums);   // Простой текстовый список
@@ -79,7 +79,33 @@ function renderAlbumDetail(albums) {
     `;
 }
 
-// 5. ИНИЦИАЛИЗАЦИЯ ФИЛЬТРОВ И СОРТИРОВКИ (downloads.html)
+// 5. ОБНОВЛЕННАЯ СЕТКА АЛЬБОМОВ (с очисткой контейнера)
+function renderDownloadsGrid(albumsToRender) {
+    const container = document.getElementById("albums");
+    if (!container) return;
+
+    container.innerHTML = ""; 
+
+    if (albumsToRender.length === 0) {
+        container.innerHTML = `<p class="no-results">No albums found matching your criteria.</p>`;
+        return;
+    }
+
+    albumsToRender.forEach(album => {
+        const div = document.createElement("div");
+        div.className = "album";
+        div.innerHTML = `
+          <a href="/albums/${album.id}" class="album-link">
+            <img src="${album.img}" alt="${album.title}" loading="lazy">
+            <h3>${album.title}</h3>
+            <p>${album.artist} • ${album.year}</p>
+          </a>
+        `;
+        container.appendChild(div);
+    });
+}
+
+// 6. ИНИЦИАЛИЗАЦИЯ ФИЛЬТРОВ И СОРТИРОВКИ (downloads.html)
 function initFilters(albums) {
     const filterYearFrom = document.getElementById("filter-year-from");
     const filterYearTo = document.getElementById("filter-year-to");
@@ -88,9 +114,13 @@ function initFilters(albums) {
     const filterCity = document.getElementById("filter-city");
     const sortBy = document.getElementById("sort-by");
     const resetFiltersBtn = document.getElementById("reset-filters");
+    const applyFiltersBtn = document.getElementById("apply-filters");
 
     // Если элементов нет — мы не на downloads.html
     if (!filterYearFrom) return;
+
+    // Показываем все альбомы по умолчанию
+    renderDownloadsGrid(albums);
 
     // Заполняем селекты уникальными значениями
     const genres = [...new Set(albums.map(a => a.genre))].sort();
@@ -159,7 +189,7 @@ function initFilters(albums) {
                 break;
             case "date-added-desc":
             default:
-                // Default order (по массиву, новые в конце)
+                // Default order
                 break;
         }
 
@@ -167,14 +197,12 @@ function initFilters(albums) {
         renderDownloadsGrid(filtered);
     }
 
-    // Обработчики событий
-    filterYearFrom.addEventListener("change", applyFiltersAndSort);
-    filterYearTo.addEventListener("change", applyFiltersAndSort);
-    filterGenre.addEventListener("change", applyFiltersAndSort);
-    filterArtist.addEventListener("change", applyFiltersAndSort);
-    filterCity.addEventListener("change", applyFiltersAndSort);
-    sortBy.addEventListener("change", applyFiltersAndSort);
+    // Обработчик кнопки "Apply"
+    if (applyFiltersBtn) {
+        applyFiltersBtn.addEventListener("click", applyFiltersAndSort);
+    }
 
+    // Обработчик кнопки "Reset"
     resetFiltersBtn.addEventListener("click", () => {
         filterYearFrom.value = "";
         filterYearTo.value = "";
@@ -182,14 +210,11 @@ function initFilters(albums) {
         filterArtist.value = "";
         filterCity.value = "";
         sortBy.value = "date-added-desc";
-        applyFiltersAndSort();
+        renderDownloadsGrid(albums); // Показываем все альбомы
     });
-
-    // Первый рендер
-    applyFiltersAndSort();
 }
 
-// 6. НОВИНКИ (На главной)
+// 7. НОВИНКИ (На главной)
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container) return;
@@ -199,7 +224,7 @@ function renderNewAlbums(albums) {
         const div = document.createElement("div");
         div.className = "album-mini";
         div.innerHTML = `
-          <a href="album.html?id=${album.id}">
+          <a href="/albums/${album.id}">
             <img src="${album.img}" alt="${album.title}">
           </a>
           <p><strong>${album.artist}</strong><br>${album.title}</p>
@@ -208,7 +233,7 @@ function renderNewAlbums(albums) {
     });
 }
 
-// 7. ВЕРСИИ КОЛЛЕКЦИИ (about.html / index.html)
+// 8. ВЕРСИИ КОЛЛЕКЦИИ (about.html / index.html)
 function renderCollectionVersions() {
     const versionsContainer = document.getElementById("old-versions");
     if (!versionsContainer) return;
@@ -229,7 +254,7 @@ function renderCollectionVersions() {
     });
 }
 
-// 8. ПРОСТОЙ СПИСОК (если нужен)
+// 9. ПРОСТОЙ СПИСОК (если нужен)
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
@@ -240,7 +265,7 @@ function renderSimpleList(albums) {
     });
 }
 
-// 9. ПОДСВЕТКА МЕНЮ
+// 10. ПОДСВЕТКА МЕНЮ
 function highlightActiveNav() {
     document.querySelectorAll("nav a").forEach(link => {
         const href = link.getAttribute("href");
