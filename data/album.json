@@ -350,7 +350,7 @@
     "city": "Boston, MA",
     "label": "X-Claim! Records",
     "img": "img/Mc026.jpg",
-    "download": "https://drive.google.com/file/d/1_EnhVA9BveJUj_AP8KfmK6u1zkRjOPkC/view?usp=drive_link",
+    "download": "https://drive.google.com/file/d/1tVJLIzwtmSNkit8rbf3HtBZEbzE44xvz/view?usp=drive_link",
     "tracks": [
       "Glue", "Forced Down Your Throat", "Get It Away", "Under The Influence",
       "Nothing Done", "Xclaim", "No Reply"
@@ -460,21 +460,19 @@
     ]
   },
   {
-    "id": "damaged-jealous-again",
-    "title": "Damaged / Jealous Again",
+    "id": "damaged",
+    "title": "Damaged",
     "artist": "Black Flag",
-    "year": 1995,
+    "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Hermosa Beach, CA",
     "label": "SST Records",
     "img": "img/Mc017.jpg",
-    "download": "https://drive.google.com/file/d/1pykvhvQNWDsR2X3FhPx7B9-GhH5kIfX4/view?usp=drive_link",
+    "download": "https://drive.google.com/file/d/1GayiPRrg4gDX_EpXPzmd5PN8_f-Bqbyy/view?usp=drive_link",
     "tracks": [
       "Rise Above", "Spray Paint", "Six Pack", "What I See", "TV Party",
       "Thirsty and Miserable", "Police Story", "Gimmie Gimmie Gimmie", "Depression",
-      "Room 13", "Damaged II", "No More", "Padded Cell", "Life of Pain", "Damaged I",
-      "Jealous Again", "Revenge", "White Minority", "No Values",
-      "You Bet We've Got Something Against You!"
+      "Room 13", "Damaged II", "No More", "Padded Cell", "Life of Pain", "Damaged I"
     ]
   },
   {
@@ -506,4 +504,20 @@
       "Where It Ends", "Live @ The Anthrax, March 18th, 1988"
     ]
   }
+    {
+    "id": "no-wishes-no-prayers",
+    "title": "No Wishes, No Prayers",
+    "artist": "Subhumans",
+    "year": 1983,
+    "genre": "Punk Rock",
+    "city": "Victoria, BC",
+    "label": "SST Records",
+    "img": "img/Mc046.jpg",
+    "download": "https://drive.google.com/file/d/1IllPTQWQ5HAO2VxgfEgUj5f6EJZTU4sm/view?usp=drive_link",
+    "tracks": [
+      "America Commits Suicide", "Breaking Point", "Canada's Favourite Sport",
+      "For The Common Good", "Googolplex", "Helicopter", "Hiroshima", "Mobile Electric Chair",
+      "Moron Majority", "No Wishes, No Prayers", "Screwed Up", "Slap In The Face"
+    ]
+  },
 ]
