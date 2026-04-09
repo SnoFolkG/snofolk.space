@@ -26,32 +26,6 @@ async function fetchAlbums() {
     }
 }
 
-// 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ
-function findSimilarAlbums(currentAlbum, allAlbums) {
-    const others = allAlbums.filter(a => a.id !== currentAlbum.id);
-    
-    // 1. Сначала ищем по исполнителю
-    const sameArtist = others.filter(a => a.artist === currentAlbum.artist);
-    if (sameArtist.length >= 3) {
-        return sameArtist.slice(0, 3);
-    }
-    if (sameArtist.length > 0) {
-        return sameArtist; // вернем что есть, если меньше 3
-    }
-    
-    // 2. Если исполнитель один — ищем по городу
-    const sameCity = others.filter(a => a.city === currentAlbum.city);
-    if (sameCity.length >= 3) {
-        return sameCity.slice(0, 3);
-    }
-    if (sameCity.length > 0) {
-        return sameCity;
-    }
-    
-    // 3. Если города нет/совпадений нет — возвращаем пустой массив
-    // (это будет сигналом показать сообщение + случайные)
-    return [];
-}
 
 // 4. ALBUM DETAIL PAGE (album.html)
 function renderAlbumDetail(albums) {
@@ -66,9 +40,6 @@ function renderAlbumDetail(albums) {
         albumDetail.innerHTML = `<p class="error">Album not found.</p>`;
         return;
     }
-
-    // Находим похожие альбомы
-    const similarAlbums = findSimilarAlbums(album, albums);
 
     // --- SEO & META DATA START ---
     // 1. Update Title
