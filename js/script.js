@@ -7,11 +7,11 @@ async function init() {
     if (albums.length === 0) return;
 
     renderCollectionVersions();     // Версии коллекции
-    renderDownloadsGrid(albums);    // Сетка альбомов на downloads.html
-    renderAlbumDetail(albums);      // Страница конкретного альбома (album.html)
-    renderNewAlbums(albums);        // Секция "Новинки" на главной
-    renderSimpleList(albums);       // Простой список (если используется)
-    highlightActiveNav();           // Подсветка активного пункта меню
+    renderDownloadsGrid(albums);    // Сетка на downloads.html
+    renderAlbumDetail(albums);      // Страница альбома album.html
+    renderNewAlbums(albums);        // Новинки на главной
+    renderSimpleList(albums);       // Простой список (если нужен)
+    highlightActiveNav();           // Подсветка меню
 }
 
 // 3. ЗАГРУЗКА JSON
@@ -26,7 +26,7 @@ async function fetchAlbums() {
     }
 }
 
-// 4. СТРАНИЦА КОНКРЕТНОГО АЛЬБОМА (album.html)
+// 4. СТРАНИЦА КОНКРЕТНОГО АЛЬБОМА (album.html) — БЕЗ ПОХОЖИХ АЛЬБОМОВ
 function renderAlbumDetail(albums) {
     const albumDetail = document.getElementById("album-detail");
     if (!albumDetail) return;
@@ -40,7 +40,7 @@ function renderAlbumDetail(albums) {
         return;
     }
 
-    // === SEO & META DATA ===
+    // === SEO & META ===
     document.title = `${album.artist} - ${album.title} (${album.year}) | snofolk.space`;
 
     const metaDesc = document.querySelector('meta[name="description"]');
@@ -61,30 +61,7 @@ function renderAlbumDetail(albums) {
             : album.download;
     }
 
-    // Похожие альбомы (случайные 3, если нет специального списка)
-    const randomAlbums = albums
-        .filter(a => a.id !== album.id)
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 3);
-
-    const similarHTML = `
-        <div class="similar-albums">
-            <h3>Похожие альбомы</h3>
-            <p class="similar-note">Пока нет точных совпадений, вот несколько других хороших альбомов:</p>
-            <div class="similar-grid">
-                ${randomAlbums.map(a => `
-                    <div class="album-mini-card">
-                        <a href="album.html?id=${a.id}">
-                            <img src="${a.img}" alt="${a.title}" loading="lazy">
-                            <p><strong>${a.artist}</strong><br>${a.title}</p>
-                        </a>
-                    </div>
-                `).join('')}
-            </div>
-        </div>
-    `;
-
-    // Основной HTML альбома
+    // Основной HTML альбома (без похожих альбомов)
     albumDetail.innerHTML = `
         <div class="album-detail-wrap">
             <div class="album-cover-col">
@@ -97,8 +74,6 @@ function renderAlbumDetail(albums) {
                        <p class="download-hint">Если Google покажет предупреждение — нажмите «Скачать в любом случае»</p>`
                     : `<p class="no-download">Ссылка на скачивание появится скоро</p>`
                 }
-
-                ${similarHTML}
             </div>
 
             <div class="album-info-col">
@@ -121,9 +96,9 @@ function renderAlbumDetail(albums) {
     `;
 }
 
-// SEO: Schema.org JSON-LD
+// 5. SEO: Schema.org JSON-LD
 function injectAlbumSchema(album) {
-    // Удаляем старый schema, если есть
+    // Удаляем предыдущий schema, если есть
     document.getElementById('album-schema')?.remove();
 
     const schema = {
@@ -152,7 +127,7 @@ function injectAlbumSchema(album) {
     document.head.appendChild(script);
 }
 
-// 5. СЕТКА АЛЬБОМОВ (downloads.html)
+// 6. СЕТКА АЛЬБОМОВ (downloads.html)
 function renderDownloadsGrid(albums) {
     const container = document.getElementById("albums");
     if (!container) return;
@@ -178,12 +153,14 @@ function renderDownloadsGrid(albums) {
     });
 }
 
-// 6. НОВИНКИ НА ГЛАВНОЙ СТРАНИЦЕ
+// 7. НОВИНКИ НА ГЛАВНОЙ
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container) return;
 
     const last5 = albums.slice(-5).reverse();
+
+    container.innerHTML = ""; // очищаем перед добавлением
 
     last5.forEach(album => {
         const div = document.createElement("div");
@@ -198,7 +175,7 @@ function renderNewAlbums(albums) {
     });
 }
 
-// 7. ВЕРСИИ КОЛЛЕКЦИИ
+// 8. ВЕРСИИ КОЛЛЕКЦИИ
 function renderCollectionVersions() {
     const container = document.getElementById("old-versions");
     if (!container) return;
@@ -211,7 +188,7 @@ function renderCollectionVersions() {
         }
     ];
 
-    container.innerHTML = ""; // очищаем на всякий случай
+    container.innerHTML = "";
 
     collectionVersions.forEach(v => {
         const div = document.createElement("div");
@@ -225,7 +202,7 @@ function renderCollectionVersions() {
     });
 }
 
-// 8. ПРОСТОЙ ТЕКСТОВЫЙ СПИСОК (если используется где-то)
+// 9. ПРОСТОЙ СПИСОК (если используется)
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
@@ -238,7 +215,7 @@ function renderSimpleList(albums) {
     });
 }
 
-// 9. ПОДСВЕТКА АКТИВНОГО ПУНКТА МЕНЮ
+// 10. ПОДСВЕТКА АКТИВНОГО МЕНЮ
 function highlightActiveNav() {
     document.querySelectorAll("nav a").forEach(link => {
         const href = link.getAttribute("href");
@@ -248,5 +225,5 @@ function highlightActiveNav() {
     });
 }
 
-// ЗАПУСК СКРИПТА
+// ЗАПУСК
 init();
