@@ -7,26 +7,26 @@ async function init() {
     if (albums.length === 0) return;
 
     renderCollectionVersions();     // Версии коллекции
-    renderDownloadsGrid(albums);    // Сетка на downloads.html
-    renderAlbumDetail(albums);      // Страница альбома album.html
-    renderNewAlbums(albums);        // Новинки на главной
-    renderSimpleList(albums);       // Простой список (если нужен)
-    highlightActiveNav();           // Подсветка меню
+    renderDownloadsGrid(albums);    // Сетка альбомов на downloads.html
+    renderAlbumDetail(albums);      // Страница конкретного альбома album.html
+    renderNewAlbums(albums);        // Секция "Новинки" на главной странице
+    renderSimpleList(albums);       // Простой список (если используется)
+    highlightActiveNav();           // Подсветка активного пункта меню
 }
 
 // 3. ЗАГРУЗКА JSON
 async function fetchAlbums() {
     try {
         const response = await fetch(DATA_URL);
-        if (!response.ok) throw new Error(`Ошибка загрузки: ${response.status}`);
+        if (!response.ok) throw new Error(`Loading error: ${response.status}`);
         return await response.json();
     } catch (error) {
-        console.error("Критическая ошибка загрузки альбомов:", error);
+        console.error("Critical error loading albums:", error);
         return [];
     }
 }
 
-// 4. СТРАНИЦА КОНКРЕТНОГО АЛЬБОМА (album.html) — БЕЗ ПОХОЖИХ АЛЬБОМОВ
+// 4. СТРАНИЦА КОНКРЕТНОГО АЛЬБОМА (album.html)
 function renderAlbumDetail(albums) {
     const albumDetail = document.getElementById("album-detail");
     if (!albumDetail) return;
@@ -36,7 +36,7 @@ function renderAlbumDetail(albums) {
     const album = albums.find(a => a.id === id);
 
     if (!album) {
-        albumDetail.innerHTML = `<p class="error">Альбом не найден.</p>`;
+        albumDetail.innerHTML = `<p class="error">Album not found.</p>`;
         return;
     }
 
@@ -45,34 +45,34 @@ function renderAlbumDetail(albums) {
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-        metaDesc.setAttribute("content", 
-            `Слушайте альбом ${album.title} — ${album.artist} (${album.year}). Жанр: ${album.genre}. Город: ${album.city}. Скачать на snofolk.space.`
+        metaDesc.setAttribute("content",
+            `Listen to ${album.title} by ${album.artist} (${album.year}). Genre: ${album.genre}. City: ${album.city}. Download on snofolk.space.`
         );
     }
 
     injectAlbumSchema(album);
 
-    // Подготовка ссылки на скачивание
+    // Prepare download link
     let downloadUrl = '';
     if (album.download) {
         const fileId = album.download.match(/[-\w]{25,}/)?.[0];
-        downloadUrl = fileId 
+        downloadUrl = fileId
             ? `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`
             : album.download;
     }
 
-    // Основной HTML альбома (без похожих альбомов)
+    // Основной HTML альбома
     albumDetail.innerHTML = `
         <div class="album-detail-wrap">
             <div class="album-cover-col">
                 <img src="${album.img}" alt="${album.artist} - ${album.title}" class="album-cover-big" loading="lazy">
                 
-                ${downloadUrl 
+                ${downloadUrl
                     ? `<a href="${downloadUrl}" class="download-btn download-btn-cover" download>
-                            Скачать альбом (.rar)
+                            Download Album (.rar)
                        </a>
-                       <p class="download-hint">Если Google покажет предупреждение — нажмите «Скачать в любом случае»</p>`
-                    : `<p class="no-download">Ссылка на скачивание появится скоро</p>`
+                       <p class="download-hint">If Google shows a warning — click "Download anyway"</p>`
+                    : `<p class="no-download">Download link coming soon</p>`
                 }
             </div>
 
@@ -81,14 +81,14 @@ function renderAlbumDetail(albums) {
                 <p class="album-artist">${album.artist}</p>
                 
                 <ul class="album-meta">
-                    <li><span>Год</span>${album.year}</li>
-                    <li><span>Жанр</span>${album.genre}</li>
-                    <li><span>Город</span>${album.city}</li>
-                    <li><span>Лейбл</span>${album.label || '—'}</li>
+                    <li><span>Year</span>${album.year}</li>
+                    <li><span>Genre</span>${album.genre}</li>
+                    <li><span>City</span>${album.city}</li>
+                    <li><span>Label</span>${album.label || '—'}</li>
                 </ul>
 
                 <div class="tracklist">
-                    <h3>Треклист</h3>
+                    <h3>Tracklist</h3>
                     <ol>${album.tracks.map(t => `<li>${t}</li>`).join("")}</ol>
                 </div>
             </div>
@@ -98,7 +98,7 @@ function renderAlbumDetail(albums) {
 
 // 5. SEO: Schema.org JSON-LD
 function injectAlbumSchema(album) {
-    // Удаляем предыдущий schema, если есть
+    // Remove previous schema if exists
     document.getElementById('album-schema')?.remove();
 
     const schema = {
@@ -135,7 +135,7 @@ function renderDownloadsGrid(albums) {
     container.innerHTML = "";
 
     if (albums.length === 0) {
-        container.innerHTML = `<p class="no-results">Альбомы не найдены.</p>`;
+        container.innerHTML = `<p class="no-results">No albums found.</p>`;
         return;
     }
 
@@ -153,14 +153,14 @@ function renderDownloadsGrid(albums) {
     });
 }
 
-// 7. НОВИНКИ НА ГЛАВНОЙ
+// 7. НОВИНКИ НА ГЛАВНОЙ СТРАНИЦЕ
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container) return;
 
     const last5 = albums.slice(-5).reverse();
 
-    container.innerHTML = ""; // очищаем перед добавлением
+    container.innerHTML = "";
 
     last5.forEach(album => {
         const div = document.createElement("div");
@@ -181,10 +181,10 @@ function renderCollectionVersions() {
     if (!container) return;
 
     const collectionVersions = [
-        { 
-            version: "v4.2.0", 
-            date: "29.03.2026", 
-            file: "https://drive.google.com/file/d/1PWQM4fC2Rwnbmr6mFG2Chvbk4w3wFXPg/view?usp=drive_link" 
+        {
+            version: "v4.2.0",
+            date: "March 29, 2026",
+            file: "https://drive.google.com/file/d/1PWQM4fC2Rwnbmr6mFG2Chvbk4w3wFXPg/view?usp=drive_link"
         }
     ];
 
@@ -196,13 +196,13 @@ function renderCollectionVersions() {
         div.innerHTML = `
             <span class="version-tag">${v.version}</span>
             <span class="version-date">${v.date}</span>
-            <a href="${v.file}" class="download-btn" target="_blank">Скачать</a>
+            <a href="${v.file}" class="download-btn" target="_blank">Download</a>
         `;
         container.appendChild(div);
     });
 }
 
-// 9. ПРОСТОЙ СПИСОК (если используется)
+// 9. ПРОСТОЙ СПИСОК (если используется где-то)
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
@@ -215,7 +215,7 @@ function renderSimpleList(albums) {
     });
 }
 
-// 10. ПОДСВЕТКА АКТИВНОГО МЕНЮ
+// 10. ПОДСВЕТКА АКТИВНОГО ПУНКТА МЕНЮ
 function highlightActiveNav() {
     document.querySelectorAll("nav a").forEach(link => {
         const href = link.getAttribute("href");
@@ -225,5 +225,5 @@ function highlightActiveNav() {
     });
 }
 
-// ЗАПУСК
+// ЗАПУСК СКРИПТА
 init();
