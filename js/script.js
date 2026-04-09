@@ -26,6 +26,33 @@ async function fetchAlbums() {
     }
 }
 
+// 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ
+function findSimilarAlbums(currentAlbum, allAlbums) {
+    const others = allAlbums.filter(a => a.id !== currentAlbum.id);
+    
+    // 1. Сначала ищем по исполнителю
+    const sameArtist = others.filter(a => a.artist === currentAlbum.artist);
+    if (sameArtist.length >= 3) {
+        return sameArtist.slice(0, 3);
+    }
+    if (sameArtist.length > 0) {
+        return sameArtist; // вернем что есть, если меньше 3
+    }
+    
+    // 2. Если исполнитель один — ищем по городу
+    const sameCity = others.filter(a => a.city === currentAlbum.city);
+    if (sameCity.length >= 3) {
+        return sameCity.slice(0, 3);
+    }
+    if (sameCity.length > 0) {
+        return sameCity;
+    }
+    
+    // 3. Если города нет/совпадений нет — возвращаем пустой массив
+    // (это будет сигналом показать сообщение + случайные)
+    return [];
+}
+
 // 4. ALBUM DETAIL PAGE (album.html)
 function renderAlbumDetail(albums) {
     const albumDetail = document.getElementById("album-detail");
@@ -39,6 +66,9 @@ function renderAlbumDetail(albums) {
         albumDetail.innerHTML = `<p class="error">Album not found.</p>`;
         return;
     }
+
+    // Находим похожие альбомы
+    const similarAlbums = findSimilarAlbums(album, albums);
 
     // --- SEO & META DATA START ---
     // 1. Update Title
@@ -62,6 +92,49 @@ function renderAlbumDetail(albums) {
             : album.download;
     }
 
+    // Формируем HTML для похожих альбомов
+    let similarHTML = '';
+    if (similarAlbums.length === 0) {
+        // Случайные 3 альбома
+        const randomAlbums = albums
+            .filter(a => a.id !== album.id)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 3);
+        
+        similarHTML = `
+          <div class="similar-albums">
+            <h3>Похожие альбомы</h3>
+            <p class="similar-note">Пока похожих нет, но у меня есть другие хорошие альбомы</p>
+            <div class="similar-grid">
+              ${randomAlbums.map(a => `
+                <div class="album-mini-card">
+                  <a href="album.html?id=${a.id}">
+                    <img src="${a.img}" alt="${a.title}">
+                    <p><strong>${a.artist}</strong><br>${a.title}</p>
+                  </a>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+    } else {
+        similarHTML = `
+          <div class="similar-albums">
+            <h3>Похожие альбомы</h3>
+            <div class="similar-grid">
+              ${similarAlbums.map(a => `
+                <div class="album-mini-card">
+                  <a href="album.html?id=${a.id}">
+                    <img src="${a.img}" alt="${a.title}">
+                    <p><strong>${a.artist}</strong><br>${a.title}</p>
+                  </a>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+    }
+
     albumDetail.innerHTML = `
       <div class="album-detail-wrap">
         <div class="album-cover-col">
@@ -71,6 +144,7 @@ function renderAlbumDetail(albums) {
                <p class="download-hint">If Google shows a warning — click "Download anyway"</p>`
             : `<p class="no-download">Download link coming soon</p>`
           }
+          ${similarHTML}
         </div>
         <div class="album-info-col">
           <h2 class="album-title">${album.title}</h2>
