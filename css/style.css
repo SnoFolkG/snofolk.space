@@ -59,7 +59,6 @@ body {
   background-attachment: scroll;
 }
 
-
 /* ==========================
    TYPOGRAPHY
 ========================== */
@@ -277,6 +276,13 @@ nav a:focus-visible {
   transform: scale(0.97);
 }
 
+.download-btn-big {
+  font-size: 14px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-color: var(--accent-border);
+}
+
 /* ==========================
    NEWS
 ========================== */
@@ -318,11 +324,13 @@ nav a:focus-visible {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 16px;
+  justify-content: space-between;
 }
 
 .album-mini {
   text-align: center;
   width: 120px;
+  flex-shrink: 0;
 }
 
 .album-mini img {
@@ -422,30 +430,6 @@ footer {
 }
 
 /* ==========================
-   RESPONSIVE
-========================== */
-@media (max-width: 768px) {
-  .albums {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 14px;
-  }
-}
-
-@media (max-width: 600px) {
-  main {
-    margin: 10px;
-    padding: 16px;
-  }
-  nav a {
-    font-size: 12px;
-    padding: 5px 8px;
-  }
-  h2 {
-    font-size: 16px;
-  }
-}
-
-/* ==========================
    COLLECTION DOWNLOAD
 ========================== */
 .collection-download {
@@ -464,13 +448,6 @@ footer {
   margin-bottom: 4px;
   color: var(--text-light);
   font-weight: 500;
-}
-
-.download-btn-big {
-  font-size: 14px;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-color: var(--accent-border);
 }
 
 .collection-info p:first-child {
@@ -511,15 +488,8 @@ footer {
 }
 
 /* ==========================
-   RESPONSIVE ADDITIONS
+   ALBUM DETAIL PAGE
 ========================== */
-@media (max-width: 600px) {
-  .collection-download {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
 .album-detail-wrap {
   display: flex;
   gap: 2rem;
@@ -529,11 +499,38 @@ footer {
   align-items: flex-start;
 }
 
+.album-cover-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
 .album-cover-big {
   width: 280px;
   height: 280px;
   object-fit: cover;
   display: block;
+}
+
+.download-btn-cover {
+  width: 100%;
+  text-align: center;
+  padding: 9px 0;
+  font-size: 13px;
+  border-color: var(--accent-border);
+  letter-spacing: 0.5px;
+}
+
+.download-btn-cover:hover {
+  background: var(--accent);
+}
+
+.download-hint {
+  width: 280px;
+  font-size: 12px;
+  color: var(--text-dim);
 }
 
 .album-info-col {
@@ -583,17 +580,6 @@ footer {
   line-height: 1.8;
 }
 
-@media (max-width: 600px) {
-  .album-detail-wrap {
-    flex-direction: column;
-  }
-
-  .album-cover-big {
-    width: 100%;
-    height: auto;
-  }
-}
-
 .album-link {
   display: block;
   text-decoration: none;
@@ -602,246 +588,6 @@ footer {
 
 .album-link:hover img {
   opacity: 0.8;
-}
-
-.album-cover-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  flex-shrink: 0;
-}
-
-.download-btn-cover {
-  width: 100%;
-  text-align: center;
-  padding: 9px 0;
-  font-size: 13px;
-  border-color: var(--accent-border);
-  letter-spacing: 0.5px;
-}
-
-.download-btn-cover:hover {
-  background: var(--accent);
-}
-
-.download-hint {
-  width: 280px;
-  font-size: 12px;
-  color: var(--text-dim);
-}
-
-/* ==========================
-   SORTING SECTION
-========================== */
-.sorting-section {
-  display: flex;
-  gap: 12px;
-  padding: 16px;
-  margin-bottom: 20px;
-  border-radius: 14px;
-  background: var(--glass);
-  border: 1px solid var(--border);
-  align-items: flex-end;
-}
-
-.sort-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.sort-group label {
-  font-size: 12px;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-
-.sort-group select {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,0.3);
-  color: var(--text-main);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  transition: background var(--transition), border-color var(--transition);
-  min-width: 180px;
-}
-
-.sort-group select:focus {
-  outline: none;
-  background: rgba(0,0,0,0.5);
-  border-color: var(--accent-border);
-}
-
-.sort-group select option {
-  background: #1a1a1a;
-  color: var(--text-main);
-}
-
-#reset-sort {
-  font-size: 12px;
-  padding: 8px 12px;
-  height: fit-content;
-}
-
-@media (max-width: 600px) {
-  .sorting-section {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
-  .sort-group select {
-    min-width: auto;
-  }
-  
-  #reset-sort {
-    width: 100%;
-  }
-}
-
-/* ==========================
-========================== */
-.filters-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 12px;
-  padding: 16px;
-  margin-bottom: 20px;
-  border-radius: 14px;
-  background: var(--glass);
-  border: 1px solid var(--border);
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.filter-group label {
-  font-size: 12px;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-  font-weight: 600;
-}
-
-.filter-group input,
-.filter-group select {
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,0.3);
-  color: var(--text-main);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  transition: background var(--transition), border-color var(--transition);
-}
-
-.filter-group input:focus,
-.filter-group select:focus {
-  outline: none;
-  background: rgba(0,0,0,0.5);
-  border-color: var(--accent-border);
-}
-
-.filter-group select option {
-  background: #1a1a1a;
-  color: var(--text-main);
-}
-
-#reset-filters {
-  align-self: flex-end;
-  font-size: 12px;
-  padding: 8px 12px;
-  height: fit-content;
-  margin-top: 18px;
-}
-
-@media (max-width: 600px) {
-  .filters-section {
-    grid-template-columns: 1fr;
-  }
-  
-  #reset-filters {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-/* ==========================
-   FILTERS & SORT
-========================== */
-.filters-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-  padding: 16px;
-  border-radius: 14px;
-  background: var(--glass);
-  border: 1px solid var(--border);
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.filter-group label {
-  font-size: 12px;
-  color: var(--text-dim);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-.filter-group input,
-.filter-group select {
-  padding: 8px 10px;
-  font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
-  color: var(--text-main);
-  background: var(--glass-strong);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  transition: var(--transition);
-}
-
-.filter-group input:hover,
-.filter-group select:hover {
-  background: rgba(255,255,255,0.12);
-}
-
-.filter-group input:focus,
-.filter-group select:focus {
-  outline: none;
-  border-color: var(--accent-border);
-  background: rgba(255,255,255,0.15);
-}
-
-#reset-filters {
-  align-self: flex-end;
-}
-
-@media (max-width: 600px) {
-  .filters-wrap {
-    flex-direction: column;
-  }
-  
-  .filter-group {
-    width: 100%;
-  }
-  
-  .filter-group input,
-  .filter-group select {
-    width: 100%;
-  }
 }
 
 /* ==========================
@@ -917,7 +663,45 @@ footer {
   color: inherit;
 }
 
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 768px) {
+  .albums {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+  }
+}
+
 @media (max-width: 600px) {
+  main {
+    margin: 10px;
+    padding: 16px;
+  }
+  
+  nav a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  
+  h2 {
+    font-size: 16px;
+  }
+  
+  .collection-download {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .album-detail-wrap {
+    flex-direction: column;
+  }
+
+  .album-cover-big {
+    width: 100%;
+    height: auto;
+  }
+  
   .similar-albums {
     width: 100%;
   }
