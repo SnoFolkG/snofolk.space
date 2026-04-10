@@ -26,31 +26,36 @@ async function fetchAlbums() {
     }
 }
 
-// 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ
+// 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ (улучшенная версия)
 function findSimilarAlbums(currentAlbum, allAlbums) {
+    // Убираем текущий альбом из списка
     const others = allAlbums.filter(a => a.id !== currentAlbum.id);
-    
-    // 1. Сначала ищем по исполнителю
-    const sameArtist = others.filter(a => a.artist === currentAlbum.artist);
-    if (sameArtist.length >= 3) {
-        return sameArtist.slice(0, 3);
+
+    // 1. Находим все альбомы того же исполнителя
+    let similar = others.filter(a => a.artist === currentAlbum.artist);
+
+    // Если уже есть 3 или больше — возвращаем только 3
+    if (similar.length >= 3) {
+        return similar.slice(0, 3);
     }
-    if (sameArtist.length > 0) {
-        return sameArtist; // вернем что есть, если меньше 3
-    }
-    
-    // 2. Если исполнитель один — ищем по городу
-    const sameCity = others.filter(a => a.city === currentAlbum.city);
-    if (sameCity.length >= 3) {
-        return sameCity.slice(0, 3);
-    }
-    if (sameCity.length > 0) {
-        return sameCity;
-    }
-    
-    // 3. Если города нет/совпадений нет — возвращаем пустой массив
-    // (это будет сигналом показать сообщение + случайные)
-    return [];
+
+    // 2. Если меньше 3 — добавляем альбомы из того же города
+    const needed = 3 - similar.length; // сколько ещё нужно (1 или 2)
+
+    // Находим альбомы из того же города, исключая уже добавленные (того же исполнителя)
+    const sameCity = others.filter(a => 
+        a.city === currentAlbum.city && 
+        a.artist !== currentAlbum.artist   // не берём повторно альбомы исполнителя
+    );
+
+    // Добавляем нужное количество из города
+    const additional = sameCity.slice(0, needed);
+
+    // Объединяем альбомы исполнителя + дополнительные из города
+    similar = [...similar, ...additional];
+
+    // Если в итоге ничего не нашлось — возвращаем пустой массив
+    return similar;
 }
 
 // 4. ALBUM DETAIL PAGE (album.html)
