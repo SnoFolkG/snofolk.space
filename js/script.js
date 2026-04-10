@@ -108,8 +108,8 @@ function renderAlbumDetail(albums) {
         
         similarHTML = `
           <div class="similar-albums">
-            <h3>Похожие альбомы</h3>
-            <p class="similar-note">Пока похожих нет, но у меня есть другие хорошие альбомы</p>
+            <h3>Similar albums</h3>
+            <p class="similar-note">No similar albums found, but here are some other great albums you might like</p>
             <div class="similar-grid">
               ${randomAlbums.map(a => `
                 <div class="album-mini-card">
@@ -125,7 +125,7 @@ function renderAlbumDetail(albums) {
     } else {
         similarHTML = `
           <div class="similar-albums">
-            <h3>Похожие альбомы</h3>
+            <h3>Similar albums</h3>
             <div class="similar-grid">
               ${similarAlbums.map(a => `
                 <div class="album-mini-card">
