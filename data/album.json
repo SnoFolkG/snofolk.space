@@ -533,5 +533,20 @@
     "tracks": [
       "Dead Was Too Kind", "Fuck You", "Inquisition Day", "Slave To My Dick"
     ]
+  },
+     {
+    "id": "deep-wound",
+    "title": "Deep Wound",
+    "artist": "Deep Wound",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Westfield, MA",
+    "label": "Radiobeat Records",
+    "img": "img/Mc048.jpg",
+    "download": "https://drive.google.com/file/d/1gEOyV0AVwlL3Puzuf9ZmfxZS3iI3HT3C/view?usp=drive_link",
+    "tracks": [
+     "I Saw It", "Sisters", "In My Room", "Don't Need", "Lou's Anxiety Song",
+     "Video", "Sick Of Fun", "Deep Wound", "Dead Babies"
+    ]
   }
 ]
