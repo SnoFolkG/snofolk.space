@@ -233,7 +233,7 @@ function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container) return;
 
-    const last5 = albums.slice(-5).reverse(); // Последние 5, сначала новые
+    const last5 = albums.slice(-6).reverse(); // Последние 5, сначала новые
     last5.forEach(album => {
         const div = document.createElement("div");
         div.className = "album-mini";
