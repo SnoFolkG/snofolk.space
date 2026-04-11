@@ -362,7 +362,7 @@
     "artist": "Subhumans",
     "year": 1980,
     "genre": "Hardcore Punk",
-    "city": "Victoria, BC",
+    "city": "Vancouver, BC",
     "label": "Friends Records",
     "img": "img/Mc027.jpg",
     "download": "https://drive.google.com/file/d/15vh2cgsRDOf8fEotHvigRYssb0q6mddH/view?usp=drive_link",
@@ -510,7 +510,7 @@
     "artist": "Subhumans",
     "year": 1983,
     "genre": "Punk Rock",
-    "city": "Victoria, BC",
+    "city": "Vancouver, BC",
     "label": "SST Records",
     "img": "img/Mc046.jpg",
     "download": "https://drive.google.com/file/d/1IllPTQWQ5HAO2VxgfEgUj5f6EJZTU4sm/view?usp=drive_link",
@@ -518,6 +518,20 @@
       "America Commits Suicide", "Breaking Point", "Canada's Favourite Sport",
       "For The Common Good", "Googolplex", "Helicopter", "Hiroshima", "Mobile Electric Chair",
       "Moron Majority", "No Wishes, No Prayers", "Screwed Up", "Slap In The Face"
+    ]
+  },
+   {
+    "id": "subhumans",
+    "title": "Subhumans",
+    "artist": "Subhumans",
+    "year": 1979,
+    "genre": "Punk Rock",
+    "city": "Vancouver, BC",
+    "label": "Quintessence Records",
+    "img": "img/Mc047.jpg",
+    "download": "https://drive.google.com/file/d/1CIA50rZxSJaC06XOKsh971nJK0bf9K7a/view?usp=drive_link",
+    "tracks": [
+      "Dead Was Too Kind", "Fuck You", "Inquisition Day", "Slave To My Dick"
     ]
   }
 ]
