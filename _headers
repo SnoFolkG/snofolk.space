@@ -1,0 +1,11 @@
+/css/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/js/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/img/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.json
+  Cache-Control: public, max-age=3600
