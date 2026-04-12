@@ -165,7 +165,7 @@ function renderAlbumDetail(albums) {
             <ol>${album.tracks.map(t => {
                 let trackTitle = t;
                 if (trackTitle.startsWith('SR ')) {
-                    trackTitle = trackTitle.replace('SR ', '<span class="star">★</span>');
+                    trackTitle = trackTitle.replace('SR ', '<span class="star">★ </span>');
                 }
                 return `<li>${trackTitle}</li>`;
             }).join("")}</ol>
