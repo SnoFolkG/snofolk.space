@@ -295,5 +295,15 @@ function highlightActiveNav() {
     });
 }
 
+// 10. мне повезет
+function getRandomAlbum() {
+    fetch('albums.json')
+        .then(r => r.json())
+        .then(albums => {
+            const random = albums[Math.floor(Math.random() * albums.length)];
+            window.location.href = `/albums/${random.url}`;
+        });
+}
+
 // ЗАПУСК
 init();
