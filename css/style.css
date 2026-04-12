@@ -604,6 +604,7 @@ footer {
     position: absolute;
     left: 20px; /* между номером и текстом */
     top: 0;
+    transform: translateY(-2px);
     color: var(--accent);
     font-size: 16px;
 }
