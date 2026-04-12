@@ -14,6 +14,7 @@
   --green-terminal: #00FF00;
   
   --mono: 'Courier New', 'Courier', monospace;
+  --mono-heading: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', 'Courier New', monospace;
   
   /* Spacing system */
   --space-xs: 4px;
@@ -29,6 +30,9 @@
   
   /* Focus ring */
   --focus-ring: 0 0 0 2px var(--black), 0 0 0 4px var(--germs-blue);
+  
+  /* Overlay background */
+  --overlay-bg: rgba(0, 0, 0, 0.85);
 }
 
 /* ==========================
@@ -67,12 +71,36 @@ body {
   /* Better font rendering */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  position: relative;
+}
+
+/* Black semi-transparent overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-bg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure all content is above the overlay */
+header,
+main,
+footer,
+.container {
+  position: relative;
+  z-index: 1;
 }
 
 /* ==========================
    ACCESSIBLE TYPOGRAPHY
 ========================== */
 h1 {
+  font-family: var(--mono-heading);
   font-size: clamp(28px, 5vw, 36px);
   font-weight: 700;
   text-transform: uppercase;
@@ -82,6 +110,7 @@ h1 {
 }
 
 h2 {
+  font-family: var(--mono-heading);
   font-size: clamp(16px, 3vw, 18px);
   font-weight: 700;
   text-transform: uppercase;
@@ -93,6 +122,7 @@ h2 {
 }
 
 h3 {
+  font-family: var(--mono-heading);
   font-size: clamp(12px, 2vw, 14px);
   font-weight: 700;
   margin-bottom: var(--space-sm);
@@ -175,26 +205,45 @@ li::before {
 }
 
 /* ==========================
-   IMPROVED LAYOUT WITH CONTAINER
+   IMPROVED LAYOUT WITH SIDE MARGINS
 ========================== */
 .container {
   max-width: 1200px;
   margin-inline: auto;
-  padding-inline: var(--space-md);
+  padding-inline: var(--space-lg);
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-inline: var(--space-lg);
+    padding-inline: var(--space-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 48px;
   }
 }
 
 header {
   margin-block: var(--space-lg);
+  margin-inline: var(--space-lg);
   padding: var(--space-lg);
   background: transparent;
   border: 3px solid var(--white);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-inline: var(--space-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    margin-inline: 48px;
+  }
 }
 
 /* ==========================
@@ -209,6 +258,7 @@ nav {
 }
 
 nav a {
+  font-family: var(--mono-heading);
   font-size: clamp(12px, 2vw, 14px);
   font-weight: 700;
   text-transform: uppercase;
@@ -248,9 +298,22 @@ nav a.active {
 
 main {
   margin-block: var(--space-lg);
+  margin-inline: var(--space-lg);
   padding: var(--space-xl);
   background: transparent;
   border: 3px solid var(--white);
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-inline: var(--space-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin-inline: 48px;
+  }
 }
 
 section {
@@ -316,6 +379,7 @@ section:last-child {
 }
 
 .album h3 {
+  font-family: var(--mono-heading);
   font-size: clamp(11px, 2vw, 12px);
   margin-bottom: var(--space-xs);
   word-break: break-word;
@@ -340,7 +404,7 @@ section:last-child {
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  font-family: var(--mono);
+  font-family: var(--mono-heading);
   font-size: clamp(11px, 2vw, 12px);
   font-weight: 700;
   text-transform: uppercase;
@@ -541,6 +605,7 @@ section:last-child {
 }
 
 .album-title {
+  font-family: var(--mono-heading);
   font-size: clamp(20px, 4vw, 24px);
   font-weight: 700;
   text-transform: uppercase;
@@ -595,6 +660,10 @@ section:last-child {
   border: 2px solid var(--gray-mid);
 }
 
+.tracklist h3 {
+  font-family: var(--mono-heading);
+}
+
 .tracklist ol {
   counter-reset: track-counter;
 }
@@ -634,6 +703,10 @@ section:last-child {
   padding: var(--space-md);
   background: var(--gray-dark);
   border: 2px solid var(--gray-mid);
+}
+
+.similar-albums h3 {
+  font-family: var(--mono-heading);
 }
 
 .similar-grid {
@@ -680,10 +753,23 @@ section:last-child {
 footer {
   text-align: center;
   padding: var(--space-lg);
+  margin-inline: var(--space-lg);
   color: var(--gray-light);
   font-size: clamp(10px, 1.5vw, 11px);
   border-top: 2px solid var(--gray-mid);
   margin-top: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin-inline: var(--space-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    margin-inline: 48px;
+  }
 }
 
 /* ==========================
@@ -746,6 +832,10 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+  
+  footer {
+    margin-inline: var(--space-sm);
+  }
 }
 
 /* ==========================
@@ -755,6 +845,10 @@ footer {
   body {
     background: white;
     color: black;
+  }
+  
+  body::before {
+    display: none;
   }
   
   .download-btn,
@@ -785,12 +879,4 @@ footer {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-/* ==========================
-   DARK MODE SUPPORT (if needed)
-========================== */
-@media (prefers-color-scheme: light) {
-  /* Optional light mode support */
-  /* Can be customized based on needs */
 }
