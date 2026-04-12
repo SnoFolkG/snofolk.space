@@ -602,7 +602,8 @@ footer {
 
 .tracklist .star {
     position: absolute;
-    left: 22px; /* между номером и текстом */
+    left: 20px; /* между номером и текстом */
+    top: 0;
     color: var(--accent);
     font-size: 16px;
 }
