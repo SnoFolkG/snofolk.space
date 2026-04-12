@@ -580,6 +580,13 @@ footer {
   line-height: 1.8;
 }
 
+.track-item .star {
+  color: var(--accent);
+  font-size: 16px;
+  margin-right: 6px;
+  display: inline-block;
+}
+
 .album-link {
   display: block;
   text-decoration: none;
