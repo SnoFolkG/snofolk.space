@@ -301,7 +301,7 @@ function getRandomAlbum() {
         .then(r => r.json())
         .then(albums => {
             const random = albums[Math.floor(Math.random() * albums.length)];
-            window.location.href = `/albums/${random.url}`;
+            window.location.href = `/album?id=${random.id}`;
         });
 }
 
