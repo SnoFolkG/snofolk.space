@@ -138,8 +138,8 @@ function renderAlbumDetail(albums) {
             </div>
           </div>
         `;
-    }
-
+        
+ }
     albumDetail.innerHTML = `
       <div class="album-detail-wrap">
         <div class="album-cover-col">
@@ -162,7 +162,13 @@ function renderAlbumDetail(albums) {
           </ul>
           <div class="tracklist">
             <h3>Tracklist</h3>
-            <ol>${album.tracks.map(t => `<li>${t}</li>`).join("")}</ol>
+            <ol>${album.tracks.map(t => {
+                let trackTitle = t;
+                if (trackTitle.startsWith('SR ')) {
+                    trackTitle = trackTitle.replace('SR ', '<span class="star">★</span>');
+                }
+                return `<li>${trackTitle}</li>`;
+            }).join("")}</ol>
           </div>
         </div>
       </div>
