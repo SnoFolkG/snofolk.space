@@ -58,7 +58,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 16px;
-  color: var(--white);
+  color: var(--germs-blue);
   border-bottom: 2px solid var(--germs-blue);
   padding-bottom: 8px;
 }
@@ -366,18 +366,20 @@ section:last-child {
    ALBUM DETAIL
 ========================== */
 .album-detail-wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: 360px 1fr;
   gap: 40px;
   padding: 0;
 }
 
 .album-cover-col {
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .album-cover-big {
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
   border: 3px solid var(--white);
   margin-bottom: 16px;
@@ -387,16 +389,19 @@ section:last-child {
   width: 100%;
   text-align: center;
   margin-bottom: 8px;
+  padding: 14px 24px;
 }
 
 .download-hint {
   font-size: 11px;
   color: var(--gray-light);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .album-info-col {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .album-title {
@@ -404,6 +409,7 @@ section:last-child {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 8px;
+  color: var(--white);
 }
 
 .album-artist {
@@ -415,9 +421,9 @@ section:last-child {
 .album-meta {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  gap: 16px;
   margin-bottom: 24px;
-  padding: 16px;
+  padding: 20px;
   background: var(--gray-dark);
   border: 2px solid var(--gray-mid);
 }
@@ -425,6 +431,7 @@ section:last-child {
 .album-meta li {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .album-meta li::before {
@@ -435,14 +442,15 @@ section:last-child {
   font-size: 10px;
   text-transform: uppercase;
   color: var(--germs-blue);
-  margin-bottom: 4px;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .tracklist {
   padding: 20px;
   background: var(--gray-dark);
   border: 2px solid var(--gray-mid);
+  flex: 1;
 }
 
 .tracklist h3 {
@@ -454,17 +462,25 @@ section:last-child {
 }
 
 .tracklist ol {
-  list-style: decimal inside;
+  list-style: none;
   padding: 0;
+  counter-reset: track-counter;
 }
 
 .tracklist li {
-  padding: 6px 0;
+  padding: 8px 0;
   border-bottom: 1px solid var(--gray-mid);
+  counter-increment: track-counter;
+  position: relative;
+  padding-left: 32px;
 }
 
 .tracklist li::before {
-  display: none;
+  content: counter(track-counter) ".";
+  position: absolute;
+  left: 0;
+  color: var(--gray-light);
+  margin-right: 0;
 }
 
 .tracklist li:last-child {
@@ -474,6 +490,7 @@ section:last-child {
 .star {
   color: var(--germs-blue);
   margin-right: 4px;
+  font-size: 14px;
 }
 
 /* ==========================
@@ -481,7 +498,7 @@ section:last-child {
 ========================== */
 .similar-albums {
   width: 100%;
-  margin-top: 24px;
+  margin-top: 20px;
   padding: 16px;
   background: var(--gray-dark);
   border: 2px solid var(--gray-mid);
@@ -491,50 +508,63 @@ section:last-child {
   font-size: 12px;
   color: var(--germs-blue);
   margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .similar-note {
   font-size: 11px;
   color: var(--gray-light);
   margin-bottom: 12px;
+  line-height: 1.4;
 }
 
 .similar-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+  background: var(--gray-mid);
+  border: 2px solid var(--gray-mid);
 }
 
 .album-mini-card {
-  display: flex;
-  gap: 12px;
-  padding: 12px;
   background: var(--black);
-  border: 1px solid var(--gray-mid);
-  transition: border-color 0.2s;
+  padding: 12px;
+  transition: background 0.2s;
 }
 
 .album-mini-card:hover {
-  border-color: var(--germs-blue);
+  background: var(--gray-dark);
+}
+
+.album-mini-card a {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
 }
 
 .album-mini-card img {
   width: 60px;
   height: 60px;
   object-fit: cover;
-  border: 1px solid var(--white);
+  border: 2px solid var(--white);
 }
 
 .album-mini-card p {
   font-size: 11px;
   line-height: 1.4;
+  margin: 0;
 }
 
-.album-mini-card a {
-  display: flex;
-  gap: 12px;
-  text-decoration: none;
-  color: inherit;
+.album-mini-card strong {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 2px;
+  color: var(--white);
+  font-weight: 700;
 }
 
 /* ==========================
@@ -562,12 +592,7 @@ footer {
   }
   
   .album-detail-wrap {
-    flex-direction: column;
-  }
-  
-  .album-cover-big {
-    width: 100%;
-    height: auto;
+    grid-template-columns: 1fr;
   }
   
   nav {
@@ -582,5 +607,9 @@ footer {
   
   nav a:last-child {
     border-bottom: 2px solid var(--white);
+  }
+  
+  .similar-albums {
+    width: 100%;
   }
 }
