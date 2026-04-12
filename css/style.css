@@ -580,11 +580,31 @@ footer {
   line-height: 1.8;
 }
 
-.track-item .star {
-  color: var(--accent);
-  font-size: 16px;
-  margin-right: 6px;
-  display: inline-block;
+.tracklist ol {
+    list-style: none; /* убираем стандартную нумерацию */
+    counter-reset: track-counter;
+    padding-left: 0;
+}
+
+.tracklist li {
+    counter-increment: track-counter;
+    position: relative;
+    padding-left: 40px; /* место под номер и звезду */
+    margin-bottom: 8px;
+}
+
+.tracklist li::before {
+    content: counter(track-counter) ".";
+    position: absolute;
+    left: 0;
+    color: var(--text-secondary);
+}
+
+.tracklist .star {
+    position: absolute;
+    left: 22px; /* между номером и текстом */
+    color: var(--accent);
+    font-size: 16px;
 }
 
 .album-link {
