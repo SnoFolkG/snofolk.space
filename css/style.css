@@ -55,7 +55,7 @@ body {
   color: var(--text-main);
   user-select: none;
   position: relative;
-  background: url('../img/back.jpg') center/cover no-repeat;
+  background: url('../img/fone.jpg') center/cover no-repeat;
   background-attachment: scroll;
 }
 
