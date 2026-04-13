@@ -1,20 +1,53 @@
 /* ==========================
-   VARIABLES
+   BRUTAL MINIMALISM 2.1
+   Enhanced & Optimized — April 2026
 ========================== */
+
 :root {
-  --black: #000;
-  --white: #FFF;
+  /* Core Colors */
+  --black: #000000;
+  --white: #FFFFFF;
   --gray-dark: #1a1a1a;
-  --gray-mid: #333;
-  --gray-light: #666;
-  --accent: #06F;
-  --mono: 'Courier New', Courier, monospace;
+  --gray-mid: #333333;
+  --gray-light: #666666;
+  --germs-blue: #0066FF;
+  --green-terminal: #00FF00;
+
+  /* Typography */
+  --mono: 'Courier New', 'Courier', monospace;
+  --mono-heading: 'IBM Plex Mono', 'SF Mono', 'Menlo', 'DejaVu Sans Mono', monospace;
+
+  /* Spacing System (more granular) */
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Transitions */
+  --transition-fast: 0.12s cubic-bezier(0.23, 1, 0.32, 1);
+  --transition-normal: 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  --transition-slow: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px var(--black), 0 0 0 6px var(--germs-blue);
+
+  /* Overlay */
+  --overlay-bg: rgba(0, 0, 0, 0.88);
+
+  /* Border radius (minimal but present for modern feel) */
+  --radius-sm: 2px;
+  --radius-md: 4px;
 }
 
-/* ==========================
-   RESET
-========================== */
-*, *::before, *::after {
+/* ====================== RESET & PERFORMANCE ====================== */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -22,586 +55,453 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  min-height: 100%;
+  min-height: 100dvh;
   background: var(--black);
   color: var(--white);
-  font: 14px/1.6 var(--mono);
-  background-image: 
-    linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
-  background-size: 24px 24px;
-  background-position: -1px -1px;
+  font-family: var(--mono);
+  font-size: clamp(13px, 1.75vw, 14px);
+  line-height: 1.65;
+  background-image: url('../img/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x: hidden;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: var(--overlay-bg);
+  z-index: 0;
+  pointer-events: none;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Layers */
+header, main, footer, .container, nav {
+  position: relative;
+  z-index: 1;
 }
 
-ul, ol {
-  list-style: none;
-}
-
-/* ==========================
-   LAYOUT
-========================== */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-header {
-  border-bottom: 2px solid var(--gray-mid);
-  padding: 20px 0;
-  margin-bottom: 40px;
-}
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font: 700 24px var(--mono);
+/* ====================== TYPOGRAPHY ====================== */
+h1, h2, h3, h4,
+nav a {
+  font-family: var(--mono-heading);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.08em;
 }
 
-.logo:hover {
-  color: var(--accent);
+h1 {
+  font-size: clamp(36px, 7.5vw, 56px);
+  line-height: 1.05;
+  color: var(--green-terminal);
+  text-shadow: 
+    0 0 10px var(--green-terminal),
+    0 0 25px var(--green-terminal),
+    0 0 40px rgba(0, 255, 0, 0.4);
+  transition: text-shadow var(--transition-normal);
 }
 
-nav ul {
+h1:hover {
+  text-shadow: 
+    0 0 15px var(--green-terminal),
+    0 0 35px var(--germs-blue),
+    3px 3px 0 var(--germs-blue);
+}
+
+h2 {
+  font-size: clamp(19px, 4vw, 26px);
+  color: var(--germs-blue);
+  border-bottom: 4px solid currentColor;
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  letter-spacing: 0.12em;
+}
+
+h3 {
+  font-size: clamp(14px, 2.6vw, 17px);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-sm);
+}
+
+p, li {
+  font-size: clamp(13px, 1.85vw, 14px);
+  margin-bottom: var(--space-sm);
+  line-height: 1.65;
+}
+
+/* ====================== NAVIGATION (улучшена) ====================== */
+nav {
+  margin: var(--space-2xl) 0 var(--space-xl);
   display: flex;
-  gap: 24px;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 nav a {
-  display: flex;
+  font-size: clamp(13.5px, 2.3vw, 15.5px);
+  padding: 20px 40px;
+  border: 4px solid var(--white);
+  background: var(--black);
+  color: var(--white);
+  transition: all var(--transition-normal);
+  letter-spacing: 0.1em;
+  min-width: 160px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
-  transition: color .2s;
 }
+
+nav a:first-child { border-left: 4px solid var(--white); }
+nav a:last-child  { border-right: 4px solid var(--white); }
 
 nav a:hover,
+nav a:focus-visible,
 nav a.active {
-  color: var(--accent);
+  background: var(--germs-blue);
+  color: var(--black);
+  border-color: var(--germs-blue);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 
+    0 0 0 5px var(--black),
+    0 0 30px rgba(0, 102, 255, 0.7);
+  z-index: 10;
 }
 
-nav svg {
-  width: 24px;
-  height: 24px;
-  stroke: currentColor;
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+/* ====================== HEADER & MAIN ====================== */
+header {
+  margin: var(--space-2xl) var(--space-lg);
+  padding: var(--space-2xl);
+  border: 5px solid var(--white);
+  text-align: center;
+  background: transparent;
 }
 
 main {
-  min-height: calc(100vh - 200px);
-  padding-bottom: 60px;
+  margin: var(--space-2xl) var(--space-lg);
+  padding: var(--space-2xl);
+  border: 5px solid var(--white);
+  background: transparent;
 }
 
-footer {
-  border-top: 2px solid var(--gray-mid);
-  padding: 20px 0;
-  text-align: center;
-  color: var(--gray-light);
-  font-size: 12px;
+/* ====================== CONTAINER ====================== */
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
 }
 
-/* ==========================
-   SEARCH
-========================== */
-.search-bar {
-  margin-bottom: 40px;
+@media (min-width: 1024px) {
+  .container { padding-inline: 60px; }
 }
 
-.search-input {
+/* ====================== SECTIONS ====================== */
+section {
+  margin-bottom: var(--space-3xl);
+  padding-bottom: var(--space-3xl);
+  border-bottom: 1px solid var(--gray-mid);
+  scroll-margin-top: 100px;
+}
+
+section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ====================== ALBUM GRID ====================== */
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(190px, 100%), 1fr));
+  gap: 3px;
+  background: var(--white);
+  border: 4px solid var(--white);
+}
+
+.album {
+  background: var(--black);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.album:hover {
+  transform: scale(0.975);
+  box-shadow: 0 0 0 6px var(--germs-blue);
+}
+
+.album-link {
+  display: block;
+  padding: var(--space-lg);
+  text-decoration: none;
+  color: inherit;
+}
+
+.album img {
   width: 100%;
-  max-width: 600px;
-  background: var(--gray-dark);
-  border: 2px solid var(--gray-mid);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  margin-bottom: var(--space-md);
+  border: 3px solid var(--white);
+  filter: contrast(0.85) saturate(0.75);
+  transition: all var(--transition-normal);
+}
+
+.album:hover img {
+  filter: contrast(1) saturate(1.15);
+  transform: scale(1.04);
+}
+
+.album h3 {
+  font-size: clamp(12px, 2.1vw, 13.5px);
+  margin-bottom: var(--space-xs);
+  word-break: break-word;
+}
+
+.album p {
+  font-size: clamp(11px, 1.7vw, 12px);
+  color: var(--gray-light);
+}
+
+/* Hover state for text */
+.album:hover p {
+  color: var(--black);
+}
+
+/* ====================== BUTTONS ====================== */
+.download-btn,
+.random-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  font-family: var(--mono-heading);
+  font-size: clamp(12px, 2.1vw, 13.5px);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background: var(--black);
   color: var(--white);
-  font: 16px var(--mono);
-  padding: 12px 16px;
-  transition: border-color .2s;
+  border: 3px solid var(--white);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  letter-spacing: 0.06em;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
 }
 
-.search-input:focus {
-  outline: none;
-  border-color: var(--accent);
+.download-btn::before,
+.random-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+  transform: translateX(-150%);
+  transition: transform 0.7s;
 }
 
-.search-input::placeholder {
-  color: var(--gray-light);
+.download-btn:hover::before,
+.random-btn:hover::before {
+  transform: translateX(300%);
 }
 
-/* ==========================
-   ARTISTS GRID
-========================== */
-.artists-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2px;
-  background: var(--gray-mid);
-  border: 2px solid var(--gray-mid);
+.download-btn:hover,
+.random-btn:hover,
+.download-btn:focus-visible,
+.random-btn:focus-visible {
+  background: var(--germs-blue);
+  color: var(--black);
+  border-color: var(--germs-blue);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 102, 255, 0.5);
 }
 
-.artist-card {
-  background: var(--black);
-  padding: 20px;
-  transition: background .2s;
+.random-btn {
+  padding: 18px 40px;
+  font-size: clamp(14px, 2.4vw, 15px);
 }
 
-.artist-card:hover {
+/* ====================== NEWS & OTHER BLOCKS ====================== */
+.news {
+  padding: var(--space-xl);
   background: var(--gray-dark);
+  border: 3px solid var(--gray-mid);
+  border-left: 6px solid var(--germs-blue);
+  transition: all var(--transition-normal);
 }
 
-.artist-cover {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border: 2px solid var(--white);
-  margin-bottom: 16px;
-  filter: grayscale(.3);
-  transition: filter .2s;
+.news:hover {
+  transform: translateX(8px);
+  border-left-color: var(--green-terminal);
 }
 
-.artist-card:hover .artist-cover {
-  filter: none;
-}
-
-.artist-name {
-  font: 700 18px var(--mono);
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-}
-
-.artist-meta {
-  color: var(--gray-light);
-  font-size: 12px;
-  margin-bottom: 12px;
-}
-
-.artist-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tag {
-  font-size: 10px;
-  text-transform: uppercase;
-  padding: 4px 8px;
-  background: var(--gray-mid);
-  border: 1px solid var(--gray-light);
-  letter-spacing: 1px;
-}
-
-/* ==========================
-   ARTIST PAGE
-========================== */
-.artist-header {
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid var(--gray-mid);
-}
-
-.artist-banner {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border: 2px solid var(--white);
-  margin-bottom: 24px;
-}
-
-.artist-title {
-  font: 700 36px var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  margin-bottom: 12px;
-}
-
-.artist-info {
-  display: flex;
-  gap: 24px;
-  color: var(--gray-light);
-  font-size: 14px;
-}
-
-.artist-info span {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.albums-list {
+/* ====================== ALBUM DETAIL ====================== */
+.album-detail-wrap {
   display: grid;
-  gap: 2px;
-  background: var(--gray-mid);
-  border: 2px solid var(--gray-mid);
+  grid-template-columns: minmax(300px, 380px) 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
 }
 
-.album-card {
-  background: var(--black);
-  padding: 16px;
-  display: grid;
-  grid-template-columns: 60px auto 1fr auto;
-  gap: 16px;
-  align-items: center;
-  transition: background .2s;
-}
-
-.album-card:hover {
-  background: var(--gray-dark);
-}
-
-.album-cover-small {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border: 2px solid var(--white);
-  filter: grayscale(.3);
-  transition: filter .2s;
-}
-
-.album-card:hover .album-cover-small {
-  filter: none;
-}
-
-.album-year {
-  font: 700 14px var(--mono);
-  color: var(--accent);
-  min-width: 40px;
-}
-
-.album-name {
-  font: 700 16px var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.album-tracks {
-  color: var(--gray-light);
-  font-size: 12px;
-}
-
-/* ==========================
-   ALBUM PAGE
-========================== */
-.album-detail {
-  display: grid;
-  grid-template-columns: 400px 1fr;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-.album-cover-col {
-  display: flex;
-  flex-direction: column;
+@media (max-width: 840px) {
+  .album-detail-wrap {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
 }
 
 .album-cover-big {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 3px solid var(--white);
-  margin-bottom: 20px;
-}
-
-.album-info-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.album-header {
-  margin-bottom: 24px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid var(--gray-mid);
-}
-
-.album-title {
-  font: 700 32px var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-.album-subtitle {
-  color: var(--gray-light);
-  font-size: 16px;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 20px;
-  color: var(--gray-light);
-  font-size: 12px;
-  transition: color .2s;
-}
-
-.back-link:hover {
-  color: var(--accent);
-}
-
-.album-meta {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 24px;
-  padding: 20px;
+  border: 5px solid var(--white);
   background: var(--gray-dark);
-  border: 2px solid var(--gray-mid);
-}
-
-.album-meta-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.album-meta-label {
-  font: 700 10px var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--accent);
-}
-
-.album-meta-value {
-  font-size: 14px;
-  color: var(--white);
 }
 
 .tracklist {
+  padding: var(--space-2xl);
   background: var(--gray-dark);
-  border: 2px solid var(--gray-mid);
-  padding: 24px;
-  flex: 1;
-}
-
-.tracklist h2 {
-  font: 700 14px var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
-  color: var(--accent);
+  border: 3px solid var(--gray-mid);
 }
 
 .tracklist ol {
-  counter-reset: track;
+  counter-reset: track-counter;
+  list-style: none;
 }
 
 .tracklist li {
-  padding: 10px 0 10px 32px;
+  padding: var(--space-md) 0;
   border-bottom: 1px solid var(--gray-mid);
-  counter-increment: track;
+  padding-left: 3em;
   position: relative;
 }
 
-.tracklist li:last-child {
-  border-bottom: none;
-}
-
 .tracklist li::before {
-  content: counter(track) ".";
+  content: counter(track-counter) ".";
   position: absolute;
   left: 0;
-  color: var(--gray-light);
+  color: var(--germs-blue);
   font-weight: 700;
+  counter-increment: track-counter;
 }
 
-/* ==========================
-   SIMILAR ALBUMS
-========================== */
-.similar-albums {
-  margin-top: 40px;
-  padding: 20px;
-  background: var(--gray-dark);
-  border: 2px solid var(--gray-mid);
-}
-
-.similar-albums h3 {
-  font: 700 14px var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
-  color: var(--accent);
-}
-
-.similar-grid {
-  display: grid;
-  gap: 2px;
-  background: var(--gray-mid);
-  border: 2px solid var(--gray-mid);
-}
-
-.album-mini-card {
-  background: var(--black);
-  padding: 12px;
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  gap: 12px;
-  align-items: center;
-  transition: background .2s;
-}
-
-.album-mini-card:hover {
-  background: var(--gray-dark);
-}
-
-.album-mini-card img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border: 2px solid var(--white);
-  filter: grayscale(.3);
-  transition: filter .2s;
-}
-
-.album-mini-card:hover img {
-  filter: none;
-}
-
-.album-mini-info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.album-mini-name {
-  font: 700 12px var(--mono);
-  text-transform: uppercase;
-}
-
-.album-mini-meta {
-  font-size: 11px;
-  color: var(--gray-light);
-}
-
-/* ==========================
-   DOWNLOAD BUTTON
-========================== */
-.download-btn {
-  display: inline-block;
-  font: 700 14px var(--mono);
-  text-transform: uppercase;
-  padding: 12px 24px;
-  background: var(--black);
-  color: var(--white);
-  border: 2px solid var(--white);
-  cursor: pointer;
-  transition: all .2s;
+/* ====================== FOOTER ====================== */
+footer {
   text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  color: var(--gray-light);
+  font-size: clamp(10.5px, 1.4vw, 11.5px);
+  border-top: 3px solid var(--gray-mid);
+  margin-top: var(--space-3xl);
 }
 
-.download-btn:hover {
-  background: var(--accent);
+/* ====================== ACCESSIBILITY ====================== */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  background: var(--germs-blue);
   color: var(--black);
-  border-color: var(--accent);
+  padding: 12px 20px;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 9999;
+  transition: all var(--transition-fast);
 }
 
-.download-btn-full {
+.skip-to-content:focus-visible {
+  top: 20px;
+}
+
+/* Semantic links */
+a {
+  color: var(--germs-blue);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: currentColor;
+  transition: width var(--transition-normal);
+}
+
+a:hover::after,
+a:focus-visible::after {
   width: 100%;
 }
 
-/* ==========================
-   EMPTY STATE
-========================== */
-.empty-state {
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--gray-light);
-}
-
-.empty-state h2 {
-  font: 700 24px var(--mono);
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-/* ==========================
-   LOADING
-========================== */
-.loading {
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--gray-light);
-  font: 16px var(--mono);
-}
-
-/* ==========================
-   RESPONSIVE
-========================== */
+/* ====================== RESPONSIVE ====================== */
 @media (max-width: 768px) {
-  .header-inner {
+  :root {
+    --space-lg: 20px;
+    --space-xl: 28px;
+    --space-2xl: 36px;
+  }
+
+  header, main {
+    margin-inline: var(--space-sm);
+    padding: var(--space-lg);
+  }
+
+  nav {
     flex-direction: column;
-    gap: 16px;
   }
 
-  nav ul {
-    gap: 20px;
+  nav a {
+    min-width: 100%;
+    border-right: 4px solid var(--white);
+    border-bottom: none;
   }
 
-  .artists-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  nav a:last-child {
+    border-bottom: 4px solid var(--white);
   }
+}
 
-  .album-detail {
-    grid-template-columns: 1fr;
+/* ====================== REDUCED MOTION ====================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
+}
 
-  .album-card {
-    grid-template-columns: 60px 1fr;
-    gap: 12px;
-  }
-
-  .album-year {
-    grid-column: 2;
-    order: 2;
-  }
-
-  .album-name {
-    grid-column: 2;
-    order: 1;
-  }
-
-  .album-tracks {
-    grid-column: 2;
-    order: 3;
-  }
-
-  .artist-banner {
-    height: 200px;
-  }
-
-  .artist-title {
-    font-size: 28px;
-  }
-
-  .artist-info {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .album-meta {
-    grid-template-columns: 1fr;
-  }
+/* ====================== PRINT ====================== */
+@media print {
+  body { background: white; color: black; }
+  body::before { display: none; }
+  nav, .download-btn, .random-btn, .similar-albums { display: none; }
+  a { text-decoration: underline; color: black; }
 }
