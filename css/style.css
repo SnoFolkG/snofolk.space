@@ -217,66 +217,72 @@ nav a:focus-visible {
     margin-bottom: 10px;
 }
 
-/* ========================== BUTTONS ========================== */
-
-/* Базовый стиль для всех кнопок скачивания */
-.download-btn {
+/* ========================== BUTTONS (ИСПРАВЛЕНО) ========================== */
+.download-btn,
+.download-btn-big,
+.download-btn-cover,
+.random-btn {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: var(--font-mono, 'Montserrat', sans-serif);
+    font-weight: bold;
     text-transform: uppercase;
-    color: var(--text-main);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    background: transparent;
+    text-align: center;
+    background: #ffffff;
+    color: #000000;
+    border: none;
     cursor: pointer;
-    transition: var(--transition);
-    letter-spacing: 0.8px;
+    box-shadow: 4px 4px 0px var(--accent-border);
+    transition: 0.1s;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    box-sizing: border-box;
 }
 
-/* Обычная маленькая кнопка */
+.download-btn:hover,
+.download-btn-big:hover,
+.download-btn-cover:hover,
+.random-btn:hover {
+    box-shadow: 0px 0px 0px var(--accent-border);
+    background: var(--accent-border);
+    color: #ffffff;
+}
+
+.download-btn:active,
+.download-btn-big:active,
+.download-btn-cover:active,
+.random-btn:active {
+    transform: scale(0.95);
+}
+
+/* Базовые размеры для обычной кнопки */
 .download-btn {
-    padding: 8px 16px;
+    padding: 10px 18px;
     font-size: 12px;
 }
 
-/* Большая кнопка (если используется) */
+/* Большая кнопка */
 .download-btn-big {
-    padding: 10px 20px;
     font-size: 14px;
+    padding: 14px 30px;
 }
 
-/* Кнопка на странице альбома — главная кнопка скачивания */
-.download-btn.download-btn-cover {
+/* Кнопка для обложки (Исправлено) */
+.download-btn-cover {
+    display: block;      /* <-- ГЛАВНОЕ ИСПРАВЛЕНИЕ: позволяет кнопке растянуться на 100% ширины родителя */
     width: 100%;
-    text-align: center;
-    padding: 14px 0;           /* чуть выше и заметнее */
-    font-size: 13.5px;
-    font-weight: 700;
-    border: 2px solid var(--accent-border);   /* толще и ярче рамка */
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: var(--blur);
-    box-shadow: 0 4px 15px rgba(26, 108, 181, 0.15);
-    letter-spacing: 1px;
+    padding: 14px 10px;  /* Увеличен вертикальный отступ для удобства клика */
+    font-size: 14px;     /* Немного крупнее шрифт */
+    white-space: nowrap; /* Предотвращает перенос слов в две строки, если текст длинный */
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Hover — делаем кнопку заметнее */
-.download-btn:hover,
-.download-btn-big:hover,
-.download-btn.download-btn-cover:hover {
-    background: var(--glass-strong);
-    border-color: var(--accent-border);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(26, 108, 181, 0.3);
+/* Случайная кнопка */
+.random-btn {
+    padding: 10px 18px;
+    font-size: 12px;
 }
-
-/* Active */
-.download-btn:active,
-.download-btn-big:active,
-.download-btn.download-btn-cover:active {
-    transform: scale(0.98) translateY(0);
-}
-
 
 /* ========================== NEWS ========================== */
 .aboutme h2 {
@@ -510,6 +516,9 @@ footer {
     letter-spacing: 0.1em;
 }
 
+.tracklist {
+    counter-reset: track-counter;
+}
 .tracklist h3 {
     font-family: 'Orbitron', sans-serif;
     font-size: 0.85rem;
@@ -534,7 +543,7 @@ footer {
     content: counter(track-counter) ".";
     position: absolute;
     left: 0;
-    color: var(--text-secondary);
+    color: var(--text-dim);
 }
 
 .tracklist .star {
@@ -658,5 +667,11 @@ footer {
     }
     .similar-albums {
         width: 100%;
+    }
+    
+    /* Адаптив для кнопки на мобильных */
+    .download-btn-cover {
+        white-space: normal; /* Разрешаем перенос на маленьких экранах */
+        font-size: 13px;
     }
 }
