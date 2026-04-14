@@ -218,7 +218,6 @@ nav a:focus-visible {
 }
 
 /* ========================== BUTTONS (ИСПРАВЛЕНО) ========================== */
-.download-btn,
 .download-btn-big,
 .download-btn-cover,
 .random-btn {
@@ -260,6 +259,10 @@ nav a:focus-visible {
 .download-btn {
     padding: 10px 18px;
     font-size: 12px;
+}
+
+.download-btn {
+    width: auto;
 }
 
 /* Большая кнопка */
