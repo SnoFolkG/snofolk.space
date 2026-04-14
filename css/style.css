@@ -625,11 +625,18 @@ footer {
 ========================== */
 
 .random-btn {
-  font-size: 18px;
-  display: block;
-  width: fit-content;
-  margin: 40px auto;
-  padding: 20px 50px;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background: var(--white);
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px var(--accent);
+  transition: 0.1s;
+  text-decoration: none;
 }
 
 .random-btn:hover {
@@ -641,6 +648,11 @@ footer {
 
 .random-btn:active {
     transform: translateY(0);
+     font-size: 18px;
+  display: block;
+  width: fit-content;
+  margin: 40px auto;
+  padding: 20px 50px;
 }
 
 
