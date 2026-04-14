@@ -262,8 +262,35 @@ nav a:focus-visible {
     font-size: 12px;
 }
 
-.download-btn {
-    width: auto;
+.old-ver-download {
+    display: inline-block;
+    width: 100%;
+    padding: 11px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #aaaaaa;                    /* серый текст */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+/* Лёгкое выделение при наведении */
+.old-ver-download:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #cccccc;
+}
+
+/* При нажатии */
+.old-ver-download:active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.07);
 }
 
 /* Большая кнопка */
