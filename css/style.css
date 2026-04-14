@@ -217,57 +217,53 @@ nav a:focus-visible {
     margin-bottom: 10px;
 }
 
-/* ========================== BUTTONS ========================== */
+/* ========================== BUTTONS (Новый единый стиль) ========================== */
 .download-btn,
 .download-btn-big,
-.download-btn-cover {
+.download-btn-cover,
+.random-btn {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+    font-family: var(--font-mono, 'Montserrat', sans-serif);
+    font-weight: bold;
     text-transform: uppercase;
-    color: var(--text-main);
-    text-decoration: none;
-    border: 1px solid var(--border);
-    background: transparent;
+    padding: 12px 24px;
+    background: #ffffff;
+    color: #000000;
+    border: none;
     cursor: pointer;
-    transition: var(--transition);
+    box-shadow: 4px 4px 0px var(--accent-border);
+    transition: 0.1s;
+    text-decoration: none;
     letter-spacing: 0.5px;
 }
 
-/* Обычная кнопка Скачать RAR — старая длина */
-.download-btn {
-    padding: 7px 12px;
-    font-size: 12px;
-}
-
-/* Большая кнопка Скачать RAR */
-.download-btn-big {
-    padding: 10px 20px;
-    font-size: 14px;
-}
-
-/* Кнопка на странице альбома */
-.download-btn-cover {
-    width: 100%;
-    text-align: center;
-    padding: 9px 0;
-    font-size: 13px;
-    border-color: var(--accent-border);
-}
-
-/* Hover и Active состояния */
 .download-btn:hover,
 .download-btn-big:hover,
-.download-btn-cover:hover {
-    background: var(--glass-strong);
-    transform: scale(1.05);
-    border-color: var(--accent-border);
+.download-btn-cover:hover,
+.random-btn:hover {
+    box-shadow: 0px 0px 0px var(--accent-border);
+    background: var(--accent-border);
+    color: #ffffff;
 }
 
 .download-btn:active,
 .download-btn-big:active,
-.download-btn-cover:active {
-    transform: scale(0.97);
+.download-btn-cover:active,
+.random-btn:active {
+    transform: scale(0.95);
+}
+
+/* Специальные размеры */
+.download-btn-big {
+    font-size: 14px;
+    padding: 12px 28px;
+}
+
+.download-btn-cover {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 13px;
 }
 
 /* ========================== NEWS ========================== */
