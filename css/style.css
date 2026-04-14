@@ -217,55 +217,58 @@ nav a:focus-visible {
     margin-bottom: 10px;
 }
 
-/* ========================== BUTTONS (Новый единый стиль) ========================== */
-.download-btn,
-.download-btn-big,
-.download-btn-cover,
-.random-btn {
+/* ========================== BUTTONS ========================== */
+
+/* Базовые стили для всех кнопок скачивания */
+.download-btn {
     display: inline-block;
-    font-family: var(--font-mono, 'Montserrat', sans-serif);
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 12px 24px;
-    background: #ffffff;
-    color: #000000;
-    border: none;
-    cursor: pointer;
-    box-shadow: 4px 4px 0px var(--accent-border);
-    transition: 0.1s;
+    color: var(--text-main);
     text-decoration: none;
+    border: 1px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    transition: var(--transition);
     letter-spacing: 0.5px;
 }
 
+/* Обычная маленькая кнопка */
+.download-btn {
+    padding: 7px 12px;
+    font-size: 12px;
+}
+
+/* Большая версия кнопки (если используется где-то отдельно) */
+.download-btn-big {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Специально для кнопки на странице альбома — старая компактная длина */
+.download-btn.download-btn-cover {
+    width: 100%;
+    text-align: center;
+    padding: 9px 0;           /* старая высота */
+    font-size: 13px;
+    border-color: var(--accent-border);
+}
+
+/* Hover и Active для всех кнопок */
 .download-btn:hover,
 .download-btn-big:hover,
-.download-btn-cover:hover,
-.random-btn:hover {
-    box-shadow: 0px 0px 0px var(--accent-border);
-    background: var(--accent-border);
-    color: #ffffff;
+.download-btn.download-btn-cover:hover {
+    background: var(--glass-strong);
+    transform: scale(1.05);
+    border-color: var(--accent-border);
 }
 
 .download-btn:active,
 .download-btn-big:active,
-.download-btn-cover:active,
-.random-btn:active {
-    transform: scale(0.95);
+.download-btn.download-btn-cover:active {
+    transform: scale(0.97);
 }
-
-/* Специальные размеры */
-.download-btn-big {
-    font-size: 14px;
-    padding: 12px 28px;
-}
-
-.download-btn-cover {
-    width: 100%;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 13px;
-}
-
 /* ========================== NEWS ========================== */
 .aboutme h2 {
     color: var(--text-main);
