@@ -219,7 +219,7 @@ nav a:focus-visible {
 
 /* ========================== BUTTONS ========================== */
 
-/* Базовые стили для всех кнопок скачивания */
+/* Базовый стиль для всех кнопок скачивания */
 .download-btn {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
@@ -231,44 +231,53 @@ nav a:focus-visible {
     background: transparent;
     cursor: pointer;
     transition: var(--transition);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
 }
 
 /* Обычная маленькая кнопка */
 .download-btn {
-    padding: 7px 12px;
+    padding: 8px 16px;
     font-size: 12px;
 }
 
-/* Большая версия кнопки (если используется где-то отдельно) */
+/* Большая кнопка (если используется) */
 .download-btn-big {
     padding: 10px 20px;
     font-size: 14px;
 }
 
-/* Специально для кнопки на странице альбома — старая компактная длина */
+/* Кнопка на странице альбома — главная кнопка скачивания */
 .download-btn.download-btn-cover {
     width: 100%;
     text-align: center;
-    padding: 9px 0;           /* старая высота */
-    font-size: 13px;
-    border-color: var(--accent-border);
+    padding: 14px 0;           /* чуть выше и заметнее */
+    font-size: 13.5px;
+    font-weight: 700;
+    border: 2px solid var(--accent-border);   /* толще и ярче рамка */
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: var(--blur);
+    box-shadow: 0 4px 15px rgba(26, 108, 181, 0.15);
+    letter-spacing: 1px;
 }
 
-/* Hover и Active для всех кнопок */
+/* Hover — делаем кнопку заметнее */
 .download-btn:hover,
 .download-btn-big:hover,
 .download-btn.download-btn-cover:hover {
     background: var(--glass-strong);
-    transform: scale(1.05);
     border-color: var(--accent-border);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 108, 181, 0.3);
 }
 
+/* Active */
 .download-btn:active,
 .download-btn-big:active,
 .download-btn.download-btn-cover:active {
-    transform: scale(0.97);
+    transform: scale(0.98) translateY(0);
 }
+
+
 /* ========================== NEWS ========================== */
 .aboutme h2 {
     color: var(--text-main);
