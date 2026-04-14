@@ -237,6 +237,7 @@ nav a:focus-visible {
     letter-spacing: 0.5px;
     line-height: 1.2;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .download-btn:hover,
@@ -473,6 +474,8 @@ footer {
     align-items: center;
     gap: 12px;
     flex-shrink: 0;
+    width: 280px; /* ✅ Добавляем фиксированную ширину */
+    max-width: 100%; /* ✅ На мобильных не вылезет */
 }
 
 .album-cover-big {
