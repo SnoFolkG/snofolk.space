@@ -218,6 +218,7 @@ nav a:focus-visible {
 }
 
 /* ========================== BUTTONS (ИСПРАВЛЕНО) ========================== */
+.download-btn,
 .download-btn-big,
 .download-btn-cover,
 .random-btn {
