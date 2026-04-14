@@ -269,13 +269,12 @@ nav a:focus-visible {
 
 /* Кнопка для обложки (Исправлено) */
 .download-btn-cover {
-    display: block;      /* <-- ГЛАВНОЕ ИСПРАВЛЕНИЕ: позволяет кнопке растянуться на 100% ширины родителя */
-    width: 100%;
-    padding: 14px 10px;  /* Увеличен вертикальный отступ для удобства клика */
-    font-size: 14px;     /* Немного крупнее шрифт */
-    white-space: nowrap; /* Предотвращает перенос слов в две строки, если текст длинный */
-    overflow: hidden;
-    text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+  padding: 9px 0;
+  font-size: 13px;
+  border-color: var(--accent-border);
+  letter-spacing: 0.5px;
 }
 
 /* Случайная кнопка */
