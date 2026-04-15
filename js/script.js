@@ -12,6 +12,7 @@ async function init() {
     renderNewAlbums(albums);    // Секция "Новинки" на главной
     renderSimpleList(albums);   // Простой текстовый список
     highlightActiveNav();       // Подсветка меню
+	initSearch(albums); // Поиск
 }
 
 // 3. ЗАГРУЗКА JSON
@@ -26,36 +27,31 @@ async function fetchAlbums() {
     }
 }
 
-// 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ (улучшенная версия)
+// 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ
 function findSimilarAlbums(currentAlbum, allAlbums) {
-    // Убираем текущий альбом из списка
     const others = allAlbums.filter(a => a.id !== currentAlbum.id);
-
-    // 1. Находим все альбомы того же исполнителя
-    let similar = others.filter(a => a.artist === currentAlbum.artist);
-
-    // Если уже есть 3 или больше — возвращаем только 3
-    if (similar.length >= 3) {
-        return similar.slice(0, 3);
+    
+    // 1. Сначала ищем по исполнителю
+    const sameArtist = others.filter(a => a.artist === currentAlbum.artist);
+    if (sameArtist.length >= 3) {
+        return sameArtist.slice(0, 3);
     }
-
-    // 2. Если меньше 3 — добавляем альбомы из того же города
-    const needed = 3 - similar.length; // сколько ещё нужно (1 или 2)
-
-    // Находим альбомы из того же города, исключая уже добавленные (того же исполнителя)
-    const sameCity = others.filter(a => 
-        a.city === currentAlbum.city && 
-        a.artist !== currentAlbum.artist   // не берём повторно альбомы исполнителя
-    );
-
-    // Добавляем нужное количество из города
-    const additional = sameCity.slice(0, needed);
-
-    // Объединяем альбомы исполнителя + дополнительные из города
-    similar = [...similar, ...additional];
-
-    // Если в итоге ничего не нашлось — возвращаем пустой массив
-    return similar;
+    if (sameArtist.length > 0) {
+        return sameArtist; // вернем что есть, если меньше 3
+    }
+    
+    // 2. Если исполнитель один — ищем по городу
+    const sameCity = others.filter(a => a.city === currentAlbum.city);
+    if (sameCity.length >= 3) {
+        return sameCity.slice(0, 3);
+    }
+    if (sameCity.length > 0) {
+        return sameCity;
+    }
+    
+    // 3. Если города нет/совпадений нет — возвращаем пустой массив
+    // (это будет сигналом показать сообщение + случайные)
+    return [];
 }
 
 // 4. ALBUM DETAIL PAGE (album.html)
@@ -108,14 +104,14 @@ function renderAlbumDetail(albums) {
         
         similarHTML = `
           <div class="similar-albums">
-            <h3>Similar albums</h3>
-            <p class="similar-note">No similar albums found, but here are some other great albums you might like</p>
+            <h3>Похожие альбомы</h3>
+            <p class="similar-note">Пока похожих нет, но у меня есть другие хорошие альбомы</p>
             <div class="similar-grid">
               ${randomAlbums.map(a => `
                 <div class="album-mini-card">
                   <a href="album.html?id=${a.id}">
                     <img src="${a.img}" alt="${a.title}">
-                    <p><strong>${a.title}</strong><br>${a.artist}</p>
+                    <p><strong>${a.artist}</strong><br>${a.title}</p>
                   </a>
                 </div>
               `).join('')}
@@ -125,21 +121,21 @@ function renderAlbumDetail(albums) {
     } else {
         similarHTML = `
           <div class="similar-albums">
-            <h3>Similar albums</h3>
+            <h3>Похожие альбомы</h3>
             <div class="similar-grid">
               ${similarAlbums.map(a => `
                 <div class="album-mini-card">
                   <a href="album.html?id=${a.id}">
                     <img src="${a.img}" alt="${a.title}">
-                    <p><strong>${a.title}</strong><br>${a.artist}</p>
+                    <p><strong>${a.artist}</strong><br>${a.title}</p>
                   </a>
                 </div>
               `).join('')}
             </div>
           </div>
         `;
-        
- }
+    }
+
     albumDetail.innerHTML = `
       <div class="album-detail-wrap">
         <div class="album-cover-col">
@@ -162,13 +158,7 @@ function renderAlbumDetail(albums) {
           </ul>
           <div class="tracklist">
             <h3>Tracklist</h3>
-            <ol>${album.tracks.map(t => {
-                let trackTitle = t;
-                if (trackTitle.startsWith('SR ')) {
-                    trackTitle = trackTitle.replace('SR ', '<span class="star">★ </span>');
-                }
-                return `<li>${trackTitle}</li>`;
-            }).join("")}</ol>
+            <ol>${album.tracks.map(t => `<li>${t}</li>`).join("")}</ol>
           </div>
         </div>
       </div>
@@ -239,17 +229,16 @@ function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container) return;
 
-    const last5 = albums.slice(-6).reverse(); // Последние 5, сначала новые
+    const last5 = albums.slice(-5).reverse(); // Последние 5, сначала новые
     last5.forEach(album => {
         const div = document.createElement("div");
         div.className = "album-mini";
-        div.innerHTML = `
-          <a href="album.html?id=${album.id}">
-            <img src="${album.img}" alt="${album.title}">
-          </a>
-          <p><strong>${album.title}</strong><br>${album.artist}</p>
-        `;
-        container.appendChild(div);
+div.innerHTML = `
+  <a href="album.html?id=${album.id}" style="display:block; width:120px; height:120px; overflow:hidden;">
+    <img src="${album.img}" alt="${album.title}" style="width:120px; height:120px; object-fit:cover;">
+  </a>
+  <p><strong>${album.artist}</strong><br>${album.title}</p>
+`;
     });
 }
 
@@ -295,14 +284,25 @@ function highlightActiveNav() {
     });
 }
 
-// 10. мне повезет
-function getRandomAlbum() {
-    fetch('/data/album.json')
-        .then(r => r.json())
-        .then(albums => {
-            const random = albums[Math.floor(Math.random() * albums.length)];
-            window.location.href = `/album?id=${random.id}`;
-        });
+// 10. ПОИСК
+function initSearch(albums) {
+    const input = document.getElementById("search-input");
+    if (!input) return;
+
+    input.addEventListener("input", () => {
+        const q = input.value.trim().toLowerCase();
+        if (!q) {
+            renderDownloadsGrid(albums);
+            return;
+        }
+        const filtered = albums.filter(a =>
+            a.title.toLowerCase().includes(q) ||
+            a.artist.toLowerCase().includes(q) ||
+            String(a.year).includes(q) ||
+            (a.city && a.city.toLowerCase().includes(q))
+        );
+        renderDownloadsGrid(filtered);
+    });
 }
 
 // ЗАПУСК

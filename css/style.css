@@ -14,6 +14,7 @@
     --shadow-lg: 0 16px 40px rgba(0,0,0,0.45);
     --transition: 0.22s cubic-bezier(0.25, 0.8, 0.25, 1);
     --text-muted: rgba(255,255,255,0.35);
+	--font-mono: 'Montserrat', sans-serif;
 }
 
 /* ========================== RESET ========================== */
@@ -667,7 +668,150 @@ footer {
     color: inherit;
 }
 
-/* ========================== RESPONSIVE ========================== */
+
+
+/* ========================== SEARCH BAR ========================== */
+
+.search-wrap {
+    max-width: 400px;
+    margin: 0 auto 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-main);
+    background: var(--glass);
+    border: 1px solid var(--border);
+    outline: none;
+    transition: var(--transition);
+    box-shadow: 4px 4px 0px var(--accent-border);
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.search-input:focus {
+    background: var(--glass-hover);
+    border-color: var(--accent-border);
+    box-shadow: 0px 0px 0px var(--accent-border);
+}
+
+/* === STATS GRID === */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background: #111;
+  border: 1px solid #222;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-number {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* === LUCKY SECTION === */
+.lucky-section {
+  border: 1px solid #222;
+  background: #0a0a0a;
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.lucky-inner p {
+  color: #888;
+  margin-bottom: 1.2rem;
+}
+
+/* === NEWS TEASER === */
+.news-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 1rem 0 1.5rem;
+}
+
+.news-item-preview {
+  background: #111;
+  border: 1px solid #222;
+  padding: 1rem 1.1rem;
+}
+
+.news-item-preview h3 {
+  margin: 0.3rem 0 0.5rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.news-item-preview p {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0;
+}
+
+.news-date {
+  font-size: 0.75rem;
+  color: #555;
+  font-family: monospace;
+}
+
+.all-news-btn {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.all-news-btn:hover {
+  border-color: #0066FF;
+  color: #0066FF;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-preview {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 768px) {
     .albums {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
