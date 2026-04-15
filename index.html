@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-
   <link rel="manifest" href="/icons/site.webmanifest">
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="UcyoRn7v94I22BJavf8l73E6itE0ckFQxjkgEn9em-U" />
-  
+
   <title>SnoFolk | Hardcore & Horror Punk Music Archive</title>
   <meta name="description" content="Digital collection of rare and classic Hardcore Punk and Horror Punk albums. Explore 400+ tracks, tracklists, and high-quality covers from MDC, Misfits, and more.">
   <meta name="keywords" content="hardcore punk archive, horror punk music, punk rock collection, misfits discography, MDC punk, punk mp3 download, snofolk">
@@ -20,7 +18,9 @@
   <meta property="og:title" content="SnoFolk | Hardcore & Horror Punk Music Archive">
   <meta property="og:description" content="Explore a curated collection of 400+ punk and hardcore songs. Downloads and tracklists available.">
   <meta property="og:url" content="https://snofolk.space/">
-  <meta property="og:image" content="https://snofolk.space/img/Mc001.jpg"> <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta property="og:image" content="https://snofolk.space/img/Mc001.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preload" href="https://images.pexels.com/photos/4547587/pexels-photo-4547587.jpeg" as="image">
@@ -29,91 +29,92 @@
 <body>
   <header>
     <h1>SnoFolk.Space</h1>
-<nav>
-  <a href="index.html"><strong>Homepage</strong></a>
-  <a href="downloads.html">Downloads</a>
-  <a href="news.html">News</a>
-  <a href="info.html">Info</a>
-</nav>
+    <nav>
+      <a href="index.html"><strong>Homepage</strong></a>
+      <a href="downloads.html">Downloads</a>
+      <a href="news.html">News</a>
+      <a href="info.html">Info</a>
+    </nav>
   </header>
+
   <main>
-    <section>
+
+    <!-- HERO -->
+    <section class="hero-section">
       <div class="aboutme">
         <h2><strong>About SnoFolk's Punk Collection</strong></h2>
         <p>Hey! My name is SnoFolk. Since summer 2025 I've been building a collection of the best <strong>punk and hardcore punk albums</strong>. Currently the collection has around 400 songs: 31 albums from 15 artists.</p>
         <p>On this site you can track collection updates, download the full collection, and discover individual albums with full tracklists and credits.</p>
       </div>
     </section>
-    
+
+    <!-- ARCHIVE STATS -->
     <section>
-      <h2>New Punk Albums</h2>
+      <h2>Archive Stats</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">400+</span>
+          <span class="stat-label">Tracks</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">31</span>
+          <span class="stat-label">Albums</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Artists</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">1978–2006</span>
+          <span class="stat-label">Years covered</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW ALBUMS -->
+    <section>
+      <h2>New in Collection</h2>
       <div class="popular-albums" id="new-albums"></div>
     </section>
 
-      <section>
-       <h2>Random Album</h2>
-        <p>You don't know what to listen to? Use this button to get one!</p>
-       <button onclick="getRandomAlbum()" class="random-btn">I'm Feeling Lucky</button>
-      </section>
-        
-    <section>
-      <h2>Archive News & Updates</h2>
-      
-<div class="news">
-    <h3>Stars in the tracklists!</h3>
-    <p><strong>Date:</strong> 12.04.2026</p>
-    <p><strong>What is that?</strong></p>
-    <ul>
-      <li>These are the best tracks I like.</li>
-    </ul>
-    <p><strong>But</strong></p>
-    <ul>
-      <li>A lot of tracks I like are forgotten by me. So a lot of cool music may be without stars.</li>
-    </ul>
-</div>
-      
-      <div class="news">
-    <h3>Minor Update 5.1.0</h3>
-    <p><strong>Date:</strong> 10.04.2026</p>
-    <p><strong>Added:</strong></p>
-    <ul>
-      <li>Subhumans - No Wishes, No Prayers</li>
-      <li>Deep Wound - Deep Wound</li>
-    </ul>
-    <p><strong>Improved & Replaced:</strong></p>
-    <ul>
-      <li>Updated "Get It Away" and "Damaged" to higher-quality versions</li>
-    </ul>
-      </div>
-        
-      <div class="news">
-        <h3>Major Update 5.0.0</h3>
-        <p><strong>Date:</strong> 01.04.2026</p>
-        
-        <p><strong>Removed:</strong></p>
-        <ul>
-          <li>7 Seconds - The Crew</li>
-          <li>Circle Jerks - Wonderful</li>
-          <li>DOA - Let's Wreck the Party</li>
-          <li>Danzig - Danzig I–III</li>
-          <li>MDC - Magnus Dominus Corpus</li>
-          <li>Misfits - Evilive</li>
-          <li>Sex Pistols - Never Mind the Bollocks</li>
-          <li>Suicidal Tendencies - Suicidal Tendencies</li>
-        </ul>
-        
-        <p><strong>Renamed & Improved:</strong></p>
-        <ul>
-          <li>Jerry's Kids - S/T → Unrealised EP</li>
-          <li>SOA - Flex Your Head EP → Flex Your Head</li>
-          <li>Updated folder icons and metadata tags</li>
-        </ul>
+    <!-- RANDOM ALBUM -->
+    <section class="lucky-section">
+      <div class="lucky-inner">
+        <h2>Don't know what to listen to?</h2>
+        <p>Let the archive decide for you.</p>
+        <button onclick="getRandomAlbum()" class="random-btn">I'm Feeling Lucky</button>
       </div>
     </section>
+
+    <!-- NEWS TEASER -->
+    <section class="news-teaser">
+      <h2>Latest News</h2>
+      <div class="news-preview">
+        <div class="news-item-preview">
+          <span class="news-date">12.04.2026</span>
+          <h3>Stars in the tracklists!</h3>
+          <p>Favourite tracks are now marked with ★ in all tracklists.</p>
+        </div>
+        <div class="news-item-preview">
+          <span class="news-date">10.04.2026</span>
+          <h3>Minor Update 5.1.0</h3>
+          <p>Added Subhumans – No Wishes, No Prayers and Deep Wound S/T. Quality upgrades for Get It Away and Damaged.</p>
+        </div>
+        <div class="news-item-preview">
+          <span class="news-date">01.04.2026</span>
+          <h3>Major Update 5.0.0</h3>
+          <p>Large collection overhaul — 8 albums removed, several renamed and improved.</p>
+        </div>
+      </div>
+      <a href="news.html" class="all-news-btn">All news →</a>
+    </section>
+
   </main>
+
   <footer>
     <p>© SnoFolk. All rights reserved.</p>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 </html>
