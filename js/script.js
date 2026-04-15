@@ -1,19 +1,37 @@
 // 1. ПУТЬ К ДАННЫМ
 const DATA_URL = '/data/album.json';
 
+// Глобальная переменная для доступа из любой функции (например, для Lucky Button)
+let allAlbumsData = []; 
+
 // 2. ГЛАВНАЯ ФУНКЦИЯ (ЗАПУСК)
 async function init() {
-    const albums = await fetchAlbums();
-    if (albums.length === 0) return;
+    allAlbumsData = await fetchAlbums(); // Сохраняxtv в глобальную переменную
+    if (allAlbumsData.length === 0) return;
 
-    renderCollectionVersions(); // Версии коллекции
-    renderDownloadsGrid(albums); // Сетка на странице downloads.html
-    renderAlbumDetail(albums);  // Страница конкретного альбома album.html
-    renderNewAlbums(albums);    // Секция "Новинки" на главной
-    renderSimpleList(albums);   // Простой текстовый список
-    highlightActiveNav();       // Подсветка меню
-	initSearch(albums); // Поиск
+    renderCollectionVersions(); 
+    renderDownloadsGrid(allAlbumsData); 
+    renderAlbumDetail(allAlbumsData);  
+    renderNewAlbums(allAlbumsData);    
+    renderSimpleList(allAlbumsData);   
+    highlightActiveNav();       
+    initSearch(allAlbumsData); 
 }
+
+// --- НОВАЯ ФУНКЦИЯ ДЛЯ КНОПКИ LUCKY ---
+function getRandomAlbum() {
+    if (allAlbumsData.length > 0) {
+        const randomIndex = Math.floor(Math.random() * allAlbumsData.length);
+        const randomAlbum = allAlbumsData[randomIndex];
+        // Переходим на страницу альбома
+        window.location.href = `album.html?id=${randomAlbum.id}`;
+    } else {
+        // Если данные еще не загружены, просто идем на страницу загрузок
+        window.location.href = 'downloads.html';
+    }
+}
+
+
 
 // 3. ЗАГРУЗКА JSON
 async function fetchAlbums() {

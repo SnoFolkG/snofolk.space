@@ -167,7 +167,7 @@ nav a:focus-visible {
 .albums {
     display: grid;
     /* Теперь колонки ВСЕГДА 165px, они не расширяются и не сужаются */
-    grid-template-columns: repeat(auto-fill, 165px); 
+    grid-template-columns: repeat(auto-fill, 160px); 
     gap: 20px;
     margin-top: 16px;
     justify-content: center; /* Центрирует всю сетку в контейнере main */
@@ -192,7 +192,7 @@ nav a:focus-visible {
 
     /* --- ФИКСЫ РАСТЯГИВАНИЯ --- */
     width: 100%;           /* Занимает всю ширину своей колонки */
-    max-width: 165px; 
+    max-width: 160px; 
     margin: 0 auto;        /* Центрирует карточку внутри колонки при поиске */
     height: 100%;          /* Чтобы все карточки в ряду были одной высоты */
 }
