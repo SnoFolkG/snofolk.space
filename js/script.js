@@ -227,18 +227,33 @@ function renderDownloadsGrid(albumsToRender) {
 // 6. НОВИНКИ (На главной)
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
-    if (!container) return;
+    if (!container || !albums || albums.length === 0) return;
 
-    const last5 = albums.slice(-5).reverse(); // Последние 5, сначала новые
+    // Очищаем контейнер перед рендерингом (на случай повторного вызова)
+    container.innerHTML = "";
+
+    // Берем последние 5 альбомов и разворачиваем массив, чтобы самые новые были первыми
+    const last5 = albums.slice(-5).reverse(); 
+
     last5.forEach(album => {
         const div = document.createElement("div");
         div.className = "album-mini";
-div.innerHTML = `
-  <a href="album.html?id=${album.id}" style="display:block; width:120px; height:120px; overflow:hidden;">
-    <img src="${album.img}" alt="${album.title}" style="width:120px; height:120px; object-fit:cover;">
-  </a>
-  <p><strong>${album.artist}</strong><br>${album.title}</p>
-`;
+        
+        // Формируем внутреннюю разметку карточки
+        div.innerHTML = `
+            <a href="album.html?id=${album.id}" class="album-mini-link">
+                <div class="album-mini-cover">
+                    <img src="${album.img}" alt="${album.title}" loading="lazy">
+                </div>
+                <div class="album-mini-info">
+                    <strong>${album.artist}</strong>
+                    <span>${album.title}</span>
+                </div>
+            </a>
+        `;
+        
+        // КРИТИЧЕСКИЙ МОМЕНТ: Добавляем созданный элемент в контейнер на странице
+        container.appendChild(div);
     });
 }
 
