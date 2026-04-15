@@ -166,9 +166,13 @@ nav a:focus-visible {
 /* ========================== ALBUM GRID ========================== */
 .albums {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    /* Теперь колонки ВСЕГДА 165px, они не расширяются и не сужаются */
+    grid-template-columns: repeat(auto-fill, 165px); 
     gap: 20px;
     margin-top: 16px;
+    justify-content: center; /* Центрирует всю сетку в контейнере main */
+    min-height: 600px;       /* Чтобы фон не прыгал */
+    align-items: start;
 }
 
 /* ========================== ALBUM CARD ========================== */
@@ -188,7 +192,7 @@ nav a:focus-visible {
 
     /* --- ФИКСЫ РАСТЯГИВАНИЯ --- */
     width: 100%;           /* Занимает всю ширину своей колонки */
-    max-width: 200px;      /* НО не становится шире 200px (подбери под свой дизайн) */
+    max-width: 165px; 
     margin: 0 auto;        /* Центрирует карточку внутри колонки при поиске */
     height: 100%;          /* Чтобы все карточки в ряду были одной высоты */
 }
