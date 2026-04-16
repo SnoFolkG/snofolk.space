@@ -17,7 +17,7 @@
 	--font-mono: 'Montserrat', sans-serif;
     --back-color: #111111;
     --blocks-color: #1A1A1A;
-    --button-color: #2A2A2A;
+    --button-color: #232323;
 }
 
 /* ========================== RESET ========================== */
@@ -748,7 +748,7 @@ footer {
 }
 
 .stat-card {
-  background: var(--glass);
+  background: var(--blocks-color);
   border: 1px solid var(--border);
   padding: 1.2rem 1rem;
   text-align: center;
@@ -793,7 +793,7 @@ footer {
 }
 
 .news-item-preview {
-  background: var(--glass);
+  background: var(--blocks-color);
   border: 1px solid var(--border);
   padding: 1rem 1.1rem;
 }
