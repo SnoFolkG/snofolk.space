@@ -12,7 +12,7 @@ async function init() {
     renderNewAlbums(albums);    // Секция "Новинки" на главной
     renderSimpleList(albums);   // Простой текстовый список
     highlightActiveNav();       // Подсветка меню
-	initSearch(albums); // Поиск
+    initSearch(albums); // Поиск
 }
 
 // 3. ЗАГРУЗКА JSON
@@ -30,7 +30,7 @@ async function fetchAlbums() {
 // 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ
 function findSimilarAlbums(currentAlbum, allAlbums) {
     const others = allAlbums.filter(a => a.id !== currentAlbum.id);
-    
+
     // 1. Сначала ищем по исполнителю
     const sameArtist = others.filter(a => a.artist === currentAlbum.artist);
     if (sameArtist.length >= 3) {
@@ -39,7 +39,7 @@ function findSimilarAlbums(currentAlbum, allAlbums) {
     if (sameArtist.length > 0) {
         return sameArtist; // вернем что есть, если меньше 3
     }
-    
+
     // 2. Если исполнитель один — ищем по городу
     const sameCity = others.filter(a => a.city === currentAlbum.city);
     if (sameCity.length >= 3) {
@@ -48,7 +48,7 @@ function findSimilarAlbums(currentAlbum, allAlbums) {
     if (sameCity.length > 0) {
         return sameCity;
     }
-    
+
     // 3. Если города нет/совпадений нет — возвращаем пустой массив
     // (это будет сигналом показать сообщение + случайные)
     return [];
@@ -88,7 +88,7 @@ function renderAlbumDetail(albums) {
     let downloadUrl = '';
     if (album.download) {
         const fileId = album.download.match(/[-\w]{25,}/)?.[0];
-        downloadUrl = fileId 
+        downloadUrl = fileId
             ? `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`
             : album.download;
     }
@@ -101,7 +101,7 @@ function renderAlbumDetail(albums) {
             .filter(a => a.id !== album.id)
             .sort(() => 0.5 - Math.random())
             .slice(0, 3);
-        
+
         similarHTML = `
           <div class="similar-albums">
             <h3>Похожие альбомы</h3>
@@ -140,11 +140,11 @@ function renderAlbumDetail(albums) {
       <div class="album-detail-wrap">
         <div class="album-cover-col">
           <img src="${album.img}" alt="${album.artist} - ${album.title}" class="album-cover-big">
-          ${downloadUrl 
+          ${downloadUrl
             ? `<a href="${downloadUrl}" class="download-btn download-btn-cover" download>Download Album (.rar)</a>
                <p class="download-hint">If Google shows a warning — click "Download anyway"</p>`
             : `<p class="no-download">Download link coming soon</p>`
-          }
+        }
           ${similarHTML}
         </div>
         <div class="album-info-col">
@@ -202,7 +202,7 @@ function renderDownloadsGrid(albumsToRender) {
     if (!container) return;
 
     // КРИТИЧНО: Очищаем контейнер перед тем, как рисовать отфильтрованные данные
-    container.innerHTML = ""; 
+    container.innerHTML = "";
 
     // Если ничего не найдено, можно вывести сообщение
     if (albumsToRender.length === 0) {
@@ -233,7 +233,7 @@ function renderNewAlbums(albums) {
     last5.forEach(album => {
         const div = document.createElement("div");
         div.className = "album-mini";
-div.innerHTML = `
+        div.innerHTML = `
   <a href="album.html?id=${album.id}" style="display:block; width:120px; height:120px; overflow:hidden;">
     <img src="${album.img}" alt="${album.title}" style="width:120px; height:120px; object-fit:cover;">
   </a>
