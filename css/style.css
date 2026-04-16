@@ -98,7 +98,7 @@ main {
     max-width: 950px;
     margin: 30px auto;
     padding: 28px;
-    background: #111111;
+    background: var(--glass-strong);
     border: 1px solid var(--border);
 }
 
@@ -120,7 +120,7 @@ header {
     margin: 20px auto;
     padding: 20px;
     text-align: center;
-    background: #111111;
+    background: var(--glass-strong);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
 }
