@@ -15,6 +15,9 @@
     --transition: 0.22s cubic-bezier(0.25, 0.8, 0.25, 1);
     --text-muted: rgba(255,255,255,0.35);
 	--font-mono: 'Montserrat', sans-serif;
+    --back-color: #111111;
+    --blocks-color: #1A1A1A;
+    --button-color: #2A2A2A;
 }
 
 /* ========================== RESET ========================== */
@@ -98,7 +101,7 @@ main {
     max-width: 950px;
     margin: 30px auto;
     padding: 28px;
-    background: var(--glass-strong);
+    background: var(--back-color);
     border: 1px solid var(--border);
 }
 
@@ -120,7 +123,7 @@ header {
     margin: 20px auto;
     padding: 20px;
     text-align: center;
-    background: var(--glass-strong);
+    background: var(--back-color);
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
 }
@@ -179,7 +182,7 @@ nav a:focus-visible {
     justify-content: flex-start; /* Изменили на flex-start, чтобы контент не "разлетался" */
     text-align: center;
     padding: 14px;
-    background: var(--glass);
+    background: var(--blocks-color);
     border: 1px solid var(--border);
     cursor: pointer;
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
@@ -241,7 +244,7 @@ nav a:focus-visible {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    background: #111111;
+    background: var(--button-color);
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -336,7 +339,7 @@ nav a:focus-visible {
 
 .news {
     padding: 18px;
-    background: var(--glass);
+    background: var(--blocks-color);
     border: 1px solid var(--border);
     transition: background var(--transition), transform var(--transition);
     margin-bottom: 15px;
@@ -490,7 +493,7 @@ footer {
     flex-wrap: wrap;
     gap: 16px;
     padding: 20px;
-    background: var(--glass);
+    background: var(--back-color);
     border: 1px solid var(--accent-border);
 }
 
@@ -500,7 +503,7 @@ footer {
     align-items: center;
     gap: 16px;
     padding: 10px 14px;
-    background: var(--glass);
+    background: var(--back-color);
     border: 1px solid var(--border);
     margin-bottom: 8px;
     transition: background var(--transition);
@@ -664,7 +667,7 @@ footer {
     display: flex;
     gap: 10px;
     padding: 10px;
-    background: var(--glass);
+    background: var(--blocks-color);
     border: 1px solid var(--border);
     transition: var(--transition);
 }
@@ -719,7 +722,7 @@ footer {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--text-main);
-    background: var(--glass);
+    background: var(--button-color);
     border: 1px solid var(--border);
     outline: none;
     transition: var(--transition);
@@ -770,7 +773,7 @@ footer {
 /* === LUCKY SECTION === */
 .lucky-section {
   border: 1px solid var(--border);
-  background: var(--glass);
+  background: var(--blocks-color);
   padding: 2rem;
   text-align: center;
   margin: 2rem 0;
