@@ -3,13 +3,13 @@
     --text-main: #ffffff;
     --text-dim: #aaa;
     --text-light: #bbb;
-    --glass: rgba(255,255,255,0.06);
-    --glass-hover: rgba(255,255,255,0.10);
-    --glass-strong: rgba(255,255,255,0.15);
-    --accent: rgba(26,108,181,0.25);
+    --glass: #111111;
+    --glass-hover: #1a1a1a;
+    --glass-strong: #222222;
+    --accent: rgba(26,108,181,0.15);
     --accent-border: #1A6CB5;
-    --border: rgba(255,255,255,0.15);
-    --blur: blur(12px);
+    --border: #2a2a2a;
+    --blur: none;
     --shadow-sm: 0 2px 8px rgba(0,0,0,0.25);
     --shadow-lg: 0 16px 40px rgba(0,0,0,0.45);
     --transition: 0.22s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -49,8 +49,7 @@ body {
     color: var(--text-main);
     user-select: none;
     position: relative;
-    background: url('../img/fone.jpg') center/cover no-repeat;
-    background-attachment: scroll;
+    background: #0d0d0d;
 }
 
 #albums {
@@ -99,8 +98,7 @@ main {
     max-width: 950px;
     margin: 30px auto;
     padding: 28px;
-    background: rgba(0,0,0,0.35);
-    backdrop-filter: var(--blur);
+    background: #111111;
     border: 1px solid var(--border);
 }
 
@@ -122,8 +120,7 @@ header {
     margin: 20px auto;
     padding: 20px;
     text-align: center;
-    background: rgba(0,0,0,0.25);
-    backdrop-filter: var(--blur);
+    background: #111111;
     border: 1px solid var(--border);
     box-shadow: var(--shadow-sm);
 }
@@ -183,7 +180,6 @@ nav a:focus-visible {
     text-align: center;
     padding: 14px;
     background: var(--glass);
-    backdrop-filter: var(--blur);
     border: 1px solid var(--border);
     cursor: pointer;
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
@@ -749,8 +745,8 @@ footer {
 }
 
 .stat-card {
-  background: #111;
-  border: 1px solid #222;
+  background: var(--glass);
+  border: 1px solid var(--border);
   padding: 1.2rem 1rem;
   text-align: center;
   display: flex;
@@ -773,7 +769,7 @@ footer {
 
 /* === LUCKY SECTION === */
 .lucky-section {
-  border: 1px solid #222;
+  border: 1px solid var(--border);
   background: #0a0a0a;
   padding: 2rem;
   text-align: center;
@@ -794,8 +790,8 @@ footer {
 }
 
 .news-item-preview {
-  background: #111;
-  border: 1px solid #222;
+  background: var(--glass);
+  border: 1px solid var(--border);
   padding: 1rem 1.1rem;
 }
 
@@ -819,7 +815,7 @@ footer {
 
 .all-news-btn {
   display: inline-block;
-  border: 1px solid #333;
+  border: 1px solid var(--border);
   padding: 0.5rem 1.2rem;
   color: #fff;
   text-decoration: none;
@@ -828,27 +824,11 @@ footer {
 }
 
 .all-news-btn:hover {
-  border-color: #0066FF;
-  color: #0066FF;
+  border-color: var(--accent-border);
+  color: var(--accent-border);
 }
 
 /* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .news-preview {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .stats-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 768px) {
     .albums {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -861,9 +841,24 @@ footer {
         margin: 10px;
         padding: 16px;
     }
+    header {
+        margin: 10px;
+        padding: 14px 16px;
+    }
+    h1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
     nav a {
         font-size: 12px;
         padding: 5px 8px;
+        margin: 0;
     }
     h2 {
         font-size: 16px;
@@ -874,6 +869,10 @@ footer {
     }
     .album-detail-wrap {
         flex-direction: column;
+        padding: 1rem;
+    }
+    .album-cover-col {
+        width: 100%;
     }
     .album-cover-big {
         width: 100%;
@@ -882,10 +881,20 @@ footer {
     .similar-albums {
         width: 100%;
     }
-    
-    /* Адаптив для кнопки на мобильных */
+    .album-meta {
+        grid-template-columns: 1fr;
+    }
+    .popular-albums {
+        justify-content: center;
+    }
     .download-btn-cover {
-        white-space: normal; /* Разрешаем перенос на маленьких экранах */
+        white-space: normal;
         font-size: 13px;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .news-preview {
+        grid-template-columns: 1fr;
     }
 }
