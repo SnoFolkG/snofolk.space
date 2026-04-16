@@ -98,7 +98,7 @@ main {
     max-width: 950px;
     margin: 30px auto;
     padding: 28px;
-    background: #111111;
+    background: url(../img/fone.jpg);
     border: 1px solid var(--border);
 }
 
@@ -241,7 +241,7 @@ nav a:focus-visible {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    background: #ffffff;
+    background: #2f2f2f;
     color: #000000;
     border: none;
     cursor: pointer;

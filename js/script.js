@@ -37,10 +37,10 @@ function getRandomAlbum() {
 async function fetchAlbums() {
     try {
         const response = await fetch(DATA_URL);
-        if (!response.ok) throw new Error(`Ошибка загрузки: ${response.status}`);
+        if (!response.ok) throw new Error(`LOADING ERROR: ${response.status}`);
         return await response.json();
     } catch (error) {
-        console.error("Критическая ошибка:", error);
+        console.error("CRITICAL ERROR:", error);
         return [];
     }
 }
@@ -122,8 +122,8 @@ function renderAlbumDetail(albums) {
         
         similarHTML = `
           <div class="similar-albums">
-            <h3>Похожие альбомы</h3>
-            <p class="similar-note">Пока похожих нет, но у меня есть другие хорошие альбомы</p>
+            <h3>Similar albums</h3>
+            <p class="similar-note">No similar albums yet, but there are some good ones for you</p>
             <div class="similar-grid">
               ${randomAlbums.map(a => `
                 <div class="album-mini-card">
@@ -139,7 +139,7 @@ function renderAlbumDetail(albums) {
     } else {
         similarHTML = `
           <div class="similar-albums">
-            <h3>Похожие альбомы</h3>
+            <h3>Similar albums</h3>
             <div class="similar-grid">
               ${similarAlbums.map(a => `
                 <div class="album-mini-card">
