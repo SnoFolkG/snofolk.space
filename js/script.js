@@ -6,16 +6,27 @@ let allAlbumsData = [];
 
 // 2. ГЛАВНАЯ ФУНКЦИЯ (ЗАПУСК)
 async function init() {
-    allAlbumsData = await fetchAlbums(); // Сохраняxtv в глобальную переменную
-    if (allAlbumsData.length === 0) return;
+    allAlbumsData = await fetchAlbums();
+    if (allAlbumsData.length === 0) {
+        console.warn("Не удалось загрузить альбомы");
+        return;
+    }
 
-    renderCollectionVersions(); 
-    renderDownloadsGrid(allAlbumsData); 
-    renderAlbumDetail(allAlbumsData);  
-    renderNewAlbums(allAlbumsData);    
-    renderSimpleList(allAlbumsData);   
-    highlightActiveNav();       
-    initSearch(allAlbumsData); 
+    renderCollectionVersions();
+    highlightActiveNav();
+
+    // Определяем, какая страница открыта
+    if (document.getElementById("album-detail")) {
+        // Это album.html
+        renderAlbumDetail(allAlbumsData);
+    } 
+    else {
+        // Это index.html или downloads.html
+        renderDownloadsGrid(allAlbumsData);
+        renderNewAlbums(allAlbumsData);
+        renderSimpleList(allAlbumsData);   // если нужен
+        initSearch(allAlbumsData);
+    }
 }
 
 // --- НОВАЯ ФУНКЦИЯ ДЛЯ КНОПКИ LUCKY ---
@@ -94,12 +105,12 @@ function renderAlbumDetail(albums) {
 
     let metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-        metaDesc.setAttribute("content", 
+        metaDesc.setAttribute("content",
             `Listen to ${album.title} by ${album.artist} (${album.year}). Genre: ${album.genre}. City: ${album.city}.`
         );
     }
 
-    injectAlbumSchema(album);
+    injectAlbumSchema(album);   // ← теперь функция доступна
 
     // Скачивание
     let downloadHTML = '';
@@ -123,10 +134,9 @@ function renderAlbumDetail(albums) {
         const tracksHTML = album.tracks.map(track => {
             const isStarred = track.title.startsWith('SR ');
             const name = track.title.replace(/^SR /, '');
-            const duration = track.duration 
-                ? `<span class="track-duration">${track.duration}</span>` 
+            const duration = track.duration
+                ? `<span class="track-duration">${track.duration}</span>`
                 : '';
-
             return `
                 <li>
                     ${isStarred ? '★ ' : ''}${name}${duration}
@@ -144,7 +154,7 @@ function renderAlbumDetail(albums) {
         tracklistHTML = `<p class="no-tracks">Tracklist not available yet.</p>`;
     }
 
-    // Похожие альбомы (оставляем как было)
+    // Похожие альбомы
     let similarHTML = '';
     if (similarAlbums.length === 0) {
         const randomAlbums = albums
@@ -186,7 +196,7 @@ function renderAlbumDetail(albums) {
         `;
     }
 
-    // Финальный рендер
+    // Финальный рендер страницы альбома
     albumDetail.innerHTML = `
         <div class="album-detail-wrap">
             <div class="album-cover-col">
@@ -203,11 +213,42 @@ function renderAlbumDetail(albums) {
                     <li><span>City</span>${album.city}</li>
                     <li><span>Label</span>${album.label || 'N/A'}</li>
                 </ul>
-                
                 ${tracklistHTML}
             </div>
         </div>
     `;
+}
+
+// === SEO: SCHEMA.ORG ДЛЯ АЛЬБОМА (вынесена наружу!) ===
+function injectAlbumSchema(album) {
+    // Удаляем старый schema, если есть
+    const oldSchema = document.getElementById('album-schema');
+    if (oldSchema) oldSchema.remove();
+
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "MusicAlbum",
+        "name": album.title,
+        "byArtist": {
+            "@type": "MusicGroup",
+            "name": album.artist
+        },
+        "genre": album.genre,
+        "datePublished": album.year.toString(),
+        "image": `https://snofolk.space/${album.img}`,
+        "numTracks": album.tracks ? album.tracks.length : 0,
+        "track": (album.tracks || []).map((track, index) => ({
+            "@type": "MusicRecording",
+            "position": index + 1,
+            "name": track.title || track
+        }))
+    };
+
+    const script = document.createElement('script');
+    script.id = 'album-schema';
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(schema, null, 2);
+    document.head.appendChild(script);
 }
 // 5. ОБНОВЛЕННАЯ СЕТКА АЛЬБОМОВ (с очисткой контейнера)
 function renderDownloadsGrid(albumsToRender) {
