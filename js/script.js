@@ -89,130 +89,125 @@ function renderAlbumDetail(albums) {
     // Находим похожие альбомы
     const similarAlbums = findSimilarAlbums(album, albums);
 
-    // --- SEO & META DATA START ---
-    // 1. Update Title
+    // --- SEO & META DATA ---
     document.title = `${album.artist} - ${album.title} (${album.year}) | snofolk.space`;
 
-    // 2. Update Description Meta Tag
     let metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
-        metaDesc.setAttribute("content", `Listen to ${album.title} by ${album.artist} (${album.year}). Genre: ${album.genre}. City: ${album.city}. Explore the full tracklist and download on snofolk.space.`);
+        metaDesc.setAttribute("content", 
+            `Listen to ${album.title} by ${album.artist} (${album.year}). Genre: ${album.genre}. City: ${album.city}.`
+        );
     }
 
-    // 3. Inject Schema.org JSON-LD (For Google "Rich Results")
     injectAlbumSchema(album);
-    // --- SEO & META DATA END ---
 
-    let downloadUrl = '';
+    // Скачивание
+    let downloadHTML = '';
     if (album.download) {
         const fileId = album.download.match(/[-\w]{25,}/)?.[0];
-        downloadUrl = fileId 
+        const downloadUrl = fileId
             ? `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`
             : album.download;
+
+        downloadHTML = `
+            <a href="${downloadUrl}" class="download-btn download-btn-cover" download>Download Album (.rar)</a>
+            <p class="download-hint">If Google shows a warning — click "Download anyway"</p>
+        `;
+    } else {
+        downloadHTML = `<p class="no-download">Download link coming soon</p>`;
     }
 
-    // Формируем HTML для похожих альбомов
+    // === НОВЫЙ РЕНДЕР ТРЕКЛИСТА ===
+    let tracklistHTML = '';
+    if (album.tracks && Array.isArray(album.tracks) && album.tracks.length > 0) {
+        const tracksHTML = album.tracks.map(track => {
+            const isStarred = track.title.startsWith('SR ');
+            const name = track.title.replace(/^SR /, '');
+            const duration = track.duration 
+                ? `<span class="track-duration">${track.duration}</span>` 
+                : '';
+
+            return `
+                <li>
+                    ${isStarred ? '★ ' : ''}${name}${duration}
+                </li>
+            `;
+        }).join('');
+
+        tracklistHTML = `
+            <div class="tracklist">
+                <h3>Tracklist</h3>
+                <ol>${tracksHTML}</ol>
+            </div>
+        `;
+    } else {
+        tracklistHTML = `<p class="no-tracks">Tracklist not available yet.</p>`;
+    }
+
+    // Похожие альбомы (оставляем как было)
     let similarHTML = '';
     if (similarAlbums.length === 0) {
-        // Случайные 3 альбома
         const randomAlbums = albums
             .filter(a => a.id !== album.id)
             .sort(() => 0.5 - Math.random())
             .slice(0, 3);
-        
+
         similarHTML = `
-          <div class="similar-albums">
-            <h3>Similar albums</h3>
-            <p class="similar-note">No similar albums yet, but there are some good ones for you</p>
-            <div class="similar-grid">
-              ${randomAlbums.map(a => `
-                <div class="album-mini-card">
-                  <a href="album.html?id=${a.id}">
-                    <img src="${a.img}" alt="${a.title}">
-                    <p><strong>${a.artist}</strong><br>${a.title}</p>
-                  </a>
+            <div class="similar-albums">
+                <h3>Similar albums</h3>
+                <p class="similar-note">No similar albums yet, but here are some good ones:</p>
+                <div class="similar-grid">
+                    ${randomAlbums.map(a => `
+                        <div class="album-mini-card">
+                            <a href="album.html?id=${a.id}">
+                                <img src="${a.img}" alt="${a.title}">
+                                <p><strong>${a.artist}</strong><br>${a.title}</p>
+                            </a>
+                        </div>
+                    `).join('')}
                 </div>
-              `).join('')}
             </div>
-          </div>
         `;
     } else {
         similarHTML = `
-          <div class="similar-albums">
-            <h3>Similar albums</h3>
-            <div class="similar-grid">
-              ${similarAlbums.map(a => `
-                <div class="album-mini-card">
-                  <a href="album.html?id=${a.id}">
-                    <img src="${a.img}" alt="${a.title}">
-                    <p><strong>${a.artist}</strong><br>${a.title}</p>
-                  </a>
+            <div class="similar-albums">
+                <h3>Similar albums</h3>
+                <div class="similar-grid">
+                    ${similarAlbums.map(a => `
+                        <div class="album-mini-card">
+                            <a href="album.html?id=${a.id}">
+                                <img src="${a.img}" alt="${a.title}">
+                                <p><strong>${a.artist}</strong><br>${a.title}</p>
+                            </a>
+                        </div>
+                    `).join('')}
                 </div>
-              `).join('')}
             </div>
-          </div>
         `;
     }
 
+    // Финальный рендер
     albumDetail.innerHTML = `
-      <div class="album-detail-wrap">
-        <div class="album-cover-col">
-          <img src="${album.img}" alt="${album.artist} - ${album.title}" class="album-cover-big">
-          ${downloadUrl 
-            ? `<a href="${downloadUrl}" class="download-btn download-btn-cover" download>Download Album (.rar)</a>
-               <p class="download-hint">If Google shows a warning — click "Download anyway"</p>`
-            : `<p class="no-download">Download link coming soon</p>`
-          }
-          ${similarHTML}
+        <div class="album-detail-wrap">
+            <div class="album-cover-col">
+                <img src="${album.img}" alt="${album.artist} - ${album.title}" class="album-cover-big">
+                ${downloadHTML}
+                ${similarHTML}
+            </div>
+            <div class="album-info-col">
+                <h2 class="album-title">${album.title}</h2>
+                <p class="album-artist">${album.artist}</p>
+                <ul class="album-meta">
+                    <li><span>Year</span>${album.year}</li>
+                    <li><span>Genre</span>${album.genre}</li>
+                    <li><span>City</span>${album.city}</li>
+                    <li><span>Label</span>${album.label || 'N/A'}</li>
+                </ul>
+                
+                ${tracklistHTML}
+            </div>
         </div>
-        <div class="album-info-col">
-          <h2 class="album-title">${album.title}</h2>
-          <p class="album-artist">${album.artist}</p>
-          <ul class="album-meta">
-            <li><span>Year</span>${album.year}</li>
-            <li><span>Genre</span>${album.genre}</li>
-            <li><span>City</span>${album.city}</li>
-            <li><span>Label</span>${album.label || 'N/A'}</li>
-          </ul>
-          <div class="tracklist">
-            <h3>Tracklist</h3>
-            <ol>${album.tracks.map(t => `<li>${t}</li>`).join("")}</ol>
-          </div>
-        </div>
-      </div>
     `;
-}
-
-// NEW HELPER FUNCTION FOR SEO
-function injectAlbumSchema(album) {
-    // Remove existing schema if any (to avoid duplicates when navigating)
-    const oldSchema = document.getElementById('album-schema');
-    if (oldSchema) oldSchema.remove();
-
-    const schema = {
-        "@context": "https://schema.org",
-        "@type": "MusicAlbum",
-        "name": album.title,
-        "byArtist": {
-            "@type": "MusicGroup",
-            "name": album.artist
-        },
-        "genre": album.genre,
-        "datePublished": album.year.toString(),
-        "image": `https://snofolk.space/${album.img}`,
-        "numTracks": album.tracks.length,
-        "track": album.tracks.map((track, index) => ({
-            "@type": "MusicRecording",
-            "position": index + 1,
-            "name": track
-        }))
-    };
-
-    const script = document.createElement('script');
-    script.id = 'album-schema';
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
-    document.head.appendChild(script);
 }
 // 5. ОБНОВЛЕННАЯ СЕТКА АЛЬБОМОВ (с очисткой контейнера)
 function renderDownloadsGrid(albumsToRender) {
