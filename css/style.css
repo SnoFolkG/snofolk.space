@@ -818,7 +818,7 @@ footer {
 /* ========================== NEW IN COLLECTION ========================== */
 .new-albums-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 12px;
     margin-top: 16px;
 }
@@ -956,5 +956,9 @@ footer {
 
     .news-preview {
         grid-template-columns: 1fr;
+    }
+
+    .new-albums-grid {
+    grid-template-columns: repeat(2, 1fr);
     }
 }
