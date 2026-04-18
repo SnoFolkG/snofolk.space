@@ -870,23 +870,23 @@ footer {
     font-size: 11px;
     color: var(--text-muted);
     letter-spacing: 0.04em;
-    margin: 0 0 2px;
+    margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .album-mini-title {
-    font-size: 12px;
-    font-weight: 500;
-    color: #ddd;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
     line-height: 1.3;
     transition: color 0.18s;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin: 0;
+    margin: 0 0 3px;
 }
 
 /* ========================== RESPONSIVE ========================== */

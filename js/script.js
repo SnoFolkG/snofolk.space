@@ -257,8 +257,8 @@ function renderNewAlbums(albums) {
                     <img src="${album.img}" alt="${album.title}" loading="lazy">
                 </div>
                 <div class="album-mini-info">
-                    <p class="album-mini-artist">${album.artist}</p>
                     <p class="album-mini-title">${album.title}</p>
+                    <p class="album-mini-artist">${album.фкешые}</p>
                 </div>
             </a>
         `;
