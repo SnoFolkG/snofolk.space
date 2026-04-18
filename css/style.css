@@ -60,9 +60,7 @@ body {
 
 #albums {
     min-height: 600px;
-    /* Резервирует место, чтобы футер не прыгал вверх при поиске */
     align-content: flex-start;
-    /* Удерживает элементы вверху, а не растягивает их по вертикали */
 }
 
 /* ========================== TYPOGRAPHY ========================== */
@@ -118,8 +116,6 @@ section:last-child {
     margin-bottom: 0;
 }
 
-
-
 /* ========================== HEADER ========================== */
 header {
     position: relative;
@@ -171,14 +167,11 @@ nav a:focus-visible {
 /* ========================== ALBUM GRID ========================== */
 .albums {
     display: grid;
-    /* Теперь колонки ВСЕГДА 165px, они не расширяются и не сужаются */
     grid-template-columns: repeat(auto-fill, 160px);
     gap: 20px;
     margin-top: 16px;
     justify-content: center;
-    /* Центрирует всю сетку в контейнере main */
     min-height: 600px;
-    /* Чтобы фон не прыгал */
     align-items: start;
 }
 
@@ -187,7 +180,6 @@ nav a:focus-visible {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* Изменили на flex-start, чтобы контент не "разлетался" */
     text-align: center;
     padding: 14px;
     background: var(--blocks-color);
@@ -196,15 +188,10 @@ nav a:focus-visible {
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
     box-shadow: var(--shadow-sm);
     will-change: transform;
-
-    /* --- ФИКСЫ РАСТЯГИВАНИЯ --- */
     width: 100%;
-    /* Занимает всю ширину своей колонки */
     max-width: 160px;
     margin: 0 auto;
-    /* Центрирует карточку внутри колонки при поиске */
     height: 100%;
-    /* Чтобы все карточки в ряду были одной высоты */
 }
 
 .album:hover {
@@ -245,7 +232,7 @@ nav a:focus-visible {
     margin-bottom: 10px;
 }
 
-/* ========================== BUTTONS (ИСПРАВЛЕНО) ========================== */
+/* ========================== BUTTONS ========================== */
 .download-btn,
 .download-btn-big,
 .download-btn-cover,
@@ -284,7 +271,6 @@ nav a:focus-visible {
     transform: scale(0.95);
 }
 
-/* Базовые размеры для обычной кнопки */
 .download-btn {
     padding: 10px 18px;
     font-size: 12px;
@@ -301,7 +287,6 @@ nav a:focus-visible {
     letter-spacing: 0.6px;
     text-align: center;
     color: #aaaaaa;
-    /* серый текст */
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.20);
     cursor: pointer;
@@ -309,26 +294,22 @@ nav a:focus-visible {
     text-decoration: none;
 }
 
-/* Лёгкое выделение при наведении */
 .old-ver-download:hover {
     background: rgba(255, 255, 255, 0.09);
     border-color: rgba(255, 255, 255, 0.35);
     color: #cccccc;
 }
 
-/* При нажатии */
 .old-ver-download:active {
     transform: scale(0.98);
     background: rgba(255, 255, 255, 0.07);
 }
 
-/* Большая кнопка */
 .download-btn-big {
     font-size: 14px;
     padding: 14px 30px;
 }
 
-/* Кнопка для обложки (Исправлено) */
 .download-btn-cover {
     width: 100%;
     text-align: center;
@@ -338,7 +319,6 @@ nav a:focus-visible {
     letter-spacing: 0.5px;
 }
 
-/* Случайная кнопка */
 .random-btn {
     padding: 10px 18px;
     font-size: 12px;
@@ -383,39 +363,12 @@ nav a:focus-visible {
     justify-content: space-between;
 }
 
-.album-mini {
-    text-align: center;
-    width: 120px;
-    flex-shrink: 0;
-}
-
 .album-mini img {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
     transition: transform var(--transition);
-}
-
-/* Добавьте это в секцию POPULAR MINI ALBUMS */
-.album-mini-link {
-    text-decoration: none;
-    display: block;
-}
-
-.album-mini-cover {
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
-    /* Чтобы картинка не вылезала при увеличении */
-    border: 1px solid var(--border);
-}
-
-.album-mini-info strong {
-    display: block;
-    margin-top: 5px;
-    font-size: 12px;
-    color: var(--text-main);
 }
 
 .album-mini img:hover {
@@ -556,16 +509,7 @@ footer {
     gap: 12px;
     flex-shrink: 0;
     width: 280px;
-    /* ✅ Добавляем фиксированную ширину */
     max-width: 100%;
-    /* ✅ На мобильных не вылезет */
-}
-
-.track-duration {
-    float: right;
-    opacity: 0.5;
-    font-size: 0.85em;
-    font-variant-numeric: tabular-nums;
 }
 
 .album-cover-big {
@@ -608,46 +552,6 @@ footer {
     letter-spacing: 0.1em;
 }
 
-.tracklist {
-    counter-reset: track-counter;
-}
-
-.tracklist h3 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.5rem;
-}
-
-.tracklist ol {
-    list-style: none;
-    padding-left: 0;
-}
-
-.tracklist li {
-    counter-increment: track-counter;
-    position: relative;
-    padding-left: 40px;
-    margin-bottom: 8px;
-}
-
-.tracklist li::before {
-    content: counter(track-counter) ".";
-    position: absolute;
-    left: 0;
-    color: var(--text-dim);
-}
-
-.tracklist .star {
-    position: absolute;
-    left: 20px;
-    top: 0;
-    transform: translateY(-2px);
-    color: var(--accent-border);
-    font-size: 16px;
-}
-
 .album-link {
     display: block;
     text-decoration: none;
@@ -656,6 +560,67 @@ footer {
 
 .album-link:hover img {
     opacity: 0.8;
+}
+
+/* ========================== TRACKLIST ========================== */
+.tracklist h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+
+.tracklist ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tracklist li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    margin: 0;
+}
+
+.tracklist li:last-child {
+    border-bottom: none;
+}
+
+.track-index {
+    width: 24px;
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-dim);
+    line-height: 1;
+}
+
+.track-index.is-star {
+    color: var(--accent-border);
+    font-size: 13px;
+}
+
+.track-name {
+    flex: 1;
+    font-size: 13px;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+.tracklist li.is-star .track-name {
+    color: var(--accent-border);
+}
+
+.track-duration {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+    margin-left: auto;
 }
 
 /* ========================== SIMILAR ALBUMS ========================== */
@@ -727,12 +692,8 @@ footer {
     color: inherit;
 }
 
-
-
 /* ========================== SEARCH BAR ========================== */
-
 .search-wrap {
-    max-width: auto;
     margin: 0 auto 20px;
 }
 
@@ -762,7 +723,7 @@ footer {
     box-shadow: 0px 0px 0px var(--accent-border);
 }
 
-/* === STATS GRID === */
+/* ========================== STATS GRID ========================== */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -793,7 +754,7 @@ footer {
     letter-spacing: 0.08em;
 }
 
-/* === LUCKY SECTION === */
+/* ========================== LUCKY SECTION ========================== */
 .lucky-section {
     border: 1px solid var(--border);
     background: var(--blocks-color);
@@ -807,7 +768,7 @@ footer {
     margin-bottom: 1.2rem;
 }
 
-/* === NEWS TEASER === */
+/* ========================== NEWS TEASER ========================== */
 .news-preview {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -856,113 +817,144 @@ footer {
 
 /* ========================== NEW IN COLLECTION ========================== */
 .new-albums-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
     margin-top: 16px;
-}
-
-.album-mini {
-    width: 140px;
-    flex-shrink: 0;
-    text-align: center;
-    background: var(--blocks-color);
-    border: 1px solid var(--border);
-    padding: 10px;
-    transition: transform var(--transition), border-color var(--transition), background var(--transition);
-    box-shadow: var(--shadow-sm);
-}
-
-.album-mini:hover {
-    transform: translateY(-6px);
-    border-color: var(--accent-border);
-    background: var(--glass-hover);
 }
 
 .album-mini-link {
     text-decoration: none;
-    display: block;
     color: inherit;
+    display: block;
+    width: 100%;
+}
+
+.album-mini {
+    background: var(--blocks-color);
+    border: 1px solid var(--border);
+    padding: 10px;
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    cursor: pointer;
+}
+
+.album-mini:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-border);
+    background: var(--glass-hover);
+}
+
+.album-mini:hover .album-mini-title {
+    color: var(--accent-border);
 }
 
 .album-mini-cover {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .album-mini-cover img {
     width: 100%;
-    height: 10;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-    /* === RESPONSIVE === */
-    /* ========================== RESPONSIVE ========================== */
-    @media (max-width: 768px) {
-        .albums {
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 16px;
-        }
+.album-mini-info {
+    padding: 0;
+}
+
+.album-mini-artist {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    margin: 0 0 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.album-mini-title {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ddd;
+    line-height: 1.3;
+    transition: color 0.18s;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* ========================== RESPONSIVE ========================== */
+@media (max-width: 768px) {
+    .albums {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+        padding: 16px;
     }
 
-    @media (max-width: 600px) {
-        main {
-            margin: 10px;
-            padding: 16px;
-        }
-
-        header {
-            margin: 10px;
-            padding: 14px 16px;
-        }
-
-        h1 {
-            font-size: 18px;
-            letter-spacing: 1px;
-        }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 4px;
-        }
-
-        nav a {
-            font-size: 12px;
-            padding: 5px 8px;
-            margin: 0;
-        }
-
-        .album-detail-wrap {
-            flex-direction: column;
-            padding: 1rem;
-            gap: 1.5rem;
-        }
-
-        .album-cover-col {
-            width: 100%;
-        }
-
-        .album-cover-big {
-            width: 100%;
-            height: auto;
-            max-height: 320px;
-        }
-
-        .similar-albums {
-            width: 100%;
-        }
-
-        .album-meta {
-            grid-template-columns: 1fr;
-        }
-
-        .stats-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .news-preview {
-            grid-template-columns: 1fr;
-        }
+    header {
+        margin: 10px;
+        padding: 14px 16px;
     }
+
+    h1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 5px 8px;
+        margin: 0;
+    }
+
+    .album-detail-wrap {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .album-cover-col {
+        width: 100%;
+    }
+
+    .album-cover-big {
+        width: 100%;
+        height: auto;
+        max-height: 320px;
+    }
+
+    .similar-albums {
+        width: 100%;
+    }
+
+    .album-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .news-preview {
+        grid-template-columns: 1fr;
+    }
+}

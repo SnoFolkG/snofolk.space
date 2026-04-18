@@ -1,10 +1,9 @@
 // 1. ПУТЬ К ДАННЫМ
 const DATA_URL = '/data/album.json';
 
-// Глобальная переменная для доступа из любой функции (например, для Lucky Button)
-let allAlbumsData = []; 
+let allAlbumsData = [];
 
-// 2. ГЛАВНАЯ ФУНКЦИЯ (ЗАПУСК)
+// 2. ЗАПУСК
 async function init() {
     allAlbumsData = await fetchAlbums();
     if (allAlbumsData.length === 0) {
@@ -15,34 +14,25 @@ async function init() {
     renderCollectionVersions();
     highlightActiveNav();
 
-    // Определяем, какая страница открыта
     if (document.getElementById("album-detail")) {
-        // Это album.html
         renderAlbumDetail(allAlbumsData);
-    } 
-    else {
-        // Это index.html или downloads.html
+    } else {
         renderDownloadsGrid(allAlbumsData);
         renderNewAlbums(allAlbumsData);
-        renderSimpleList(allAlbumsData);   // если нужен
+        renderSimpleList(allAlbumsData);
         initSearch(allAlbumsData);
     }
 }
 
-// --- НОВАЯ ФУНКЦИЯ ДЛЯ КНОПКИ LUCKY ---
+// LUCKY BUTTON
 function getRandomAlbum() {
     if (allAlbumsData.length > 0) {
         const randomIndex = Math.floor(Math.random() * allAlbumsData.length);
-        const randomAlbum = allAlbumsData[randomIndex];
-        // Переходим на страницу альбома
-        window.location.href = `album.html?id=${randomAlbum.id}`;
+        window.location.href = `album.html?id=${allAlbumsData[randomIndex].id}`;
     } else {
-        // Если данные еще не загружены, просто идем на страницу загрузок
         window.location.href = 'downloads.html';
     }
 }
-
-
 
 // 3. ЗАГРУЗКА JSON
 async function fetchAlbums() {
@@ -56,34 +46,22 @@ async function fetchAlbums() {
     }
 }
 
-// 3.5 ПОИСК ПОХОЖИХ АЛЬБОМОВ
+// 3.5 ПОХОЖИЕ АЛЬБОМЫ
 function findSimilarAlbums(currentAlbum, allAlbums) {
     const others = allAlbums.filter(a => a.id !== currentAlbum.id);
-    
-    // 1. Сначала ищем по исполнителю
+
     const sameArtist = others.filter(a => a.artist === currentAlbum.artist);
-    if (sameArtist.length >= 3) {
-        return sameArtist.slice(0, 3);
-    }
-    if (sameArtist.length > 0) {
-        return sameArtist; // вернем что есть, если меньше 3
-    }
-    
-    // 2. Если исполнитель один — ищем по городу
+    if (sameArtist.length >= 3) return sameArtist.slice(0, 3);
+    if (sameArtist.length > 0) return sameArtist;
+
     const sameCity = others.filter(a => a.city === currentAlbum.city);
-    if (sameCity.length >= 3) {
-        return sameCity.slice(0, 3);
-    }
-    if (sameCity.length > 0) {
-        return sameCity;
-    }
-    
-    // 3. Если города нет/совпадений нет — возвращаем пустой массив
-    // (это будет сигналом показать сообщение + случайные)
+    if (sameCity.length >= 3) return sameCity.slice(0, 3);
+    if (sameCity.length > 0) return sameCity;
+
     return [];
 }
 
-// 4. ALBUM DETAIL PAGE (album.html)
+// 4. ALBUM DETAIL PAGE
 function renderAlbumDetail(albums) {
     const albumDetail = document.getElementById("album-detail");
     if (!albumDetail) return;
@@ -97,29 +75,25 @@ function renderAlbumDetail(albums) {
         return;
     }
 
-    // Находим похожие альбомы
     const similarAlbums = findSimilarAlbums(album, albums);
 
-    // --- SEO & META DATA ---
+    // SEO
     document.title = `${album.artist} - ${album.title} (${album.year}) | snofolk.space`;
-
     let metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
         metaDesc.setAttribute("content",
             `Listen to ${album.title} by ${album.artist} (${album.year}). Genre: ${album.genre}. City: ${album.city}.`
         );
     }
+    injectAlbumSchema(album);
 
-    injectAlbumSchema(album);   // ← теперь функция доступна
-
-    // Скачивание
+    // СКАЧИВАНИЕ
     let downloadHTML = '';
     if (album.download) {
         const fileId = album.download.match(/[-\w]{25,}/)?.[0];
         const downloadUrl = fileId
             ? `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`
             : album.download;
-
         downloadHTML = `
             <a href="${downloadUrl}" class="download-btn download-btn-cover" download>Download Album (.rar)</a>
             <p class="download-hint">If Google shows a warning — click "Download anyway"</p>
@@ -128,18 +102,24 @@ function renderAlbumDetail(albums) {
         downloadHTML = `<p class="no-download">Download link coming soon</p>`;
     }
 
-    // === НОВЫЙ РЕНДЕР ТРЕКЛИСТА ===
+    // ТРЕКЛИСТ
     let tracklistHTML = '';
     if (album.tracks && Array.isArray(album.tracks) && album.tracks.length > 0) {
-        const tracksHTML = album.tracks.map(track => {
+        const tracksHTML = album.tracks.map((track, index) => {
             const isStarred = track.title.startsWith('SR ');
             const name = track.title.replace(/^SR /, '');
             const duration = track.duration
                 ? `<span class="track-duration">${track.duration}</span>`
                 : '';
+            const indexCell = isStarred
+                ? `<span class="track-index is-star">★</span>`
+                : `<span class="track-index">${index + 1}.</span>`;
+
             return `
-                <li>
-                    ${isStarred ? '★ ' : ''}${name}${duration}
+                <li class="${isStarred ? 'is-star' : ''}">
+                    ${indexCell}
+                    <span class="track-name">${name}</span>
+                    ${duration}
                 </li>
             `;
         }).join('');
@@ -154,49 +134,33 @@ function renderAlbumDetail(albums) {
         tracklistHTML = `<p class="no-tracks">Tracklist not available yet.</p>`;
     }
 
-    // Похожие альбомы
-    let similarHTML = '';
-    if (similarAlbums.length === 0) {
-        const randomAlbums = albums
-            .filter(a => a.id !== album.id)
-            .sort(() => 0.5 - Math.random())
-            .slice(0, 3);
+    // ПОХОЖИЕ АЛЬБОМЫ
+    const displayAlbums = similarAlbums.length > 0
+        ? similarAlbums
+        : albums.filter(a => a.id !== album.id).sort(() => 0.5 - Math.random()).slice(0, 3);
 
-        similarHTML = `
-            <div class="similar-albums">
-                <h3>Similar albums</h3>
-                <p class="similar-note">No similar albums yet, but here are some good ones:</p>
-                <div class="similar-grid">
-                    ${randomAlbums.map(a => `
-                        <div class="album-mini-card">
-                            <a href="album.html?id=${a.id}">
-                                <img src="${a.img}" alt="${a.title}">
-                                <p><strong>${a.artist}</strong><br>${a.title}</p>
-                            </a>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-    } else {
-        similarHTML = `
-            <div class="similar-albums">
-                <h3>Similar albums</h3>
-                <div class="similar-grid">
-                    ${similarAlbums.map(a => `
-                        <div class="album-mini-card">
-                            <a href="album.html?id=${a.id}">
-                                <img src="${a.img}" alt="${a.title}">
-                                <p><strong>${a.artist}</strong><br>${a.title}</p>
-                            </a>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-        `;
-    }
+    const similarNote = similarAlbums.length === 0
+        ? `<p class="similar-note">No similar albums yet, but here are some good ones:</p>`
+        : '';
 
-    // Финальный рендер страницы альбома
+    const similarHTML = `
+        <div class="similar-albums">
+            <h3>Similar albums</h3>
+            ${similarNote}
+            <div class="similar-grid">
+                ${displayAlbums.map(a => `
+                    <div class="album-mini-card">
+                        <a href="album.html?id=${a.id}">
+                            <img src="${a.img}" alt="${a.title}">
+                            <p><strong>${a.artist}</strong><br>${a.title}</p>
+                        </a>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+
+    // ФИНАЛЬНЫЙ РЕНДЕР
     albumDetail.innerHTML = `
         <div class="album-detail-wrap">
             <div class="album-cover-col">
@@ -219,9 +183,8 @@ function renderAlbumDetail(albums) {
     `;
 }
 
-// === SEO: SCHEMA.ORG ДЛЯ АЛЬБОМА (вынесена наружу!) ===
+// SEO SCHEMA
 function injectAlbumSchema(album) {
-    // Удаляем старый schema, если есть
     const oldSchema = document.getElementById('album-schema');
     if (oldSchema) oldSchema.remove();
 
@@ -250,15 +213,14 @@ function injectAlbumSchema(album) {
     script.textContent = JSON.stringify(schema, null, 2);
     document.head.appendChild(script);
 }
-// 5. ОБНОВЛЕННАЯ СЕТКА АЛЬБОМОВ (с очисткой контейнера)
+
+// 5. СЕТКА АЛЬБОМОВ
 function renderDownloadsGrid(albumsToRender) {
     const container = document.getElementById("albums");
     if (!container) return;
 
-    // КРИТИЧНО: Очищаем контейнер перед тем, как рисовать отфильтрованные данные
-    container.innerHTML = ""; 
+    container.innerHTML = "";
 
-    // Если ничего не найдено, можно вывести сообщение
     if (albumsToRender.length === 0) {
         container.innerHTML = `<p class="no-results">No albums found matching your criteria.</p>`;
         return;
@@ -278,40 +240,33 @@ function renderDownloadsGrid(albumsToRender) {
     });
 }
 
-// 6. НОВИНКИ (На главной)
+// 6. НОВИНКИ
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container || !albums || albums.length === 0) return;
 
-    // Очищаем контейнер перед рендерингом (на случай повторного вызова)
     container.innerHTML = "";
-
-    // Берем последние 5 альбомов и разворачиваем массив, чтобы самые новые были первыми
-    const last5 = albums.slice(-5).reverse(); 
+    const last5 = albums.slice(-5).reverse();
 
     last5.forEach(album => {
         const div = document.createElement("div");
         div.className = "album-mini";
-        
-        // Формируем внутреннюю разметку карточки
         div.innerHTML = `
             <a href="album.html?id=${album.id}" class="album-mini-link">
                 <div class="album-mini-cover">
                     <img src="${album.img}" alt="${album.title}" loading="lazy">
                 </div>
                 <div class="album-mini-info">
-                    <strong>${album.artist}</strong>
-                    <span>${album.title}</span>
+                    <p class="album-mini-artist">${album.artist}</p>
+                    <p class="album-mini-title">${album.title}</p>
                 </div>
             </a>
         `;
-        
-        // КРИТИЧЕСКИЙ МОМЕНТ: Добавляем созданный элемент в контейнер на странице
         container.appendChild(div);
     });
 }
 
-// 7. ВЕРСИИ КОЛЛЕКЦИИ (about.html / index.html)
+// 7. ВЕРСИИ КОЛЛЕКЦИИ
 function renderCollectionVersions() {
     const versionsContainer = document.getElementById("old-versions");
     if (!versionsContainer) return;
@@ -332,7 +287,7 @@ function renderCollectionVersions() {
     });
 }
 
-// 8. ПРОСТОЙ СПИСОК (если нужен)
+// 8. ПРОСТОЙ СПИСОК
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
