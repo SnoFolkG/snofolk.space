@@ -12,6 +12,7 @@ async function init() {
     }
 
     renderCollectionVersions();
+    renderStats(allAlbumsData);
     highlightActiveNav();
 
     if (document.getElementById("album-detail")) {
