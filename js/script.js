@@ -246,9 +246,9 @@ function renderNewAlbums(albums) {
     if (!container || !albums || albums.length === 0) return;
 
     container.innerHTML = "";
-    const last5 = albums.slice(-5).reverse();
+    const last4 = albums.slice(-4).reverse();
 
-    last5.forEach(album => {
+    last4.forEach(album => {
         const div = document.createElement("div");
         div.className = "album-mini";
         div.innerHTML = `
@@ -258,7 +258,7 @@ function renderNewAlbums(albums) {
                 </div>
                 <div class="album-mini-info">
                     <p class="album-mini-title">${album.title}</p>
-                    <p class="album-mini-artist">${album.фкешые}</p>
+                    <p class="album-mini-artist">${album.artist}</p>
                 </div>
             </a>
         `;
