@@ -337,7 +337,7 @@ function renderStats(albums) {
 
     const totalTracks = albums.reduce((sum, a) => sum + (a.tracks?.length || 0), 0);
     const artists = new Set(albums.map(a => a.artist)).size;
-    const years = albums.map(a => a.year);
+    const years = albums.map(a => Number(a.year)).filter(y => !isNaN(y));
     const yearRange = Math.min(...years) + '–' + Math.max(...years);
 
     nums[0].textContent = totalTracks;
