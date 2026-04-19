@@ -329,5 +329,21 @@ function initSearch(albums) {
     });
 }
 
+// 11. СТАТИСТИКА
+function renderStats(albums) {
+    const nums = document.querySelectorAll('.stat-number');
+    if (!nums.length) return;
+
+    const totalTracks = albums.reduce((sum, a) => sum + (a.tracks?.length || 0), 0);
+    const artists = new Set(albums.map(a => a.artist)).size;
+    const years = albums.map(a => a.year);
+    const yearRange = Math.min(...years) + '–' + Math.max(...years);
+
+    nums[0].textContent = totalTracks;
+    nums[1].textContent = albums.length;
+    nums[2].textContent = artists;
+    nums[3].textContent = yearRange;
+}
+
 // ЗАПУСК
 init();
