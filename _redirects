@@ -1,6 +1,9 @@
 /css/*    /css/:splat    200
 /js/*     /js/:splat     200
 /img/*    /img/:splat    200
-/album.html*    /album.html    200
-/album/*  /album.html    200
-/*        /index.html    200
+/album.html     /downloads     301
+/info.html      /info          301
+/about.html     /info          301
+/contact.html   /info          301
+/downloads.html /downloads     301
+/index.html     /              301

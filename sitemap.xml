@@ -2,51 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://snofolk.space/</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <url><loc>https://snofolk.space/info.html</loc><priority>0.5</priority></url>
-  <url><loc>https://snofolk.space/news.html</loc><priority>0.7</priority></url>
-  <url><loc>https://snofolk.space/downloads.html</loc><priority>0.5</priority></url>
-
-  <url>
-    <loc>https://snofolk.space/album.html?id=millions-of-dead-cops</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-<url><loc>https://snofolk.space/album.html?id=millions-of-dead-cops</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=smoke-signals</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=metal-devil-cokes</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=hey-cop-if-i-had-a-face-like-yours</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=walk-among-us</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=earth-ad-wolfs-blood</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=static-age</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=something-better-change</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=hardcore-81</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=war-on-45</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=unreleased-ep</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=is-this-my-world</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=no-policy</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=flex-your-head</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=gi</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=cats-clause-live</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=negative-approach</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=tied-down</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=the-speed-of-twisted-thought</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=cause-for-alarm</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=the-kids-will-have-their-say</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=get-it-away</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=incorrect-thoughts</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=group-sex</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=youth-anthems-for-the-new-order</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=let-them-eat-jellybeans</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=beware-all-eps-collection</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=legacy-of-brutality</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=damaged</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=lexicon-devil</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=straight-edge-revenge</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=no-wishes-no-prayers</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=subhumans</loc><priority>0.9</priority></url>
-<url><loc>https://snofolk.space/album.html?id=deep-wound</loc><priority>0.9</priority></url> сколько тут альбомов?
+  <url><loc>https://snofolk.space/downloads</loc><priority>0.8</priority></url>
+  <url><loc>https://snofolk.space/news</loc><priority>0.7</priority></url>
+  <url><loc>https://snofolk.space/info</loc><priority>0.5</priority></url>
+  <url><loc>https://snofolk.space/albums/millions-of-dead-cops</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/smoke-signals</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/metal-devil-cokes</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/hey-cop-if-i-had-a-face-like-yours</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/walk-among-us</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/earth-ad-wolfs-blood</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/static-age</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/something-better-change</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/hardcore-81</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/war-on-45</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/unreleased-ep</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/is-this-my-world</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/no-policy</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/flex-your-head</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/gi</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/cats-clause-live</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/negative-approach</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/tied-down</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/the-speed-of-twisted-thought</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/cause-for-alarm</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/the-kids-will-have-their-say</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/get-it-away</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/incorrect-thoughts</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/group-sex</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/youth-anthems-for-the-new-order</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/let-them-eat-jellybeans</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/beware-all-eps-collection</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/legacy-of-brutality</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/damaged</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/lexicon-devil</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/straight-edge-revenge</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/no-wishes-no-prayers</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/subhumans</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/deep-wound</loc><priority>0.9</priority></url>
 </urlset>
