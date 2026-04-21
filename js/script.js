@@ -29,7 +29,7 @@ async function init() {
 function getRandomAlbum() {
     if (allAlbumsData.length > 0) {
         const randomIndex = Math.floor(Math.random() * allAlbumsData.length);
-        window.location.href = `album.html?id=${allAlbumsData[randomIndex].id}`;
+        window.location.href = `/albums/${allAlbumsData[randomIndex].id}`;
     } else {
         window.location.href = 'downloads.html';
     }
@@ -67,8 +67,7 @@ function renderAlbumDetail(albums) {
     const albumDetail = document.getElementById("album-detail");
     if (!albumDetail) return;
 
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
+    const id = window.location.pathname.split('/').pop();
     const album = albums.find(a => a.id === id);
 
     if (!album) {
@@ -151,7 +150,7 @@ function renderAlbumDetail(albums) {
             <div class="similar-grid">
                 ${displayAlbums.map(a => `
                     <div class="album-mini-card">
-                        <a href="album.html?id=${a.id}">
+                        <a href="/albums/${a.id}">
                             <img src="${a.img}" alt="${a.title}">
                             <p><strong>${a.artist}</strong><br>${a.title}</p>
                         </a>
@@ -231,7 +230,7 @@ function renderDownloadsGrid(albumsToRender) {
         const div = document.createElement("div");
         div.className = "album";
         div.innerHTML = `
-          <a href="album.html?id=${album.id}" class="album-link">
+          <a href="/albums/${album.id}" class="album-link">
             <img src="${album.img}" alt="${album.title}" loading="lazy">
             <h3>${album.title}</h3>
             <p>${album.artist} • ${album.year}</p>
@@ -253,7 +252,7 @@ function renderNewAlbums(albums) {
         const div = document.createElement("div");
         div.className = "album-mini";
         div.innerHTML = `
-            <a href="album.html?id=${album.id}" class="album-mini-link">
+            <a href="/albums/${album.id}" class="album-mini-link">
                 <div class="album-mini-cover">
                     <img src="${album.img}" alt="${album.title}" loading="lazy">
                 </div>
