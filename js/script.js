@@ -76,7 +76,7 @@ function findSimilarAlbums(currentAlbum, allAlbums) {
 function isTopAlbum(album) {
     if (!album.tracks || album.tracks.length === 0) return false;
     const starred = album.tracks.filter(t => t.title.startsWith('SR ')).length;
-    return starred / album.tracks.length >= 0.6;
+    return starred / album.tracks.length >= 0.35;
 }
 
 // 4. ALBUM DETAIL PAGE
