@@ -1,6 +1,6 @@
 # ⚡ SnoFolk.Space — Punk Music Archive
 
-![Version](https://img.shields.io/badge/version-2.0.0-red?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-3.0.0-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
 
 A curated digital archive of the best **Hardcore**, **Horror Punk**, and **Classic Punk Rock** albums.
