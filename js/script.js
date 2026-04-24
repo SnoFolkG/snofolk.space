@@ -189,7 +189,7 @@ function renderAlbumDetail(albums) {
             </div>
             <div class="album-info-col">
                 <h2 class="album-title ${topAlbum ? 'top-album' : ''}">
-                    ${topAlbum ? '<span class="medal-icon">/img/icons/best.png</span>' : ''}
+                     ${topAlbum ? '<img src="/img/icons/best.png" alt="Best Album" class="medal-icon">' : ''}
                     ${album.title}
                 </h2>
                 <p class="album-artist">${album.artist}</p>
