@@ -62,6 +62,13 @@ function findSimilarAlbums(currentAlbum, allAlbums) {
     return [];
 }
 
+// 3.6 МЕДАЛЬ
+function isTopAlbum(album) {
+    if (!album.tracks || album.tracks.length === 0) return false;
+    const starred = album.tracks.filter(t => t.title.startsWith('SR ')).length;
+    return starred / album.tracks.length >= 0.6;
+}
+
 // 4. ALBUM DETAIL PAGE
 function renderAlbumDetail(albums) {
     const albumDetail = document.getElementById("album-detail");
@@ -77,6 +84,7 @@ function renderAlbumDetail(albums) {
     }
 
     const similarAlbums = findSimilarAlbums(album, albums);
+    const topAlbum = isTopAlbum(album);
 
     // SEO
     document.title = `${album.artist} - ${album.title} (${album.year}) | snofolk.space`;
@@ -170,7 +178,10 @@ function renderAlbumDetail(albums) {
                 ${similarHTML}
             </div>
             <div class="album-info-col">
-                <h2 class="album-title">${album.title}</h2>
+                <h2 class="album-title ${topAlbum ? 'top-album' : ''}">
+                    ${topAlbum ? '<span class="medal-icon">/img/icons/best.png</span>' : ''}
+                    ${album.title}
+                </h2>
                 <p class="album-artist">${album.artist}</p>
                 <ul class="album-meta">
                     <li><span>Year</span>${album.year}</li>
