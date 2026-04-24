@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>What Is SnoFolk.Space? | SnoFolk</title>
+  <meta name="description"
+    content="Learn what SnoFolk.Space is: a personal archive of hardcore punk and horror punk music, album pages, downloads, and updates.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="What Is SnoFolk.Space? | SnoFolk">
+  <meta property="og:description"
+    content="A short explanation of the archive, the collection, and what you can find on SnoFolk.Space.">
+  <meta property="og:url" content="https://snofolk.space/what.html">
+  <meta property="og:image" content="https://snofolk.space/img/Mc001.jpg">
+  <link rel="canonical" href="https://snofolk.space/what.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <a class="site-title" href="what.html" aria-label="Open What page">
+      <h1>SnoFolk.Space</h1>
+    </a>
+    <nav>
+      <a href="index.html">
+        <img class="nav-icon" src="img/icons/home.png" alt="" aria-hidden="true">
+        <span class="nav-label">Homepage</span>
+      </a>
+      <a href="downloads.html">
+        <img class="nav-icon" src="img/icons/down.png" alt="" aria-hidden="true">
+        <span class="nav-label">Downloads</span>
+      </a>
+      <a href="news.html">
+        <img class="nav-icon" src="img/icons/news.png" alt="" aria-hidden="true">
+        <span class="nav-label">News</span>
+      </a>
+      <a href="info.html">
+        <img class="nav-icon" src="img/icons/info.png" alt="" aria-hidden="true">
+        <span class="nav-label">Info</span>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <section>
+          <h1>What is that?</h1>
+  this is a easter egg, pleace be patient and u will see the conten (i think it can take 1-2 days)
+    </section>
+
+  </main>
+  <script>
+    (function () {
+      const key = 'snofolk-what-access';
+      const value = Number(localStorage.getItem(key) || '0');
+      const isFresh = Number.isFinite(value) && Date.now() - value < 15000;
+
+      if (!isFresh) {
+        window.location.replace('index.html');
+        return;
+      }
+
+      localStorage.removeItem(key);
+    }());
+  </script>
+</body>
+
+</html>

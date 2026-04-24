@@ -2,9 +2,11 @@
 const DATA_URL = '/data/album.json';
 
 let allAlbumsData = [];
+const WHAT_ACCESS_KEY = 'snofolk-what-access';
 
 // 2. ЗАПУСК
 async function init() {
+    initWhatPageAccess();
     allAlbumsData = await fetchAlbums();
     if (allAlbumsData.length === 0) {
         console.warn("Не удалось загрузить альбомы");
@@ -23,6 +25,14 @@ async function init() {
         renderSimpleList(allAlbumsData);
         initSearch(allAlbumsData);
     }
+}
+
+function initWhatPageAccess() {
+    document.querySelectorAll('.site-title').forEach(link => {
+        link.addEventListener('click', () => {
+            localStorage.setItem(WHAT_ACCESS_KEY, String(Date.now()));
+        });
+    });
 }
 
 // LUCKY BUTTON
