@@ -76,7 +76,8 @@ function findSimilarAlbums(currentAlbum, allAlbums) {
 function isTopAlbum(album) {
     if (!album.tracks || album.tracks.length === 0) return false;
     const starred = album.tracks.filter(t => t.title.startsWith('SR ')).length;
-    return starred / album.tracks.length >= 0.4;
+    return starred / album.tracks.length >= 0.5;
+
 }
 
 // 4. ALBUM DETAIL PAGE
@@ -189,7 +190,7 @@ function renderAlbumDetail(albums) {
             </div>
             <div class="album-info-col">
                 <h2 class="album-title ${topAlbum ? 'top-album' : ''}">
-                    ${topAlbum ? '<span class="medal-icon">/img/icons/best.png</span>' : ''}
+                     ${topAlbum ? '<img src="/img/icons/best.png" alt="Best Album" class="medal-icon">' : ''}
                     ${album.title}
                 </h2>
                 <p class="album-artist">${album.artist}</p>
