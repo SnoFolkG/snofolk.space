@@ -55,25 +55,21 @@
   </header>
   <main>
     <section>
-          <h1>What is that?</h1>
-  this is a easter egg, pleace be patient and u will see the conten (i think it can take 1-2 days)
+      <h2>My Favorite Albums</h2>
+      <p>My favorites</p>
+
+      <div id="favorite-albums" class="new-albums-grid">
+        <!-- Albums will be loaded here via JS -->
+      </div>
+    </section>
+
+        <section>
+      <h2>Exclusives</h2>
+      <p>Some albums that are unaviable in downloads page</p>
     </section>
 
   </main>
-  <script>
-    (function () {
-      const key = 'snofolk-what-access';
-      const value = Number(localStorage.getItem(key) || '0');
-      const isFresh = Number.isFinite(value) && Date.now() - value < 15000;
-
-      if (!isFresh) {
-        window.location.replace('index.html');
-        return;
-      }
-
-      localStorage.removeItem(key);
-    }());
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

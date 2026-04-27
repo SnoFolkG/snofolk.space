@@ -7,6 +7,16 @@ const WHAT_ACCESS_KEY = 'snofolk-what-access';
 // 2. ЗАПУСК
 async function init() {
     initWhatPageAccess();
+    if (window.location.pathname.includes('what.html')) {
+        const key = 'snofolk-what-access';
+        const value = Number(localStorage.getItem(key) || '0');
+        const isFresh = Number.isFinite(value) && Date.now() - value < 15000;
+        if (!isFresh) {
+            window.location.replace('index.html');
+            return;
+        }
+        localStorage.removeItem(key);
+    }
     allAlbumsData = await fetchAlbums();
     if (allAlbumsData.length === 0) {
         console.warn("Не удалось загрузить альбомы");
@@ -24,6 +34,10 @@ async function init() {
         renderNewAlbums(allAlbumsData);
         renderSimpleList(allAlbumsData);
         initSearch(allAlbumsData);
+    }
+
+    if (document.getElementById('favorite-albums')) {
+        renderFavoriteAlbums(allAlbumsData);
     }
 }
 
@@ -366,6 +380,32 @@ function renderStats(albums) {
     nums[1].textContent = albums.length;
     nums[2].textContent = artists;
     nums[3].textContent = yearRange;
+}
+
+// 12. ЛЮБИМЫЕ АЛЬБОМЫ
+function renderFavoriteAlbums(albums) {
+    // Edit this array with your favorite album IDs from album.json
+    const favoriteIds = [
+        'smoke-signals',
+        'incorect-thoughts'
+    ];
+
+    const favoriteAlbums = albums.filter(album => favoriteIds.includes(album.id));
+
+    const container = document.getElementById('favorite-albums');
+    container.innerHTML = favoriteAlbums.map(album => `
+        <a class="album-mini-link" href="album.html?id=${album.id}">
+            <article class="album-mini">
+                <div class="album-mini-cover">
+                    <img src="${album.img}" alt="${album.title} cover">
+                </div>
+                <div class="album-mini-info">
+                    <h3 class="album-mini-title">${album.title}</h3>
+                    <p class="album-mini-artist">${album.artist}</p>
+                </div>
+            </article>
+        </a>
+    `).join('');
 }
 
 // ЗАПУСК
