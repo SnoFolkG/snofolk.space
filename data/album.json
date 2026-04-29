@@ -112,7 +112,7 @@
         "duration": "01:35"
       },
       {
-        "title": "Missle Destroyed Civilization",
+        "title": "Missile Destroyed Civilization",
         "duration": "02:25"
       },
       {
@@ -238,7 +238,7 @@
         "duration": "01:26"
       },
       {
-        "title": "SR Beat Somebosy Up",
+        "title": "SR Beat Somebody Up",
         "duration": "02:20"
       },
       {
@@ -2098,6 +2098,52 @@
       {
         "title": "SR Dead Babies",
         "duration": "01:13"
+      }
+    ]
+  },
+
+  {
+    "id": "possible-ep",
+    "title": "Possible EP",
+    "artist": "Youth Brigade",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Washington, D.C.",
+    "label": "Dischord Records",
+    "img": "img/Mc035.jpg",
+    "download": "https://drive.google.com/file/d/1mZJDWIbInlLYEXfIJWx9_DWk7Qfd9IZ2/view?usp=drive_link",
+    "tracks": [
+      {
+        "title": "Barbed Wire",
+        "duration": "01:42"
+      },
+      {
+        "title": "Full Speed Ahead",
+        "duration": "01:28"
+      },
+      {
+        "title": "It's About Time That We Had a Change",
+        "duration": "01:19"
+      },
+      {
+        "title": "No Song",
+        "duration": "02:25"
+      },
+      {
+        "title": "No Song II",
+        "duration": "00:04"
+      },
+      {
+        "title": "Pay No Attention",
+        "duration": "00:56"
+      },
+      {
+        "title": "Point of View",
+        "duration": "00:47"
+      },
+      {
+        "title": "Wrong Decision",
+        "duration": "01:32"
       }
     ]
   }
