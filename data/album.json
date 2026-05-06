@@ -1,6 +1,4 @@
-    "city": "San Francisco, CA",
-    "label": "R Radical Records",
-[
+﻿[
   {
     "id": "millions-of-dead-cops",
     "title": "Millions Of Dead Cops",
@@ -70,6 +68,7 @@
       }
     ]
   },
+
   {
     "id": "smoke-signals",
     "title": "Smoke Signals",
