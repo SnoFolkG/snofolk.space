@@ -1,10 +1,10 @@
-// 1. ПУТЬ К ДАННЫМ
+﻿// 1. DATA PATH
 const DATA_URL = '/data/album.json';
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = 'snofolk-what-access';
 
-// 2. ЗАПУСК
+// 2. APP START
 async function init() {
     initWhatPageAccess();
     if (window.location.pathname.includes('what.html')) {
@@ -17,9 +17,10 @@ async function init() {
         }
         localStorage.removeItem(key);
     }
+    renderNewsTeaser();
     allAlbumsData = await fetchAlbums();
     if (allAlbumsData.length === 0) {
-        console.warn("Не удалось загрузить альбомы");
+        console.warn("Failed to load albums");
         return;
     }
 
@@ -59,7 +60,7 @@ function getRandomAlbum() {
     }
 }
 
-// 3. ЗАГРУЗКА JSON
+// 3. LOAD JSON
 async function fetchAlbums() {
     try {
         const response = await fetch(DATA_URL);
@@ -71,7 +72,7 @@ async function fetchAlbums() {
     }
 }
 
-// 3.5 ПОХОЖИЕ АЛЬБОМЫ
+// 3.5 SIMILAR ALBUMS
 function findSimilarAlbums(currentAlbum, allAlbums) {
     const others = allAlbums.filter(a => a.id !== currentAlbum.id);
 
@@ -86,7 +87,7 @@ function findSimilarAlbums(currentAlbum, allAlbums) {
     return [];
 }
 
-// 3.6 МЕДАЛЬ
+// 3.6 BEST ALBUM BADGE
 function isTopAlbum(album) {
     if (!album.tracks || album.tracks.length === 0) return false;
     const starred = album.tracks.filter(t => t.title.startsWith('SR ')).length;
@@ -121,7 +122,7 @@ function renderAlbumDetail(albums) {
     }
     injectAlbumSchema(album);
 
-    // СКАЧИВАНИЕ
+    // DOWNLOAD
     let downloadHTML = '';
     if (album.download) {
         const fileId = album.download.match(/[-\w]{25,}/)?.[0];
@@ -130,13 +131,13 @@ function renderAlbumDetail(albums) {
             : album.download;
         downloadHTML = `
             <a href="${downloadUrl}" class="download-btn download-btn-cover" download>Download Album (.rar)</a>
-            <p class="download-hint">If Google shows a warning — click "Download anyway"</p>
+            <p class="download-hint">If Google shows a warning - click "Download anyway"</p>
         `;
     } else {
         downloadHTML = `<p class="no-download">Download link coming soon</p>`;
     }
 
-    // ТРЕКЛИСТ
+    // TRACKLIST
     let tracklistHTML = '';
     if (album.tracks && Array.isArray(album.tracks) && album.tracks.length > 0) {
         const tracksHTML = album.tracks.map((track, index) => {
@@ -146,7 +147,7 @@ function renderAlbumDetail(albums) {
                 ? `<span class="track-duration">${track.duration}</span>`
                 : '';
             const indexCell = isStarred
-                ? `<span class="track-index is-star">★</span>`
+                ? `<span class="track-index is-star">&#9733;</span>`
                 : `<span class="track-index">${index + 1}.</span>`;
 
             return `
@@ -168,7 +169,7 @@ function renderAlbumDetail(albums) {
         tracklistHTML = `<p class="no-tracks">Tracklist not available yet.</p>`;
     }
 
-    // ПОХОЖИЕ АЛЬБОМЫ
+    // SIMILAR ALBUMS
     const displayAlbums = similarAlbums.length > 0
         ? similarAlbums
         : albums.filter(a => a.id !== album.id).sort(() => 0.5 - Math.random()).slice(0, 3);
@@ -194,7 +195,7 @@ function renderAlbumDetail(albums) {
         </div>
     `;
 
-    // ФИНАЛЬНЫЙ РЕНДЕР
+    // FINAL RENDER
     albumDetail.innerHTML = `
         <div class="album-detail-wrap">
             <div class="album-cover-col">
@@ -251,7 +252,7 @@ function injectAlbumSchema(album) {
     document.head.appendChild(script);
 }
 
-// 5. СЕТКА АЛЬБОМОВ
+// 5. ALBUM GRID
 function renderDownloadsGrid(albumsToRender) {
     const container = document.getElementById("albums");
     if (!container) return;
@@ -270,14 +271,14 @@ function renderDownloadsGrid(albumsToRender) {
           <a href="album.html?id=${album.id}" class="album-link">
             <img src="${album.img}" alt="${album.title}" loading="lazy">
             <h3>${album.title}</h3>
-            <p>${album.artist} • ${album.year}</p>
+            <p>${album.artist} &bull; ${album.year}</p>
           </a>
         `;
         container.appendChild(div);
     });
 }
 
-// 6. НОВИНКИ
+// 6. NEW ALBUMS
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
     if (!container || !albums || albums.length === 0) return;
@@ -303,7 +304,69 @@ function renderNewAlbums(albums) {
     });
 }
 
-// 7. ВЕРСИИ КОЛЛЕКЦИИ
+// 6.5 LATEST NEWS
+async function renderNewsTeaser() {
+    const container = document.querySelector(".news-preview");
+    if (!container) return;
+
+    try {
+        const response = await fetch("news.html");
+        if (!response.ok) throw new Error(`NEWS LOADING ERROR: ${response.status}`);
+
+        const html = await response.text();
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const latestNews = Array.from(doc.querySelectorAll(".news")).slice(0, 3);
+
+        if (latestNews.length === 0) return;
+
+        container.innerHTML = latestNews.map(news => {
+            const title = news.querySelector("h3")?.textContent?.trim() || "Untitled news";
+            const date = getNewsDate(news);
+            const summary = getNewsSummary(news);
+
+            return `
+                <div class="news-item-preview">
+                    ${date ? `<span class="news-date">${date}</span>` : ""}
+                    <h3>${escapeHTML(title)}</h3>
+                    ${summary ? `<p>${escapeHTML(summary)}</p>` : ""}
+                </div>
+            `;
+        }).join("") + `<a href="news.html" class="all-news-btn">All news &rarr;</a>`;
+    } catch (error) {
+        console.warn("Could not load latest news teaser:", error);
+    }
+}
+
+function getNewsDate(news) {
+    const dateParagraph = Array.from(news.querySelectorAll("p"))
+        .find(p => p.textContent.trim().startsWith("Date:"));
+
+    return dateParagraph
+        ? dateParagraph.textContent.replace(/^Date:\s*/i, "").trim()
+        : "";
+}
+
+function getNewsSummary(news) {
+    const firstListItem = news.querySelector("li");
+    if (firstListItem) return firstListItem.textContent.trim();
+
+    const summaryParagraph = Array.from(news.querySelectorAll("p"))
+        .find(p => !p.textContent.trim().startsWith("Date:"));
+
+    return summaryParagraph ? summaryParagraph.textContent.trim() : "";
+}
+
+function escapeHTML(value) {
+    return value.replace(/[&<>"']/g, char => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+    }[char]));
+}
+
+// 7. COLLECTION VERSIONS
 function renderCollectionVersions() {
     const versionsContainer = document.getElementById("old-versions");
     if (!versionsContainer) return;
@@ -324,7 +387,7 @@ function renderCollectionVersions() {
     });
 }
 
-// 8. ПРОСТОЙ СПИСОК
+// 8. SIMPLE LIST
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
@@ -336,12 +399,12 @@ function renderSimpleList(albums) {
 
     sortedAlbums.forEach(album => {
         const li = document.createElement("li");
-        li.textContent = `${album.artist} — ${album.title} (${album.year})`;
+        li.textContent = `${album.artist} - ${album.title} (${album.year})`;
         list.appendChild(li);
     });
 }
 
-// 9. ПОДСВЕТКА МЕНЮ
+// 9. ACTIVE NAV HIGHLIGHT
 function highlightActiveNav() {
     document.querySelectorAll("nav a").forEach(link => {
         const href = link.getAttribute("href");
@@ -351,7 +414,7 @@ function highlightActiveNav() {
     });
 }
 
-// 10. ПОИСК
+// 10. SEARCH
 function initSearch(albums) {
     const input = document.getElementById("search-input");
     if (!input) return;
@@ -372,7 +435,7 @@ function initSearch(albums) {
     });
 }
 
-// 11. СТАТИСТИКА
+// 11. STATS
 function renderStats(albums) {
     const nums = document.querySelectorAll('.stat-number');
     if (!nums.length) return;
@@ -380,7 +443,7 @@ function renderStats(albums) {
     const totalTracks = albums.reduce((sum, a) => sum + (a.tracks?.length || 0), 0);
     const artists = new Set(albums.map(a => a.artist)).size;
     const years = albums.map(a => Number(a.year)).filter(y => !isNaN(y));
-    const yearRange = Math.min(...years) + '–' + Math.max(...years);
+    const yearRange = Math.min(...years) + '-' + Math.max(...years);
 
     nums[0].textContent = totalTracks;
     nums[1].textContent = albums.length;
@@ -388,7 +451,7 @@ function renderStats(albums) {
     nums[3].textContent = yearRange;
 }
 
-// 12. ЛЮБИМЫЕ АЛЬБОМЫ
+// 12. FAVORITE ALBUMS
 function renderFavoriteAlbums(albums) {
     // Edit this array with your favorite album IDs from album.json
     const favoriteIds = [
@@ -416,5 +479,5 @@ function renderFavoriteAlbums(albums) {
     `).join('');
 }
 
-// ЗАПУСК
+// START
 init();
