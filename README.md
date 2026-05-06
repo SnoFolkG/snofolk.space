@@ -1,4 +1,4 @@
-# ⚡ SnoFolk.Space — Punk Music Archive
+# snofolk.space
 
 ![Version](https://img.shields.io/badge/version-4.1.0-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
