@@ -1,28 +1,85 @@
 # ⚡ SnoFolk.Space — Punk Music Archive
 
-![Version](https://img.shields.io/badge/version-4.0.0-red?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-4.1.0-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
 
-A curated digital archive of the best **Hardcore**, **Horror Punk**, and **Classic Punk Rock** albums.
+SnoFolk.Space is a static archive of classic and rare **Hardcore Punk**, **Horror Punk**, and **Punk Rock** albums.
 
 ---
 
-## About the Project
-Since summer 2025, I’ve been building a collection of best hardcore releases. This site is a static web-archive that allows users to explore tracklists, view high-quality covers, and download full albums.
+## Project Overview
+This repository hosts a small static website built with HTML, CSS and JavaScript. It serves as a curated punk collection with:
 
-## Repository Structure
-- `/data` — Contains `album.json` (the heart of the archive).
-- `/js` — Core logic and SEO meta-data injection.
-- `/css` — Custom styling (Montserrat & Orbitron typography).
-- `/icons` — Favicons and PWA manifest.
-- `/img` — Album artwork.
+- A homepage with archive stats and "I'm Feeling Lucky" navigation.
+- A finished album details viewer with tracklists, cover art and download links.
+- A downloads page for the full collection.
+- News and update history pages.
+- An info page with contact details and a sorted album list.
+
+## Files and Structure
+
+### Root files
+- `index.html` — Homepage with archive stats, new album highlights, and a random album button.
+- `downloads.html` — Collection download page, full archive link and searchable album grid.
+- `news.html` — Project news and changelog history.
+- `info.html` — Contact info, album list and version history.
+- `album.html` — Dynamic album details page rendered from JSON data.
+- `what.html` — Access gate page used by the header link flow.
+- `robots.txt` — Search engine rules.
+- `sitemap.xml` — Sitemap for crawlers.
+- `_headers` and `_redirects` — Static hosting configuration helpers.
+
+### Assets and scripts
+- `css/style.css` — The site styling, dark punk theme, responsive layout and typography.
+- `js/script.js` — Collection rendering logic, search, routing, and album detail generation.
+- `data/album.json` — Album metadata source for tracklists, downloads and cover art.
+- `icons/site.webmanifest` — PWA manifest.
+- `icons/` — Site icons and favicons.
+- `img/` — Album covers, navigation icons and background assets.
+
+## Data Source
+The archive is driven by `data/album.json`. Each album entry includes:
+
+- `id`
+- `title`
+- `artist`
+- `year`
+- `genre`
+- `city`
+- `label`
+- `img`
+- `download`
+- `tracks`
+
+The JavaScript code loads this JSON and renders:
+
+- album details on `album.html`
+- download cards on `downloads.html`
+- search and filter functionality
+- site statistics and latest additions on `index.html`
 
 ## Features
-- [x] **Dynamic Routing:** Album details are rendered based on URL parameters.
-- [x] **Lightweight:** Fast loading times via Cloudflare.
+- Dynamic album routing via URL parameters.
+- Tracklist rendering with favorite track stars.
+- Full collection download page.
+- Search by artist, album, year or city.
+- Similar album recommendations.
+- News and version history updates.
+- Custom fonts from Google Fonts (`Montserrat`, `Orbitron`).
 
-## Legal
-Everything here is for archiving purposes. If you like the music, support the bands and buy their merch.
+## Usage
+Open any page from the repository in a static web server or deploy to a static hosting provider.
+
+Example local preview:
+```bash
+# from repository root
+python -m http.server 8080
+```
+Then visit `http://localhost:8080/index.html`.
+
+## License
+This repository is published under the MIT License.
 
 ---
-**Stay Punk. Stay Core.** [Visit SnoFolk.Space](https://snofolk.space)
+
+**Stay Punk. Stay Core.**

@@ -1,3 +1,5 @@
+    "city": "San Francisco, CA",
+    "label": "R Radical Records",
 [
   {
     "id": "millions-of-dead-cops",
@@ -7,7 +9,7 @@
     "genre": "Hardcore Punk",
     "city": "Austin, TX",
     "label": "R Radical Records",
-    "img": "img/Mc001.jpg",
+    "img": "img/MDC - Millions Of Dead Cops (1982).jpg",
     "download": "https://drive.google.com/file/d/17F3-V0l_sjmJ9tzS9gZwQapba_iPEK_J/view?usp=drive_link",
     "tracks": [
       {
@@ -76,7 +78,7 @@
     "genre": "Hardcore Punk",
     "city": "San Francisco, CA",
     "label": "R Radical Records",
-    "img": "img/Mc002.jpg",
+    "img": "img/MDC - Smoke Signals (1986).jpg",
     "download": "https://drive.google.com/file/d/1gq9GsFjwc_QHnBq6sScHCT_0JrWCwH5n/view?usp=drive_link",
     "tracks": [
       {
@@ -100,7 +102,7 @@
         "duration": "01:30"
       },
       {
-        "title": "Tofutti!",
+        "title": "SR Tofutti!",
         "duration": "01:26"
       },
       {
@@ -141,7 +143,7 @@
     "genre": "Hardcore Punk",
     "city": "San Francisco, CA",
     "label": "R Radical Records",
-    "img": "img/Mc003.jpg",
+    "img": "img/MDC - Metal Devil Cokes (1989).jpg",
     "download": "https://drive.google.com/file/d/1o9N_mo7eZwgXJTQV2MMojtCtukhSB4V0/view?usp=drive_link",
     "tracks": [
       {
@@ -218,7 +220,7 @@
     "genre": "Hardcore Punk",
     "city": "San Francisco, CA",
     "label": "R Radical Records",
-    "img": "img/Mc004.jpg",
+    "img": "img/MDC - Hey Cop!! If I Had A Face Like Yours… (1991).jpg",
     "download": "https://drive.google.com/file/d/1FumRPdnTHy7ibdmLR4VWNfJcduYWCm4R/view?usp=drive_link",
     "tracks": [
       {
@@ -291,7 +293,7 @@
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
     "label": "Ruby Records",
-    "img": "img/Mc005.jpg",
+    "img": "img/Misfits - Walk Among Us (1982).jpg",
     "download": "https://drive.google.com/file/d/1wA5ne-bXmEmlMWdcKvZwvldi7s44TeU_/view?usp=drive_link",
     "tracks": [
       {
@@ -356,7 +358,7 @@
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
     "label": "Plan 9 Records",
-    "img": "img/Mc006.jpg",
+    "img": "img/Misfits - Earth A.D. - Wolfs Blood (1983).jpg",
     "download": "https://drive.google.com/file/d/1yuaM5OgB-MzxrQCv_UsBvStjvyJ5qDc1/view?usp=drive_link",
     "tracks": [
       {
@@ -417,7 +419,7 @@
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
     "label": "Caroline Records",
-    "img": "img/Mc008.jpg",
+    "img": "img/Misfits - Static Age (1996).jpg",
     "download": "https://drive.google.com/file/d/19qRFC3YtxueH40xCZ9bBh0kf9Iy9dkQP/view?usp=drive_link",
     "tracks": [
       {
@@ -498,7 +500,7 @@
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
     "label": "Sudden Death Records",
-    "img": "img/Mc010.jpg",
+    "img": "img/DOA - Something Better Change (1980).jpg",
     "download": "https://drive.google.com/file/d/1_RuokmQBIglD0n9chlZw2ZTfhweNb-OL/view?usp=drive_link",
     "tracks": [
       {
@@ -567,7 +569,7 @@
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
     "label": "Friends Records",
-    "img": "img/Mc011.jpg",
+    "img": "img/DOA - Hardcore '81 (1981).jpg",
     "download": "https://drive.google.com/file/d/19A-n3O_ZeURKQbdKQIRXapDkNOQrSusM/view?usp=drive_link",
     "tracks": [
       {
@@ -636,7 +638,7 @@
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
     "label": "Alternative Tentacles",
-    "img": "img/Mc012.jpg",
+    "img": "img/DOA - War on 45 (1982).jpg",
     "download": "https://drive.google.com/file/d/1_PG34D9cL4nn2JdQLXL3s-PP9wzAC8-f/view?usp=drive_link",
     "tracks": [
       {
@@ -681,7 +683,7 @@
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
     "label": "X-Claim! Records",
-    "img": "img/Mc013.jpg",
+    "img": "img/Jerry's Kids - Unreleased EP (1982).jpg",
     "download": "https://drive.google.com/file/d/1baZdAhmlFUE7nhPvYfEHNuB51ixlT6uU/view?usp=drive_link",
     "tracks": [
       {
@@ -701,7 +703,7 @@
         "duration": "01:18"
       },
       {
-        "title": "Pressure",
+        "title": "SR Pressure",
         "duration": "01:27"
       },
       {
@@ -717,11 +719,11 @@
         "duration": "00:46"
       },
       {
-        "title": "Machine Gun",
+        "title": "SR Machine Gun",
         "duration": "01:18"
       },
       {
-        "title": "It's OK",
+        "title": "SR It's OK",
         "duration": "00:49"
       }
     ]
@@ -734,15 +736,15 @@
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
     "label": "X-Claim! Records",
-    "img": "img/Mc014.jpg",
+    "img": "img/Jerry's Kids - Is This My World (1983).jpg",
     "download": "https://drive.google.com/file/d/1mKw2pkE1Pi9lrW8YWc1WYLt-DOA_fix",
     "tracks": [
       {
-        "title": "I Don't Belong",
+        "title": "SR I Don't Belong",
         "duration": "01:47"
       },
       {
-        "title": "Cracks In The Wall",
+        "title": "SR Cracks In The Wall",
         "duration": "01:19"
       },
       {
@@ -758,7 +760,7 @@
         "duration": "01:36"
       },
       {
-        "title": "Raise The Curtain",
+        "title": "SR Raise The Curtain",
         "duration": "03:27"
       },
       {
@@ -766,7 +768,7 @@
         "duration": "01:44"
       },
       {
-        "title": "Build Me A Bomb",
+        "title": "SR Build Me A Bomb",
         "duration": "02:01"
       },
       {
@@ -782,7 +784,7 @@
         "duration": "01:41"
       },
       {
-        "title": "Is This My World?",
+        "title": "SR Is This My World?",
         "duration": "02:04"
       }
     ]
@@ -795,7 +797,7 @@
     "genre": "Hardcore Punk",
     "city": "Washington, D.C.",
     "label": "Dischord Records",
-    "img": "img/Mc015.jpg",
+    "img": "img/SOA - No Policy (1981).jpg",
     "download": "https://drive.google.com/file/d/1JfBFteWacKBYFu20DjL6qknDq38HvqFs/view?usp=drive_link",
     "tracks": [
       {
@@ -848,7 +850,7 @@
     "genre": "Hardcore Punk",
     "city": "Washington, D.C.",
     "label": "Dischord Records",
-    "img": "img/Mc016.jpg",
+    "img": "img/SOA - Flex Your Head (1982).jpg",
     "download": "https://drive.google.com/file/d/16oRkvBOaCQCRwtJmmdDj9NvUgrikpxpR/view?usp=drive_link",
     "tracks": [
       {
@@ -873,7 +875,7 @@
     "genre": "Punk Rock",
     "city": "Los Angeles, CA",
     "label": "Slash Records",
-    "img": "img/Mc019.jpg",
+    "img": "img/The Germs - (GI) (1979).jpg",
     "download": "https://drive.google.com/file/d/16nJKdZ6j7yv6FG14KLNlzYm53pjHMbYX/view?usp=drive_link",
     "tracks": [
       {
@@ -954,7 +956,7 @@
     "genre": "Punk Rock",
     "city": "Los Angeles, CA",
     "label": "Slash Records",
-    "img": "img/Mc020.jpg",
+    "img": "img/The Germs - Cat's Clause (Live) (1993).jpg",
     "download": "https://drive.google.com/file/d/1tDf-t2v_9bg_Iczf5K5EQ1G4DPq3Ur9F/view?usp=drive_link",
     "tracks": [
       {
@@ -1019,7 +1021,7 @@
     "genre": "Hardcore Punk",
     "city": "Detroit, MI",
     "label": "Touch and Go Records",
-    "img": "img/Mc021.jpg",
+    "img": "img/Negative Approach - Negative Approach (1982).jpg",
     "download": "https://drive.google.com/file/d/12-4u2vQ6Lnnb5-CSHVXilsBFm4WAWXuY/view?usp=drive_link",
     "tracks": [
       {
@@ -1027,7 +1029,7 @@
         "duration": "01:20"
       },
       {
-        "title": "Sick of Talk",
+        "title": "SR Sick of Talk",
         "duration": "00:30"
       },
       {
@@ -1059,7 +1061,7 @@
         "duration": "00:53"
       },
       {
-        "title": "Negative Approach",
+        "title": "SR Negative Approach",
         "duration": "00:52"
       }
     ]
@@ -1072,7 +1074,7 @@
     "genre": "Hardcore Punk",
     "city": "Detroit, MI",
     "label": "Touch and Go Records",
-    "img": "img/Mc022.jpg",
+    "img": "img/Negative Approach - Tied Down (1983).jpg",
     "download": "https://drive.google.com/file/d/1xLQ-YGa29wtR3Bkx9Bxa-iqzBPoufTG-/view?usp=drive_link",
     "tracks": [
       {
@@ -1092,7 +1094,7 @@
         "duration": "00:49"
       },
       {
-        "title": "Nothing (LP version)",
+        "title": "SR Nothing (LP version)",
         "duration": "02:21"
       },
       {
@@ -1125,7 +1127,7 @@
     "genre": "Hardcore Punk",
     "city": "Lansing, MI",
     "label": "Touch and Go Records",
-    "img": "img/Mc023.jpg",
+    "img": "img/The Fix - The Speed of Twisted Thought (2006).jpg",
     "download": "https://drive.google.com/file/d/1cU2oPtChPZkcd_7azmd3SUNM1hUma-kx/view?usp=drive_link",
     "tracks": [
       {
@@ -1234,7 +1236,7 @@
     "genre": "Hardcore Punk",
     "city": "New York, NY",
     "label": "Rat Cage Records",
-    "img": "img/Mc024.jpg",
+    "img": "img/Cause for Alarm - Cause for Alarm (1982).jpg",
     "download": "https://drive.google.com/file/d/1vp3YER4u0TAS6OuAVDd3OCIykAbs1JYm/view?usp=drive_link",
     "tracks": [
       {
@@ -1283,7 +1285,7 @@
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
     "label": "X-Claim! Records",
-    "img": "img/Mc025.jpg",
+    "img": "img/SS Decontrol - The Kids Will Have Their Say (1982).jpg",
     "download": "https://drive.google.com/file/d/1EnKGXpTnf6G4X95XKb6CPXRwJ5w_CI0v/view?usp=drive_link",
     "tracks": [
       {
@@ -1368,7 +1370,7 @@
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
     "label": "X-Claim! Records",
-    "img": "img/Mc026.jpg",
+    "img": "img/SS Decontrol - Get It Away (1983).jpg",
     "download": "https://drive.google.com/file/d/1tVJLIzwtmSNkit8rbf3HtBZEbzE44xvz/view?usp=drive_link",
     "tracks": [
       {
@@ -1409,7 +1411,7 @@
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
     "label": "Friends Records",
-    "img": "img/Mc027.jpg",
+    "img": "img/Subhumans - Incorrect Thoughts (1980).jpg",
     "download": "https://drive.google.com/file/d/15vh2cgsRDOf8fEotHvigRYssb0q6mddH/view?usp=drive_link",
     "tracks": [
       {
@@ -1441,7 +1443,7 @@
         "duration": "03:10"
       },
       {
-        "title": "War in the Head",
+        "title": "SR War in the Head",
         "duration": "03:09"
       },
       {
@@ -1486,7 +1488,7 @@
     "genre": "Hardcore Punk",
     "city": "Los Angeles, CA",
     "label": "Frontier Records",
-    "img": "img/Mc028.jpg",
+    "img": "img/Circle Jerks - Group Sex (1980).jpg",
     "download": "https://drive.google.com/file/d/1fTaRkv_nwskLPuVfKooHnjwQchTWPGrl/view?usp=drive_link",
     "tracks": [
       {
@@ -1518,7 +1520,7 @@
         "duration": "01:26"
       },
       {
-        "title": "World up My Ass",
+        "title": "SR World up My Ass",
         "duration": "01:17"
       },
       {
@@ -1538,7 +1540,7 @@
         "duration": "00:57"
       },
       {
-        "title": "Group Sex",
+        "title": "SR Group Sex",
         "duration": "01:04"
       },
       {
@@ -1555,7 +1557,7 @@
     "genre": "Hardcore Punk",
     "city": "New York, NY",
     "label": "New Red Archives",
-    "img": "img/Mc029.jpg",
+    "img": "img/Reagan Youth - Youth Anthems for the New Order (1984).jpg",
     "download": "https://drive.google.com/file/d/12Fs6px3NgZfLKVMV0fxdd7RCpBWdNUJy/view?usp=drive_link",
     "tracks": [
       {
@@ -1571,7 +1573,7 @@
         "duration": "01:42"
       },
       {
-        "title": "I Hate Hate",
+        "title": "SR I Hate Hate",
         "duration": "01:57"
       },
       {
@@ -1596,7 +1598,7 @@
     "genre": "Hardcore Punk",
     "city": "Various",
     "label": "Alternative Tentacles",
-    "img": "img/Mc031.jpg",
+    "img": "img/Various Artists - Let Them Eat Jellybeans (1982).jpg",
     "download": "https://drive.google.com/file/d/152wY9R42R3oSWXu0sXQ6TcyND0SZBn1s/view?usp=drive_link",
     "tracks": [
       {
@@ -1660,7 +1662,7 @@
         "duration": "01:52"
       },
       {
-        "title": "Joke's On You (Christian Lunch)",
+        "title": "SR Joke's On You (Christian Lunch)",
         "duration": "03:24"
       },
       {
@@ -1677,7 +1679,7 @@
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
     "label": "Non-Official",
-    "img": "img/Mc009.jpg",
+    "img": "img/Misfits - Beware - All EPs Collection (Non-Official).jpg",
     "download": "https://drive.google.com/file/d/1iVM4iTXzx8_FIq4t2UzO5LuqGcpGcJwU/view?usp=drive_link",
     "tracks": [
       {
@@ -1770,7 +1772,7 @@
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
     "label": "Plan 9 Records",
-    "img": "img/Mc007.jpg",
+    "img": "img/Misfits - Legacy Of Brutality (1985).jpg",
     "download": "https://drive.google.com/file/d/1TjDw7qIqEQKVswCzlOfJ9pXa3e_sOT6W/view?usp=drive_link",
     "tracks": [
       {
@@ -1835,11 +1837,11 @@
     "genre": "Hardcore Punk",
     "city": "Hermosa Beach, CA",
     "label": "SST Records",
-    "img": "img/Mc017.jpg",
+    "img": "img/Black Flag - Damaged (1982).jpg",
     "download": "https://drive.google.com/file/d/1GayiPRrg4gDX_EpXPzmd5PN8_f-Bqbyy/view?usp=drive_link",
     "tracks": [
       {
-        "title": "Rise Above",
+        "title": "SR Rise Above",
         "duration": "02:27"
       },
       {
@@ -1847,7 +1849,7 @@
         "duration": "00:34"
       },
       {
-        "title": "Six Pack",
+        "title": "SR Six Pack",
         "duration": "02:21"
       },
       {
@@ -1855,7 +1857,7 @@
         "duration": "01:56"
       },
       {
-        "title": "TV Party",
+        "title": "SR TV Party",
         "duration": "03:31"
       },
       {
@@ -1867,7 +1869,7 @@
         "duration": "01:33"
       },
       {
-        "title": "Gimmie Gimmie Gimmie",
+        "title": "SR Gimmie Gimmie Gimmie",
         "duration": "01:47"
       },
       {
@@ -1908,7 +1910,7 @@
     "genre": "Punk Rock",
     "city": "Los Angeles, CA",
     "label": "What? Records",
-    "img": "img/Mc018.jpg",
+    "img": "img/The Germs - Lexicon Devil (1978).jpg",
     "download": "https://drive.google.com/file/d/1TCYSBSn1Z25HkAIIXihJBxMnbnE3LlFg/view?usp=drive_link",
     "tracks": [
       {
@@ -1933,7 +1935,7 @@
     "genre": "Hardcore Punk",
     "city": "New York, NY",
     "label": "Schism Records",
-    "img": "img/Mc030.jpg",
+    "img": "img/Project X - Straight Edge Revenge (1987).jpg",
     "download": "https://drive.google.com/file/d/13IAfSlRLV60zVV4S3KvK1BoGTc0LsYuO/view?usp=drive_link",
     "tracks": [
       {
@@ -1970,7 +1972,7 @@
     "genre": "Punk Rock",
     "city": "Vancouver, BC",
     "label": "SST Records",
-    "img": "img/Mc046.jpg",
+    "img": "img/Subhumans - No Wishes, No Prayers (1983).jpg",
     "download": "https://drive.google.com/file/d/1IllPTQWQ5HAO2VxgfEgUj5f6EJZTU4sm/view?usp=drive_link",
     "tracks": [
       {
@@ -2031,7 +2033,7 @@
     "genre": "Punk Rock",
     "city": "Vancouver, BC",
     "label": "Quintessence Records",
-    "img": "img/Mc047.jpg",
+    "img": "img/Subhumans - Subhumans (1979).jpg",
     "download": "https://drive.google.com/file/d/1CIA50rZxSJaC06XOKsh971nJK0bf9K7a/view?usp=drive_link",
     "tracks": [
       {
@@ -2060,7 +2062,7 @@
     "genre": "Hardcore Punk",
     "city": "Westfield, MA",
     "label": "Radiobeat Records",
-    "img": "img/Mc048.jpg",
+    "img": "img/Deep Wound - Deep Wound (1983).jpg",
     "download": "https://drive.google.com/file/d/1gEOyV0AVwlL3Puzuf9ZmfxZS3iI3HT3C/view?usp=drive_link",
     "tracks": [
       {
@@ -2101,7 +2103,6 @@
       }
     ]
   },
-
   {
     "id": "possible-ep",
     "title": "Possible EP",
@@ -2110,7 +2111,7 @@
     "genre": "Hardcore Punk",
     "city": "Washington, D.C.",
     "label": "Dischord Records",
-    "img": "img/Mc035.jpg",
+    "img": "img/Youth Brigade - Possible EP (1983).jpg",
     "download": "https://drive.google.com/file/d/1mZJDWIbInlLYEXfIJWx9_DWk7Qfd9IZ2/view?usp=drive_link",
     "tracks": [
       {

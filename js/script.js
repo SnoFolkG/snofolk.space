@@ -328,7 +328,13 @@ function renderCollectionVersions() {
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
-    albums.forEach(album => {
+
+    const sortedAlbums = albums.slice().sort((a, b) =>
+        (a.artist || '').localeCompare(b.artist || '') ||
+        (a.title || '').localeCompare(b.title || '')
+    );
+
+    sortedAlbums.forEach(album => {
         const li = document.createElement("li");
         li.textContent = `${album.artist} — ${album.title} (${album.year})`;
         list.appendChild(li);
@@ -387,7 +393,9 @@ function renderFavoriteAlbums(albums) {
     // Edit this array with your favorite album IDs from album.json
     const favoriteIds = [
         'smoke-signals',
-        'incorect-thoughts'
+        'incorrect-thoughts',
+        'cause-for-alarm',
+        'the-speed-of-twisted-thought'
     ];
 
     const favoriteAlbums = albums.filter(album => favoriteIds.includes(album.id));
