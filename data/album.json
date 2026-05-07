@@ -68,7 +68,6 @@
       }
     ]
   },
-
   {
     "id": "smoke-signals",
     "title": "Smoke Signals",
@@ -2144,6 +2143,75 @@
       {
         "title": "Wrong Decision",
         "duration": "01:32"
+      }
+    ]
+  },
+  {
+    "id": "screaming-for-change",
+    "title": "Screaming for Change",
+    "artist": "Uniform Choice",
+    "year": 1986,
+    "genre": "Hardcore Punk",
+    "city": "Orange County, CA",
+    "label": "Wishingwell Records",
+    "img": "img/Uniform Choice - Screaming for Change (1986).jpg",
+    "download": "https://drive.google.com/file/d/1sCIP0MCfv_mc_-oZuwAg6WyGLIxmBNEZ/view?usp=drive_link",
+    "tracks": [
+      {
+        "title": "A Choice",
+        "duration": "02:27"
+      },
+      {
+        "title": "Big Man, Small Mind",
+        "duration": "01:32"
+      },
+      {
+        "title": "Build to Break",
+        "duration": "01:14"
+      },
+      {
+        "title": "Don't Quit",
+        "duration": "01:27"
+      },
+      {
+        "title": "In Time",
+        "duration": "02:51"
+      },
+      {
+        "title": "My Own Mind",
+        "duration": "02:17"
+      },
+      {
+        "title": "No Thanks",
+        "duration": "02:13"
+      },
+      {
+        "title": "Once I Cry",
+        "duration": "02:22"
+      },
+      {
+        "title": "Scream to Say",
+        "duration": "01:22"
+      },
+      {
+        "title": "Screaming for Change",
+        "duration": "01:40"
+      },
+      {
+        "title": "Silenced",
+        "duration": "01:10"
+      },
+      {
+        "title": "Sometimes",
+        "duration": "01:18"
+      },
+      {
+        "title": "Straight and Alert",
+        "duration": "03:09"
+      },
+      {
+        "title": "Use Your Head",
+        "duration": "01:23"
       }
     ]
   }
