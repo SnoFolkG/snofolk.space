@@ -55,7 +55,11 @@ body {
     color: var(--text-main);
     user-select: none;
     position: relative;
-    background: url(../img/fone.jpg);
+    background-color: #1a1a1a;
+    background-image:
+     linear-gradient(rgba(26,108,181,0.3) 1px, transparent 1px),
+     linear-gradient(90deg, rgba(26,108,181,0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 #albums {
