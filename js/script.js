@@ -76,15 +76,24 @@ async function fetchAlbums() {
 function findSimilarAlbums(currentAlbum, allAlbums) {
     const others = allAlbums.filter(a => a.id !== currentAlbum.id);
 
-    const sameArtist = others.filter(a => a.artist === currentAlbum.artist);
+    const sameArtist = shuffleArray(others.filter(a => a.artist === currentAlbum.artist));
     if (sameArtist.length >= 3) return sameArtist.slice(0, 3);
     if (sameArtist.length > 0) return sameArtist;
 
-    const sameCity = others.filter(a => a.city === currentAlbum.city);
+    const sameCity = shuffleArray(others.filter(a => a.city === currentAlbum.city));
     if (sameCity.length >= 3) return sameCity.slice(0, 3);
     if (sameCity.length > 0) return sameCity;
 
     return [];
+}
+
+function shuffleArray(array) {
+    const copy = array.slice();
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
 }
 
 // 3.6 BEST ALBUM BADGE

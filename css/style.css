@@ -127,7 +127,7 @@ header {
     text-align: center;
     background: var(--back-color);
     border: 1px solid var(--border);
-    box-shadow: var(--shadow-sm);
+    box-shadow: none;
 }
 
 h1 {
@@ -136,19 +136,18 @@ h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFFFF;
-    text-shadow: 0 0 20px rgba(192, 192, 192, 0.6), 0 0 40px rgba(192, 192, 192, 0.2);
+    text-shadow: none;
 }
 
 .site-title {
     display: inline-block;
     color: inherit;
     text-decoration: none;
-    transition: opacity var(--transition), transform var(--transition);
+    transition: opacity var(--transition);
 }
 
 .site-title:hover {
     opacity: 0.9;
-    transform: scale(1.01);
 }
 
 .site-title:focus-visible {
@@ -190,13 +189,12 @@ nav a:focus-visible {
     height: 16px;
     object-fit: contain;
     opacity: 0.85;
-    transition: opacity var(--transition), transform var(--transition);
+    transition: opacity var(--transition);
 }
 
 nav a:hover .nav-icon,
 nav a.active .nav-icon {
     opacity: 1;
-    transform: scale(1.05);
 }
 
 .nav-label {
@@ -224,9 +222,7 @@ nav a.active .nav-icon {
     background: var(--blocks-color);
     border: 1px solid var(--border);
     cursor: pointer;
-    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
     box-shadow: var(--shadow-sm);
-    will-change: transform;
     width: 100%;
     max-width: 160px;
     margin: 0 auto;
@@ -234,10 +230,7 @@ nav a.active .nav-icon {
 }
 
 .album:hover {
-    transform: translateY(-8px) scale(1.025);
-    box-shadow: var(--shadow-lg);
     border-color: var(--accent-border);
-    background: var(--glass-hover);
 }
 
 .album:focus-visible {
@@ -250,11 +243,6 @@ nav a.active .nav-icon {
     aspect-ratio: 1;
     object-fit: cover;
     margin-bottom: 10px;
-    transition: transform var(--transition);
-}
-
-.album:hover img {
-    transform: scale(1.05);
 }
 
 .album h3 {
@@ -372,13 +360,7 @@ nav a.active .nav-icon {
     padding: 18px;
     background: var(--blocks-color);
     border: 1px solid var(--border);
-    transition: background var(--transition), transform var(--transition);
     margin-bottom: 15px;
-}
-
-.news:hover {
-    background: var(--glass-hover);
-    transform: translateY(-3px);
 }
 
 .news h3 {
@@ -407,11 +389,6 @@ nav a.active .nav-icon {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform var(--transition);
-}
-
-.album-mini img:hover {
-    transform: scale(1.05);
 }
 
 .album-mini p {
@@ -704,12 +681,6 @@ footer {
     padding: 10px;
     background: var(--blocks-color);
     border: 1px solid var(--border);
-    transition: var(--transition);
-}
-
-.album-mini-card:hover {
-    background: var(--glass-hover);
-    transform: translateX(4px);
 }
 
 .album-mini-card img {
@@ -881,14 +852,11 @@ footer {
     background: var(--blocks-color);
     border: 1px solid var(--border);
     padding: 10px;
-    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
     cursor: pointer;
 }
 
 .album-mini:hover {
-    transform: translateY(-5px);
     border-color: var(--accent-border);
-    background: var(--glass-hover);
 }
 
 .album-mini:hover .album-mini-title {
@@ -928,7 +896,6 @@ footer {
     font-weight: 700;
     color: #fff;
     line-height: 1.3;
-    transition: color 0.18s;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
