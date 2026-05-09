@@ -367,6 +367,7 @@ nav a.active .nav-icon {
     background: var(--blocks-color);
     border: 1px solid var(--border);
     margin-bottom: 15px;
+    transition: background var(--transition);
 }
 
 .news:hover {
@@ -661,6 +662,11 @@ footer {
 .similar-albums {
     width: 280px;
     margin-top: 20px;
+    transition: background var(--transition);
+}
+
+.similar-albums:hover {
+    background: var(--glass-hover);
 }
 
 .similar-albums h3 {
