@@ -227,6 +227,7 @@ nav a.active .nav-icon {
     max-width: 160px;
     margin: 0 auto;
     height: 100%;
+    transition: border-color var(--transition);
 }
 
 .album:hover {
@@ -250,6 +251,11 @@ nav a.active .nav-icon {
     font-weight: 600;
     margin: 6px 0 2px;
     color: var(--text-main);
+    transition: color var(--transition);
+}
+
+.album:hover h3 {
+    color: var(--accent-border);
 }
 
 .album p {
@@ -361,6 +367,10 @@ nav a.active .nav-icon {
     background: var(--blocks-color);
     border: 1px solid var(--border);
     margin-bottom: 15px;
+}
+
+.news:hover {
+    background: var(--glass-hover);
 }
 
 .news h3 {
@@ -853,6 +863,7 @@ footer {
     border: 1px solid var(--border);
     padding: 10px;
     cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .album-mini:hover {
@@ -892,7 +903,7 @@ footer {
 }
 
 .album-mini-title {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     color: #fff;
     line-height: 1.3;
