@@ -409,11 +409,25 @@ nav a.active .nav-icon {
     color: var(--text-light);
 }
 
-/* ========================== BANNER ========================== */
-.banner-announce {
+/* ========================== BANNERS ========================== */
+.banner-announce-bad {
     background: #1a0000;
     border: 1px solid #cc0000;
     color: #ff4444;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    max-width: 960px;
+    margin: 0 auto 16px;
+}
+
+.banner-announce-good {
+    background: #1a3300;
+    border: 1px solid #00cc00;
+    color: #44ff44;
     text-align: center;
     padding: 10px 20px;
     font-size: 13px;
@@ -744,9 +758,14 @@ footer {
 /* ========================== SEARCH BAR ========================== */
 .search-wrap {
     margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 170px;
+    gap: 12px;
+    align-items: center;
 }
 
-.search-input {
+.search-input,
+.sort-select {
     width: 100%;
     padding: 10px 14px;
     font-family: 'Montserrat', sans-serif;
@@ -762,11 +781,16 @@ footer {
     box-shadow: 4px 4px 0px var(--accent-border);
 }
 
+.sort-select {
+    cursor: pointer;
+}
+
 .search-input::placeholder {
     color: var(--text-muted);
 }
 
-.search-input:focus {
+.search-input:focus,
+.sort-select:focus {
     background: var(--glass-hover);
     border-color: var(--accent-border);
     box-shadow: 0px 0px 0px var(--accent-border);
@@ -1012,5 +1036,9 @@ footer {
 
     .new-albums-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-wrap {
+        grid-template-columns: 1fr;
     }
 }

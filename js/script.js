@@ -3,6 +3,10 @@ const DATA_URL = '/data/album.json';
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = 'snofolk-what-access';
+const downloadsState = {
+    query: '',
+    sort: 'artist-asc'
+};
 
 // 2. APP START
 async function init() {
@@ -31,10 +35,10 @@ async function init() {
     if (document.getElementById("album-detail")) {
         renderAlbumDetail(allAlbumsData);
     } else {
-        renderDownloadsGrid(allAlbumsData);
+        renderDownloadsGrid(sortDownloadsAlbums(allAlbumsData));
         renderNewAlbums(allAlbumsData);
         renderSimpleList(allAlbumsData);
-        initSearch(allAlbumsData);
+        initDownloadsControls(allAlbumsData);
     }
 
     if (document.getElementById('favorite-albums')) {
@@ -134,14 +138,9 @@ function renderAlbumDetail(albums) {
     // DOWNLOAD
     let downloadHTML = '';
     if (album.download) {
-        const fileId = album.download.match(/[-\w]{25,}/)?.[0];
-        const downloadUrl = fileId
-            ? `https://drive.usercontent.google.com/download?id=${fileId}&export=download&confirm=t`
-            : album.download;
         downloadHTML = `
-            <a href="${downloadUrl}" class="download-btn download-btn-cover" download>Download Album (.rar)</a>
-            <p class="download-hint">If Google shows a warning - click "Download anyway"</p>
-        `;
+        <a href="${album.download}" class="download-btn download-btn-cover" download>Download Album (.zip)</a>
+    `;
     } else {
         downloadHTML = `<p class="no-download">Download link coming soon</p>`;
     }
@@ -287,6 +286,33 @@ function renderDownloadsGrid(albumsToRender) {
     });
 }
 
+function sortDownloadsAlbums(albums, sort = downloadsState.sort) {
+    const direction = sort === 'artist-desc' ? -1 : 1;
+
+    return albums.slice().sort((a, b) => {
+        const artistCompare = (a.artist || '').localeCompare(b.artist || '') * direction;
+        if (artistCompare !== 0) return artistCompare;
+
+        return (a.title || '').localeCompare(b.title || '') * direction;
+    });
+}
+
+function getFilteredDownloadsAlbums(albums) {
+    const q = downloadsState.query.trim().toLowerCase();
+    if (!q) return albums;
+
+    return albums.filter(a =>
+        a.title.toLowerCase().includes(q) ||
+        a.artist.toLowerCase().includes(q) ||
+        String(a.year).includes(q) ||
+        (a.city && a.city.toLowerCase().includes(q))
+    );
+}
+
+function updateDownloadsGrid(albums) {
+    renderDownloadsGrid(sortDownloadsAlbums(getFilteredDownloadsAlbums(albums)));
+}
+
 // 6. NEW ALBUMS
 function renderNewAlbums(albums) {
     const container = document.getElementById("new-albums");
@@ -381,7 +407,7 @@ function renderCollectionVersions() {
     if (!versionsContainer) return;
 
     const collectionVersions = [
-        { version: "v4.2.0", date: "29.03.2026", file: "https://drive.google.com/file/d/1PWQM4fC2Rwnbmr6mFG2Chvbk4w3wFXPg/view?usp=drive_link" }
+        { version: "v5.5.0", date: "07.05.2026", file: "https://www.mediafire.com/file/bwpijt88xf8fr0a/Collection_v5_5_0.zip/file" }
     ];
 
     collectionVersions.forEach(v => {
@@ -423,25 +449,27 @@ function highlightActiveNav() {
     });
 }
 
-// 10. SEARCH
-function initSearch(albums) {
+// 10. DOWNLOADS CONTROLS
+function initDownloadsControls(albums) {
     const input = document.getElementById("search-input");
-    if (!input) return;
+    const sortSelect = document.getElementById("sort-select");
 
-    input.addEventListener("input", () => {
-        const q = input.value.trim().toLowerCase();
-        if (!q) {
-            renderDownloadsGrid(albums);
-            return;
-        }
-        const filtered = albums.filter(a =>
-            a.title.toLowerCase().includes(q) ||
-            a.artist.toLowerCase().includes(q) ||
-            String(a.year).includes(q) ||
-            (a.city && a.city.toLowerCase().includes(q))
-        );
-        renderDownloadsGrid(filtered);
-    });
+    if (!input && !sortSelect) return;
+
+    if (input) {
+        input.addEventListener("input", () => {
+            downloadsState.query = input.value;
+            updateDownloadsGrid(albums);
+        });
+    }
+
+    if (sortSelect) {
+        sortSelect.value = downloadsState.sort;
+        sortSelect.addEventListener("change", () => {
+            downloadsState.sort = sortSelect.value;
+            updateDownloadsGrid(albums);
+        });
+    }
 }
 
 // 11. STATS
