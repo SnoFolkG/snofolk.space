@@ -45,6 +45,7 @@ li {
 /* ========================== BACKGROUND ========================== */
 html {
     min-height: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -57,6 +58,7 @@ body {
     position: relative;
     background-color: #0f0f0f;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cdefs%3E%3Cpattern id='d' x='0' y='0' width='28' height='28' patternUnits='userSpaceOnUse'%3E%3Cpath d='M 28 0 L 0 0 0 28' fill='none' stroke='%234a7aaa' stroke-width='0.8' opacity='0.35'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='28' height='28' fill='url(%23d)'/%3E%3C/svg%3E");
+    overflow-x: hidden;
 }
 
 #albums {
@@ -163,6 +165,7 @@ nav {
 nav a {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -170,6 +173,7 @@ nav a {
     text-decoration: none;
     margin: 0 6px;
     padding: 6px 12px;
+    min-height: 36px;
     transition: var(--transition);
 }
 
@@ -286,6 +290,7 @@ nav a.active .nav-icon {
     line-height: 1.2;
     box-sizing: border-box;
     width: 100%;
+    min-height: 40px;
 }
 
 .download-btn:hover,
@@ -519,6 +524,10 @@ footer {
     border: 1px solid var(--accent-border);
 }
 
+.collection-info {
+    min-width: 0;
+}
+
 /* ========================== OLD VERSIONS ========================== */
 .version-row {
     display: flex;
@@ -552,7 +561,6 @@ footer {
 .album-detail-wrap {
     display: flex;
     gap: 2rem;
-    padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
     align-items: flex-start;
@@ -577,12 +585,15 @@ footer {
 
 .album-info-col {
     flex: 1;
+    min-width: 0;
 }
 
 .album-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
 }
 
 .album-artist {
@@ -670,9 +681,11 @@ footer {
 
 .track-name {
     flex: 1;
+    min-width: 0;
     font-size: 13px;
     color: #ddd;
     line-height: 1.4;
+    overflow-wrap: anywhere;
 }
 
 .tracklist li.is-star .track-name {
@@ -691,6 +704,14 @@ footer {
 .similar-albums {
     width: 280px;
     margin-top: 20px;
+}
+
+.similar-albums.is-desktop {
+    display: block;
+}
+
+.similar-albums.is-mobile {
+    display: none;
 }
 
 .similar-albums h3 {
@@ -962,21 +983,47 @@ footer {
 
 /* ========================== RESPONSIVE ========================== */
 @media (max-width: 768px) {
+    body {
+        padding-top: 8px;
+    }
+
+    header,
+    main,
+    .banner-announce-bad,
+    .banner-announce-good {
+        width: min(100% - 20px, 960px);
+    }
+
+    header {
+        margin: 10px auto;
+    }
+
+    main {
+        margin: 10px auto 18px;
+    }
+
     .albums {
         grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 16px;
+        min-height: 0;
+    }
+
+    #albums {
+        min-height: 0;
+    }
+
+    .album {
+        max-width: none;
     }
 }
 
 @media (max-width: 600px) {
     main {
-        margin: 10px;
-        padding: 16px;
+        padding: 14px;
     }
 
     header {
-        margin: 10px;
-        padding: 14px 16px;
+        padding: 14px;
     }
 
     h1 {
@@ -988,13 +1035,16 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 4px;
+        gap: 6px;
     }
 
     nav a {
+        flex: 1 1 calc(50% - 6px);
         font-size: 12px;
-        padding: 5px 8px;
+        padding: 8px 10px;
         margin: 0;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border);
     }
 
     .nav-icon {
@@ -1002,10 +1052,46 @@ footer {
         height: 14px;
     }
 
+    section {
+        margin-bottom: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    p,
+    li {
+        font-size: 13px;
+    }
+
+    .banner-announce-bad,
+    .banner-announce-good {
+        padding: 10px 12px;
+        font-size: 11px;
+        line-height: 1.45;
+    }
+
+    .collection-download {
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .version-row {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px 12px;
+        padding: 12px;
+    }
+
+    .version-row .download-btn {
+        grid-column: 1 / -1;
+    }
+
     .album-detail-wrap {
         flex-direction: column;
-        padding: 1rem;
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
 
     .album-cover-col {
@@ -1015,19 +1101,57 @@ footer {
     .album-cover-big {
         width: 100%;
         height: auto;
-        max-height: 320px;
+        max-height: none;
+        aspect-ratio: 1 / 1;
     }
 
     .similar-albums {
         width: 100%;
     }
 
+    .similar-albums.is-desktop {
+        display: none;
+    }
+
+    .similar-albums.is-mobile {
+        display: block;
+        margin-top: 6px;
+    }
+
+    .album-title {
+        font-size: 1.15rem;
+    }
+
     .album-meta {
         grid-template-columns: 1fr;
+        gap: 0.65rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .tracklist li {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .track-duration {
+        padding-top: 1px;
     }
 
     .stats-grid {
         grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 1rem 0.75rem;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.68rem;
     }
 
     .news-preview {
@@ -1040,5 +1164,46 @@ footer {
 
     .search-wrap {
         grid-template-columns: 1fr;
+    }
+
+    .search-input,
+    .sort-select {
+        min-height: 42px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    header,
+    main,
+    .banner-announce-bad,
+    .banner-announce-good {
+        width: min(100% - 14px, 960px);
+    }
+
+    .albums {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .album {
+        padding: 10px;
+    }
+
+    .album h3 {
+        font-size: 12px;
+    }
+
+    .album p {
+        font-size: 11px;
+    }
+
+    .new-albums-grid {
+        gap: 10px;
+    }
+
+    nav a {
+        gap: 6px;
+        padding: 8px 7px;
     }
 }

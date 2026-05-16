@@ -186,19 +186,21 @@ function renderAlbumDetail(albums) {
         ? `<p class="similar-note">No similar albums yet, but here are some good ones:</p>`
         : '';
 
-    const similarHTML = `
-        <div class="similar-albums">
+    const similarCardsHTML = displayAlbums.map(a => `
+        <div class="album-mini-card">
+            <a href="album.html?id=${a.id}">
+                <img src="${a.img}" alt="${a.title}">
+                <p><strong>${a.artist}</strong><br>${a.title}</p>
+            </a>
+        </div>
+    `).join('');
+
+    const similarHTML = (modifierClass) => `
+        <div class="similar-albums ${modifierClass}">
             <h3>Similar albums</h3>
             ${similarNote}
             <div class="similar-grid">
-                ${displayAlbums.map(a => `
-                    <div class="album-mini-card">
-                        <a href="album.html?id=${a.id}">
-                            <img src="${a.img}" alt="${a.title}">
-                            <p><strong>${a.artist}</strong><br>${a.title}</p>
-                        </a>
-                    </div>
-                `).join('')}
+                ${similarCardsHTML}
             </div>
         </div>
     `;
@@ -209,7 +211,7 @@ function renderAlbumDetail(albums) {
             <div class="album-cover-col">
                 <img src="${album.img}" alt="${album.artist} - ${album.title}" class="album-cover-big">
                 ${downloadHTML}
-                ${similarHTML}
+                ${similarHTML('is-desktop')}
             </div>
             <div class="album-info-col">
                 <h2 class="album-title ${topAlbum ? 'top-album' : ''}">
@@ -224,6 +226,7 @@ function renderAlbumDetail(albums) {
                     <li><span>Label</span>${album.label || 'N/A'}</li>
                 </ul>
                 ${tracklistHTML}
+                ${similarHTML('is-mobile')}
             </div>
         </div>
     `;
