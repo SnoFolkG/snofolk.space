@@ -2303,5 +2303,86 @@
         "duration": "00:42"
       }
     ]
+  },
+{
+    "id": "1980-1986",
+    "title": "1980-1986",
+    "artist": "Dicks",
+    "year": 1997,
+    "genre": "Hardcore Punk",
+    "city": "Austin, TX",
+    "label": "Alternative Tentacles",
+    "img": "img/Dicks - 1980-1986.jpg",
+    "download": "https://www.mediafire.com/file/ur20an6ldb82g15/1980-1986_%25281997%2529.zip/file",
+    "tracks": [
+      {
+        "title": "Anti-Klan, Pt. 1",
+        "duration": "03:45"
+      },
+      {
+        "title": "Anti-Klan, Pt. 2",
+        "duration": "06:35"
+      },
+      {
+        "title": "Dead in a Motel Room [Live]",
+        "duration": "03:39"
+      },
+      {
+        "title": "Decent and Clean",
+        "duration": "06:59"
+      },
+      {
+        "title": "Dicks Hate the Police",
+        "duration": "03:58"
+      },
+      {
+        "title": "Executive Dive",
+        "duration": "01:57"
+      },
+      {
+        "title": "Fake Bands",
+        "duration": "01:38"
+      },
+      {
+        "title": "Fast Food",
+        "duration": "00:46"
+      },
+      {
+        "title": "Kill from the Heart",
+        "duration": "04:04"
+      },
+      {
+        "title": "Little Boys' Feet",
+        "duration": "01:57"
+      },
+      {
+        "title": "No Nazi's Friend",
+        "duration": "03:35"
+      },
+      {
+        "title": "Pigs Run Wild",
+        "duration": "01:43"
+      },
+      {
+        "title": "Rich Daddy",
+        "duration": "03:14"
+      },
+      {
+        "title": "Saturday Night at the Bookstore",
+        "duration": "03:06"
+      },
+      {
+        "title": "Shit on Me",
+        "duration": "03:53"
+      },
+      {
+        "title": "The Dicks Can't Swim",
+        "duration": "02:23"
+      },
+      {
+        "title": "Wheelchair Epidemic",
+        "duration": "01:50"
+      }
+    ]
   }
 ]
