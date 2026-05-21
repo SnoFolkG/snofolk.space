@@ -2305,84 +2305,100 @@
     ]
   },
 {
-    "id": "1980-1986",
-    "title": "1980-1986",
-    "artist": "Dicks",
-    "year": 1997,
-    "genre": "Hardcore Punk",
-    "city": "Austin, TX",
-    "label": "Alternative Tentacles",
-    "img": "img/Dicks - 1980-1986.jpg",
-    "download": "https://www.mediafire.com/file/ur20an6ldb82g15/1980-1986_%25281997%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Anti-Klan, Pt. 1",
-        "duration": "03:45"
-      },
-      {
-        "title": "Anti-Klan, Pt. 2",
-        "duration": "06:35"
-      },
-      {
-        "title": "Dead in a Motel Room [Live]",
-        "duration": "03:39"
-      },
-      {
-        "title": "Decent and Clean",
-        "duration": "06:59"
-      },
-      {
-        "title": "Dicks Hate the Police",
-        "duration": "03:58"
-      },
-      {
-        "title": "Executive Dive",
-        "duration": "01:57"
-      },
-      {
-        "title": "Fake Bands",
-        "duration": "01:38"
-      },
-      {
-        "title": "Fast Food",
-        "duration": "00:46"
-      },
-      {
-        "title": "Kill from the Heart",
-        "duration": "04:04"
-      },
-      {
-        "title": "Little Boys' Feet",
-        "duration": "01:57"
-      },
-      {
-        "title": "No Nazi's Friend",
-        "duration": "03:35"
-      },
-      {
-        "title": "Pigs Run Wild",
-        "duration": "01:43"
-      },
-      {
-        "title": "Rich Daddy",
-        "duration": "03:14"
-      },
-      {
-        "title": "Saturday Night at the Bookstore",
-        "duration": "03:06"
-      },
-      {
-        "title": "Shit on Me",
-        "duration": "03:53"
-      },
-      {
-        "title": "The Dicks Can't Swim",
-        "duration": "02:23"
-      },
-      {
-        "title": "Wheelchair Epidemic",
-        "duration": "01:50"
-      }
-    ]
-  }
+  "id": "1980-1986",
+  "title": "1980-1986",
+  "artist": "Dicks",
+  "year": 1997,
+  "genre": "Hardcore Punk",
+  "city": "Austin, TX",
+  "label": "Alternative Tentacles",
+  "img": "img/Dicks - 1980-1986.jpg",
+  "download": "https://www.mediafire.com/file/ur20an6ldb82g15/1980-1986_%25281997%2529.zip/file",
+  "tracks": [
+    {
+      "title": "Anti-Klan, Pt. 1",
+      "duration": "03:45"
+    },
+    {
+      "title": "Anti-Klan, Pt. 2",
+      "duration": "06:35"
+    },
+    {
+      "title": "Dead in a Motel Room [Live]",
+      "duration": "03:39"
+    },
+    {
+      "title": "Decent and Clean",
+      "duration": "06:59"
+    },
+    {
+      "title": "Dicks Hate the Police",
+      "duration": "03:58"
+    },
+    {
+      "title": "Executive Dive",
+      "duration": "05:52"
+    },
+    {
+      "title": "Fake Bands [Live]",
+      "duration": "02:51"
+    },
+    {
+      "title": "George Jackson",
+      "duration": "06:58"
+    },
+    {
+      "title": "Gilbeau",
+      "duration": "06:39"
+    },
+    {
+      "title": "I Hope You Get Drafted",
+      "duration": "02:54"
+    },
+    {
+      "title": "Kill from the Heart",
+      "duration": "03:51"
+    },
+    {
+      "title": "Lifetime Problems",
+      "duration": "03:46"
+    },
+    {
+      "title": "No Fuckin' War",
+      "duration": "09:32"
+    },
+    {
+      "title": "No Nazi's Friend",
+      "duration": "06:17"
+    },
+    {
+      "title": "Off-Duty Sailor",
+      "duration": "05:27"
+    },
+    {
+      "title": "Rich Daddy",
+      "duration": "05:00"
+    },
+    {
+      "title": "Saturday Night at the Bookstore [Live]",
+      "duration": "09:27"
+    },
+    {
+      "title": "Shit on Me [Live]",
+      "duration": "04:09"
+    },
+    {
+      "title": "Sidewalk Begging",
+      "duration": "07:39"
+    },
+    {
+      "title": "The Police (Force)",
+      "duration": "04:54"
+    },
+    {
+      "title": "Wheelchair Epidemic [Live]",
+      "duration": "04:36"
+    }
+  ]
+}
 ]
