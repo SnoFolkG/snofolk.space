@@ -2309,11 +2309,11 @@
     "title": "1980-1986",
     "artist": "Dicks",
     "year": 1997,
-    "genre": "Hardcore Punk",
+    "genre": "Punk",
     "city": "Austin, TX",
     "label": "Alternative Tentacles",
     "img": "img/Dicks - 1980-1986.jpg",
-    "download": "https://www.mediafire.com/file/ur20an6ldb82g15/1980-1986_%25281997%2529.zip/file",
+    "download": "https://www.mediafire.com/file/a8aqmhu013xi8iz/1980-1986_%25281997%2529.zip/file",
     "tracks": [
       {
         "title": "Anti-Klan, Pt. 1",
@@ -2384,5 +2384,67 @@
         "duration": "01:50"
       }
     ]
-  }
+  },
+
+  {
+  "id": "faith",
+  "title": "Faith",
+  "artist": "Faith",
+  "year": 1982,
+  "genre": "Hardcore Punk",
+  "city": "Washington, D.C.",
+  "label": "Dischord Records",
+  "img": "img/Faith - Faith.jpg",
+  "download": "https://www.mediafire.com/file/n3bjpt4e0s5tw2d/Faith_%25281982%2529.zip/file",
+  "tracks": [
+    {
+      "title": "SR It's Time",
+      "duration": "00:58"
+    },
+    {
+      "title": "SR Face To Face",
+      "duration": "01:01"
+    },
+    {
+      "title": "SR Trapped",
+      "duration": "00:45"
+    },
+    {
+      "title": "In Control",
+      "duration": "01:08"
+    },
+    {
+      "title": "Another Victim",
+      "duration": "00:40"
+    },
+    {
+      "title": "What's Wrong With Me",
+      "duration": "00:41"
+    },
+    {
+      "title": "SR What You Think",
+      "duration": "00:48"
+    },
+    {
+      "title": "Confusion",
+      "duration": "01:33"
+    },
+    {
+      "title": "You're X'd",
+      "duration": "01:06"
+    },
+    {
+      "title": "Nightmare",
+      "duration": "01:10"
+    },
+    {
+      "title": "Don't Tell Me",
+      "duration": "00:55"
+    },
+    {
+      "title": "SR In The Black",
+      "duration": "01:44"
+    }
+  ]
+}
 ]
