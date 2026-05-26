@@ -2446,5 +2446,63 @@
       "duration": "01:44"
     }
   ]
+},
+
+  {
+  "id": "brotherhood",
+  "title": "Brotherhood",
+  "artist": "DYS",
+  "year": 1983,
+  "genre": "Hardcore Punk",
+  "city": "Boston, MA",
+  "label": "X-Claim! Records",
+  "img": "img/DYS - Brotherhood.jpg",
+  "download": "https://snofolk.space/unaviable",
+  "tracks": [
+    {
+      "title": "Open Up",
+      "duration": "01:26"
+    },
+    {
+      "title": "SR More Than Fashion",
+      "duration": "01:31"
+    },
+    {
+      "title": "SR Circle Storm",
+      "duration": "00:37"
+    },
+    {
+      "title": "City To City",
+      "duration": "01:28"
+    },
+    {
+      "title": "[The Gitl's] Got Limits",
+      "duration": "01:13"
+    },
+    {
+      "title": "SR Brotherhood",
+      "duration": "01:03"
+    },
+    {
+      "title": "Yellow",
+      "duration": "01:18"
+    },
+    {
+      "title": "SR Stand Proud",
+      "duration": "00:57"
+    },
+    {
+      "title": "SR Insurance Risk",
+      "duration": "00:52"
+    },
+    {
+      "title": "Escape",
+      "duration": "02:22"
+    },
+    {
+      "title": "Wolfpack",
+      "duration": "01:16"
+    }
+  ]
 }
 ]
