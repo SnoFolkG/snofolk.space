@@ -2504,5 +2504,63 @@
       "duration": "01:16"
     }
   ]
+},
+
+{
+  "id": "my-america",
+  "title": "My America",
+  "artist": "F.U.'s",
+  "year": 1983,
+  "genre": "Hardcore Punk",
+  "city": "Boston, MA",
+  "label": "X-Claim! Records",
+  "img": "img/FU's - My America.jpg",
+  "download": "",
+  "tracks": [
+    {
+      "title": "SR What You Pay For",
+      "duration": "01:30"
+    },
+    {
+      "title": "SR Outcast",
+      "duration": "00:53"
+    },
+    {
+      "title": "Poor, Poor, Pitiful You",
+      "duration": "01:17"
+    },
+    {
+      "title": "The Grinder",
+      "duration": "01:03"
+    },
+    {
+      "title": "SR Unite or Lose",
+      "duration": "01:32"
+    },
+    {
+      "title": "SR This Is Your Life",
+      "duration": "01:20"
+    },
+    {
+      "title": "My America",
+      "duration": "01:21"
+    },
+    {
+      "title": "Choir Boy",
+      "duration": "01:26"
+    },
+    {
+      "title": "Boston's FInest",
+      "duration": "01:17"
+    },
+    {
+      "title": "Rifle",
+      "duration": "01:13"
+    },
+    {
+      "title": "SR We're An American Band",
+      "duration": "02:38"
+    }
+  ]
 }
 ]

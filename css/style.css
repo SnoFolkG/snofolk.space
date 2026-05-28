@@ -93,13 +93,25 @@ strong {
 }
 
 a.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     color: var(--accent-border);
     text-decoration: none;
-    transition: opacity var(--transition);
+    border-bottom: 1px solid transparent;
+    transition: color var(--transition), border-color var(--transition), opacity var(--transition);
 }
 
-a.link:hover {
-    opacity: 0.75;
+a.link:hover,
+ a.link:focus-visible {
+    color: #ffffff;
+    opacity: 1;
+    border-color: var(--accent-border);
+}
+
+a.link:focus-visible {
+    outline: 2px solid var(--accent-border);
+    outline-offset: 3px;
 }
 
 /* ========================== LAYOUT ========================== */
