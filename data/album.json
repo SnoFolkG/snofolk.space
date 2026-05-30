@@ -2562,5 +2562,71 @@
       "duration": "02:38"
     }
   ]
+},
+
+{
+  "id": "land-of-the-lost",
+  "title": "Land Of The Lost",
+  "artist": "Freeze",
+  "year": 1983,
+  "genre": "Hardcore Punk",
+  "city": "Boston, MA",
+  "label": "Modern Method Records",
+  "img": "img/Freeze - Land Of The Lost.jpg",
+  "download": "https://www.mediafire.com/file/pbbfwyg3wpx19j1/Land_Of_The_Lost_%25281983%2529.rar/file",
+  "tracks": [
+    {
+      "title": "American Town",
+      "duration": "03:34"
+    },
+    {
+      "title": "Gardener And The Maid",
+      "duration": "02:33"
+    },
+    {
+      "title": "No Exposure",
+      "duration": "01:25"
+    },
+    {
+      "title": "Food Lava",
+      "duration": "00:31"
+    },
+    {
+      "title": "Days Of Desperation",
+      "duration": "03:21"
+    },
+    {
+      "title": "Go Team Go",
+      "duration": "01:24"
+    },
+    {
+      "title": "Nazi Fun",
+      "duration": "01:27"
+    },
+    {
+      "title": "Won't Come Back Alive",
+      "duration": "01:27"
+    },
+    {
+      "title": "So Long Ago",
+      "duration": "01:57"
+    },
+    {
+      "title": "Duh Family",
+      "duration": "03:56"
+    },
+    {
+      "title": "The Megawaki Cult",
+      "duration": "01:40"
+    },
+    {
+      "title": "Sickly Sweet",
+      "duration": "00:17"
+    },
+    {
+      "title": "Pig Hunt",
+      "duration": "01:50"
+    }
+  ]
 }
 ]
