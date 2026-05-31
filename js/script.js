@@ -1,4 +1,4 @@
-﻿// 1. DATA PATH
+// 1. DATA PATH
 const DATA_URL = '/data/album.json';
 
 let allAlbumsData = [];
@@ -81,15 +81,13 @@ function findSimilarAlbums(currentAlbum, allAlbums) {
     const others = allAlbums.filter(a => a.id !== currentAlbum.id);
 
     const sameArtist = shuffleArray(others.filter(a => a.artist === currentAlbum.artist));
-    if (sameArtist.length >= 3) return sameArtist.slice(0, 3);
-    if (sameArtist.length > 0) return sameArtist;
+    // Берем тот же город, но исключаем того же исполнителя, чтобы не дублировать
+    const sameCity = shuffleArray(others.filter(a => a.city === currentAlbum.city && a.artist !== currentAlbum.artist));
 
-    const sameCity = shuffleArray(others.filter(a => a.city === currentAlbum.city));
-    if (sameCity.length >= 3) return sameCity.slice(0, 3);
-    if (sameCity.length > 0) return sameCity;
-
-    return [];
+    // Объединяем массивы (артисты в приоритете) и забираем первые 3 элемента
+    return [...sameArtist, ...sameCity].slice(0, 3);
 }
+
 
 function shuffleArray(array) {
     const copy = array.slice();
@@ -179,8 +177,9 @@ function renderAlbumDetail(albums) {
 
     // SIMILAR ALBUMS
     const displayAlbums = similarAlbums.length > 0
-        ? similarAlbums
-        : albums.filter(a => a.id !== album.id).sort(() => 0.5 - Math.random()).slice(0, 3);
+    ? similarAlbums
+    : shuffleArray(albums.filter(a => a.id !== album.id)).slice(0, 3);
+
 
     const similarNote = similarAlbums.length === 0
         ? `<p class="similar-note">No similar albums yet, but here are some good ones:</p>`
@@ -190,7 +189,8 @@ function renderAlbumDetail(albums) {
         <div class="album-mini-card">
             <a href="album.html?id=${a.id}">
                 <img src="${a.img}" alt="${a.title}">
-                <p><strong>${a.title}</strong><br>${a.artist}</p>
+               <p><strong>${a.title}</strong><br>
+                   ${a.artist}</p>
             </a>
         </div>
     `).join('');
