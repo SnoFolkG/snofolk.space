@@ -1,6 +1,6 @@
 # snofolk.space
 
-![Version](https://img.shields.io/badge/version-4.5.0-red?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-4.6.1-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
 
 SnoFolk.Space is a static archive of classic and rare **Hardcore Punk**, **Horror Punk**, and **Punk Rock** albums.
@@ -67,19 +67,6 @@ The JavaScript code loads this JSON and renders:
 - Similar album recommendations.
 - News and version history updates.
 - Custom fonts from Google Fonts (`Montserrat`, `Orbitron`).
-
-## Usage
-Open any page from the repository in a static web server or deploy to a static hosting provider.
-
-Example local preview:
-```bash
-# from repository root
-python -m http.server 8080
-```
-Then visit `http://localhost:8080/index.html`.
-
-## License
-This repository is published under the MIT License.
 
 ---
 

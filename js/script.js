@@ -190,7 +190,7 @@ function renderAlbumDetail(albums) {
         <div class="album-mini-card">
             <a href="album.html?id=${a.id}">
                 <img src="${a.img}" alt="${a.title}">
-                <p><strong>${a.artist}</strong><br>${a.title}</p>
+                <p><strong>${a.title}</strong><br>${a.artist}</p>
             </a>
         </div>
     `).join('');

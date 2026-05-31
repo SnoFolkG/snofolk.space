@@ -769,14 +769,14 @@ footer {
 }
 
 .album-mini-card p {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.4;
     margin: 0;
     color: var(--text-light);
 }
 
 .album-mini-card strong {
-    font-size: 12px;
+    font-size: 14px;
     display: block;
     margin-bottom: 2px;
 }
