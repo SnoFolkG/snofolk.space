@@ -1,6 +1,6 @@
 # snofolk.space
 
-![Version](https://img.shields.io/badge/version-4.6.1-red?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-4.6.2-red?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
 
 SnoFolk.Space is a static archive of classic and rare **Hardcore Punk**, **Horror Punk**, and **Punk Rock** albums.
@@ -25,7 +25,7 @@ This repository hosts a small static website built with HTML, CSS and JavaScript
 - `info.html` — Contact info, album list and version history.
 - `album.html` — Dynamic album details page rendered from JSON data.
 - `what.html` — Access gate page used by the header link flow.
-- `unaviable.html` — If cite is broken
+- `404.html` — Error page shown when a page is missing.
 - `robots.txt` — Search engine rules.
 - `sitemap.xml` — Sitemap for crawlers.
 - `_headers` and `_redirects` — Static hosting configuration helpers.

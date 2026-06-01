@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="2.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://snofolk.space/</loc>
@@ -43,4 +43,12 @@
   <url><loc>https://snofolk.space/albums/no-wishes-no-prayers</loc><priority>0.9</priority></url>
   <url><loc>https://snofolk.space/albums/subhumans</loc><priority>0.9</priority></url>
   <url><loc>https://snofolk.space/albums/deep-wound</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/possible-ep</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/screaming-for-change</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/kill-for-christ</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/1980-1986</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/faith</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/brotherhood</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/my-america</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/land-of-the-lost</loc><priority>0.9</priority></url>
 </urlset>
