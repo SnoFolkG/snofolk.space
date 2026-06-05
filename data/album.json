@@ -6,6 +6,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Austin, TX",
+    "country": "USA",
     "label": "R Radical Records",
     "img": "img/MDC - Millions Of Dead Cops (1982).jpg",
     "download": "https://www.mediafire.com/file/0pnerbvo0e2nn4w/Millions_of_Dead_Cops_%25281982%2529.zip/file",
@@ -75,6 +76,7 @@
     "year": 1986,
     "genre": "Hardcore Punk",
     "city": "San Francisco, CA",
+    "country": "USA",
     "label": "R Radical Records",
     "img": "img/MDC - Smoke Signals (1986).jpg",
     "download": "https://www.mediafire.com/file/3oo6gwxod66pso0/Smoke_Signals_%25281986%2529.zip/file",
@@ -140,6 +142,7 @@
     "year": 1989,
     "genre": "Hardcore Punk",
     "city": "San Francisco, CA",
+    "country": "USA",
     "label": "R Radical Records",
     "img": "img/MDC - Metal Devil Cokes (1989).jpg",
     "download": "https://www.mediafire.com/file/onz2vhg77iq1yzh/Metal_Devil_Cokes_%25281989%2529.zip/file",
@@ -217,6 +220,7 @@
     "year": 1991,
     "genre": "Hardcore Punk",
     "city": "San Francisco, CA",
+    "country": "USA",
     "label": "R Radical Records",
     "img": "img/MDC - Hey Cop!! If I Had A Face Like Yours… (1991).jpg",
     "download": "https://www.mediafire.com/file/8lca5qfemvwcupr/Hey_Cop%2521%2521_If_I_Had_A_Face_Like_Your%2527s_%25281991%2529.zip/file",
@@ -290,6 +294,7 @@
     "year": 1982,
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
+    "country": "USA",
     "label": "Ruby Records",
     "img": "img/Misfits - Walk Among Us (1982).jpg",
     "download": "https://www.mediafire.com/file/7oyxz3o3d2o1rja/Walk_Among_Us_%25281982%2529.zip/file",
@@ -355,6 +360,7 @@
     "year": 1983,
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
+    "country": "USA",
     "label": "Plan 9 Records",
     "img": "img/Misfits - Earth A.D. - Wolfs Blood (1983).jpg",
     "download": "https://www.mediafire.com/file/t3couwmm0iads9k/Earth_A.D._%25281984%2529.zip/file",
@@ -416,6 +422,7 @@
     "year": 1996,
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
+    "country": "USA",
     "label": "Caroline Records",
     "img": "img/Misfits - Static Age (1996).jpg",
     "download": "https://www.mediafire.com/file/akdt6ifqnzbwubf/Static_Age_%25281996%2529.zip/file",
@@ -497,6 +504,7 @@
     "year": 1980,
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
+    "country": "Canada",
     "label": "Sudden Death Records",
     "img": "img/DOA - Something Better Change (1980).jpg",
     "download": "https://www.mediafire.com/file/4hislmjoku93vsg/Something_Better_Change_%25281980%2529.zip/file",
@@ -566,6 +574,7 @@
     "year": 1981,
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
+    "country": "Canada",
     "label": "Sudden Death Records",
     "img": "img/DOA - Hardcore '81 (1981).jpg",
     "download": "https://www.mediafire.com/file/01g53i94ur9ej2h/H%2Ardc%2Ar%2A_%252781_%25281981%2529.zip/file",
@@ -635,6 +644,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
+    "country": "Canada",
     "label": "Alternative Tentacles",
     "img": "img/DOA - War on 45 (1982).jpg",
     "download": "https://www.mediafire.com/file/4h2vkvmuuymxm41/War_On_45_%25281982%2529.zip/file",
@@ -680,6 +690,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
+    "country": "USA",
     "label": "X-Claim! Records",
     "img": "img/Jerry's Kids - Unreleased EP (1982).jpg",
     "download": "https://www.mediafire.com/file/jq1thc1srh64nrx/Unreleased_EP_%25281982%2529.zip/file",
@@ -733,6 +744,7 @@
     "year": 1983,
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
+    "country": "USA",
     "label": "X-Claim! Records",
     "img": "img/Jerry's Kids - Is This My World (1983).jpg",
     "download": "https://www.mediafire.com/file/1s3okukg97rwifi/Is_This_My_World_%25281983%2529.zip/file",
@@ -794,6 +806,7 @@
     "year": 1981,
     "genre": "Hardcore Punk",
     "city": "Washington, D.C.",
+    "country": "USA",
     "label": "Dischord Records",
     "img": "img/SOA - No Policy (1981).jpg",
     "download": "https://www.mediafire.com/file/kpt41vp422pyd03/No_Policy_%25281981%2529.zip/file",
@@ -847,6 +860,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Washington, D.C.",
+    "country": "USA",
     "label": "Dischord Records",
     "img": "img/SOA - Flex Your Head (1982).jpg",
     "download": "https://www.mediafire.com/file/sndo84cqs6tt5t3/Flex_Your_Head_%25281982%2529.zip/file",
@@ -872,6 +886,7 @@
     "year": 1979,
     "genre": "Punk Rock",
     "city": "Los Angeles, CA",
+    "country": "USA",
     "label": "Slash Records",
     "img": "img/The Germs - (GI) (1979).jpg",
     "download": "https://www.mediafire.com/file/dm4tq3nooal1ri4/%2528GI%2529_%25281979%2529.zip/file",
@@ -953,6 +968,7 @@
     "year": 1993,
     "genre": "Punk Rock",
     "city": "Los Angeles, CA",
+    "country": "USA",
     "label": "Slash Records",
     "img": "img/The Germs - Cat's Clause (Live) (1993).jpg",
     "download": "https://www.mediafire.com/file/pe4xyq7awquvvp2/Cat%2527s_Clause_%2528Live%2529_%25281993%2529.zip/file",
@@ -1018,6 +1034,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Detroit, MI",
+    "country": "USA",
     "label": "Touch and Go Records",
     "img": "img/Negative Approach - Negative Approach (1982).jpg",
     "download": "https://www.mediafire.com/file/n44w24e75wds69h/Negative_Approach_%25281982%2529.zip/file",
@@ -1071,6 +1088,7 @@
     "year": 1983,
     "genre": "Hardcore Punk",
     "city": "Detroit, MI",
+    "country": "USA",
     "label": "Touch and Go Records",
     "img": "img/Negative Approach - Tied Down (1983).jpg",
     "download": "https://www.mediafire.com/file/ohve0xozarqb1h8/Tied_Down_%25281983%2529.zip/file",
@@ -1124,6 +1142,7 @@
     "year": 2006,
     "genre": "Hardcore Punk",
     "city": "Lansing, MI",
+    "country": "USA",
     "label": "Touch and Go Records",
     "img": "img/The Fix - The Speed of Twisted Thought (2006).jpg",
     "download": "https://www.mediafire.com/file/qu9qtjfkan6egrt/The_Speed_of_Twisted_Thought_%25282006%2529.zip/file",
@@ -1233,6 +1252,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "New York, NY",
+    "country": "USA",
     "label": "Rat Cage Records",
     "img": "img/Cause for Alarm - Cause for Alarm (1982).jpg",
     "download": "https://www.mediafire.com/file/asknlyuq0d9cry7/Cause_For_Alarm_%25281982%2529.zip/file",
@@ -1282,6 +1302,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
+    "country": "USA",
     "label": "X-Claim! Records",
     "img": "img/SS Decontrol - The Kids Will Have Their Say (1982).jpg",
     "download": "https://www.mediafire.com/file/xi9gue6tcytpjtz/The_Kids_Will_Have_Their_Say_%25281982%2529.zip/file",
@@ -1367,6 +1388,7 @@
     "year": 1983,
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
+    "country": "USA",
     "label": "X-Claim! Records",
     "img": "img/SS Decontrol - Get It Away (1983).jpg",
     "download": "https://www.mediafire.com/file/9yh7nzseuguid0n/Get_It_Away_%25281983%2529.zip/file",
@@ -1408,6 +1430,7 @@
     "year": 1980,
     "genre": "Hardcore Punk",
     "city": "Vancouver, BC",
+    "country": "Canada",
     "label": "Friends Records",
     "img": "img/Subhumans - Incorrect Thoughts (1980).jpg",
     "download": "https://www.mediafire.com/file/s1ydbpndkssrprf/Incorrect_Thoughts_%25281980%2529.zip/file",
@@ -1485,6 +1508,7 @@
     "year": 1980,
     "genre": "Hardcore Punk",
     "city": "Los Angeles, CA",
+    "country": "USA",
     "label": "Frontier Records",
     "img": "img/Circle Jerks - Group Sex (1980).jpg",
     "download": "https://www.mediafire.com/file/zwei9jadnwwupf6/Group_Sex_%25281980%2529.zip/file",
@@ -1554,6 +1578,7 @@
     "year": 1984,
     "genre": "Hardcore Punk",
     "city": "New York, NY",
+    "country": "USA",
     "label": "New Red Archives",
     "img": "img/Reagan Youth - Youth Anthems for the New Order (1984).jpg",
     "download": "https://www.mediafire.com/file/f0cippjenkhoixp/Youth_Anthems_for_the_New_Order_%25281984%2529.zip/file",
@@ -1595,6 +1620,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Various",
+    "country": "Various",
     "label": "Alternative Tentacles",
     "img": "img/Various Artists - Let Them Eat Jellybeans (1982).jpg",
     "download": "https://www.mediafire.com/file/povixv6q5zkxidy/Let_Them_Eat_Jellybeans.zip/file",
@@ -1676,6 +1702,7 @@
     "year": "Non-Official",
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
+    "country": "USA",
     "label": "Non-Official",
     "img": "img/Misfits - Beware - All EPs Collection (Non-Official).jpg",
     "download": "https://www.mediafire.com/file/fui74qocagfy9tv/Beware_All_EPs_Collection_%25281984%2529.zip/file",
@@ -1769,6 +1796,7 @@
     "year": 1985,
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
+    "country": "USA",
     "label": "Plan 9 Records",
     "img": "img/Misfits - Legacy Of Brutality (1985).jpg",
     "download": "https://www.mediafire.com/file/gq7rkwckcyydojx/Legacy_Of_Brutality_%25281985%2529.zip/file",
@@ -1834,6 +1862,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Hermosa Beach, CA",
+    "country": "USA",
     "label": "SST Records",
     "img": "img/Black Flag - Damaged (1982).jpg",
     "download": "https://www.mediafire.com/file/chzfxjzg60o45oo/Damaged_%25281982%2529.zip/file",
@@ -1907,6 +1936,7 @@
     "year": 1978,
     "genre": "Punk Rock",
     "city": "Los Angeles, CA",
+    "country": "USA",
     "label": "What? Records",
     "img": "img/The Germs - Lexicon Devil (1978).jpg",
     "download": "https://www.mediafire.com/file/f16c64tr06y667i/Lexicon_Devil_%25281978%2529.zip/file",
@@ -1932,6 +1962,7 @@
     "year": 1987,
     "genre": "Hardcore Punk",
     "city": "New York, NY",
+    "country": "USA",
     "label": "Schism Records",
     "img": "img/Project X - Straight Edge Revenge (1987).jpg",
     "download": "https://www.mediafire.com/file/fa9rw96j7oy54xk/Straight_Edge_Revenge_%25281987%2529.zip/file",
@@ -1969,6 +2000,7 @@
     "year": 1983,
     "genre": "Punk Rock",
     "city": "Vancouver, BC",
+    "country": "Canada",
     "label": "SST Records",
     "img": "img/Subhumans - No Wishes, No Prayers (1983).jpg",
     "download": "https://www.mediafire.com/file/iimkfjlm1zm0oui/No_Wishes%252C_No_Prayers_%25281983%2529.zip/file",
@@ -2030,6 +2062,7 @@
     "year": 1979,
     "genre": "Punk Rock",
     "city": "Vancouver, BC",
+    "country": "Canada",
     "label": "Quintessence Records",
     "img": "img/Subhumans - Subhumans (1979).jpg",
     "download": "https://www.mediafire.com/file/k5idny2fgkp36ep/Subhumans_%25281979%2529.zip/file",
@@ -2059,6 +2092,7 @@
     "year": 1983,
     "genre": "Hardcore Punk",
     "city": "Westfield, MA",
+    "country": "USA",
     "label": "Radiobeat Records",
     "img": "img/Deep Wound - Deep Wound (1983).jpg",
     "download": "https://www.mediafire.com/file/uwzfgwgw9sxance/Deep_Wound_EP_%25281983%2529.zip/file",
@@ -2108,6 +2142,7 @@
     "year": 1981,
     "genre": "Hardcore Punk",
     "city": "Washington, D.C.",
+    "country": "USA",
     "label": "Dischord Records",
     "img": "img/Youth Brigade - Possible EP (1983).jpg",
     "download": "https://www.mediafire.com/file/d8phpgtijuy53vt/Possible_EP_%25281981%2529.zip/file",
@@ -2153,6 +2188,7 @@
     "year": 1986,
     "genre": "Hardcore Punk",
     "city": "Orange County, CA",
+    "country": "USA",
     "label": "Wishingwell Records",
     "img": "img/Uniform Choice - Screaming for Change (1986).jpg",
     "download": "https://www.mediafire.com/file/ehcrv4bggguzhsq/Screaming_for_Change_%25281986%2529.zip/file",
@@ -2222,6 +2258,7 @@
     "year": 1982,
     "genre": "Hardcore Punk",
     "city": "Boston, MA",
+    "country": "USA",
     "label": "Posh Boy Records",
     "img": "img/FUs - Kill for Christ (1982).jpg",
     "download": "https://www.mediafire.com/file/jceukdiifik85i1/Kill_for_Christ_%25281982%2529.zip/file",
@@ -2304,13 +2341,14 @@
       }
     ]
   },
-{
+  {
     "id": "1980-1986",
     "title": "1980-1986",
     "artist": "Dicks",
     "year": 1997,
     "genre": "Punk",
     "city": "Austin, TX",
+    "country": "USA",
     "label": "Alternative Tentacles",
     "img": "img/Dicks - 1980-1986.jpg",
     "download": "https://www.mediafire.com/file/a8aqmhu013xi8iz/1980-1986_%25281997%2529.zip/file",
@@ -2385,248 +2423,248 @@
       }
     ]
   },
-
   {
-  "id": "faith",
-  "title": "Faith",
-  "artist": "Faith",
-  "year": 1982,
-  "genre": "Hardcore Punk",
-  "city": "Washington, D.C.",
-  "label": "Dischord Records",
-  "img": "img/Faith - Faith.jpg",
-  "download": "https://www.mediafire.com/file/n3bjpt4e0s5tw2d/Faith_%25281982%2529.zip/file",
-  "tracks": [
-    {
-      "title": "SR It's Time",
-      "duration": "00:58"
-    },
-    {
-      "title": "SR Face To Face",
-      "duration": "01:01"
-    },
-    {
-      "title": "SR Trapped",
-      "duration": "00:45"
-    },
-    {
-      "title": "In Control",
-      "duration": "01:08"
-    },
-    {
-      "title": "Another Victim",
-      "duration": "00:40"
-    },
-    {
-      "title": "What's Wrong With Me",
-      "duration": "00:41"
-    },
-    {
-      "title": "SR What You Think",
-      "duration": "00:48"
-    },
-    {
-      "title": "Confusion",
-      "duration": "01:33"
-    },
-    {
-      "title": "You're X'd",
-      "duration": "01:06"
-    },
-    {
-      "title": "Nightmare",
-      "duration": "01:10"
-    },
-    {
-      "title": "Don't Tell Me",
-      "duration": "00:55"
-    },
-    {
-      "title": "SR In The Black",
-      "duration": "01:44"
-    }
-  ]
-},
-
+    "id": "faith",
+    "title": "Faith",
+    "artist": "Faith",
+    "year": 1982,
+    "genre": "Hardcore Punk",
+    "city": "Washington, D.C.",
+    "country": "USA",
+    "label": "Dischord Records",
+    "img": "img/Faith - Faith.jpg",
+    "download": "https://www.mediafire.com/file/n3bjpt4e0s5tw2d/Faith_%25281982%2529.zip/file",
+    "tracks": [
+      {
+        "title": "SR It's Time",
+        "duration": "00:58"
+      },
+      {
+        "title": "SR Face To Face",
+        "duration": "01:01"
+      },
+      {
+        "title": "SR Trapped",
+        "duration": "00:45"
+      },
+      {
+        "title": "In Control",
+        "duration": "01:08"
+      },
+      {
+        "title": "Another Victim",
+        "duration": "00:40"
+      },
+      {
+        "title": "What's Wrong With Me",
+        "duration": "00:41"
+      },
+      {
+        "title": "SR What You Think",
+        "duration": "00:48"
+      },
+      {
+        "title": "Confusion",
+        "duration": "01:33"
+      },
+      {
+        "title": "You're X'd",
+        "duration": "01:06"
+      },
+      {
+        "title": "Nightmare",
+        "duration": "01:10"
+      },
+      {
+        "title": "Don't Tell Me",
+        "duration": "00:55"
+      },
+      {
+        "title": "SR In The Black",
+        "duration": "01:44"
+      }
+    ]
+  },
   {
-  "id": "brotherhood",
-  "title": "Brotherhood",
-  "artist": "DYS",
-  "year": 1983,
-  "genre": "Hardcore Punk",
-  "city": "Boston, MA",
-  "label": "X-Claim! Records",
-  "img": "img/DYS - Brotherhood.jpg",
-  "download": "https://www.mediafire.com/file/hunk6jq4u7r9pe2/Brotherhood_%25281983%2529.zip/file",
-  "tracks": [
-    {
-      "title": "Open Up",
-      "duration": "01:26"
-    },
-    {
-      "title": "SR More Than Fashion",
-      "duration": "01:31"
-    },
-    {
-      "title": "SR Circle Storm",
-      "duration": "00:37"
-    },
-    {
-      "title": "City To City",
-      "duration": "01:28"
-    },
-    {
-      "title": "[The Gitl's] Got Limits",
-      "duration": "01:13"
-    },
-    {
-      "title": "SR Brotherhood",
-      "duration": "01:03"
-    },
-    {
-      "title": "Yellow",
-      "duration": "01:18"
-    },
-    {
-      "title": "SR Stand Proud",
-      "duration": "00:57"
-    },
-    {
-      "title": "SR Insurance Risk",
-      "duration": "00:52"
-    },
-    {
-      "title": "Escape",
-      "duration": "02:22"
-    },
-    {
-      "title": "Wolfpack",
-      "duration": "01:16"
-    }
-  ]
-},
-
-{
-  "id": "my-america",
-  "title": "My America",
-  "artist": "F.U.'s",
-  "year": 1983,
-  "genre": "Hardcore Punk",
-  "city": "Boston, MA",
-  "label": "X-Claim! Records",
-  "img": "img/FU's - My America.jpg",
-  "download": "https://www.mediafire.com/file/o9pzcv7ye6bd5lg/My_America_%25281983%2529.zip/file",
-  "tracks": [
-    {
-      "title": "SR What You Pay For",
-      "duration": "01:30"
-    },
-    {
-      "title": "SR Outcast",
-      "duration": "00:53"
-    },
-    {
-      "title": "Poor, Poor, Pitiful You",
-      "duration": "01:17"
-    },
-    {
-      "title": "The Grinder",
-      "duration": "01:03"
-    },
-    {
-      "title": "SR Unite or Lose",
-      "duration": "01:32"
-    },
-    {
-      "title": "SR This Is Your Life",
-      "duration": "01:20"
-    },
-    {
-      "title": "My America",
-      "duration": "01:21"
-    },
-    {
-      "title": "Choir Boy",
-      "duration": "01:26"
-    },
-    {
-      "title": "Boston's FInest",
-      "duration": "01:17"
-    },
-    {
-      "title": "Rifle",
-      "duration": "01:13"
-    },
-    {
-      "title": "SR We're An American Band",
-      "duration": "02:38"
-    }
-  ]
-},
-
-{
-  "id": "land-of-the-lost",
-  "title": "Land Of The Lost",
-  "artist": "Freeze",
-  "year": 1983,
-  "genre": "Hardcore Punk",
-  "city": "Boston, MA",
-  "label": "Modern Method Records",
-  "img": "img/Freeze - Land Of The Lost.jpg",
-  "download": "https://www.mediafire.com/file/pbbfwyg3wpx19j1/Land_Of_The_Lost_%25281983%2529.rar/file",
-  "tracks": [
-    {
-      "title": "American Town",
-      "duration": "03:34"
-    },
-    {
-      "title": "Gardener And The Maid",
-      "duration": "02:33"
-    },
-    {
-      "title": "No Exposure",
-      "duration": "01:25"
-    },
-    {
-      "title": "Food Lava",
-      "duration": "00:31"
-    },
-    {
-      "title": "Days Of Desperation",
-      "duration": "03:21"
-    },
-    {
-      "title": "Go Team Go",
-      "duration": "01:24"
-    },
-    {
-      "title": "Nazi Fun",
-      "duration": "01:27"
-    },
-    {
-      "title": "Won't Come Back Alive",
-      "duration": "01:27"
-    },
-    {
-      "title": "So Long Ago",
-      "duration": "01:57"
-    },
-    {
-      "title": "Duh Family",
-      "duration": "03:56"
-    },
-    {
-      "title": "The Megawaki Cult",
-      "duration": "01:40"
-    },
-    {
-      "title": "Sickly Sweet",
-      "duration": "00:17"
-    },
-    {
-      "title": "Pig Hunt",
-      "duration": "01:50"
-    }
-  ]
-}
+    "id": "brotherhood",
+    "title": "Brotherhood",
+    "artist": "DYS",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Boston, MA",
+    "country": "USA",
+    "label": "X-Claim! Records",
+    "img": "img/DYS - Brotherhood.jpg",
+    "download": "https://www.mediafire.com/file/hunk6jq4u7r9pe2/Brotherhood_%25281983%2529.zip/file",
+    "tracks": [
+      {
+        "title": "Open Up",
+        "duration": "01:26"
+      },
+      {
+        "title": "SR More Than Fashion",
+        "duration": "01:31"
+      },
+      {
+        "title": "SR Circle Storm",
+        "duration": "00:37"
+      },
+      {
+        "title": "City To City",
+        "duration": "01:28"
+      },
+      {
+        "title": "[The Gitl's] Got Limits",
+        "duration": "01:13"
+      },
+      {
+        "title": "SR Brotherhood",
+        "duration": "01:03"
+      },
+      {
+        "title": "Yellow",
+        "duration": "01:18"
+      },
+      {
+        "title": "SR Stand Proud",
+        "duration": "00:57"
+      },
+      {
+        "title": "SR Insurance Risk",
+        "duration": "00:52"
+      },
+      {
+        "title": "Escape",
+        "duration": "02:22"
+      },
+      {
+        "title": "Wolfpack",
+        "duration": "01:16"
+      }
+    ]
+  },
+  {
+    "id": "my-america",
+    "title": "My America",
+    "artist": "F.U.'s",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Boston, MA",
+    "country": "USA",
+    "label": "X-Claim! Records",
+    "img": "img/FU's - My America.jpg",
+    "download": "https://www.mediafire.com/file/o9pzcv7ye6bd5lg/My_America_%25281983%2529.zip/file",
+    "tracks": [
+      {
+        "title": "SR What You Pay For",
+        "duration": "01:30"
+      },
+      {
+        "title": "SR Outcast",
+        "duration": "00:53"
+      },
+      {
+        "title": "Poor, Poor, Pitiful You",
+        "duration": "01:17"
+      },
+      {
+        "title": "The Grinder",
+        "duration": "01:03"
+      },
+      {
+        "title": "SR Unite or Lose",
+        "duration": "01:32"
+      },
+      {
+        "title": "SR This Is Your Life",
+        "duration": "01:20"
+      },
+      {
+        "title": "My America",
+        "duration": "01:21"
+      },
+      {
+        "title": "Choir Boy",
+        "duration": "01:26"
+      },
+      {
+        "title": "Boston's FInest",
+        "duration": "01:17"
+      },
+      {
+        "title": "Rifle",
+        "duration": "01:13"
+      },
+      {
+        "title": "SR We're An American Band",
+        "duration": "02:38"
+      }
+    ]
+  },
+  {
+    "id": "land-of-the-lost",
+    "title": "Land Of The Lost",
+    "artist": "Freeze",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Boston, MA",
+    "country": "USA",
+    "label": "Modern Method Records",
+    "img": "img/Freeze - Land Of The Lost.jpg",
+    "download": "https://www.mediafire.com/file/pbbfwyg3wpx19j1/Land_Of_The_Lost_%25281983%2529.rar/file",
+    "tracks": [
+      {
+        "title": "American Town",
+        "duration": "03:34"
+      },
+      {
+        "title": "Gardener And The Maid",
+        "duration": "02:33"
+      },
+      {
+        "title": "No Exposure",
+        "duration": "01:25"
+      },
+      {
+        "title": "Food Lava",
+        "duration": "00:31"
+      },
+      {
+        "title": "Days Of Desperation",
+        "duration": "03:21"
+      },
+      {
+        "title": "Go Team Go",
+        "duration": "01:24"
+      },
+      {
+        "title": "Nazi Fun",
+        "duration": "01:27"
+      },
+      {
+        "title": "Won't Come Back Alive",
+        "duration": "01:27"
+      },
+      {
+        "title": "So Long Ago",
+        "duration": "01:57"
+      },
+      {
+        "title": "Duh Family",
+        "duration": "03:56"
+      },
+      {
+        "title": "The Megawaki Cult",
+        "duration": "01:40"
+      },
+      {
+        "title": "Sickly Sweet",
+        "duration": "00:17"
+      },
+      {
+        "title": "Pig Hunt",
+        "duration": "01:50"
+      }
+    ]
+  }
 ]

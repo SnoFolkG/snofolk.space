@@ -223,6 +223,7 @@ function renderAlbumDetail(albums) {
                     <li><span>Year</span>${album.year}</li>
                     <li><span>Genre</span>${album.genre}</li>
                     <li><span>City</span>${album.city}</li>
+                    <li><span>Country</span>${album.country || 'N/A'}</li>
                     <li><span>Label</span>${album.label || 'N/A'}</li>
                 </ul>
                 ${tracklistHTML}
@@ -308,7 +309,8 @@ function getFilteredDownloadsAlbums(albums) {
         a.title.toLowerCase().includes(q) ||
         a.artist.toLowerCase().includes(q) ||
         String(a.year).includes(q) ||
-        (a.city && a.city.toLowerCase().includes(q))
+        (a.city && a.city.toLowerCase().includes(q)) ||
+        (a.country && a.country.toLowerCase().includes(q))
     );
 }
 
