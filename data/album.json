@@ -2666,5 +2666,153 @@
         "duration": "01:50"
       }
     ]
+  },
+  {
+    "id": "terveet-kadet-1983",
+    "title": "Terveet Kädet",
+    "artist": "Terveet Kädet",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Tornio",
+    "country": "Finland",
+    "label": "Propaganda Records",
+    "img": "img/Terveet Kadet - Terveet Kadet.jpg",
+    "download": "https://www.mediafire.com/file/3lui7l5d4ciudvc/Terveet_K%25C3%25A4det_%25281983%2529.zip/file",
+    "tracks": [
+      {
+        "title": "Halloween",
+        "duration": "00:30"
+      },
+      {
+        "title": "Vapaa Pohjola",
+        "duration": "00:44"
+      },
+      {
+        "title": "SR Minä Haluan Paljon Rahaa",
+        "duration": "00:43"
+      },
+      {
+        "title": "Sota",
+        "duration": "00:38"
+      },
+      {
+        "title": "Transvestiitti",
+        "duration": "01:06"
+      },
+      {
+        "title": "SR Musta",
+        "duration": "00:35"
+      },
+      {
+        "title": "Perseet Ylös",
+        "duration": "00:53"
+      },
+      {
+        "title": "A.l.i.e.n.",
+        "duration": "01:04"
+      },
+      {
+        "title": "N.y.t.",
+        "duration": "01:02"
+      },
+      {
+        "title": "Not Right (Part I)",
+        "duration": "01:20"
+      },
+      {
+        "title": "Not Right (Part II)",
+        "duration": "00:51"
+      },
+      {
+        "title": "SR Jeesus Perkele",
+        "duration": "01:24"
+      },
+      {
+        "title": "Vedän Käteen",
+        "duration": "00:56"
+      },
+      {
+        "title": "SR Maailmanloppua Etsimässä",
+        "duration": "00:50"
+      },
+      {
+        "title": "Tuntematon Sotilas",
+        "duration": "00:54"
+      },
+      {
+        "title": "Anna Mulle Piiskaa",
+        "duration": "00:41"
+      },
+      {
+        "title": "Huominen",
+        "duration": "00:42"
+      },
+      {
+        "title": "SR Ei Enää Koskaan Sotaa",
+        "duration": "00:37"
+      }
+    ]
+  },
+  {
+    "id": "ristiinnaulittu-kaaos",
+    "title": "Ristiinnaulittu Kaaos",
+    "artist": "Kaaos",
+    "year": 1984,
+    "genre": "Hardcore Punk",
+    "city": "Tampere",
+    "country": "Finland",
+    "label": "Propaganda Records",
+    "img": "img/Kaaos - Ristiinnaulittu Kaaos.jpg",
+    "download": "https://www.mediafire.com/file/z8l4thcifk6uocm/Ristiinnaulittu_Kaaos_%25281984%2529.zip/file",
+    "tracks": [
+      {
+        "title": "Kuolleet Sankarit",
+        "duration": "01:16"
+      },
+      {
+        "title": "Väkivallan Uhrit",
+        "duration": "01:57"
+      },
+      {
+        "title": "Syytön Sivustakatsoja",
+        "duration": "02:28"
+      },
+      {
+        "title": "Vaihtoehto",
+        "duration": "02:04"
+      },
+      {
+        "title": "Odotan Maailmanloppua",
+        "duration": "02:37"
+      },
+      {
+        "title": "SR Vanki",
+        "duration": "02:10"
+      },
+      {
+        "title": "Pelko Kasvattaa Vihaa",
+        "duration": "01:39"
+      },
+      {
+        "title": "Sun Valinta",
+        "duration": "02:21"
+      },
+      {
+        "title": "Syntynyt Häviään",
+        "duration": "02:40"
+      },
+      {
+        "title": "Kohti Tuhoa...",
+        "duration": "02:09"
+      },
+      {
+        "title": "Kuka Kuolee Kenen Puolesta",
+        "duration": "02:52"
+      },
+      {
+        "title": "SR Ei Ulospääsyä",
+        "duration": "02:07"
+      }
+    ]
   }
 ]
