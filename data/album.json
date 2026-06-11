@@ -2814,5 +2814,51 @@
         "duration": "02:07"
       }
     ]
+  },
+  {
+    "id": "subject-to-change",
+    "title": "Subject to Change",
+    "artist": "Faith",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Washington, D.C.",
+    "country": "USA",
+    "label": "Dischord Records",
+    "img": "img/Faith - Subject to Change.jpg",
+    "download": "https://www.mediafire.com/file/wf8kjk8ojg8jjxc/Subject_To_Change_%25281983%2529.zip/file",
+    "tracks": [
+      {
+        "title": "SR Aware",
+        "duration": "01:41"
+      },
+      {
+        "title": "Limitations",
+        "duration": "01:26"
+      },
+      {
+        "title": "More Of The Same",
+        "duration": "01:34"
+      },
+      {
+        "title": "SR No Choice",
+        "duration": "01:08"
+      },
+      {
+        "title": "SR Say No More",
+        "duration": "01:30"
+      },
+      {
+        "title": "Slowdown",
+        "duration": "02:59"
+      },
+      {
+        "title": "SR Subject To Change",
+        "duration": "01:34"
+      },
+      {
+        "title": "Untitled",
+        "duration": "01:08"
+      }
+    ]
   }
 ]
