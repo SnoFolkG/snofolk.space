@@ -2668,7 +2668,7 @@
     ]
   },
   {
-    "id": "terveet-kadet-1983",
+    "id": "terveet-kadet",
     "title": "Terveet Kädet",
     "artist": "Terveet Kädet",
     "year": 1983,
@@ -2860,5 +2860,52 @@
         "duration": "01:08"
       }
     ]
+  },
+
+  {
+    "id": "aareton-joulu",
+    "title": "Ääretön Joulu",
+    "artist": "Terveet Kädet",
+    "year": 1982,
+    "genre": "Hardcore Punk",
+    "city": "Tornio",
+    "country": "Finland",
+    "label": "Poko Rekords",
+    "img": "img/Terveet Kädet - Ääretön Joulu.jpg",
+    "download": "https://www.mediafire.com/file/w03rnd5ttg25aw7/%25C3%2584%25C3%25A4ret%25C3%25B6n_Joulu_%25281982%2529.zip/file",
+    "tracks": [
+  {
+    "title": "Halstelljat",
+    "duration": "00:44"
+  },
+  {
+    "title": "Musta Jumala",
+    "duration": "01:12"
+  },
+  {
+    "title": "Onnellisia Kytkentöjä",
+    "duration": "00:38"
+  },
+  {
+    "title": "Outo Maa",
+    "duration": "00:47"
+  },
+  {
+    "title": "Pissaa Ja Paskaa",
+    "duration": "00:31"
+  },
+  {
+    "title": "T. Tuho",
+    "duration": "00:34"
+  },
+  {
+    "title": "Tornion Kevät",
+    "duration": "00:41"
+  },
+  {
+    "title": "Utopia",
+    "duration": "01:01"
   }
+]
+  }  
 ]

@@ -1,4 +1,4 @@
-<?xml version="2.0" encoding="UTF-8"?>
+<?xml version="3.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://snofolk.space/</loc>
@@ -51,4 +51,8 @@
   <url><loc>https://snofolk.space/albums/brotherhood</loc><priority>0.9</priority></url>
   <url><loc>https://snofolk.space/albums/my-america</loc><priority>0.9</priority></url>
   <url><loc>https://snofolk.space/albums/land-of-the-lost</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/terveet-kadet</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/ristiinnaulittu-kaaos</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/subject-to-change</loc><priority>0.9</priority></url>
+  <url><loc>https://snofolk.space/albums/aareton-joulu</loc><priority>0.9</priority></url>
 </urlset>
