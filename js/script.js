@@ -149,12 +149,12 @@ function renderAlbumDetail(albums) {
         const tracksHTML = album.tracks.map((track, index) => {
             const isStarred = track.title.startsWith('SR ');
             const name = track.title.replace(/^SR /, '');
-            const duration = track.duration
-                ? `<span class="track-duration">${track.duration}</span>`
-                : '';
-            const indexCell = isStarred
-                ? `<span class="track-index is-star">&#9733;</span>`
-                : `<span class="track-index">${index + 1}.</span>`;
+            const duration = track.duration ?
+                `<span class="track-duration">${track.duration}</span>` :
+                '';
+            const indexCell = isStarred ?
+                `<span class="track-index is-star">&#9733;</span>` :
+                `<span class="track-index">${index + 1}.</span>`;
 
             return `
                 <li class="${isStarred ? 'is-star' : ''}">
@@ -176,14 +176,14 @@ function renderAlbumDetail(albums) {
     }
 
     // SIMILAR ALBUMS
-    const displayAlbums = similarAlbums.length > 0
-    ? similarAlbums
-    : shuffleArray(albums.filter(a => a.id !== album.id)).slice(0, 3);
+    const displayAlbums = similarAlbums.length > 0 ?
+        similarAlbums :
+        shuffleArray(albums.filter(a => a.id !== album.id)).slice(0, 3);
 
 
-    const similarNote = similarAlbums.length === 0
-        ? `<p class="similar-note">No similar albums yet, but here are some good ones:</p>`
-        : '';
+    const similarNote = similarAlbums.length === 0 ?
+        `<p class="similar-note">No similar albums yet, but here are some good ones:</p>` :
+        '';
 
     const similarCardsHTML = displayAlbums.map(a => `
         <div class="album-mini-card">
@@ -360,11 +360,11 @@ async function renderNewsTeaser() {
         if (latestNews.length === 0) return;
 
         container.innerHTML = latestNews.map(news => {
-            const title = news.querySelector("h3")?.textContent?.trim() || "Untitled news";
-            const date = getNewsDate(news);
-            const summary = getNewsSummary(news);
+                    const title = news.querySelector("h3")?.textContent?.trim() || "Untitled news";
+                    const date = getNewsDate(news);
+                    const summary = getNewsSummary(news);
 
-            return `
+                    return `
                 <div class="news-item-preview">
                     ${date ? `<span class="news-date">${date}</span>` : ""}
                     <h3>${escapeHTML(title)}</h3>
@@ -492,6 +492,21 @@ function renderStats(albums) {
     nums[2].textContent = artists;
     nums[3].textContent = yearRange;
 }
+
+// 11.5 STATS - GOAT COUNTER
+var t = setInterval(function () {
+    if (window.goatcounter?.visit_count) {
+        clearInterval(t);
+
+        window.goatcounter.visit_count({
+            append: '#counter',
+            callback: function (count) {
+                document.querySelector('#counter').textContent =
+                    `You are visitor #${count} on snofolk.space`;
+            }
+        });
+    }
+}, 100);
 
 // 12. FAVORITE ALBUMS
 function renderFavoriteAlbums(albums) {
