@@ -2861,7 +2861,6 @@
       }
     ]
   },
-
   {
     "id": "aareton-joulu",
     "title": "Ääretön Joulu",
@@ -2874,38 +2873,104 @@
     "img": "img/Terveet Kädet - Ääretön Joulu.jpg",
     "download": "https://www.mediafire.com/file/w03rnd5ttg25aw7/%25C3%2584%25C3%25A4ret%25C3%25B6n_Joulu_%25281982%2529.zip/file",
     "tracks": [
-  {
-    "title": "Halstelljat",
-    "duration": "00:44"
+      {
+        "title": "Halstelljat",
+        "duration": "00:44"
+      },
+      {
+        "title": "Musta Jumala",
+        "duration": "01:12"
+      },
+      {
+        "title": "Onnellisia Kytkentöjä",
+        "duration": "00:38"
+      },
+      {
+        "title": "Outo Maa",
+        "duration": "00:47"
+      },
+      {
+        "title": "Pissaa Ja Paskaa",
+        "duration": "00:31"
+      },
+      {
+        "title": "T. Tuho",
+        "duration": "00:34"
+      },
+      {
+        "title": "Tornion Kevät",
+        "duration": "00:41"
+      },
+      {
+        "title": "Utopia",
+        "duration": "01:01"
+      }
+    ]
   },
   {
-    "title": "Musta Jumala",
-    "duration": "01:12"
-  },
-  {
-    "title": "Onnellisia Kytkentöjä",
-    "duration": "00:38"
-  },
-  {
-    "title": "Outo Maa",
-    "duration": "00:47"
-  },
-  {
-    "title": "Pissaa Ja Paskaa",
-    "duration": "00:31"
-  },
-  {
-    "title": "T. Tuho",
-    "duration": "00:34"
-  },
-  {
-    "title": "Tornion Kevät",
-    "duration": "00:41"
-  },
-  {
-    "title": "Utopia",
-    "duration": "01:01"
+    "id": "american-style",
+    "title": "American Style",
+    "artist": "Deep Wound",
+    "year": 1982,
+    "genre": "Hardcore Punk",
+    "city": "Westfield, MA",
+    "country": "USA",
+    "label": "Not on label",
+    "img": "img/Deep Wound - American Style.jpg",
+    "download": "https://www.mediafire.com/file/3sn50h6tlqceuam/American_Style_%25281982%2529.zip/file",
+    "tracks": [
+      {
+        "title": "Pressure",
+        "duration": "01:13"
+      },
+      {
+        "title": "Training Ground",
+        "duration": "01:14"
+      },
+      {
+        "title": "Deep Wound",
+        "duration": "01:32"
+      },
+      {
+        "title": "You're False",
+        "duration": "00:55"
+      },
+      {
+        "title": "Your Hand Is In Your Crotch",
+        "duration": "00:27"
+      },
+      {
+        "title": "Psyched To Die",
+        "duration": "02:40"
+      },
+      {
+        "title": "Sister",
+        "duration": "01:05"
+      },
+      {
+        "title": "Patriots",
+        "duration": "00:32"
+      },
+      {
+        "title": "Never Let You In",
+        "duration": "00:41"
+      },
+      {
+        "title": "Adult",
+        "duration": "00:42"
+      },
+      {
+        "title": "Don't Need",
+        "duration": "01:18"
+      },
+      {
+        "title": "Video Prick",
+        "duration": "02:11"
+      },
+      {
+        "title": "Let's Go To The Mall",
+        "duration": "07:16"
+      }
+    ]
   }
-]
-  }  
 ]
