@@ -225,6 +225,7 @@ function renderAlbumDetail(albums) {
                     <li><span>City</span>${album.city}</li>
                     <li><span>Country</span>${album.country || 'N/A'}</li>
                     <li><span>Label</span>${album.label || 'N/A'}</li>
+                    <li><span>Bitrate</span>${album.bitrate || 'N/A'}</li>
                 </ul>
                 ${tracklistHTML}
                 ${similarHTML('is-mobile')}
