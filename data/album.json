@@ -79,7 +79,7 @@
     "city": "San Francisco, CA",
     "country": "USA",
     "label": "R Radical Records",
-    "bitrate": "",
+    "bitrate": "320 kbps",
     "img": "img/MDC - Smoke Signals (1986).jpg",
     "download": "https://www.mediafire.com/file/3oo6gwxod66pso0/Smoke_Signals_%25281986%2529.zip/file",
     "tracks": [
@@ -88,11 +88,11 @@
         "duration": "01:47"
       },
       {
-        "title": "King of Thrash",
+        "title": "King Of Thrash",
         "duration": "01:25"
       },
       {
-        "title": "SR Drink to Forget",
+        "title": "SR Drink To Forget",
         "duration": "01:57"
       },
       {
@@ -100,11 +100,11 @@
         "duration": "01:42"
       },
       {
-        "title": "Skateboards from Hell",
+        "title": "Skateboards From Hell",
         "duration": "01:30"
       },
       {
-        "title": "SR Tofutti!",
+        "title": "SR Tofutti",
         "duration": "01:26"
       },
       {
@@ -146,21 +146,21 @@
     "city": "San Francisco, CA",
     "country": "USA",
     "label": "R Radical Records",
-    "bitrate": "192 kbps",
+    "bitrate": "320 kbps",
     "img": "img/MDC - Metal Devil Cokes (1989).jpg",
     "download": "https://www.mediafire.com/file/onz2vhg77iq1yzh/Metal_Devil_Cokes_%25281989%2529.zip/file",
     "tracks": [
       {
         "title": "SR Huddled Masses",
-        "duration": "01:58"
+        "duration": "01:56"
       },
       {
-        "title": "SR Dirty Harry For President",
+        "title": "SR Dirty Harry for President",
         "duration": "02:11"
       },
       {
-        "title": "SR White Men In Suits",
-        "duration": "01:28"
+        "title": "SR White Men in Suits",
+        "duration": "01:29"
       },
       {
         "title": "Three Blind Mice",
@@ -168,39 +168,39 @@
       },
       {
         "title": "Tofu Spaghetti",
-        "duration": "02:09"
+        "duration": "02:08"
       },
       {
         "title": "Snuffed Out",
         "duration": "02:28"
       },
       {
-        "title": "Deep In The Heart",
+        "title": "Deep in the Heart",
         "duration": "01:36"
       },
       {
         "title": "Acid Reindeer",
-        "duration": "01:50"
+        "duration": "01:47"
       },
       {
-        "title": "I Was A Dupe For The RCP",
+        "title": "I Was a Dupe for the Rcp",
         "duration": "01:59"
       },
       {
-        "title": "SR Metal Devil Cokes",
+        "title": "SR Metal Devil Crossoverture",
         "duration": "03:17"
       },
       {
-        "title": "Hole In My Soul",
+        "title": "Hole in My Soul",
         "duration": "01:58"
       },
       {
-        "title": "SR Knucklehead",
+        "title": "SR I'm a Knucklehead",
         "duration": "02:41"
       },
       {
         "title": "Ain't It Funny (How It All Works Out)",
-        "duration": "02:17"
+        "duration": "02:18"
       },
       {
         "title": "SR Mongoloid",
@@ -211,46 +211,46 @@
         "duration": "01:34"
       },
       {
-        "title": "Something For Everyone",
-        "duration": "02:27"
+        "title": "Something for Everyone",
+        "duration": "02:25"
       }
     ]
   },
   {
     "id": "hey-cop-if-i-had-a-face-like-yours",
-    "title": "Hey Cop!!! If I Had a Face Like Yours...",
+    "title": "Hey Cop!!! If I Had A Face Like Yours...",
     "artist": "MDC",
     "year": 1991,
     "genre": "Hardcore Punk",
     "city": "San Francisco, CA",
     "country": "USA",
     "label": "R Radical Records",
-    "bitrate": "128 kbps",
+    "bitrate": "320 kbps",
     "img": "img/MDC - Hey Cop!! If I Had A Face Like Yours… (1991).jpg",
-    "download": "https://www.mediafire.com/file/8lca5qfemvwcupr/Hey_Cop%2521%2521_If_I_Had_A_Face_Like_Your%2527s_%25281991%2529.zip/file",
+    "download": "https://www.mediafire.com/file/w6k63fzcc17kefh/Hey_Cop%2521%2521%2521_If_I_Had_A_Face_Like_Yours..._%25281991%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Millions Of Dead Cops",
+        "title": "SR Millions of Dead Cops",
         "duration": "02:56"
       },
       {
-        "title": "Mark Of The Farmer",
+        "title": "Mark of the Farmer",
         "duration": "01:58"
       },
       {
-        "title": "SR U.S War #54",
+        "title": "SR U.S. War #54",
         "duration": "03:22"
       },
       {
-        "title": "Gig And Die In L.A",
+        "title": "Gig and Die in L.A.",
         "duration": "01:26"
       },
       {
         "title": "SR Beat Somebody Up",
-        "duration": "02:20"
+        "duration": "02:19"
       },
       {
-        "title": "Nowhere To Go",
+        "title": "Nowhere to Go",
         "duration": "01:59"
       },
       {
@@ -258,16 +258,16 @@
         "duration": "02:11"
       },
       {
-        "title": "SR If I Had A Face",
-        "duration": "02:00"
+        "title": "SR If I Had a Face",
+        "duration": "01:58"
       },
       {
         "title": "It's Later Than You Think",
-        "duration": "02:10"
+        "duration": "02:09"
       },
       {
         "title": "SR Lambada Me",
-        "duration": "01:34"
+        "duration": "01:33"
       },
       {
         "title": "The Jew That Got Away",
@@ -275,19 +275,19 @@
       },
       {
         "title": "SR Moneypile",
-        "duration": "02:39"
+        "duration": "03:54"
       },
       {
         "title": "SR Cockrocker",
         "duration": "01:15"
       },
       {
-        "title": "Crime Of Rape",
+        "title": "Crime of Rape",
         "duration": "02:33"
       },
       {
         "title": "Black Christmas",
-        "duration": "04:32"
+        "duration": "04:30"
       }
     ]
   },
@@ -814,13 +814,13 @@
   {
     "id": "no-policy",
     "title": "No Policy",
-    "artist": "SOA",
+    "artist": "S.O.A.",
     "year": 1981,
     "genre": "Hardcore Punk",
     "city": "Washington, D.C.",
     "country": "USA",
     "label": "Dischord Records",
-    "bitrate": "192 kbps",
+    "bitrate": "320 kbps",
     "img": "img/SOA - No Policy (1981).jpg",
     "download": "https://www.mediafire.com/file/kpt41vp422pyd03/No_Policy_%25281981%2529.zip/file",
     "tracks": [
@@ -896,7 +896,7 @@
   {
     "id": "gi",
     "title": "(GI)",
-    "artist": "The Germs",
+    "artist": "Germs",
     "year": 1979,
     "genre": "Punk Rock",
     "city": "Los Angeles, CA",
@@ -908,19 +908,19 @@
     "tracks": [
       {
         "title": "SR What We Do Is Secret",
-        "duration": "00:42"
+        "duration": "00:44"
       },
       {
         "title": "Communist Eyes",
-        "duration": "02:15"
+        "duration": "02:16"
       },
       {
-        "title": "Land of Treason",
+        "title": "Land Of Treason",
         "duration": "02:10"
       },
       {
         "title": "SR Richie Dagger's Crime",
-        "duration": "01:56"
+        "duration": "01:57"
       },
       {
         "title": "Strange Notes",
@@ -967,11 +967,11 @@
         "duration": "01:02"
       },
       {
-        "title": "Shut Down (Annihilation Man)",
-        "duration": "09:41"
+        "title": "Shut Down (Live)",
+        "duration": "09:39"
       },
       {
-        "title": "Caught in My Eye",
+        "title": "Caught In My Eye (Unreleased Album Mix)",
         "duration": "03:25"
       }
     ]
@@ -1257,81 +1257,81 @@
     "city": "Boston, MA",
     "country": "USA",
     "label": "X-Claim! Records",
-    "bitrate": "192 kbps",
+    "bitrate": "320 kbps",
     "img": "img/SS Decontrol - The Kids Will Have Their Say (1982).jpg",
     "download": "https://www.mediafire.com/file/xi9gue6tcytpjtz/The_Kids_Will_Have_Their_Say_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "Bolling Point",
-        "duration": "00:54"
+        "title": "Boiling Point",
+        "duration": "00:55"
       },
       {
         "title": "Fight Them",
-        "duration": "01:08"
+        "duration": "01:06"
       },
       {
-        "title": "You Don't Even Care",
-        "duration": "00:30"
-      },
-      {
-        "title": "Not Normal",
-        "duration": "00:54"
-      },
-      {
-        "title": "Wasted Youth",
-        "duration": "00:34"
-      },
-      {
-        "title": "Jock Itch",
-        "duration": "00:47"
-      },
-      {
-        "title": "Fun To You",
-        "duration": "00:35"
-      },
-      {
-        "title": "V.A.",
-        "duration": "00:59"
-      },
-      {
-        "title": "How Much Art",
-        "duration": "03:06"
-      },
-      {
-        "title": "The Kids Will Have Their Say",
-        "duration": "01:21"
-      },
-      {
-        "title": "Headed Straight",
-        "duration": "01:29"
-      },
-      {
-        "title": "War Threat",
-        "duration": "01:27"
-      },
-      {
-        "title": "Teach Me Violence",
+        "title": "Do You Even Care",
         "duration": "00:37"
       },
       {
-        "title": "Screw",
-        "duration": "00:22"
+        "title": "Not Normal",
+        "duration": "00:55"
       },
       {
-        "title": "Who's To Judge",
-        "duration": "01:26"
+        "title": "Wasted Youth",
+        "duration": "00:37"
+      },
+      {
+        "title": "Jock Itch",
+        "duration": "00:49"
+      },
+      {
+        "title": "Fun to You",
+        "duration": "00:38"
+      },
+      {
+        "title": "V.A.",
+        "duration": "01:03"
+      },
+      {
+        "title": "How Much Art",
+        "duration": "03:04"
+      },
+      {
+        "title": "The Kids Will Have Their Say",
+        "duration": "01:25"
+      },
+      {
+        "title": "Headed Straight",
+        "duration": "01:32"
+      },
+      {
+        "title": "War Threat",
+        "duration": "01:31"
+      },
+      {
+        "title": "Teach Me Violence",
+        "duration": "00:41"
+      },
+      {
+        "title": "Screw",
+        "duration": "00:26"
+      },
+      {
+        "title": "Who's to Judge",
+        "duration": "01:29"
       },
       {
         "title": "Police Beat",
-        "duration": "01:58"
+        "duration": "02:02"
       },
       {
         "title": "United",
-        "duration": "00:46"
+        "duration": "00:48"
       },
       {
         "title": "The End",
-        "duration": "01:26"
+        "duration": "01:32"
       }
     ]
   },
@@ -2060,9 +2060,9 @@
     "city": "Westfield, MA",
     "country": "USA",
     "label": "Radiobeat Records",
-    "bitrate": "192 kbps",
+    "bitrate": "320 kbps",
     "img": "img/Deep Wound - Deep Wound (1983).jpg",
-    "download": "https://www.mediafire.com/file/uwzfgwgw9sxance/Deep_Wound_EP_%25281983%2529.zip/file",
+    "download": "https://www.mediafire.com/file/o2h3xtlty8iiqju/Deep_Wound_%25281983%2529.zip/file",
     "tracks": [
       {
         "title": "I Saw It",
@@ -2077,7 +2077,7 @@
         "duration": "01:08"
       },
       {
-        "title": "Don't Need",
+        "title": "7 Don't Need",
         "duration": "00:58"
       },
       {
@@ -2089,7 +2089,7 @@
         "duration": "01:33"
       },
       {
-        "title": "Sick Of Fun",
+        "title": "Sick of Fun",
         "duration": "00:48"
       },
       {
@@ -2419,37 +2419,37 @@
     "city": "Washington, D.C.",
     "country": "USA",
     "label": "Dischord Records",
-    "bitrate": "192 kbps",
+    "bitrate": "320 kbps",
     "img": "img/Faith - Faith.jpg",
     "download": "https://www.mediafire.com/file/n3bjpt4e0s5tw2d/Faith_%25281982%2529.zip/file",
     "tracks": [
       {
         "title": "SR It's Time",
-        "duration": "00:58"
+        "duration": "00:59"
       },
       {
-        "title": "SR Face To Face",
-        "duration": "01:01"
+        "title": "SR Face to Face",
+        "duration": "01:02"
       },
       {
         "title": "SR Trapped",
-        "duration": "00:45"
+        "duration": "00:47"
       },
       {
         "title": "In Control",
-        "duration": "01:08"
+        "duration": "01:10"
       },
       {
         "title": "Another Victim",
-        "duration": "00:40"
-      },
-      {
-        "title": "What's Wrong With Me",
         "duration": "00:41"
       },
       {
+        "title": "What's Wrong With Me?",
+        "duration": "00:42"
+      },
+      {
         "title": "SR What You Think",
-        "duration": "00:48"
+        "duration": "00:49"
       },
       {
         "title": "Confusion",
@@ -2461,15 +2461,15 @@
       },
       {
         "title": "Nightmare",
-        "duration": "01:10"
+        "duration": "01:11"
       },
       {
         "title": "Don't Tell Me",
-        "duration": "00:55"
+        "duration": "00:57"
       },
       {
         "title": "SR In The Black",
-        "duration": "01:44"
+        "duration": "02:04"
       }
     ]
   },
