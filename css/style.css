@@ -98,6 +98,10 @@ strong {
     font-weight: 600;
 }
 
+.bitrate {
+    color: var(--text-light);
+}
+
 a.link {
     display: inline-flex;
     align-items: center;

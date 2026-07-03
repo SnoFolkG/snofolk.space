@@ -1,5 +1,12 @@
+
+
 // 1. DATA PATH
 const DATA_URL = '/data/album.json';
+
+// Site and Collection version (semantic version strings)
+const SITE_VERSION = '4.10.0';
+const COLLECTION_VERSION = '7.2.0';
+
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = 'snofolk-what-access';
@@ -22,6 +29,8 @@ async function init() {
         localStorage.removeItem(key);
     }
     renderNewsTeaser();
+    renderSiteVersion();
+    renderCollectionVersions();
     allAlbumsData = await fetchAlbums();
     if (allAlbumsData.length === 0) {
         console.warn("Failed to load albums");
@@ -43,6 +52,18 @@ async function init() {
 
     if (document.getElementById('favorite-albums')) {
         renderFavoriteAlbums(allAlbumsData);
+    }
+}
+
+// Insert numeric site version into any element with id "site-version"
+function renderSiteVersion() {
+    try {
+        const els = document.querySelectorAll('#site-version');
+        els.forEach(el => {
+            el.textContent = String(SITE_VERSION);
+        });
+    } catch (e) {
+        console.warn('renderSiteVersion failed', e);
     }
 }
 
@@ -440,7 +461,12 @@ function renderSimpleList(albums) {
 
     sortedAlbums.forEach(album => {
         const li = document.createElement("li");
-        li.textContent = `${album.artist} - ${album.title} (${album.year})`;
+        li.appendChild(document.createTextNode(`${album.artist} - ${album.title} (${album.year}) [`));
+        const span = document.createElement('span');
+        span.className = 'bitrate';
+        span.textContent = album.bitrate || 'N/A';
+        li.appendChild(span);
+        li.appendChild(document.createTextNode(']'));
         list.appendChild(li);
     });
 }
