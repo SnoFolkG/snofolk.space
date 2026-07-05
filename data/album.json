@@ -13,24 +13,40 @@
     "download": "https://www.mediafire.com/file/0pnerbvo0e2nn4w/Millions_of_Dead_Cops_%25281982%2529.zip/file",
     "tracks": [
       {
+        "title": "American Achievements",
+        "duration": "02:11"
+      },
+      {
+        "title": "Born to Die",
+        "duration": "01:57"
+      },
+      {
         "title": "Business on Parade",
         "duration": "01:27"
       },
       {
-        "title": "SR Dead Cops / America's So Straight",
-        "duration": "02:05"
-      },
-      {
-        "title": "SR Born to Die",
-        "duration": "01:57"
+        "title": "Church & State",
+        "duration": "00:33"
       },
       {
         "title": "Corporate Deathburger",
         "duration": "01:19"
       },
       {
-        "title": "SR Violent Rednecks",
-        "duration": "00:39"
+        "title": "Dead Cops / America's So Straight",
+        "duration": "02:05"
+      },
+      {
+        "title": "Dick for Brains",
+        "duration": "01:04"
+      },
+      {
+        "title": "Greedy & Pathetic",
+        "duration": "01:25"
+      },
+      {
+        "title": "I Hate Work",
+        "duration": "00:57"
       },
       {
         "title": "I Remember",
@@ -41,32 +57,16 @@
         "duration": "02:01"
       },
       {
-        "title": "SR Dick for Brains",
-        "duration": "01:04"
-      },
-      {
-        "title": "I Hate Work",
-        "duration": "00:57"
-      },
-      {
-        "title": "SR My Family is a Little Weird",
-        "duration": "01:57"
-      },
-      {
-        "title": "SR Greedy & Pathetic",
-        "duration": "01:25"
-      },
-      {
-        "title": "Church & State",
-        "duration": "00:33"
-      },
-      {
-        "title": "SR Kill the Light",
+        "title": "Kill the Light",
         "duration": "01:21"
       },
       {
-        "title": "SR American Achievements",
-        "duration": "02:11"
+        "title": "My Family is a Little Weird",
+        "duration": "01:57"
+      },
+      {
+        "title": "Violent Rednecks",
+        "duration": "00:39"
       }
     ]
   },
@@ -84,56 +84,56 @@
     "download": "https://www.mediafire.com/file/3oo6gwxod66pso0/Smoke_Signals_%25281986%2529.zip/file",
     "tracks": [
       {
-        "title": "SR No More Cops",
-        "duration": "01:47"
-      },
-      {
-        "title": "King Of Thrash",
-        "duration": "01:25"
-      },
-      {
-        "title": "SR Drink To Forget",
-        "duration": "01:57"
-      },
-      {
-        "title": "SR The Big Picture",
-        "duration": "01:42"
-      },
-      {
-        "title": "Skateboards From Hell",
-        "duration": "01:30"
-      },
-      {
-        "title": "SR Tofutti",
-        "duration": "01:26"
-      },
-      {
-        "title": "SR South Africa Is Free",
-        "duration": "04:41"
-      },
-      {
         "title": "Acceptable Risks",
         "duration": "01:35"
-      },
-      {
-        "title": "Missile Destroyed Civilization",
-        "duration": "02:25"
-      },
-      {
-        "title": "SR Soup Kitchen Celebrity",
-        "duration": "02:39"
       },
       {
         "title": "Country Squawk",
         "duration": "02:30"
       },
       {
+        "title": "Drink To Forget",
+        "duration": "01:57"
+      },
+      {
+        "title": "King Of Thrash",
+        "duration": "01:25"
+      },
+      {
+        "title": "Missile Destroyed Civilization",
+        "duration": "02:25"
+      },
+      {
+        "title": "No More Cops",
+        "duration": "01:47"
+      },
+      {
         "title": "Paradise Lost",
         "duration": "04:05"
       },
       {
+        "title": "Skateboards From Hell",
+        "duration": "01:30"
+      },
+      {
         "title": "Smoke Signals",
         "duration": "03:00"
+      },
+      {
+        "title": "Soup Kitchen Celebrity",
+        "duration": "02:39"
+      },
+      {
+        "title": "South Africa Is Free",
+        "duration": "04:41"
+      },
+      {
+        "title": "The Big Picture",
+        "duration": "01:42"
+      },
+      {
+        "title": "Tofutti",
+        "duration": "01:26"
       }
     ]
   },
@@ -151,16 +151,56 @@
     "download": "https://www.mediafire.com/file/onz2vhg77iq1yzh/Metal_Devil_Cokes_%25281989%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Huddled Masses",
-        "duration": "01:56"
+        "title": "Acid Reindeer",
+        "duration": "01:47"
       },
       {
-        "title": "SR Dirty Harry for President",
+        "title": "Ain't It Funny (How It All Works Out)",
+        "duration": "02:18"
+      },
+      {
+        "title": "Deep in the Heart",
+        "duration": "01:36"
+      },
+      {
+        "title": "Dirty Harry for President",
         "duration": "02:11"
       },
       {
-        "title": "SR White Men in Suits",
-        "duration": "01:29"
+        "title": "Hole in My Soul",
+        "duration": "01:58"
+      },
+      {
+        "title": "Huddled Masses",
+        "duration": "01:56"
+      },
+      {
+        "title": "I Was a Dupe for the Rcp",
+        "duration": "01:59"
+      },
+      {
+        "title": "I'm a Knucklehead",
+        "duration": "02:41"
+      },
+      {
+        "title": "Love Potion No. 9",
+        "duration": "01:34"
+      },
+      {
+        "title": "Metal Devil Crossoverture",
+        "duration": "03:17"
+      },
+      {
+        "title": "Mongoloid",
+        "duration": "01:21"
+      },
+      {
+        "title": "Snuffed Out",
+        "duration": "02:28"
+      },
+      {
+        "title": "Something for Everyone",
+        "duration": "02:25"
       },
       {
         "title": "Three Blind Mice",
@@ -171,48 +211,8 @@
         "duration": "02:08"
       },
       {
-        "title": "Snuffed Out",
-        "duration": "02:28"
-      },
-      {
-        "title": "Deep in the Heart",
-        "duration": "01:36"
-      },
-      {
-        "title": "Acid Reindeer",
-        "duration": "01:47"
-      },
-      {
-        "title": "I Was a Dupe for the Rcp",
-        "duration": "01:59"
-      },
-      {
-        "title": "SR Metal Devil Crossoverture",
-        "duration": "03:17"
-      },
-      {
-        "title": "Hole in My Soul",
-        "duration": "01:58"
-      },
-      {
-        "title": "SR I'm a Knucklehead",
-        "duration": "02:41"
-      },
-      {
-        "title": "Ain't It Funny (How It All Works Out)",
-        "duration": "02:18"
-      },
-      {
-        "title": "SR Mongoloid",
-        "duration": "01:21"
-      },
-      {
-        "title": "SR Love Potion No. 9",
-        "duration": "01:34"
-      },
-      {
-        "title": "Something for Everyone",
-        "duration": "02:25"
+        "title": "White Men in Suits",
+        "duration": "01:29"
       }
     ]
   },
@@ -230,55 +230,15 @@
     "download": "https://www.mediafire.com/file/w6k63fzcc17kefh/Hey_Cop%2521%2521%2521_If_I_Had_A_Face_Like_Yours..._%25281991%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Millions of Dead Cops",
-        "duration": "02:56"
-      },
-      {
-        "title": "Mark of the Farmer",
-        "duration": "01:58"
-      },
-      {
-        "title": "SR U.S. War #54",
-        "duration": "03:22"
-      },
-      {
-        "title": "Gig and Die in L.A.",
-        "duration": "01:26"
-      },
-      {
-        "title": "SR Beat Somebody Up",
+        "title": "Beat Somebody Up",
         "duration": "02:19"
       },
       {
-        "title": "Nowhere to Go",
-        "duration": "01:59"
+        "title": "Black Christmas",
+        "duration": "04:30"
       },
       {
-        "title": "I Do Not Wish",
-        "duration": "02:11"
-      },
-      {
-        "title": "SR If I Had a Face",
-        "duration": "01:58"
-      },
-      {
-        "title": "It's Later Than You Think",
-        "duration": "02:09"
-      },
-      {
-        "title": "SR Lambada Me",
-        "duration": "01:33"
-      },
-      {
-        "title": "The Jew That Got Away",
-        "duration": "02:11"
-      },
-      {
-        "title": "SR Moneypile",
-        "duration": "03:54"
-      },
-      {
-        "title": "SR Cockrocker",
+        "title": "Cockrocker",
         "duration": "01:15"
       },
       {
@@ -286,8 +246,48 @@
         "duration": "02:33"
       },
       {
-        "title": "Black Christmas",
-        "duration": "04:30"
+        "title": "Gig and Die in L.A.",
+        "duration": "01:26"
+      },
+      {
+        "title": "I Do Not Wish",
+        "duration": "02:11"
+      },
+      {
+        "title": "If I Had a Face",
+        "duration": "01:58"
+      },
+      {
+        "title": "It's Later Than You Think",
+        "duration": "02:09"
+      },
+      {
+        "title": "Lambada Me",
+        "duration": "01:33"
+      },
+      {
+        "title": "Mark of the Farmer",
+        "duration": "01:58"
+      },
+      {
+        "title": "Millions of Dead Cops",
+        "duration": "02:56"
+      },
+      {
+        "title": "Moneypile",
+        "duration": "03:54"
+      },
+      {
+        "title": "Nowhere to Go",
+        "duration": "01:59"
+      },
+      {
+        "title": "The Jew That Got Away",
+        "duration": "02:11"
+      },
+      {
+        "title": "U.S. War #54",
+        "duration": "03:22"
       }
     ]
   },
@@ -305,7 +305,7 @@
     "download": "https://www.mediafire.com/file/7oyxz3o3d2o1rja/Walk_Among_Us_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "SR 20 Eyes",
+        "title": "20 Eyes",
         "duration": "01:48"
       },
       {
@@ -313,7 +313,7 @@
         "duration": "01:48"
       },
       {
-        "title": "SR Astro Zombies",
+        "title": "Astro Zombies",
         "duration": "02:16"
       },
       {
@@ -329,7 +329,7 @@
         "duration": "03:07"
       },
       {
-        "title": "SR I Turned Into A Martian",
+        "title": "I Turned Into A Martian",
         "duration": "01:42"
       },
       {
@@ -337,7 +337,7 @@
         "duration": "02:00"
       },
       {
-        "title": "SR Night Of The Living Dead",
+        "title": "Night Of The Living Dead",
         "duration": "01:59"
       },
       {
@@ -345,7 +345,7 @@
         "duration": "02:15"
       },
       {
-        "title": "SR Skulls",
+        "title": "Skulls",
         "duration": "02:02"
       },
       {
@@ -353,7 +353,7 @@
         "duration": "01:28"
       },
       {
-        "title": "SR Violent World",
+        "title": "Violent World",
         "duration": "01:48"
       }
     ]
@@ -362,7 +362,7 @@
     "id": "earth-ad-wolfs-blood",
     "title": "Earth A.D. / Wolfs Blood",
     "artist": "Misfits",
-    "year": 1983,
+    "year": 1984,
     "genre": "Horror Punk",
     "city": "Lodi, NJ",
     "country": "USA",
@@ -384,7 +384,7 @@
         "duration": "00:45"
       },
       {
-        "title": "SR Devilock",
+        "title": "Devilock",
         "duration": "01:27"
       },
       {
@@ -392,7 +392,7 @@
         "duration": "03:12"
       },
       {
-        "title": "SR Earth A.D.",
+        "title": "Earth A.D.",
         "duration": "02:09"
       },
       {
@@ -412,11 +412,11 @@
         "duration": "01:33"
       },
       {
-        "title": "SR We Bite",
+        "title": "We Bite",
         "duration": "01:15"
       },
       {
-        "title": "SR Wolf's Blood",
+        "title": "Wolf's Blood",
         "duration": "01:13"
       }
     ]
@@ -435,16 +435,32 @@
     "download": "https://www.mediafire.com/file/akdt6ifqnzbwubf/Static_Age_%25281996%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Static Age",
-        "duration": "01:47"
+        "title": "Angelfuck",
+        "duration": "01:38"
       },
       {
-        "title": "TV Casualty",
-        "duration": "02:24"
+        "title": "Attitude",
+        "duration": "01:31"
       },
       {
-        "title": "SR Some Kinda Hate",
-        "duration": "02:02"
+        "title": "Bullet",
+        "duration": "01:38"
+      },
+      {
+        "title": "Come Back",
+        "duration": "05:00"
+      },
+      {
+        "title": "Hollywood Babylon",
+        "duration": "02:20"
+      },
+      {
+        "title": "Hybrid Moments",
+        "duration": "01:42"
+      },
+      {
+        "title": "In The Doorway",
+        "duration": "01:25"
       },
       {
         "title": "Last Caress",
@@ -455,52 +471,36 @@
         "duration": "01:37"
       },
       {
-        "title": "Hybrid Moments",
-        "duration": "01:42"
+        "title": "She",
+        "duration": "01:24"
       },
       {
-        "title": "We Are 138",
-        "duration": "01:41"
+        "title": "Some Kinda Hate",
+        "duration": "02:02"
+      },
+      {
+        "title": "Spinal Remains",
+        "duration": "01:27"
+      },
+      {
+        "title": "Static Age",
+        "duration": "01:47"
       },
       {
         "title": "Teenagers From Mars",
         "duration": "02:51"
       },
       {
-        "title": "SR Come Back",
-        "duration": "05:00"
-      },
-      {
-        "title": "Angelfuck",
-        "duration": "01:38"
-      },
-      {
-        "title": "Hollywood Babylon",
-        "duration": "02:20"
-      },
-      {
-        "title": "Attitude",
-        "duration": "01:31"
-      },
-      {
-        "title": "SR Bullet",
-        "duration": "01:38"
-      },
-      {
-        "title": "SR Theme For A Jackal",
+        "title": "Theme For A Jackal",
         "duration": "02:41"
       },
       {
-        "title": "She",
-        "duration": "01:24"
+        "title": "TV Casualty",
+        "duration": "02:24"
       },
       {
-        "title": "SR Spinal Remains",
-        "duration": "01:27"
-      },
-      {
-        "title": "SR In The Doorway",
-        "duration": "01:25"
+        "title": "We Are 138",
+        "duration": "01:41"
       }
     ]
   },
@@ -518,14 +518,6 @@
     "download": "https://www.mediafire.com/file/4hislmjoku93vsg/Something_Better_Change_%25281980%2529.zip/file",
     "tracks": [
       {
-        "title": "SR New Age",
-        "duration": "02:19"
-      },
-      {
-        "title": "The Enemy",
-        "duration": "02:54"
-      },
-      {
         "title": "2+2",
         "duration": "04:09"
       },
@@ -534,24 +526,20 @@
         "duration": "02:07"
       },
       {
-        "title": "Woke Up Screaming",
-        "duration": "02:43"
+        "title": "Great White Hope",
+        "duration": "02:53"
       },
       {
         "title": "Last Night",
         "duration": "03:24"
       },
       {
-        "title": "Thirteen",
-        "duration": "02:24"
+        "title": "New Age",
+        "duration": "02:19"
       },
       {
-        "title": "SR Great White Hope",
-        "duration": "02:53"
-      },
-      {
-        "title": "The Prisoner",
-        "duration": "02:01"
+        "title": "New Wave Sucks",
+        "duration": "01:02"
       },
       {
         "title": "Rich Bitch",
@@ -562,16 +550,28 @@
         "duration": "01:48"
       },
       {
-        "title": "SR Whatcha Gonna Do?",
+        "title": "The Enemy",
+        "duration": "02:54"
+      },
+      {
+        "title": "The Prisoner",
+        "duration": "02:01"
+      },
+      {
+        "title": "Thirteen",
+        "duration": "02:24"
+      },
+      {
+        "title": "Whatcha Gonna Do?",
         "duration": "04:44"
       },
       {
-        "title": "SR World War 3",
-        "duration": "03:46"
+        "title": "Woke Up Screaming",
+        "duration": "02:43"
       },
       {
-        "title": "New Wave Sucks",
-        "duration": "01:02"
+        "title": "World War 3",
+        "duration": "03:46"
       }
     ]
   },
@@ -589,56 +589,56 @@
     "download": "https://www.mediafire.com/file/01g53i94ur9ej2h/H%2Ardc%2Ar%2A_%252781_%25281981%2529.zip/file",
     "tracks": [
       {
-        "title": "SR D.O.A.",
-        "duration": "01:39"
+        "title": "001 Loser's Club",
+        "duration": "01:54"
       },
       {
-        "title": "Unknown",
-        "duration": "02:31"
-      },
-      {
-        "title": "Slumlord",
-        "duration": "01:55"
-      },
-      {
-        "title": "Musical Interlude",
-        "duration": "00:22"
-      },
-      {
-        "title": "SR I Don't Give a Shit",
-        "duration": "01:21"
-      },
-      {
-        "title": "SR M.C.T.F.D.",
-        "duration": "01:38"
+        "title": "Bloodsucker Baby",
+        "duration": "00:54"
       },
       {
         "title": "Communication Breakdown",
         "duration": "01:57"
       },
       {
-        "title": "SR 001 Loser's Club",
-        "duration": "01:54"
+        "title": "D.O.A.",
+        "duration": "01:39"
       },
       {
         "title": "Fucked Up Baby",
         "duration": "01:27"
       },
       {
-        "title": "The Kenny Blister Song",
-        "duration": "00:16"
+        "title": "I Don't Give a Shit",
+        "duration": "01:21"
       },
       {
-        "title": "SR Smash the State",
-        "duration": "01:33"
+        "title": "M.C.T.F.D.",
+        "duration": "01:38"
+      },
+      {
+        "title": "Musical Interlude",
+        "duration": "00:22"
       },
       {
         "title": "My Old Man's a Bum",
         "duration": "01:41"
       },
       {
-        "title": "Bloodsucker Baby",
-        "duration": "00:54"
+        "title": "Slumlord",
+        "duration": "01:55"
+      },
+      {
+        "title": "Smash the State",
+        "duration": "01:33"
+      },
+      {
+        "title": "The Kenny Blister Song",
+        "duration": "00:16"
+      },
+      {
+        "title": "Unknown",
+        "duration": "02:31"
       },
       {
         "title": "Waiting for You",
@@ -660,36 +660,36 @@
     "download": "https://www.mediafire.com/file/4h2vkvmuuymxm41/War_On_45_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Liar for Hire",
-        "duration": "02:46"
-      },
-      {
-        "title": "SR I'm Right You're Wrong",
-        "duration": "01:55"
-      },
-      {
         "title": "America the Beautiful",
         "duration": "02:15"
       },
       {
-        "title": "SR Let's Fuck",
+        "title": "Class War",
+        "duration": "01:37"
+      },
+      {
+        "title": "I Hate You",
+        "duration": "02:23"
+      },
+      {
+        "title": "I'm Right You're Wrong",
+        "duration": "01:55"
+      },
+      {
+        "title": "Let's Fuck",
         "duration": "02:13"
       },
       {
-        "title": "SR War",
-        "duration": "02:17"
+        "title": "Liar for Hire",
+        "duration": "02:46"
       },
       {
-        "title": "SR I Hate You",
-        "duration": "02:23"
+        "title": "War",
+        "duration": "02:17"
       },
       {
         "title": "War in the East",
         "duration": "04:18"
-      },
-      {
-        "title": "Class War",
-        "duration": "01:37"
       }
     ]
   },
@@ -707,24 +707,8 @@
     "download": "https://www.mediafire.com/file/jq1thc1srh64nrx/Unreleased_EP_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "Why Me",
-        "duration": "00:55"
-      },
-      {
-        "title": "I'm Pissed",
-        "duration": "01:05"
-      },
-      {
-        "title": "Wired",
-        "duration": "01:27"
-      },
-      {
         "title": "Desperate",
         "duration": "01:18"
-      },
-      {
-        "title": "SR Pressure",
-        "duration": "01:27"
       },
       {
         "title": "I Don't Wanna",
@@ -735,16 +719,32 @@
         "duration": "01:02"
       },
       {
+        "title": "I'm Pissed",
+        "duration": "01:05"
+      },
+      {
+        "title": "It's OK",
+        "duration": "00:49"
+      },
+      {
         "title": "Lysol",
         "duration": "00:46"
       },
       {
-        "title": "SR Machine Gun",
+        "title": "Machine Gun",
         "duration": "01:18"
       },
       {
-        "title": "SR It's OK",
-        "duration": "00:49"
+        "title": "Pressure",
+        "duration": "01:27"
+      },
+      {
+        "title": "Why Me",
+        "duration": "00:55"
+      },
+      {
+        "title": "Wired",
+        "duration": "01:27"
       }
     ]
   },
@@ -762,52 +762,52 @@
     "download": "https://www.mediafire.com/file/1s3okukg97rwifi/Is_This_My_World_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "SR I Don't Belong",
-        "duration": "01:47"
+        "title": "Break The Mold",
+        "duration": "01:36"
       },
       {
-        "title": "SR Cracks In The Wall",
+        "title": "Build Me A Bomb",
+        "duration": "02:01"
+      },
+      {
+        "title": "Cracks In The Wall",
         "duration": "01:19"
-      },
-      {
-        "title": "Tear It Up",
-        "duration": "01:07"
       },
       {
         "title": "Crucify Me",
         "duration": "01:59"
       },
       {
-        "title": "Break The Mold",
-        "duration": "01:36"
+        "title": "I Don't Belong",
+        "duration": "01:47"
       },
       {
-        "title": "SR Raise The Curtain",
-        "duration": "03:27"
-      },
-      {
-        "title": "Vietnam Syndrome",
-        "duration": "01:44"
-      },
-      {
-        "title": "SR Build Me A Bomb",
-        "duration": "02:01"
-      },
-      {
-        "title": "New World",
-        "duration": "02:15"
+        "title": "Is This My World?",
+        "duration": "02:04"
       },
       {
         "title": "Lost",
         "duration": "03:15"
       },
       {
+        "title": "New World",
+        "duration": "02:15"
+      },
+      {
         "title": "No Time",
         "duration": "01:41"
       },
       {
-        "title": "SR Is This My World?",
-        "duration": "02:04"
+        "title": "Raise The Curtain",
+        "duration": "03:27"
+      },
+      {
+        "title": "Tear It Up",
+        "duration": "01:07"
+      },
+      {
+        "title": "Vietnam Syndrome",
+        "duration": "01:44"
       }
     ]
   },
@@ -825,44 +825,44 @@
     "download": "https://www.mediafire.com/file/kpt41vp422pyd03/No_Policy_%25281981%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Lost In Space",
-        "duration": "00:43"
+        "title": "Blackout",
+        "duration": "00:45"
       },
       {
         "title": "Draw Blank",
         "duration": "00:36"
       },
       {
-        "title": "Girl Problems",
-        "duration": "00:49"
-      },
-      {
-        "title": "Blackout",
-        "duration": "00:45"
+        "title": "Gang Fight",
+        "duration": "00:59"
       },
       {
         "title": "Gate Crashers",
         "duration": "01:04"
       },
       {
-        "title": "SR Warzone",
-        "duration": "00:51"
+        "title": "Girl Problems",
+        "duration": "00:49"
       },
       {
-        "title": "Riot",
-        "duration": "00:42"
+        "title": "Gonna Have To Fight",
+        "duration": "00:44"
       },
       {
-        "title": "Gang Fight",
-        "duration": "00:59"
+        "title": "Lost In Space",
+        "duration": "00:43"
       },
       {
         "title": "Public Defender",
         "duration": "01:12"
       },
       {
-        "title": "SR Gonna Have To Fight",
-        "duration": "00:44"
+        "title": "Riot",
+        "duration": "00:42"
+      },
+      {
+        "title": "Warzone",
+        "duration": "00:51"
       }
     ]
   },
@@ -884,11 +884,11 @@
         "duration": "00:28"
       },
       {
-        "title": "SR I Hate The Kids",
+        "title": "I Hate The Kids",
         "duration": "00:40"
       },
       {
-        "title": "SR Stepping Stone Party",
+        "title": "Stepping Stone Party",
         "duration": "01:50"
       }
     ]
@@ -907,31 +907,31 @@
     "download": "https://www.mediafire.com/file/dm4tq3nooal1ri4/%2528GI%2529_%25281979%2529.zip/file",
     "tracks": [
       {
-        "title": "SR What We Do Is Secret",
-        "duration": "00:44"
+        "title": "American Leather",
+        "duration": "01:11"
+      },
+      {
+        "title": "Caught In My Eye (Unreleased Album Mix)",
+        "duration": "03:25"
       },
       {
         "title": "Communist Eyes",
         "duration": "02:16"
       },
       {
+        "title": "Dragon Lady",
+        "duration": "01:39"
+      },
+      {
         "title": "Land Of Treason",
         "duration": "02:10"
       },
       {
-        "title": "SR Richie Dagger's Crime",
-        "duration": "01:57"
+        "title": "Let's Pretend",
+        "duration": "02:35"
       },
       {
-        "title": "Strange Notes",
-        "duration": "01:53"
-      },
-      {
-        "title": "American Leather",
-        "duration": "01:11"
-      },
-      {
-        "title": "SR Lexicon Devil",
+        "title": "Lexicon Devil",
         "duration": "01:44"
       },
       {
@@ -939,40 +939,40 @@
         "duration": "02:11"
       },
       {
-        "title": "Our Way",
-        "duration": "01:57"
-      },
-      {
-        "title": "SR We Must Bleed",
-        "duration": "03:05"
-      },
-      {
         "title": "Media Blitz",
         "duration": "01:30"
       },
       {
-        "title": "SR The Other Newest One",
-        "duration": "02:48"
+        "title": "Our Way",
+        "duration": "01:57"
       },
       {
-        "title": "Let's Pretend",
-        "duration": "02:35"
-      },
-      {
-        "title": "Dragon Lady",
-        "duration": "01:39"
-      },
-      {
-        "title": "SR The Slave",
-        "duration": "01:02"
+        "title": "Richie Dagger's Crime",
+        "duration": "01:57"
       },
       {
         "title": "Shut Down (Live)",
         "duration": "09:39"
       },
       {
-        "title": "Caught In My Eye (Unreleased Album Mix)",
-        "duration": "03:25"
+        "title": "Strange Notes",
+        "duration": "01:53"
+      },
+      {
+        "title": "The Other Newest One",
+        "duration": "02:48"
+      },
+      {
+        "title": "The Slave",
+        "duration": "01:02"
+      },
+      {
+        "title": "We Must Bleed",
+        "duration": "03:05"
+      },
+      {
+        "title": "What We Do Is Secret",
+        "duration": "00:44"
       }
     ]
   },
@@ -990,44 +990,44 @@
     "download": "https://www.mediafire.com/file/n44w24e75wds69h/Negative_Approach_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Can't Tell No One",
+        "title": "Can't Tell No One",
         "duration": "01:25"
-      },
-      {
-        "title": "SR Sick of Talk",
-        "duration": "00:34"
-      },
-      {
-        "title": "SR Pressure",
-        "duration": "00:14"
-      },
-      {
-        "title": "Why Be Something That You're Not",
-        "duration": "00:41"
-      },
-      {
-        "title": "SR Nothing",
-        "duration": "01:51"
       },
       {
         "title": "Fair Warning",
         "duration": "00:37"
       },
       {
-        "title": "SR Ready to Fight",
+        "title": "Lead Song",
+        "duration": "01:25"
+      },
+      {
+        "title": "Negative Approach",
+        "duration": "00:53"
+      },
+      {
+        "title": "Nothing",
+        "duration": "01:51"
+      },
+      {
+        "title": "Pressure",
+        "duration": "00:14"
+      },
+      {
+        "title": "Ready to Fight",
         "duration": "01:02"
       },
       {
-        "title": "Lead Song",
-        "duration": "01:25"
+        "title": "Sick of Talk",
+        "duration": "00:34"
       },
       {
         "title": "Whatever I Do",
         "duration": "00:58"
       },
       {
-        "title": "SR Negative Approach",
-        "duration": "00:53"
+        "title": "Why Be Something That You're Not",
+        "duration": "00:41"
       }
     ]
   },
@@ -1045,44 +1045,44 @@
     "download": "https://www.mediafire.com/file/ohve0xozarqb1h8/Tied_Down_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Tied Down",
-        "duration": "01:33"
-      },
-      {
-        "title": "Hypocrite",
-        "duration": "01:47"
+        "title": "Dead Stop",
+        "duration": "02:40"
       },
       {
         "title": "Evacuate",
         "duration": "02:35"
       },
       {
-        "title": "Said and Done",
-        "duration": "00:50"
+        "title": "Friend or Foe",
+        "duration": "01:12"
+      },
+      {
+        "title": "Hypocrite",
+        "duration": "01:47"
+      },
+      {
+        "title": "I'll Survive",
+        "duration": "01:01"
+      },
+      {
+        "title": "Live Your Life",
+        "duration": "01:06"
       },
       {
         "title": "Nothing",
         "duration": "02:20"
       },
       {
+        "title": "Said and Done",
+        "duration": "00:50"
+      },
+      {
+        "title": "Tied Down",
+        "duration": "01:33"
+      },
+      {
         "title": "Your Mistake",
         "duration": "01:48"
-      },
-      {
-        "title": "SR Live Your Life",
-        "duration": "01:06"
-      },
-      {
-        "title": "Friend or Foe",
-        "duration": "01:12"
-      },
-      {
-        "title": "SR Dead Stop",
-        "duration": "02:40"
-      },
-      {
-        "title": "I'll Survive",
-        "duration": "01:01"
       }
     ]
   },
@@ -1100,100 +1100,100 @@
     "download": "https://www.mediafire.com/file/qu9qtjfkan6egrt/The_Speed_of_Twisted_Thought_%25282006%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Vengeance",
-        "duration": "01:27"
-      },
-      {
-        "title": "In This Town",
-        "duration": "01:21"
-      },
-      {
-        "title": "Cos the Elite",
-        "duration": "01:20"
-      },
-      {
-        "title": "Truth Right Now",
-        "duration": "01:31"
-      },
-      {
-        "title": "Signals",
-        "duration": "03:37"
-      },
-      {
-        "title": "SR Off to War",
-        "duration": "01:34"
-      },
-      {
-        "title": "No Idols",
-        "duration": "01:37"
-      },
-      {
-        "title": "SR Candy Store",
+        "title": "Candy Store",
         "duration": "01:15"
       },
       {
-        "title": "SR Famous",
-        "duration": "01:46"
-      },
-      {
-        "title": "SR Vengeance - Outtakes from Jan's Room Sessions",
-        "duration": "01:21"
+        "title": "Candy Store - Live",
+        "duration": "01:12"
       },
       {
         "title": "Celebre - Outtakes from Jan's Room Sessions",
         "duration": "01:41"
       },
       {
-        "title": "Rat Patrol - Outtakes from Jan's Room Sessions",
-        "duration": "01:42"
+        "title": "Cos the Elite",
+        "duration": "01:20"
       },
       {
         "title": "Cos The Elite - Live",
         "duration": "01:32"
       },
       {
-        "title": "The Letter - Live",
-        "duration": "00:49"
+        "title": "Famous",
+        "duration": "01:46"
       },
       {
-        "title": "SR Famous - Live",
+        "title": "Famous - Live",
         "duration": "01:41"
       },
       {
-        "title": "SR Off To War - Live",
-        "duration": "01:40"
+        "title": "In This Town",
+        "duration": "01:21"
       },
       {
         "title": "In This Town - Live",
         "duration": "01:28"
       },
       {
+        "title": "Media Blitz - Live",
+        "duration": "01:37"
+      },
+      {
+        "title": "No Idols",
+        "duration": "01:37"
+      },
+      {
+        "title": "Off to War",
+        "duration": "01:34"
+      },
+      {
+        "title": "Off To War - Live",
+        "duration": "01:40"
+      },
+      {
         "title": "Rat Patrol - Live",
         "duration": "01:42"
+      },
+      {
+        "title": "Rat Patrol - Outtakes from Jan's Room Sessions",
+        "duration": "01:42"
+      },
+      {
+        "title": "Signals",
+        "duration": "03:37"
       },
       {
         "title": "Statement - Live",
         "duration": "01:17"
       },
       {
-        "title": "SR Candy Store - Live",
-        "duration": "01:12"
+        "title": "Teenage Drugs - Live",
+        "duration": "00:55"
       },
       {
-        "title": "You - Live",
+        "title": "The Letter - Live",
         "duration": "00:49"
       },
       {
-        "title": "Teenage Drugs - Live",
-        "duration": "00:55"
+        "title": "Truth Right Now",
+        "duration": "01:31"
+      },
+      {
+        "title": "Vengeance",
+        "duration": "01:27"
+      },
+      {
+        "title": "Vengeance - Outtakes from Jan's Room Sessions",
+        "duration": "01:21"
       },
       {
         "title": "Waiting For Eviction - Live",
         "duration": "02:15"
       },
       {
-        "title": "SR Media Blitz - Live",
-        "duration": "01:37"
+        "title": "You - Live",
+        "duration": "00:49"
       }
     ]
   },
@@ -1211,40 +1211,40 @@
     "download": "https://www.mediafire.com/file/asknlyuq0d9cry7/Cause_For_Alarm_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "Parasite",
-        "duration": "00:44"
-      },
-      {
-        "title": "SR Second Chance",
-        "duration": "00:59"
-      },
-      {
-        "title": "SR Time To Try",
-        "duration": "01:05"
-      },
-      {
-        "title": "SR United Races",
-        "duration": "01:25"
-      },
-      {
         "title": "In Search Of",
         "duration": "00:43"
+      },
+      {
+        "title": "Parasite",
+        "duration": "00:44"
       },
       {
         "title": "Poison In The Machine",
         "duration": "00:53"
       },
       {
-        "title": "SR True Colors",
-        "duration": "01:03"
+        "title": "Second Chance",
+        "duration": "00:59"
       },
       {
         "title": "Stand As One",
         "duration": "00:56"
       },
       {
+        "title": "Time To Try",
+        "duration": "01:05"
+      },
+      {
         "title": "Time Will Tell",
         "duration": "01:59"
+      },
+      {
+        "title": "True Colors",
+        "duration": "01:03"
+      },
+      {
+        "title": "United Races",
+        "duration": "01:25"
       }
     ]
   },
@@ -1262,76 +1262,104 @@
     "download": "https://www.mediafire.com/file/xi9gue6tcytpjtz/The_Kids_Will_Have_Their_Say_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "Boiling Point",
-        "duration": "00:55"
+        "title": "Forced down your throat",
+        "duration": "02:42"
       },
       {
-        "title": "Fight Them",
-        "duration": "01:06"
+        "title": "Get it away",
+        "duration": "01:29"
+      },
+      {
+        "title": "Glue",
+        "duration": "01:17"
+      },
+      {
+        "title": "No reply",
+        "duration": "02:03"
+      },
+      {
+        "title": "Nothing done",
+        "duration": "01:05"
+      },
+      {
+        "title": "Under the influence",
+        "duration": "01:30"
+      },
+      {
+        "title": "Xclaim",
+        "duration": "01:25"
+      },
+      {
+        "title": "Boiling Point",
+        "duration": "00:55"
       },
       {
         "title": "Do You Even Care",
         "duration": "00:37"
       },
       {
-        "title": "Not Normal",
-        "duration": "00:55"
-      },
-      {
-        "title": "Wasted Youth",
-        "duration": "00:37"
-      },
-      {
-        "title": "Jock Itch",
-        "duration": "00:49"
+        "title": "Fight Them",
+        "duration": "01:06"
       },
       {
         "title": "Fun to You",
         "duration": "00:38"
       },
       {
-        "title": "V.A.",
-        "duration": "01:03"
+        "title": "Headed Straight",
+        "duration": "01:32"
       },
       {
         "title": "How Much Art",
         "duration": "03:04"
       },
       {
-        "title": "The Kids Will Have Their Say",
-        "duration": "01:25"
+        "title": "Jock Itch",
+        "duration": "00:49"
       },
       {
-        "title": "Headed Straight",
-        "duration": "01:32"
-      },
-      {
-        "title": "War Threat",
-        "duration": "01:31"
-      },
-      {
-        "title": "Teach Me Violence",
-        "duration": "00:41"
-      },
-      {
-        "title": "Screw",
-        "duration": "00:26"
-      },
-      {
-        "title": "Who's to Judge",
-        "duration": "01:29"
+        "title": "Not Normal",
+        "duration": "00:55"
       },
       {
         "title": "Police Beat",
         "duration": "02:02"
       },
       {
-        "title": "United",
-        "duration": "00:48"
+        "title": "Screw",
+        "duration": "00:26"
+      },
+      {
+        "title": "Teach Me Violence",
+        "duration": "00:41"
       },
       {
         "title": "The End",
         "duration": "01:32"
+      },
+      {
+        "title": "The Kids Will Have Their Say",
+        "duration": "01:25"
+      },
+      {
+        "title": "United",
+        "duration": "00:48"
+      },
+      {
+        "title": "V.A.",
+        "duration": "01:03"
+      },
+      {
+        "title": "War Threat",
+        "duration": "01:31"
+      },
+      {
+        "title": "Wasted Youth",
+        "duration": "00:37"
+      },
+      {
+        "title": "Who's to Judge",
+        "duration": "01:29"
       }
     ]
   },
@@ -1392,23 +1420,11 @@
     "download": "https://www.mediafire.com/file/s1ydbpndkssrprf/Incorrect_Thoughts_%25281980%2529.zip/file",
     "tracks": [
       {
-        "title": "SR The Scheme",
-        "duration": "03:16"
-      },
-      {
-        "title": "New Order",
-        "duration": "02:45"
-      },
-      {
-        "title": "SR Behind My Smile",
+        "title": "Behind My Smile",
         "duration": "02:54"
       },
       {
-        "title": "Out of Line",
-        "duration": "01:37"
-      },
-      {
-        "title": "SR Big Picture",
+        "title": "Big Picture",
         "duration": "02:12"
       },
       {
@@ -1416,44 +1432,56 @@
         "duration": "03:05"
       },
       {
-        "title": "Urban Guerillas",
-        "duration": "03:10"
-      },
-      {
-        "title": "SR War in the Head",
-        "duration": "03:09"
+        "title": "Death to the Sickoids",
+        "duration": "01:48"
       },
       {
         "title": "Firing Squad",
         "duration": "03:05"
       },
       {
-        "title": "SR Slave to My Dick",
-        "duration": "02:38"
-      },
-      {
-        "title": "Death to the Sickoids",
-        "duration": "01:48"
-      },
-      {
         "title": "Greaser Boy",
         "duration": "03:17"
+      },
+      {
+        "title": "Let's Go Down to Hollywood (& Shoot People)",
+        "duration": "03:56"
       },
       {
         "title": "Model of Stupidity",
         "duration": "02:33"
       },
       {
-        "title": "We're Alive",
-        "duration": "01:28"
+        "title": "New Order",
+        "duration": "02:45"
       },
       {
-        "title": "SR Refugee",
+        "title": "Out of Line",
+        "duration": "01:37"
+      },
+      {
+        "title": "Refugee",
         "duration": "03:32"
       },
       {
-        "title": "Let's Go Down to Hollywood (& Shoot People)",
-        "duration": "03:56"
+        "title": "Slave to My Dick",
+        "duration": "02:38"
+      },
+      {
+        "title": "The Scheme",
+        "duration": "03:16"
+      },
+      {
+        "title": "Urban Guerillas",
+        "duration": "03:10"
+      },
+      {
+        "title": "War in the Head",
+        "duration": "03:09"
+      },
+      {
+        "title": "We're Alive",
+        "duration": "01:28"
       }
     ]
   },
@@ -1471,60 +1499,60 @@
     "download": "https://www.mediafire.com/file/zwei9jadnwwupf6/Group_Sex_%25281980%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Deny Everything",
-        "duration": "00:31"
-      },
-      {
-        "title": "I Just Want Some Skank",
-        "duration": "01:10"
-      },
-      {
-        "title": "Beverly Hills",
-        "duration": "01:05"
-      },
-      {
-        "title": "Operation",
-        "duration": "01:30"
-      },
-      {
-        "title": "SR Back Against the Wall",
+        "title": "Back Against the Wall",
         "duration": "01:35"
-      },
-      {
-        "title": "SR Wasted",
-        "duration": "00:43"
       },
       {
         "title": "Behind the Door",
         "duration": "01:26"
       },
       {
-        "title": "SR World up My Ass",
-        "duration": "01:17"
+        "title": "Beverly Hills",
+        "duration": "01:05"
       },
       {
-        "title": "Paid Vacation",
-        "duration": "01:29"
+        "title": "Deny Everything",
+        "duration": "00:31"
       },
       {
-        "title": "SR Don't Care",
+        "title": "Don't Care",
         "duration": "00:35"
+      },
+      {
+        "title": "Group Sex",
+        "duration": "01:04"
+      },
+      {
+        "title": "I Just Want Some Skank",
+        "duration": "01:10"
       },
       {
         "title": "Live Fast Die Young",
         "duration": "01:34"
       },
       {
-        "title": "SR What's Your Problem",
-        "duration": "00:57"
+        "title": "Operation",
+        "duration": "01:30"
       },
       {
-        "title": "SR Group Sex",
-        "duration": "01:04"
+        "title": "Paid Vacation",
+        "duration": "01:29"
       },
       {
         "title": "Red Tape",
         "duration": "00:58"
+      },
+      {
+        "title": "Wasted",
+        "duration": "00:43"
+      },
+      {
+        "title": "What's Your Problem",
+        "duration": "00:57"
+      },
+      {
+        "title": "World up My Ass",
+        "duration": "01:17"
       }
     ]
   },
@@ -1542,32 +1570,32 @@
     "download": "https://www.mediafire.com/file/f0cippjenkhoixp/Youth_Anthems_for_the_New_Order_%25281984%2529.zip/file",
     "tracks": [
       {
-        "title": "SR New Aryans",
-        "duration": "01:17"
-      },
-      {
-        "title": "SR Reagan Youth",
-        "duration": "01:16"
-      },
-      {
         "title": "(Are You Really) Happy",
         "duration": "01:42"
       },
       {
-        "title": "SR I Hate Hate",
-        "duration": "01:57"
+        "title": "(You're a) Gonowhere",
+        "duration": "01:20"
       },
       {
         "title": "Degenerated",
         "duration": "02:18"
       },
       {
-        "title": "SR U.S.A.",
-        "duration": "01:21"
+        "title": "I Hate Hate",
+        "duration": "01:57"
       },
       {
-        "title": "(You're A) Gonowhere",
-        "duration": "01:20"
+        "title": "New Aryans",
+        "duration": "01:17"
+      },
+      {
+        "title": "Reagan Youth",
+        "duration": "01:16"
+      },
+      {
+        "title": "U.S.A.",
+        "duration": "01:21"
       }
     ]
   },
@@ -1585,72 +1613,72 @@
     "download": "https://www.mediafire.com/file/povixv6q5zkxidy/Let_Them_Eat_Jellybeans.zip/file",
     "tracks": [
       {
-        "title": "Ha Ha Ha (Flipper)",
-        "duration": "02:12"
-      },
-      {
-        "title": "SR The Prisoner (D.O.A.)",
-        "duration": "01:48"
-      },
-      {
-        "title": "Police Story (Black Flag)",
-        "duration": "01:24"
-      },
-      {
-        "title": "SR Pay to Cum (Bad Brains)",
-        "duration": "01:27"
-      },
-      {
-        "title": "SR Nazi Punks Fuck Off (Dead Kennedys)",
-        "duration": "00:58"
-      },
-      {
-        "title": "Paid Vacation (Circle Jerks)",
-        "duration": "01:24"
-      },
-      {
-        "title": "Prostitution (Really Red)",
-        "duration": "01:16"
-      },
-      {
-        "title": "SR Jesus Entering From The Rear (Feederz)",
-        "duration": "02:43"
-      },
-      {
-        "title": "SR Slave To My Dick (Subhumans)",
-        "duration": "02:33"
-      },
-      {
-        "title": "Isotope Soap (Geza X)",
-        "duration": "02:16"
-      },
-      {
-        "title": "Persecution - That's My Song (BPeople)",
-        "duration": "02:11"
-      },
-      {
-        "title": "An Object (Wounds)",
-        "duration": "02:39"
-      },
-      {
-        "title": "Everyone's A Bigot (Offs)",
-        "duration": "03:26"
-      },
-      {
-        "title": "Corporate Food (Anonymous)",
+        "title": "Corporate Food",
         "duration": "02:15"
       },
       {
-        "title": "Fun Again (Half Japanese)",
-        "duration": "01:52"
+        "title": "Pay to Cum",
+        "duration": "01:27"
       },
       {
-        "title": "SR Joke's On You (Christian Lunch)",
+        "title": "Police Story",
+        "duration": "01:24"
+      },
+      {
+        "title": "Persecution - That's My Song",
+        "duration": "02:11"
+      },
+      {
+        "title": "Joke's On You",
         "duration": "03:24"
       },
       {
-        "title": "Sleep (Voice Farm)",
+        "title": "Paid Vacation",
+        "duration": "01:24"
+      },
+      {
+        "title": "The Prisoner",
+        "duration": "01:48"
+      },
+      {
+        "title": "Nazi Punks Fuck Off",
+        "duration": "00:58"
+      },
+      {
+        "title": "Jesus Entering From The Rear",
         "duration": "02:43"
+      },
+      {
+        "title": "Ha Ha Ha",
+        "duration": "02:12"
+      },
+      {
+        "title": "Isotope Soap",
+        "duration": "02:16"
+      },
+      {
+        "title": "Fun Again",
+        "duration": "01:52"
+      },
+      {
+        "title": "Everyone's A Bigot",
+        "duration": "03:26"
+      },
+      {
+        "title": "Prostitution",
+        "duration": "01:16"
+      },
+      {
+        "title": "Slave To My Dick",
+        "duration": "02:33"
+      },
+      {
+        "title": "Sleep",
+        "duration": "02:43"
+      },
+      {
+        "title": "An Object",
+        "duration": "02:39"
       }
     ]
   },
@@ -1697,7 +1725,7 @@
       },
       {
         "title": "SR Horror Business",
-        "duration": "02:50"
+        "duration": "01:34"
       },
       {
         "title": "Teenagers From Mars",
@@ -1705,7 +1733,7 @@
       },
       {
         "title": "SR Night Of The Living Dead",
-        "duration": "02:04"
+        "duration": "01:42"
       },
       {
         "title": "Rat Fink",
@@ -1713,11 +1741,11 @@
       },
       {
         "title": "SR Where Eagles Dare",
-        "duration": "01:51"
+        "duration": "03:09"
       },
       {
         "title": "SR Spook City USA",
-        "duration": "02:12"
+        "duration": "02:50"
       },
       {
         "title": "Who Killed Marilyn?",
@@ -1725,7 +1753,7 @@
       },
       {
         "title": "SR Ghouls Night Out",
-        "duration": "02:02"
+        "duration": "02:04"
       },
       {
         "title": "Horror Hotel",
@@ -1745,7 +1773,7 @@
       },
       {
         "title": "SR We Bite",
-        "duration": "01:17"
+        "duration": "01:51"
       }
     ]
   },
@@ -1763,56 +1791,56 @@
     "download": "https://www.mediafire.com/file/gq7rkwckcyydojx/Legacy_Of_Brutality_%25281985%2529.zip/file",
     "tracks": [
       {
-        "title": "Static Age",
-        "duration": "01:47"
-      },
-      {
-        "title": "TV Casualty",
-        "duration": "02:34"
-      },
-      {
-        "title": "Hybrid Moments",
-        "duration": "01:40"
-      },
-      {
-        "title": "SR Spinal Remains",
-        "duration": "01:24"
-      },
-      {
-        "title": "SR Come Back",
-        "duration": "05:00"
-      },
-      {
-        "title": "Some Kinda Hate",
-        "duration": "02:09"
-      },
-      {
-        "title": "Theme For A Jackal",
-        "duration": "02:37"
+        "title": "American Nightmare",
+        "duration": "01:43"
       },
       {
         "title": "Angelfuck",
         "duration": "01:35"
       },
       {
-        "title": "Who Killed Marilyn?",
-        "duration": "01:56"
+        "title": "Come Back",
+        "duration": "05:00"
       },
       {
-        "title": "SR Where Eagles Dare",
-        "duration": "01:59"
+        "title": "Halloween",
+        "duration": "01:47"
+      },
+      {
+        "title": "Hybrid Moments",
+        "duration": "01:40"
       },
       {
         "title": "She",
         "duration": "01:22"
       },
       {
-        "title": "SR Halloween",
+        "title": "Some Kinda Hate",
+        "duration": "02:09"
+      },
+      {
+        "title": "Spinal Remains",
+        "duration": "01:24"
+      },
+      {
+        "title": "Static Age",
         "duration": "01:47"
       },
       {
-        "title": "SR American Nightmare",
-        "duration": "01:43"
+        "title": "Theme For A Jackal",
+        "duration": "02:37"
+      },
+      {
+        "title": "TV Casualty",
+        "duration": "02:34"
+      },
+      {
+        "title": "Where Eagles Dare",
+        "duration": "01:59"
+      },
+      {
+        "title": "Who Killed Marilyn?",
+        "duration": "01:56"
       }
     ]
   },
@@ -1830,48 +1858,24 @@
     "download": "https://www.mediafire.com/file/chzfxjzg60o45oo/Damaged_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Rise Above",
-        "duration": "02:27"
+        "title": "Damaged I",
+        "duration": "03:51"
       },
       {
-        "title": "Spray Paint",
-        "duration": "00:34"
-      },
-      {
-        "title": "SR Six Pack",
-        "duration": "02:21"
-      },
-      {
-        "title": "What I See",
-        "duration": "01:56"
-      },
-      {
-        "title": "SR TV Party",
-        "duration": "03:31"
-      },
-      {
-        "title": "Thirsty and Miserable",
-        "duration": "02:06"
-      },
-      {
-        "title": "SR Police Story",
-        "duration": "01:33"
-      },
-      {
-        "title": "SR Gimmie Gimmie Gimmie",
-        "duration": "01:47"
+        "title": "Damaged II",
+        "duration": "03:23"
       },
       {
         "title": "Depression",
         "duration": "02:29"
       },
       {
-        "title": "Room 13",
-        "duration": "02:05"
+        "title": "Gimmie Gimmie Gimmie",
+        "duration": "01:47"
       },
       {
-        "title": "Damaged II",
-        "duration": "03:23"
+        "title": "Life Of Pain",
+        "duration": "02:51"
       },
       {
         "title": "No More",
@@ -1882,12 +1886,36 @@
         "duration": "01:47"
       },
       {
-        "title": "Life of Pain",
-        "duration": "02:51"
+        "title": "Police Story",
+        "duration": "01:33"
       },
       {
-        "title": "Damaged I",
-        "duration": "03:51"
+        "title": "Rise Above",
+        "duration": "02:27"
+      },
+      {
+        "title": "Room 13",
+        "duration": "02:05"
+      },
+      {
+        "title": "Six Pack",
+        "duration": "02:21"
+      },
+      {
+        "title": "Spray Paint",
+        "duration": "00:34"
+      },
+      {
+        "title": "Thirsty And Miserable",
+        "duration": "02:06"
+      },
+      {
+        "title": "TV Party",
+        "duration": "03:31"
+      },
+      {
+        "title": "What I See",
+        "duration": "01:56"
       }
     ]
   },
@@ -1905,12 +1933,12 @@
     "download": "https://www.mediafire.com/file/f16c64tr06y667i/Lexicon_Devil_%25281978%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Lexicon Devil",
-        "duration": "02:07"
-      },
-      {
         "title": "Circle One",
         "duration": "01:49"
+      },
+      {
+        "title": "Lexicon Devil",
+        "duration": "02:07"
       },
       {
         "title": "No God",
@@ -1932,14 +1960,6 @@
     "download": "https://www.mediafire.com/file/fa9rw96j7oy54xk/Straight_Edge_Revenge_%25281987%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Straight Edge Revenge",
-        "duration": "01:21"
-      },
-      {
-        "title": "Shutdown",
-        "duration": "01:15"
-      },
-      {
         "title": "Cross Me",
         "duration": "00:09"
       },
@@ -1948,12 +1968,20 @@
         "duration": "01:31"
       },
       {
-        "title": "Where It Ends",
-        "duration": "02:17"
-      },
-      {
         "title": "Live @ The Anthrax, March 18th, 1988",
         "duration": "01:54"
+      },
+      {
+        "title": "Shutdown",
+        "duration": "01:15"
+      },
+      {
+        "title": "Straight Edge Revenge",
+        "duration": "01:21"
+      },
+      {
+        "title": "Where It Ends",
+        "duration": "02:17"
       }
     ]
   },
@@ -1971,52 +1999,52 @@
     "download": "https://www.mediafire.com/file/iimkfjlm1zm0oui/No_Wishes%252C_No_Prayers_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Canada's Favorite Sport",
-        "duration": "02:08"
+        "title": "America Commits Suicide",
+        "duration": "02:48"
       },
       {
-        "title": "Moron Majority",
+        "title": "Breaking Point",
         "duration": "02:25"
       },
       {
-        "title": "SR Helicopter",
-        "duration": "01:33"
+        "title": "Canada's Favorite Sport",
+        "duration": "02:08"
       },
       {
         "title": "For the Common Good",
         "duration": "02:13"
       },
       {
-        "title": "Slap in the Face",
+        "title": "Googolplex",
+        "duration": "02:41"
+      },
+      {
+        "title": "Helicopter",
         "duration": "01:33"
       },
       {
-        "title": "SR Screwed Up",
-        "duration": "02:05"
-      },
-      {
-        "title": "SR America Commits Suicide",
-        "duration": "02:48"
-      },
-      {
-        "title": "SR Hiroshima",
+        "title": "Hiroshima",
         "duration": "03:18"
-      },
-      {
-        "title": "No Wishes, No Prayers",
-        "duration": "02:38"
       },
       {
         "title": "Mobile Electric Chair",
         "duration": "02:05"
       },
       {
-        "title": "SR Breaking Point",
+        "title": "Moron Majority",
         "duration": "02:25"
       },
       {
-        "title": "Googolplex",
-        "duration": "02:41"
+        "title": "No Wishes, No Prayers",
+        "duration": "02:38"
+      },
+      {
+        "title": "Screwed Up",
+        "duration": "02:05"
+      },
+      {
+        "title": "Slap in the Face",
+        "duration": "01:33"
       }
     ]
   },
@@ -2034,7 +2062,7 @@
     "download": "https://www.mediafire.com/file/k5idny2fgkp36ep/Subhumans_%25281979%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Dead Was Too Kind",
+        "title": "Death Was Too Kind",
         "duration": "01:50"
       },
       {
@@ -2043,11 +2071,11 @@
       },
       {
         "title": "Inquisition Day",
-        "duration": "02:41"
+        "duration": "01:51"
       },
       {
-        "title": "SR Slave To My Dick",
-        "duration": "01:51"
+        "title": "Slave To My Dick",
+        "duration": "02:41"
       }
     ]
   },
@@ -2065,40 +2093,40 @@
     "download": "https://www.mediafire.com/file/o2h3xtlty8iiqju/Deep_Wound_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "I Saw It",
-        "duration": "01:09"
+        "title": "7 Don't Need",
+        "duration": "00:58"
       },
       {
-        "title": "SR Sisters",
-        "duration": "00:38"
+        "title": "Dead Babies",
+        "duration": "01:13"
+      },
+      {
+        "title": "Deep Wound",
+        "duration": "01:10"
+      },
+      {
+        "title": "I Saw It",
+        "duration": "01:09"
       },
       {
         "title": "In My Room",
         "duration": "01:08"
       },
       {
-        "title": "7 Don't Need",
-        "duration": "00:58"
-      },
-      {
         "title": "Lou's Anxiety Song",
         "duration": "00:57"
-      },
-      {
-        "title": "SR Video Prick",
-        "duration": "01:33"
       },
       {
         "title": "Sick of Fun",
         "duration": "00:48"
       },
       {
-        "title": "SR Deep Wound",
-        "duration": "01:10"
+        "title": "Sisters",
+        "duration": "00:38"
       },
       {
-        "title": "SR Dead Babies",
-        "duration": "01:13"
+        "title": "Video Prick",
+        "duration": "01:33"
       }
     ]
   },
@@ -2116,28 +2144,16 @@
     "download": "https://www.mediafire.com/file/d8phpgtijuy53vt/Possible_EP_%25281981%2529.zip/file",
     "tracks": [
       {
-        "title": "It's About Time That We Had a Change",
-        "duration": "01:19"
+        "title": "Barbed Wire",
+        "duration": "01:42"
       },
       {
         "title": "Full Speed Ahead",
         "duration": "01:28"
       },
       {
-        "title": "Point of View",
-        "duration": "00:48"
-      },
-      {
-        "title": "Barbed Wire",
-        "duration": "01:42"
-      },
-      {
-        "title": "Pay No Attention",
-        "duration": "00:56"
-      },
-      {
-        "title": "Wrong Decision",
-        "duration": "01:32"
+        "title": "It's About Time That We Had a Change",
+        "duration": "01:19"
       },
       {
         "title": "No Song",
@@ -2146,6 +2162,18 @@
       {
         "title": "No Song II",
         "duration": "00:06"
+      },
+      {
+        "title": "Pay No Attention",
+        "duration": "00:56"
+      },
+      {
+        "title": "Point of View",
+        "duration": "00:48"
+      },
+      {
+        "title": "Wrong Decision",
+        "duration": "01:32"
       }
     ]
   },
@@ -2163,48 +2191,16 @@
     "download": "https://www.mediafire.com/file/ehcrv4bggguzhsq/Screaming_for_Change_%25281986%2529.zip/file",
     "tracks": [
       {
-        "title": "Use Your Head",
-        "duration": "01:23"
-      },
-      {
-        "title": "My Own Mind",
-        "duration": "02:17"
-      },
-      {
-        "title": "Straight and Alert",
-        "duration": "03:09"
-      },
-      {
-        "title": "SR Build to Break",
-        "duration": "01:14"
-      },
-      {
-        "title": "Scream to Say",
-        "duration": "01:22"
-      },
-      {
-        "title": "Once I Cry",
-        "duration": "02:22"
-      },
-      {
-        "title": "Sometimes",
-        "duration": "01:17"
-      },
-      {
-        "title": "Screaming for a Change",
-        "duration": "01:40"
-      },
-      {
-        "title": "No Thanks",
-        "duration": "02:13"
-      },
-      {
-        "title": "SR A Choice",
+        "title": "A Choice",
         "duration": "02:25"
       },
       {
         "title": "Big Man, Small Mind",
         "duration": "01:32"
+      },
+      {
+        "title": "Build to Break",
+        "duration": "01:14"
       },
       {
         "title": "Don't Quit",
@@ -2215,8 +2211,40 @@
         "duration": "02:51"
       },
       {
+        "title": "My Own Mind",
+        "duration": "02:17"
+      },
+      {
+        "title": "No Thanks",
+        "duration": "02:13"
+      },
+      {
+        "title": "Once I Cry",
+        "duration": "02:22"
+      },
+      {
+        "title": "Scream to Say",
+        "duration": "01:22"
+      },
+      {
+        "title": "Screaming for a Change",
+        "duration": "01:40"
+      },
+      {
         "title": "Silenced",
         "duration": "01:13"
+      },
+      {
+        "title": "Sometimes",
+        "duration": "01:17"
+      },
+      {
+        "title": "Straight and Alert",
+        "duration": "03:09"
+      },
+      {
+        "title": "Use Your Head",
+        "duration": "01:23"
       }
     ]
   },
@@ -2234,40 +2262,52 @@
     "download": "https://www.mediafire.com/file/jceukdiifik85i1/Kill_for_Christ_%25281982%2529.zip/file",
     "tracks": [
       {
+        "title": "CETA Suckers",
+        "duration": "00:59"
+      },
+      {
         "title": "Civil Defense",
         "duration": "01:25"
       },
       {
-        "title": "SR Me Generation",
-        "duration": "01:17"
-      },
-      {
-        "title": "SR Daisy Chain",
+        "title": "Daisy Chain",
         "duration": "01:49"
       },
       {
-        "title": "SR Peer Police",
-        "duration": "01:15"
+        "title": "Death Wish",
+        "duration": "02:12"
       },
       {
-        "title": "Rock and Roll Mutha",
-        "duration": "01:25"
-      },
-      {
-        "title": "T Sux",
-        "duration": "00:36"
-      },
-      {
-        "title": "SR Trendy Nazi Hypocrites",
-        "duration": "00:45"
-      },
-      {
-        "title": "SR Die for God",
+        "title": "Die for God",
         "duration": "05:48"
+      },
+      {
+        "title": "Drug of Choice",
+        "duration": "01:46"
       },
       {
         "title": "F.U.",
         "duration": "01:06"
+      },
+      {
+        "title": "Fucking Advice",
+        "duration": "00:10"
+      },
+      {
+        "title": "Green Beret",
+        "duration": "01:40"
+      },
+      {
+        "title": "Me Generation",
+        "duration": "01:17"
+      },
+      {
+        "title": "No Change",
+        "duration": "01:02"
+      },
+      {
+        "title": "Peer Police",
+        "duration": "01:15"
       },
       {
         "title": "Preskool Dropouts",
@@ -2278,36 +2318,24 @@
         "duration": "01:03"
       },
       {
-        "title": "Green Beret",
-        "duration": "01:40"
+        "title": "Rock and Roll Mutha",
+        "duration": "01:25"
+      },
+      {
+        "title": "T Sucks - Original Version",
+        "duration": "00:42"
+      },
+      {
+        "title": "T Sux",
+        "duration": "00:36"
       },
       {
         "title": "Time Is Money",
         "duration": "00:22"
       },
       {
-        "title": "CETA Suckers",
-        "duration": "00:59"
-      },
-      {
-        "title": "Death Wish",
-        "duration": "02:12"
-      },
-      {
-        "title": "Fucking Advice",
-        "duration": "00:10"
-      },
-      {
-        "title": "No Change",
-        "duration": "01:02"
-      },
-      {
-        "title": "Drug of Choice",
-        "duration": "01:46"
-      },
-      {
-        "title": "SR T Sucks - Original Version",
-        "duration": "00:42"
+        "title": "Trendy Nazi Hypocrites",
+        "duration": "00:45"
       }
     ]
   },
@@ -2325,88 +2353,88 @@
     "download": "https://www.mediafire.com/file/a8aqmhu013xi8iz/1980-1986_%25281997%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Dicks Hate The Police",
-        "duration": "01:59"
-      },
-      {
-        "title": "Lifetime Problems",
-        "duration": "01:53"
-      },
-      {
-        "title": "Saturday Night At The Bookstore",
-        "duration": "04:43"
-      },
-      {
-        "title": "Dead In A Motel Room",
-        "duration": "01:50"
-      },
-      {
-        "title": "Fake Bands",
-        "duration": "01:25"
-      },
-      {
-        "title": "Wheelchair Epidemic",
-        "duration": "02:18"
-      },
-      {
-        "title": "SR Shit On Me",
-        "duration": "02:04"
-      },
-      {
         "title": "Anti-Klan (Part 1)",
         "duration": "01:53"
-      },
-      {
-        "title": "No Nazi's Friend",
-        "duration": "03:09"
-      },
-      {
-        "title": "Rich Daddy",
-        "duration": "02:30"
-      },
-      {
-        "title": "Kill From The Heart",
-        "duration": "01:56"
       },
       {
         "title": "Anti-Klan (Part 2)",
         "duration": "03:17"
       },
       {
-        "title": "No Fuckin' War",
-        "duration": "04:46"
-      },
-      {
-        "title": "I Hope You Get Drafted",
-        "duration": "01:27"
-      },
-      {
-        "title": "Sidewalk Begging",
-        "duration": "03:50"
-      },
-      {
-        "title": "George Jackson",
-        "duration": "03:29"
-      },
-      {
-        "title": "The Police (Force)",
-        "duration": "02:27"
-      },
-      {
-        "title": "Off-Duty Sailor",
-        "duration": "02:44"
-      },
-      {
-        "title": "Executive Dive",
-        "duration": "02:56"
+        "title": "Dead In A Motel Room",
+        "duration": "01:50"
       },
       {
         "title": "Decent And Clean",
         "duration": "03:29"
       },
       {
+        "title": "Dicks Hate The Police",
+        "duration": "01:59"
+      },
+      {
+        "title": "Executive Dive",
+        "duration": "02:56"
+      },
+      {
+        "title": "Fake Bands",
+        "duration": "01:25"
+      },
+      {
+        "title": "George Jackson",
+        "duration": "03:29"
+      },
+      {
         "title": "Gilbeau",
         "duration": "03:19"
+      },
+      {
+        "title": "I Hope You Get Drafted",
+        "duration": "01:27"
+      },
+      {
+        "title": "Kill From The Heart",
+        "duration": "01:56"
+      },
+      {
+        "title": "Lifetime Problems",
+        "duration": "01:53"
+      },
+      {
+        "title": "No Fuckin' War",
+        "duration": "04:46"
+      },
+      {
+        "title": "No Nazi's Friend",
+        "duration": "03:09"
+      },
+      {
+        "title": "Off-Duty Sailor",
+        "duration": "02:44"
+      },
+      {
+        "title": "Rich Daddy",
+        "duration": "02:30"
+      },
+      {
+        "title": "Saturday Night At The Bookstore",
+        "duration": "04:43"
+      },
+      {
+        "title": "Shit On Me",
+        "duration": "02:04"
+      },
+      {
+        "title": "Sidewalk Begging",
+        "duration": "03:50"
+      },
+      {
+        "title": "The Police (Force)",
+        "duration": "02:27"
+      },
+      {
+        "title": "Wheelchair Epidemic",
+        "duration": "02:18"
       }
     ]
   },
@@ -2424,52 +2452,52 @@
     "download": "https://www.mediafire.com/file/n3bjpt4e0s5tw2d/Faith_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "SR It's Time",
-        "duration": "00:59"
-      },
-      {
-        "title": "SR Face to Face",
-        "duration": "01:02"
-      },
-      {
-        "title": "SR Trapped",
-        "duration": "00:47"
-      },
-      {
-        "title": "In Control",
-        "duration": "01:10"
-      },
-      {
         "title": "Another Victim",
         "duration": "00:41"
-      },
-      {
-        "title": "What's Wrong With Me?",
-        "duration": "00:42"
-      },
-      {
-        "title": "SR What You Think",
-        "duration": "00:49"
       },
       {
         "title": "Confusion",
         "duration": "01:33"
       },
       {
-        "title": "You're X'd",
-        "duration": "01:06"
+        "title": "Don't Tell Me",
+        "duration": "00:57"
+      },
+      {
+        "title": "Face to Face",
+        "duration": "01:02"
+      },
+      {
+        "title": "In Control",
+        "duration": "01:10"
+      },
+      {
+        "title": "In The Black",
+        "duration": "02:04"
+      },
+      {
+        "title": "It's Time",
+        "duration": "00:59"
       },
       {
         "title": "Nightmare",
         "duration": "01:11"
       },
       {
-        "title": "Don't Tell Me",
-        "duration": "00:57"
+        "title": "Trapped",
+        "duration": "00:47"
       },
       {
-        "title": "SR In The Black",
-        "duration": "02:04"
+        "title": "What You Think",
+        "duration": "00:49"
+      },
+      {
+        "title": "What's Wrong With Me?",
+        "duration": "00:42"
+      },
+      {
+        "title": "You're X'd",
+        "duration": "01:06"
       }
     ]
   },
@@ -2487,15 +2515,15 @@
     "download": "https://www.mediafire.com/file/hunk6jq4u7r9pe2/Brotherhood_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "Open Up",
-        "duration": "01:24"
+        "title": "(The Girl's Got) Limits",
+        "duration": "01:10"
       },
       {
-        "title": "SR More Than Fashion",
-        "duration": "01:29"
+        "title": "Brotherhood",
+        "duration": "01:02"
       },
       {
-        "title": "SR Circle Storm",
+        "title": "Circle Storm",
         "duration": "00:35"
       },
       {
@@ -2503,28 +2531,28 @@
         "duration": "01:27"
       },
       {
-        "title": "(The Girl's Got) Limits",
-        "duration": "01:10"
+        "title": "Escape",
+        "duration": "02:18"
       },
       {
-        "title": "SR Brotherhood",
-        "duration": "01:02"
+        "title": "Insurance Risk",
+        "duration": "00:49"
+      },
+      {
+        "title": "More Than Fashion",
+        "duration": "01:29"
+      },
+      {
+        "title": "Open Up",
+        "duration": "01:24"
+      },
+      {
+        "title": "Stand Proud",
+        "duration": "00:56"
       },
       {
         "title": "Yellow",
         "duration": "01:16"
-      },
-      {
-        "title": "SR Stand Proud",
-        "duration": "00:56"
-      },
-      {
-        "title": "SR Insurance Risk",
-        "duration": "00:49"
-      },
-      {
-        "title": "Escape",
-        "duration": "02:18"
       }
     ]
   },
@@ -2542,11 +2570,23 @@
     "download": "https://www.mediafire.com/file/o9pzcv7ye6bd5lg/My_America_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "SR What You Pay For",
-        "duration": "01:30"
+        "title": "American Band",
+        "duration": "02:38"
       },
       {
-        "title": "SR Outcast",
+        "title": "Boston's Finest",
+        "duration": "01:17"
+      },
+      {
+        "title": "Choir Boy",
+        "duration": "01:26"
+      },
+      {
+        "title": "My America",
+        "duration": "01:21"
+      },
+      {
+        "title": "Outcast",
         "duration": "00:53"
       },
       {
@@ -2554,36 +2594,24 @@
         "duration": "01:17"
       },
       {
-        "title": "The Grinder",
-        "duration": "01:03"
-      },
-      {
-        "title": "SR Unite Or Lose",
-        "duration": "01:32"
-      },
-      {
-        "title": "SR This Is Your Life",
-        "duration": "01:20"
-      },
-      {
-        "title": "My America",
-        "duration": "01:21"
-      },
-      {
-        "title": "Choir Boy",
-        "duration": "01:26"
-      },
-      {
-        "title": "Boston's Finest",
-        "duration": "01:17"
-      },
-      {
         "title": "Rifle",
         "duration": "01:13"
       },
       {
-        "title": "American Band",
-        "duration": "02:38"
+        "title": "The Grinder",
+        "duration": "01:03"
+      },
+      {
+        "title": "This Is Your Life",
+        "duration": "01:20"
+      },
+      {
+        "title": "Unite Or Lose",
+        "duration": "01:32"
+      },
+      {
+        "title": "What You Pay For",
+        "duration": "01:30"
       }
     ]
   },
@@ -2605,20 +2633,20 @@
         "duration": "02:12"
       },
       {
-        "title": "Gardener And The Maid",
-        "duration": "01:19"
+        "title": "Days Of Desperation",
+        "duration": "01:27"
+      },
+      {
+        "title": "Duh Family",
+        "duration": "01:49"
       },
       {
         "title": "Food Lava",
         "duration": "02:32"
       },
       {
-        "title": "No Exposure",
-        "duration": "01:54"
-      },
-      {
-        "title": "Days Of Desperation",
-        "duration": "01:27"
+        "title": "Gardener And The Maid",
+        "duration": "01:19"
       },
       {
         "title": "Go Team Go",
@@ -2629,28 +2657,28 @@
         "duration": "02:49"
       },
       {
-        "title": "Won't Come Back Alive",
-        "duration": "01:24"
-      },
-      {
-        "title": "So Long Ago",
+        "title": "No Exposure",
         "duration": "01:54"
       },
       {
-        "title": "Duh Family",
-        "duration": "01:49"
+        "title": "Pig Hunt",
+        "duration": "01:44"
       },
       {
         "title": "Sickly Sweet",
         "duration": "02:01"
       },
       {
+        "title": "So Long Ago",
+        "duration": "01:54"
+      },
+      {
         "title": "The Megawaki Cult",
         "duration": "01:55"
       },
       {
-        "title": "Pig Hunt",
-        "duration": "01:44"
+        "title": "Won't Come Back Alive",
+        "duration": "01:24"
       }
     ]
   },
@@ -2668,64 +2696,24 @@
     "download": "https://www.mediafire.com/file/3lui7l5d4ciudvc/Terveet_K%25C3%25A4det_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "Halloween",
-        "duration": "00:30"
-      },
-      {
-        "title": "The Free North",
-        "duration": "00:39"
-      },
-      {
-        "title": "I Want So Much",
-        "duration": "00:38"
-      },
-      {
-        "title": "The War",
-        "duration": "00:34"
-      },
-      {
-        "title": "Transvestite",
-        "duration": "01:01"
+        "title": "A.L.I.E.N",
+        "duration": "00:59"
       },
       {
         "title": "Black",
         "duration": "00:29"
       },
       {
-        "title": "Up",
-        "duration": "00:48"
+        "title": "Halloween",
+        "duration": "00:30"
       },
       {
-        "title": "A.L.I.E.N",
-        "duration": "00:59"
+        "title": "I Want So Much",
+        "duration": "00:38"
       },
       {
         "title": "N.O.W",
         "duration": "00:58"
-      },
-      {
-        "title": "The Devil Christ",
-        "duration": "01:20"
-      },
-      {
-        "title": "To The Hand",
-        "duration": "00:52"
-      },
-      {
-        "title": "Searching For The End Of The World",
-        "duration": "00:45"
-      },
-      {
-        "title": "The Unknown",
-        "duration": "00:49"
-      },
-      {
-        "title": "Whip Me",
-        "duration": "00:36"
-      },
-      {
-        "title": "Tomorrow",
-        "duration": "00:37"
       },
       {
         "title": "Never",
@@ -2734,6 +2722,46 @@
       {
         "title": "Not Right Pt.1+2",
         "duration": "02:12"
+      },
+      {
+        "title": "Searching For The End Of The World",
+        "duration": "00:45"
+      },
+      {
+        "title": "The Devil Christ",
+        "duration": "01:20"
+      },
+      {
+        "title": "The Free North",
+        "duration": "00:39"
+      },
+      {
+        "title": "The Unknown",
+        "duration": "00:49"
+      },
+      {
+        "title": "The War",
+        "duration": "00:34"
+      },
+      {
+        "title": "To The Hand",
+        "duration": "00:52"
+      },
+      {
+        "title": "Tomorrow",
+        "duration": "00:37"
+      },
+      {
+        "title": "Transvestite",
+        "duration": "01:01"
+      },
+      {
+        "title": "Up",
+        "duration": "00:48"
+      },
+      {
+        "title": "Whip Me",
+        "duration": "00:36"
       }
     ]
   },
@@ -2751,40 +2779,8 @@
     "download": "https://www.mediafire.com/file/z8l4thcifk6uocm/Ristiinnaulittu_Kaaos_%25281984%2529.zip/file",
     "tracks": [
       {
-        "title": "Kuolleet Sankarit",
-        "duration": "01:16"
-      },
-      {
-        "title": "Väkivallan Uhrit",
-        "duration": "01:57"
-      },
-      {
-        "title": "Syytön Sivustakatsoja",
-        "duration": "02:28"
-      },
-      {
-        "title": "Vaihtoehto",
-        "duration": "02:04"
-      },
-      {
-        "title": "Odotan Maailmanloppua",
-        "duration": "02:37"
-      },
-      {
-        "title": "SR Vanki",
-        "duration": "02:10"
-      },
-      {
-        "title": "Pelko Kasvattaa Vihaa",
-        "duration": "01:39"
-      },
-      {
-        "title": "Sun Valinta",
-        "duration": "02:21"
-      },
-      {
-        "title": "Syntynyt Häviään",
-        "duration": "02:40"
+        "title": "Ei Ulospaasya",
+        "duration": "02:07"
       },
       {
         "title": "Kohti Tuhoa...",
@@ -2795,8 +2791,40 @@
         "duration": "02:52"
       },
       {
-        "title": "SR Ei Ulospääsyä",
-        "duration": "02:07"
+        "title": "Kuolleet Sankarit",
+        "duration": "01:16"
+      },
+      {
+        "title": "Odotan Maailmanloppua",
+        "duration": "02:37"
+      },
+      {
+        "title": "Pelko Kasvattaa Vihaa",
+        "duration": "01:39"
+      },
+      {
+        "title": "Sun Valinta",
+        "duration": "02:21"
+      },
+      {
+        "title": "Syntynyt Haviaan",
+        "duration": "02:40"
+      },
+      {
+        "title": "Syyton Sivustakatsoja",
+        "duration": "02:28"
+      },
+      {
+        "title": "Vaihtoehto",
+        "duration": "02:04"
+      },
+      {
+        "title": "Vakivallan Uhrit",
+        "duration": "01:57"
+      },
+      {
+        "title": "Vanki",
+        "duration": "02:10"
       }
     ]
   },
@@ -2814,36 +2842,36 @@
     "download": "https://www.mediafire.com/file/wf8kjk8ojg8jjxc/Subject_To_Change_%25281983%2529.zip/file",
     "tracks": [
       {
-        "title": "SR Aware",
+        "title": "Aware",
         "duration": "01:41"
-      },
-      {
-        "title": "SR Say No More",
-        "duration": "01:30"
       },
       {
         "title": "Limitations",
         "duration": "01:26"
       },
       {
-        "title": "SR No Choice",
-        "duration": "01:08"
-      },
-      {
-        "title": "Untitled",
-        "duration": "01:08"
-      },
-      {
-        "title": "SR Subject to Change",
-        "duration": "01:34"
-      },
-      {
         "title": "More of the Same",
         "duration": "01:34"
       },
       {
+        "title": "No Choice",
+        "duration": "01:08"
+      },
+      {
+        "title": "Say No More",
+        "duration": "01:30"
+      },
+      {
         "title": "Slowdown",
         "duration": "02:59"
+      },
+      {
+        "title": "Subject to Change",
+        "duration": "01:34"
+      },
+      {
+        "title": "Untitled",
+        "duration": "01:08"
       }
     ]
   },
@@ -2869,7 +2897,7 @@
         "duration": "01:12"
       },
       {
-        "title": "Onnellisia Kytkentöjä",
+        "title": "Onnellisia Kytkentoja",
         "duration": "00:38"
       },
       {
@@ -2885,7 +2913,7 @@
         "duration": "00:34"
       },
       {
-        "title": "Tornion Kevät",
+        "title": "Tornion Kevat",
         "duration": "00:41"
       },
       {
@@ -2908,24 +2936,32 @@
     "download": "https://www.mediafire.com/file/3sn50h6tlqceuam/American_Style_%25281982%2529.zip/file",
     "tracks": [
       {
-        "title": "Pressure",
-        "duration": "01:13"
-      },
-      {
-        "title": "Training Ground",
-        "duration": "01:14"
+        "title": "Adult",
+        "duration": "00:42"
       },
       {
         "title": "Deep Wound",
         "duration": "01:32"
       },
       {
-        "title": "You're False",
-        "duration": "00:55"
+        "title": "Don't Need",
+        "duration": "01:18"
       },
       {
-        "title": "Your Hand Is In Your Crotch",
-        "duration": "00:27"
+        "title": "Let's Go To The Mall",
+        "duration": "07:16"
+      },
+      {
+        "title": "Never Let You In",
+        "duration": "00:41"
+      },
+      {
+        "title": "Patriots",
+        "duration": "00:32"
+      },
+      {
+        "title": "Pressure",
+        "duration": "01:13"
       },
       {
         "title": "Psyched To Die",
@@ -2936,28 +2972,20 @@
         "duration": "01:05"
       },
       {
-        "title": "Patriots",
-        "duration": "00:32"
-      },
-      {
-        "title": "Never Let You In",
-        "duration": "00:41"
-      },
-      {
-        "title": "Adult",
-        "duration": "00:42"
-      },
-      {
-        "title": "Don't Need",
-        "duration": "01:18"
+        "title": "Training Ground",
+        "duration": "01:14"
       },
       {
         "title": "Video Prick",
         "duration": "02:11"
       },
       {
-        "title": "Let's Go To The Mall",
-        "duration": "07:16"
+        "title": "Your Hand Is In Your Crotch",
+        "duration": "00:27"
+      },
+      {
+        "title": "You're False",
+        "duration": "00:55"
       }
     ]
   }
