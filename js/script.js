@@ -4,7 +4,7 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '4.10.0';
+const SITE_VERSION = '4.10.1';
 const COLLECTION_VERSION = '7.2.0';
 
 
@@ -30,7 +30,6 @@ async function init() {
     }
     renderNewsTeaser();
     renderSiteVersion();
-    renderCollectionVersions();
     allAlbumsData = await fetchAlbums();
     if (allAlbumsData.length === 0) {
         console.warn("Failed to load albums");
@@ -430,8 +429,14 @@ function escapeHTML(value) {
 
 // 7. COLLECTION VERSIONS
 function renderCollectionVersions() {
+    const collectionVersionEls = document.querySelectorAll('#collection-version');
+    collectionVersionEls.forEach(el => {
+        el.textContent = String(COLLECTION_VERSION);
+    });
+
     const versionsContainer = document.getElementById("old-versions");
     if (!versionsContainer) return;
+    versionsContainer.innerHTML = '';
 
     const collectionVersions = [
         { version: "v5.5.0", date: "07.05.2026", file: "https://www.mediafire.com/file/bwpijt88xf8fr0a/Collection_v5_5_0.zip/file" }
@@ -450,6 +455,15 @@ function renderCollectionVersions() {
 }
 
 // 8. SIMPLE LIST
+function getBitrateColorClass(bitrate) {
+    if (!bitrate) return 'bitrate-na';
+    const value = Number(String(bitrate).match(/\d+/)?.[0] || 0);
+    if (!value) return 'bitrate-na';
+    if (value >= 257) return 'bitrate-high';
+    if (value >= 191) return 'bitrate-medium';
+    return 'bitrate-low';
+}
+
 function renderSimpleList(albums) {
     const list = document.getElementById("album-list");
     if (!list) return;
@@ -463,8 +477,9 @@ function renderSimpleList(albums) {
         const li = document.createElement("li");
         li.appendChild(document.createTextNode(`${album.artist} - ${album.title} (${album.year}) [`));
         const span = document.createElement('span');
-        span.className = 'bitrate';
-        span.textContent = album.bitrate || 'N/A';
+        const bitrateText = album.bitrate || 'N/A';
+        span.className = `bitrate ${getBitrateColorClass(bitrateText)}`;
+        span.textContent = bitrateText;
         li.appendChild(span);
         li.appendChild(document.createTextNode(']'));
         list.appendChild(li);

@@ -99,7 +99,23 @@ strong {
 }
 
 .bitrate {
+    font-weight: 600;
+}
+
+.bitrate-na {
     color: var(--text-light);
+}
+
+.bitrate-high {
+    color: #79a871;
+}
+
+.bitrate-medium {
+    color: #d7b15f;
+}
+
+.bitrate-low {
+    color: #b35d5d;
 }
 
 a.link {
