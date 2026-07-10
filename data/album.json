@@ -1,2992 +1,2976 @@
 [
-  {
-    "id": "millions-of-dead-cops",
-    "title": "Millions Of Dead Cops",
-    "artist": "MDC",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Austin, TX",
-    "country": "USA",
-    "label": "R Radical Records",
-    "bitrate": "320 kbps",
-    "img": "img/MDC - Millions Of Dead Cops (1982).jpg",
-    "download": "https://www.mediafire.com/file/0pnerbvo0e2nn4w/Millions_of_Dead_Cops_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "American Achievements",
-        "duration": "02:11"
-      },
-      {
-        "title": "Born to Die",
-        "duration": "01:57"
-      },
-      {
-        "title": "Business on Parade",
-        "duration": "01:27"
-      },
-      {
-        "title": "Church & State",
-        "duration": "00:33"
-      },
-      {
-        "title": "Corporate Deathburger",
-        "duration": "01:19"
-      },
-      {
-        "title": "Dead Cops / America's So Straight",
-        "duration": "02:05"
-      },
-      {
-        "title": "Dick for Brains",
-        "duration": "01:04"
-      },
-      {
-        "title": "Greedy & Pathetic",
-        "duration": "01:25"
-      },
-      {
-        "title": "I Hate Work",
-        "duration": "00:57"
-      },
-      {
-        "title": "I Remember",
-        "duration": "02:00"
-      },
-      {
-        "title": "John Wayne was a Nazi",
-        "duration": "02:01"
-      },
-      {
-        "title": "Kill the Light",
-        "duration": "01:21"
-      },
-      {
-        "title": "My Family is a Little Weird",
-        "duration": "01:57"
-      },
-      {
-        "title": "Violent Rednecks",
-        "duration": "00:39"
-      }
-    ]
-  },
-  {
-    "id": "smoke-signals",
-    "title": "Smoke Signals",
-    "artist": "MDC",
-    "year": 1986,
-    "genre": "Hardcore Punk",
-    "city": "San Francisco, CA",
-    "country": "USA",
-    "label": "R Radical Records",
-    "bitrate": "320 kbps",
-    "img": "img/MDC - Smoke Signals (1986).jpg",
-    "download": "https://www.mediafire.com/file/3oo6gwxod66pso0/Smoke_Signals_%25281986%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Acceptable Risks",
-        "duration": "01:35"
-      },
-      {
-        "title": "Country Squawk",
-        "duration": "02:30"
-      },
-      {
-        "title": "Drink To Forget",
-        "duration": "01:57"
-      },
-      {
-        "title": "King Of Thrash",
-        "duration": "01:25"
-      },
-      {
-        "title": "Missile Destroyed Civilization",
-        "duration": "02:25"
-      },
-      {
-        "title": "No More Cops",
-        "duration": "01:47"
-      },
-      {
-        "title": "Paradise Lost",
-        "duration": "04:05"
-      },
-      {
-        "title": "Skateboards From Hell",
-        "duration": "01:30"
-      },
-      {
+    {
+        "id": "millions-of-dead-cops",
+        "title": "Millions Of Dead Cops",
+        "artist": "MDC",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Austin, TX",
+        "country": "USA",
+        "label": "R Radical Records",
+        "bitrate": "320 kbps",
+        "img": "img/MDC - Millions Of Dead Cops (1982).jpg",
+        "download": "https://www.mediafire.com/file/0pnerbvo0e2nn4w/Millions_of_Dead_Cops_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Business on Parade",
+                "duration": "01:27"
+            },
+            {
+                "title": "SR Dead Cops / America's So Straight",
+                "duration": "02:05"
+            },
+            {
+                "title": "SR Born to Die",
+                "duration": "01:57"
+            },
+            {
+                "title": "Corporate Deathburger",
+                "duration": "01:19"
+            },
+            {
+                "title": "SR Violent Rednecks",
+                "duration": "00:39"
+            },
+            {
+                "title": "I Remember",
+                "duration": "02:00"
+            },
+            {
+                "title": "John Wayne was a Nazi",
+                "duration": "02:01"
+            },
+            {
+                "title": "SR Dick for Brains",
+                "duration": "01:04"
+            },
+            {
+                "title": "I Hate Work",
+                "duration": "00:57"
+            },
+            {
+                "title": "SR My Family is a Little Weird",
+                "duration": "01:57"
+            },
+            {
+                "title": "SR Greedy & Pathetic",
+                "duration": "01:25"
+            },
+            {
+                "title": "Church & State",
+                "duration": "00:33"
+            },
+            {
+                "title": "SR Kill the Light",
+                "duration": "01:21"
+            },
+            {
+                "title": "SR American Achievements",
+                "duration": "02:11"
+            }
+        ]
+    },
+    {
+        "id": "smoke-signals",
         "title": "Smoke Signals",
-        "duration": "03:00"
-      },
-      {
-        "title": "Soup Kitchen Celebrity",
-        "duration": "02:39"
-      },
-      {
-        "title": "South Africa Is Free",
-        "duration": "04:41"
-      },
-      {
-        "title": "The Big Picture",
-        "duration": "01:42"
-      },
-      {
-        "title": "Tofutti",
-        "duration": "01:26"
-      }
-    ]
-  },
-  {
-    "id": "metal-devil-cokes",
-    "title": "Metal Devil Cokes",
-    "artist": "MDC",
-    "year": 1989,
-    "genre": "Hardcore Punk",
-    "city": "San Francisco, CA",
-    "country": "USA",
-    "label": "R Radical Records",
-    "bitrate": "320 kbps",
-    "img": "img/MDC - Metal Devil Cokes (1989).jpg",
-    "download": "https://www.mediafire.com/file/onz2vhg77iq1yzh/Metal_Devil_Cokes_%25281989%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Acid Reindeer",
-        "duration": "01:47"
-      },
-      {
-        "title": "Ain't It Funny (How It All Works Out)",
-        "duration": "02:18"
-      },
-      {
-        "title": "Deep in the Heart",
-        "duration": "01:36"
-      },
-      {
-        "title": "Dirty Harry for President",
-        "duration": "02:11"
-      },
-      {
-        "title": "Hole in My Soul",
-        "duration": "01:58"
-      },
-      {
-        "title": "Huddled Masses",
-        "duration": "01:56"
-      },
-      {
-        "title": "I Was a Dupe for the Rcp",
-        "duration": "01:59"
-      },
-      {
-        "title": "I'm a Knucklehead",
-        "duration": "02:41"
-      },
-      {
-        "title": "Love Potion No. 9",
-        "duration": "01:34"
-      },
-      {
-        "title": "Metal Devil Crossoverture",
-        "duration": "03:17"
-      },
-      {
-        "title": "Mongoloid",
-        "duration": "01:21"
-      },
-      {
-        "title": "Snuffed Out",
-        "duration": "02:28"
-      },
-      {
-        "title": "Something for Everyone",
-        "duration": "02:25"
-      },
-      {
-        "title": "Three Blind Mice",
-        "duration": "02:48"
-      },
-      {
-        "title": "Tofu Spaghetti",
-        "duration": "02:08"
-      },
-      {
-        "title": "White Men in Suits",
-        "duration": "01:29"
-      }
-    ]
-  },
-  {
-    "id": "hey-cop-if-i-had-a-face-like-yours",
-    "title": "Hey Cop!!! If I Had A Face Like Yours...",
-    "artist": "MDC",
-    "year": 1991,
-    "genre": "Hardcore Punk",
-    "city": "San Francisco, CA",
-    "country": "USA",
-    "label": "R Radical Records",
-    "bitrate": "320 kbps",
-    "img": "img/MDC - Hey Cop!! If I Had A Face Like Yours… (1991).jpg",
-    "download": "https://www.mediafire.com/file/w6k63fzcc17kefh/Hey_Cop%2521%2521%2521_If_I_Had_A_Face_Like_Yours..._%25281991%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Beat Somebody Up",
-        "duration": "02:19"
-      },
-      {
-        "title": "Black Christmas",
-        "duration": "04:30"
-      },
-      {
-        "title": "Cockrocker",
-        "duration": "01:15"
-      },
-      {
-        "title": "Crime of Rape",
-        "duration": "02:33"
-      },
-      {
-        "title": "Gig and Die in L.A.",
-        "duration": "01:26"
-      },
-      {
-        "title": "I Do Not Wish",
-        "duration": "02:11"
-      },
-      {
-        "title": "If I Had a Face",
-        "duration": "01:58"
-      },
-      {
-        "title": "It's Later Than You Think",
-        "duration": "02:09"
-      },
-      {
-        "title": "Lambada Me",
-        "duration": "01:33"
-      },
-      {
-        "title": "Mark of the Farmer",
-        "duration": "01:58"
-      },
-      {
-        "title": "Millions of Dead Cops",
-        "duration": "02:56"
-      },
-      {
-        "title": "Moneypile",
-        "duration": "03:54"
-      },
-      {
-        "title": "Nowhere to Go",
-        "duration": "01:59"
-      },
-      {
-        "title": "The Jew That Got Away",
-        "duration": "02:11"
-      },
-      {
-        "title": "U.S. War #54",
-        "duration": "03:22"
-      }
-    ]
-  },
-  {
-    "id": "walk-among-us",
-    "title": "Walk Among Us",
-    "artist": "Misfits",
-    "year": 1982,
-    "genre": "Horror Punk",
-    "city": "Lodi, NJ",
-    "country": "USA",
-    "label": "Ruby Records",
-    "bitrate": "320 kbps",
-    "img": "img/Misfits - Walk Among Us (1982).jpg",
-    "download": "https://www.mediafire.com/file/7oyxz3o3d2o1rja/Walk_Among_Us_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "20 Eyes",
-        "duration": "01:48"
-      },
-      {
-        "title": "All Hell Breaks Loose",
-        "duration": "01:48"
-      },
-      {
-        "title": "Astro Zombies",
-        "duration": "02:16"
-      },
-      {
-        "title": "Braineaters",
-        "duration": "00:57"
-      },
-      {
-        "title": "Devils Whorehouse",
-        "duration": "01:46"
-      },
-      {
-        "title": "Hatebreeders",
-        "duration": "03:07"
-      },
-      {
-        "title": "I Turned Into A Martian",
-        "duration": "01:42"
-      },
-      {
-        "title": "Mommy, Can I Go Out & Kill Tonight? (Live)",
-        "duration": "02:00"
-      },
-      {
-        "title": "Night Of The Living Dead",
-        "duration": "01:59"
-      },
-      {
-        "title": "Nike A Go Go",
-        "duration": "02:15"
-      },
-      {
-        "title": "Skulls",
-        "duration": "02:02"
-      },
-      {
-        "title": "Vampira",
-        "duration": "01:28"
-      },
-      {
-        "title": "Violent World",
-        "duration": "01:48"
-      }
-    ]
-  },
-  {
-    "id": "earth-ad-wolfs-blood",
-    "title": "Earth A.D. / Wolfs Blood",
-    "artist": "Misfits",
-    "year": 1984,
-    "genre": "Horror Punk",
-    "city": "Lodi, NJ",
-    "country": "USA",
-    "label": "Plan 9 Records",
-    "bitrate": "320 kbps",
-    "img": "img/Misfits - Earth A.D. - Wolfs Blood (1983).jpg",
-    "download": "https://www.mediafire.com/file/t3couwmm0iads9k/Earth_A.D._%25281984%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Bloodfeast",
-        "duration": "02:30"
-      },
-      {
-        "title": "Death Comes Ripping",
-        "duration": "01:54"
-      },
-      {
-        "title": "Demonomania",
-        "duration": "00:45"
-      },
-      {
-        "title": "Devilock",
-        "duration": "01:27"
-      },
-      {
-        "title": "Die, Die My Darling",
-        "duration": "03:12"
-      },
-      {
-        "title": "Earth A.D.",
-        "duration": "02:09"
-      },
-      {
-        "title": "Green Hell",
-        "duration": "01:53"
-      },
-      {
-        "title": "Hellhound",
-        "duration": "01:16"
-      },
-      {
-        "title": "Mommy, Can I Go Out & Kill Tonight?",
-        "duration": "02:03"
-      },
-      {
-        "title": "Queen Wasp",
-        "duration": "01:33"
-      },
-      {
-        "title": "We Bite",
-        "duration": "01:15"
-      },
-      {
-        "title": "Wolf's Blood",
-        "duration": "01:13"
-      }
-    ]
-  },
-  {
-    "id": "static-age",
-    "title": "Static Age",
-    "artist": "Misfits",
-    "year": 1996,
-    "genre": "Horror Punk",
-    "city": "Lodi, NJ",
-    "country": "USA",
-    "label": "Caroline Records",
-    "bitrate": "320 kbps",
-    "img": "img/Misfits - Static Age (1996).jpg",
-    "download": "https://www.mediafire.com/file/akdt6ifqnzbwubf/Static_Age_%25281996%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Angelfuck",
-        "duration": "01:38"
-      },
-      {
-        "title": "Attitude",
-        "duration": "01:31"
-      },
-      {
-        "title": "Bullet",
-        "duration": "01:38"
-      },
-      {
-        "title": "Come Back",
-        "duration": "05:00"
-      },
-      {
-        "title": "Hollywood Babylon",
-        "duration": "02:20"
-      },
-      {
-        "title": "Hybrid Moments",
-        "duration": "01:42"
-      },
-      {
-        "title": "In The Doorway",
-        "duration": "01:25"
-      },
-      {
-        "title": "Last Caress",
-        "duration": "01:57"
-      },
-      {
-        "title": "Return Of The Fly",
-        "duration": "01:37"
-      },
-      {
-        "title": "She",
-        "duration": "01:24"
-      },
-      {
-        "title": "Some Kinda Hate",
-        "duration": "02:02"
-      },
-      {
-        "title": "Spinal Remains",
-        "duration": "01:27"
-      },
-      {
+        "artist": "MDC",
+        "year": 1986,
+        "genre": "Hardcore Punk",
+        "city": "San Francisco, CA",
+        "country": "USA",
+        "label": "R Radical Records",
+        "bitrate": "320 kbps",
+        "img": "img/MDC - Smoke Signals (1986).jpg",
+        "download": "https://www.mediafire.com/file/3oo6gwxod66pso0/Smoke_Signals_%25281986%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR No More Cops",
+                "duration": "01:47"
+            },
+            {
+                "title": "King Of Thrash",
+                "duration": "01:25"
+            },
+            {
+                "title": "SR Drink To Forget",
+                "duration": "01:57"
+            },
+            {
+                "title": "SR The Big Picture",
+                "duration": "01:42"
+            },
+            {
+                "title": "Skateboards From Hell",
+                "duration": "01:30"
+            },
+            {
+                "title": "SR Tofutti",
+                "duration": "01:26"
+            },
+            {
+                "title": "SR South Africa Is Free",
+                "duration": "04:41"
+            },
+            {
+                "title": "Acceptable Risks",
+                "duration": "01:35"
+            },
+            {
+                "title": "Missile Destroyed Civilization",
+                "duration": "02:25"
+            },
+            {
+                "title": "SR Soup Kitchen Celebrity",
+                "duration": "02:39"
+            },
+            {
+                "title": "Country Squawk",
+                "duration": "02:30"
+            },
+            {
+                "title": "Paradise Lost",
+                "duration": "04:05"
+            },
+            {
+                "title": "Smoke Signals",
+                "duration": "03:00"
+            }
+        ]
+    },
+    {
+        "id": "metal-devil-cokes",
+        "title": "Metal Devil Cokes",
+        "artist": "MDC",
+        "year": 1989,
+        "genre": "Hardcore Punk",
+        "city": "San Francisco, CA",
+        "country": "USA",
+        "label": "R Radical Records",
+        "bitrate": "320 kbps",
+        "img": "img/MDC - Metal Devil Cokes (1989).jpg",
+        "download": "https://www.mediafire.com/file/onz2vhg77iq1yzh/Metal_Devil_Cokes_%25281989%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Huddled Masses",
+                "duration": "01:56"
+            },
+            {
+                "title": "SR Dirty Harry for President",
+                "duration": "02:11"
+            },
+            {
+                "title": "SR White Men in Suits",
+                "duration": "01:29"
+            },
+            {
+                "title": "Three Blind Mice",
+                "duration": "02:48"
+            },
+            {
+                "title": "Tofu Spaghetti",
+                "duration": "02:08"
+            },
+            {
+                "title": "Snuffed Out",
+                "duration": "02:28"
+            },
+            {
+                "title": "Deep in the Heart",
+                "duration": "01:36"
+            },
+            {
+                "title": "Acid Reindeer",
+                "duration": "01:47"
+            },
+            {
+                "title": "I Was a Dupe for the Rcp",
+                "duration": "01:59"
+            },
+            {
+                "title": "SR Metal Devil Crossoverture",
+                "duration": "03:17"
+            },
+            {
+                "title": "Hole in My Soul",
+                "duration": "01:58"
+            },
+            {
+                "title": "SR I'm a Knucklehead",
+                "duration": "02:41"
+            },
+            {
+                "title": "Ain't It Funny (How It All Works Out)",
+                "duration": "02:18"
+            },
+            {
+                "title": "SR Mongoloid",
+                "duration": "01:21"
+            },
+            {
+                "title": "SR Love Potion No. 9",
+                "duration": "01:34"
+            },
+            {
+                "title": "Something for Everyone",
+                "duration": "02:25"
+            }
+        ]
+    },
+    {
+        "id": "hey-cop-if-i-had-a-face-like-yours",
+        "title": "Hey Cop!!! If I Had A Face Like Yours...",
+        "artist": "MDC",
+        "year": 1991,
+        "genre": "Hardcore Punk",
+        "city": "San Francisco, CA",
+        "country": "USA",
+        "label": "R Radical Records",
+        "bitrate": "320 kbps",
+        "img": "img/MDC - Hey Cop!! If I Had A Face Like Yours… (1991).jpg",
+        "download": "https://www.mediafire.com/file/w6k63fzcc17kefh/Hey_Cop%2521%2521%2521_If_I_Had_A_Face_Like_Yours..._%25281991%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Millions of Dead Cops",
+                "duration": "02:56"
+            },
+            {
+                "title": "Mark of the Farmer",
+                "duration": "01:58"
+            },
+            {
+                "title": "SR U.S. War #54",
+                "duration": "03:22"
+            },
+            {
+                "title": "Gig and Die in L.A.",
+                "duration": "01:26"
+            },
+            {
+                "title": "SR Beat Somebody Up",
+                "duration": "02:19"
+            },
+            {
+                "title": "Nowhere to Go",
+                "duration": "01:59"
+            },
+            {
+                "title": "I Do Not Wish",
+                "duration": "02:11"
+            },
+            {
+                "title": "SR If I Had a Face",
+                "duration": "01:58"
+            },
+            {
+                "title": "It's Later Than You Think",
+                "duration": "02:09"
+            },
+            {
+                "title": "SR Lambada Me",
+                "duration": "01:33"
+            },
+            {
+                "title": "The Jew That Got Away",
+                "duration": "02:11"
+            },
+            {
+                "title": "SR Moneypile",
+                "duration": "03:54"
+            },
+            {
+                "title": "SR Cockrocker",
+                "duration": "01:15"
+            },
+            {
+                "title": "Crime of Rape",
+                "duration": "02:33"
+            },
+            {
+                "title": "Black Christmas",
+                "duration": "04:30"
+            }
+        ]
+    },
+    {
+        "id": "walk-among-us",
+        "title": "Walk Among Us",
+        "artist": "Misfits",
+        "year": 1982,
+        "genre": "Horror Punk",
+        "city": "Lodi, NJ",
+        "country": "USA",
+        "label": "Ruby Records",
+        "bitrate": "320 kbps",
+        "img": "img/Misfits - Walk Among Us (1982).jpg",
+        "download": "https://www.mediafire.com/file/7oyxz3o3d2o1rja/Walk_Among_Us_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR 20 Eyes",
+                "duration": "01:48"
+            },
+            {
+                "title": "All Hell Breaks Loose",
+                "duration": "01:48"
+            },
+            {
+                "title": "SR Astro Zombies",
+                "duration": "02:16"
+            },
+            {
+                "title": "Braineaters",
+                "duration": "00:57"
+            },
+            {
+                "title": "Devils Whorehouse",
+                "duration": "01:46"
+            },
+            {
+                "title": "Hatebreeders",
+                "duration": "03:07"
+            },
+            {
+                "title": "SR I Turned Into A Martian",
+                "duration": "01:42"
+            },
+            {
+                "title": "Mommy, Can I Go Out & Kill Tonight? (Live)",
+                "duration": "02:00"
+            },
+            {
+                "title": "SR Night Of The Living Dead",
+                "duration": "01:59"
+            },
+            {
+                "title": "Nike A Go Go",
+                "duration": "02:15"
+            },
+            {
+                "title": "SR Skulls",
+                "duration": "02:02"
+            },
+            {
+                "title": "Vampira",
+                "duration": "01:28"
+            },
+            {
+                "title": "SR Violent World",
+                "duration": "01:48"
+            }
+        ]
+    },
+    {
+        "id": "earth-ad-wolfs-blood",
+        "title": "Earth A.D. / Wolfs Blood",
+        "artist": "Misfits",
+        "year": 1983,
+        "genre": "Horror Punk",
+        "city": "Lodi, NJ",
+        "country": "USA",
+        "label": "Plan 9 Records",
+        "bitrate": "320 kbps",
+        "img": "img/Misfits - Earth A.D. - Wolfs Blood (1983).jpg",
+        "download": "https://www.mediafire.com/file/t3couwmm0iads9k/Earth_A.D._%25281984%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Bloodfeast",
+                "duration": "02:30"
+            },
+            {
+                "title": "Death Comes Ripping",
+                "duration": "01:54"
+            },
+            {
+                "title": "Demonomania",
+                "duration": "00:45"
+            },
+            {
+                "title": "SR Devilock",
+                "duration": "01:27"
+            },
+            {
+                "title": "Die, Die My Darling",
+                "duration": "03:12"
+            },
+            {
+                "title": "SR Earth A.D.",
+                "duration": "02:09"
+            },
+            {
+                "title": "Green Hell",
+                "duration": "01:53"
+            },
+            {
+                "title": "Hellhound",
+                "duration": "01:16"
+            },
+            {
+                "title": "Mommy, Can I Go Out & Kill Tonight?",
+                "duration": "02:03"
+            },
+            {
+                "title": "Queen Wasp",
+                "duration": "01:33"
+            },
+            {
+                "title": "SR We Bite",
+                "duration": "01:15"
+            },
+            {
+                "title": "SR Wolf's Blood",
+                "duration": "01:13"
+            }
+        ]
+    },
+    {
+        "id": "static-age",
         "title": "Static Age",
-        "duration": "01:47"
-      },
-      {
-        "title": "Teenagers From Mars",
-        "duration": "02:51"
-      },
-      {
-        "title": "Theme For A Jackal",
-        "duration": "02:41"
-      },
-      {
-        "title": "TV Casualty",
-        "duration": "02:24"
-      },
-      {
-        "title": "We Are 138",
-        "duration": "01:41"
-      }
-    ]
-  },
-  {
-    "id": "something-better-change",
-    "title": "Something Better Change",
-    "artist": "D.O.A.",
-    "year": 1980,
-    "genre": "Hardcore Punk",
-    "city": "Vancouver, BC",
-    "country": "Canada",
-    "label": "Sudden Death Records",
-    "bitrate": "320 kbps",
-    "img": "img/DOA - Something Better Change (1980).jpg",
-    "download": "https://www.mediafire.com/file/4hislmjoku93vsg/Something_Better_Change_%25281980%2529.zip/file",
-    "tracks": [
-      {
-        "title": "2+2",
-        "duration": "04:09"
-      },
-      {
-        "title": "Get Out of My Life",
-        "duration": "02:07"
-      },
-      {
-        "title": "Great White Hope",
-        "duration": "02:53"
-      },
-      {
-        "title": "Last Night",
-        "duration": "03:24"
-      },
-      {
-        "title": "New Age",
-        "duration": "02:19"
-      },
-      {
-        "title": "New Wave Sucks",
-        "duration": "01:02"
-      },
-      {
-        "title": "Rich Bitch",
-        "duration": "03:01"
-      },
-      {
-        "title": "Take a Chance",
-        "duration": "01:48"
-      },
-      {
-        "title": "The Enemy",
-        "duration": "02:54"
-      },
-      {
-        "title": "The Prisoner",
-        "duration": "02:01"
-      },
-      {
-        "title": "Thirteen",
-        "duration": "02:24"
-      },
-      {
-        "title": "Whatcha Gonna Do?",
-        "duration": "04:44"
-      },
-      {
-        "title": "Woke Up Screaming",
-        "duration": "02:43"
-      },
-      {
-        "title": "World War 3",
-        "duration": "03:46"
-      }
-    ]
-  },
-  {
-    "id": "hardcore-81",
-    "title": "Hardcore '81",
-    "artist": "D.O.A.",
-    "year": 1981,
-    "genre": "Hardcore Punk",
-    "city": "Vancouver, BC",
-    "country": "Canada",
-    "label": "Sudden Death Records",
-    "bitrate": "320 kbps",
-    "img": "img/DOA - Hardcore '81 (1981).jpg",
-    "download": "https://www.mediafire.com/file/01g53i94ur9ej2h/H%2Ardc%2Ar%2A_%252781_%25281981%2529.zip/file",
-    "tracks": [
-      {
-        "title": "001 Loser's Club",
-        "duration": "01:54"
-      },
-      {
-        "title": "Bloodsucker Baby",
-        "duration": "00:54"
-      },
-      {
-        "title": "Communication Breakdown",
-        "duration": "01:57"
-      },
-      {
-        "title": "D.O.A.",
-        "duration": "01:39"
-      },
-      {
-        "title": "Fucked Up Baby",
-        "duration": "01:27"
-      },
-      {
-        "title": "I Don't Give a Shit",
-        "duration": "01:21"
-      },
-      {
-        "title": "M.C.T.F.D.",
-        "duration": "01:38"
-      },
-      {
-        "title": "Musical Interlude",
-        "duration": "00:22"
-      },
-      {
-        "title": "My Old Man's a Bum",
-        "duration": "01:41"
-      },
-      {
-        "title": "Slumlord",
-        "duration": "01:55"
-      },
-      {
-        "title": "Smash the State",
-        "duration": "01:33"
-      },
-      {
-        "title": "The Kenny Blister Song",
-        "duration": "00:16"
-      },
-      {
-        "title": "Unknown",
-        "duration": "02:31"
-      },
-      {
-        "title": "Waiting for You",
-        "duration": "03:37"
-      }
-    ]
-  },
-  {
-    "id": "war-on-45",
-    "title": "War On 45",
-    "artist": "D.O.A.",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Vancouver, BC",
-    "country": "Canada",
-    "label": "Alternative Tentacles",
-    "bitrate": "320 kbps",
-    "img": "img/DOA - War on 45 (1982).jpg",
-    "download": "https://www.mediafire.com/file/4h2vkvmuuymxm41/War_On_45_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "America the Beautiful",
-        "duration": "02:15"
-      },
-      {
-        "title": "Class War",
-        "duration": "01:37"
-      },
-      {
-        "title": "I Hate You",
-        "duration": "02:23"
-      },
-      {
-        "title": "I'm Right You're Wrong",
-        "duration": "01:55"
-      },
-      {
-        "title": "Let's Fuck",
-        "duration": "02:13"
-      },
-      {
-        "title": "Liar for Hire",
-        "duration": "02:46"
-      },
-      {
-        "title": "War",
-        "duration": "02:17"
-      },
-      {
-        "title": "War in the East",
-        "duration": "04:18"
-      }
-    ]
-  },
-  {
-    "id": "unreleased-ep",
-    "title": "Unreleased EP",
-    "artist": "Jerry's Kids",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "X-Claim! Records",
-    "bitrate": "192 kbps",
-    "img": "img/Jerry's Kids - Unreleased EP (1982).jpg",
-    "download": "https://www.mediafire.com/file/jq1thc1srh64nrx/Unreleased_EP_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Desperate",
-        "duration": "01:18"
-      },
-      {
-        "title": "I Don't Wanna",
-        "duration": "01:25"
-      },
-      {
-        "title": "I Hate You",
-        "duration": "01:02"
-      },
-      {
-        "title": "I'm Pissed",
-        "duration": "01:05"
-      },
-      {
-        "title": "It's OK",
-        "duration": "00:49"
-      },
-      {
-        "title": "Lysol",
-        "duration": "00:46"
-      },
-      {
-        "title": "Machine Gun",
-        "duration": "01:18"
-      },
-      {
-        "title": "Pressure",
-        "duration": "01:27"
-      },
-      {
-        "title": "Why Me",
-        "duration": "00:55"
-      },
-      {
-        "title": "Wired",
-        "duration": "01:27"
-      }
-    ]
-  },
-  {
-    "id": "is-this-my-world",
-    "title": "Is This My World?",
-    "artist": "Jerry's Kids",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "X-Claim! Records",
-    "bitrate": "320 kbps",
-    "img": "img/Jerry's Kids - Is This My World (1983).jpg",
-    "download": "https://www.mediafire.com/file/1s3okukg97rwifi/Is_This_My_World_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Break The Mold",
-        "duration": "01:36"
-      },
-      {
-        "title": "Build Me A Bomb",
-        "duration": "02:01"
-      },
-      {
-        "title": "Cracks In The Wall",
-        "duration": "01:19"
-      },
-      {
-        "title": "Crucify Me",
-        "duration": "01:59"
-      },
-      {
-        "title": "I Don't Belong",
-        "duration": "01:47"
-      },
-      {
+        "artist": "Misfits",
+        "year": 1996,
+        "genre": "Horror Punk",
+        "city": "Lodi, NJ",
+        "country": "USA",
+        "label": "Caroline Records",
+        "bitrate": "320 kbps",
+        "img": "img/Misfits - Static Age (1996).jpg",
+        "download": "https://www.mediafire.com/file/akdt6ifqnzbwubf/Static_Age_%25281996%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Static Age",
+                "duration": "01:47"
+            },
+            {
+                "title": "TV Casualty",
+                "duration": "02:24"
+            },
+            {
+                "title": "SR Some Kinda Hate",
+                "duration": "02:02"
+            },
+            {
+                "title": "Last Caress",
+                "duration": "01:57"
+            },
+            {
+                "title": "Return Of The Fly",
+                "duration": "01:37"
+            },
+            {
+                "title": "Hybrid Moments",
+                "duration": "01:42"
+            },
+            {
+                "title": "We Are 138",
+                "duration": "01:41"
+            },
+            {
+                "title": "Teenagers From Mars",
+                "duration": "02:51"
+            },
+            {
+                "title": "SR Come Back",
+                "duration": "05:00"
+            },
+            {
+                "title": "Angelfuck",
+                "duration": "01:38"
+            },
+            {
+                "title": "Hollywood Babylon",
+                "duration": "02:20"
+            },
+            {
+                "title": "Attitude",
+                "duration": "01:31"
+            },
+            {
+                "title": "SR Bullet",
+                "duration": "01:38"
+            },
+            {
+                "title": "SR Theme For A Jackal",
+                "duration": "02:41"
+            },
+            {
+                "title": "She",
+                "duration": "01:24"
+            },
+            {
+                "title": "SR Spinal Remains",
+                "duration": "01:27"
+            },
+            {
+                "title": "SR In The Doorway",
+                "duration": "01:25"
+            }
+        ]
+    },
+    {
+        "id": "something-better-change",
+        "title": "Something Better Change",
+        "artist": "D.O.A.",
+        "year": 1980,
+        "genre": "Hardcore Punk",
+        "city": "Vancouver, BC",
+        "country": "Canada",
+        "label": "Sudden Death Records",
+        "bitrate": "320 kbps",
+        "img": "img/DOA - Something Better Change (1980).jpg",
+        "download": "https://www.mediafire.com/file/4hislmjoku93vsg/Something_Better_Change_%25281980%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR New Age",
+                "duration": "02:19"
+            },
+            {
+                "title": "The Enemy",
+                "duration": "02:54"
+            },
+            {
+                "title": "2+2",
+                "duration": "04:09"
+            },
+            {
+                "title": "Get Out of My Life",
+                "duration": "02:07"
+            },
+            {
+                "title": "Woke Up Screaming",
+                "duration": "02:43"
+            },
+            {
+                "title": "Last Night",
+                "duration": "03:24"
+            },
+            {
+                "title": "Thirteen",
+                "duration": "02:24"
+            },
+            {
+                "title": "SR Great White Hope",
+                "duration": "02:53"
+            },
+            {
+                "title": "The Prisoner",
+                "duration": "02:01"
+            },
+            {
+                "title": "Rich Bitch",
+                "duration": "03:01"
+            },
+            {
+                "title": "Take a Chance",
+                "duration": "01:48"
+            },
+            {
+                "title": "SR Whatcha Gonna Do?",
+                "duration": "04:44"
+            },
+            {
+                "title": "SR World War 3",
+                "duration": "03:46"
+            },
+            {
+                "title": "New Wave Sucks",
+                "duration": "01:02"
+            }
+        ]
+    },
+    {
+        "id": "hardcore-81",
+        "title": "Hardcore '81",
+        "artist": "D.O.A.",
+        "year": 1981,
+        "genre": "Hardcore Punk",
+        "city": "Vancouver, BC",
+        "country": "Canada",
+        "label": "Sudden Death Records",
+        "bitrate": "320 kbps",
+        "img": "img/DOA - Hardcore '81 (1981).jpg",
+        "download": "https://www.mediafire.com/file/01g53i94ur9ej2h/H%2Ardc%2Ar%2A_%252781_%25281981%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR 20 Eyes",
+                "duration": "01:39"
+            },
+            {
+                "title": "SR Unknown",
+                "duration": "02:31"
+            },
+            {
+                "title": "Slumlord",
+                "duration": "01:55"
+            },
+            {
+                "title": "Musical Interlude",
+                "duration": "00:22"
+            },
+            {
+                "title": "SR I Don't Give a Shit",
+                "duration": "01:21"
+            },
+            {
+                "title": "SR M.C.T.F.D.",
+                "duration": "01:38"
+            },
+            {
+                "title": "Communication Breakdown",
+                "duration": "01:57"
+            },
+            {
+                "title": "SR 001 Loser's Club",
+                "duration": "01:54"
+            },
+            {
+                "title": "Fucked Up Baby",
+                "duration": "01:27"
+            },
+            {
+                "title": "The Kenny Blister Song",
+                "duration": "00:16"
+            },
+            {
+                "title": "SR Smash the State",
+                "duration": "01:33"
+            },
+            {
+                "title": "My Old Man's a Bum Bloodsucker Baby",
+                "duration": "01:41"
+            },
+            {
+                "title": "Waiting For You",
+                "duration": "00:54"
+            },
+            {
+                "title": "SR General Strike",
+                "duration": "03:37"
+            },
+            {
+                "title": "SR Race Riot",
+                "duration": "01:06"
+            },
+            {
+                "title": "A Season In Hell",
+                "duration": "02:35"
+            },
+            {
+                "title": "Burn It Down",
+                "duration": "02:33"
+            }
+        ]
+    },
+    {
+        "id": "war-on-45",
+        "title": "War On 45",
+        "artist": "D.O.A.",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Vancouver, BC",
+        "country": "Canada",
+        "label": "Alternative Tentacles",
+        "bitrate": "320 kbps",
+        "img": "img/DOA - War on 45 (1982).jpg",
+        "download": "https://www.mediafire.com/file/4h2vkvmuuymxm41/War_On_45_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Liar for Hire",
+                "duration": "02:46"
+            },
+            {
+                "title": "SR I'm Right You're Wrong",
+                "duration": "01:55"
+            },
+            {
+                "title": "America the Beautiful",
+                "duration": "02:15"
+            },
+            {
+                "title": "SR Let's Fuck",
+                "duration": "02:13"
+            },
+            {
+                "title": "SR War",
+                "duration": "02:17"
+            },
+            {
+                "title": "SR I Hate You",
+                "duration": "02:23"
+            },
+            {
+                "title": "War in the East",
+                "duration": "04:18"
+            },
+            {
+                "title": "Class War",
+                "duration": "01:37"
+            }
+        ]
+    },
+    {
+        "id": "unreleased-ep",
+        "title": "Unreleased EP",
+        "artist": "Jerry's Kids",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "X-Claim! Records",
+        "bitrate": "192 kbps",
+        "img": "img/Jerry's Kids - Unreleased EP (1982).jpg",
+        "download": "https://www.mediafire.com/file/jq1thc1srh64nrx/Unreleased_EP_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Why Me",
+                "duration": "00:55"
+            },
+            {
+                "title": "I'm Pissed",
+                "duration": "01:05"
+            },
+            {
+                "title": "Wired",
+                "duration": "01:27"
+            },
+            {
+                "title": "Desperate",
+                "duration": "01:18"
+            },
+            {
+                "title": "SR Pressure",
+                "duration": "01:27"
+            },
+            {
+                "title": "I Don't Wanna",
+                "duration": "01:25"
+            },
+            {
+                "title": "I Hate You",
+                "duration": "01:02"
+            },
+            {
+                "title": "Lysol",
+                "duration": "00:46"
+            },
+            {
+                "title": "SR Machine Gun",
+                "duration": "01:18"
+            },
+            {
+                "title": "SR It's OK",
+                "duration": "00:49"
+            }
+        ]
+    },
+    {
+        "id": "is-this-my-world",
         "title": "Is This My World?",
-        "duration": "02:04"
-      },
-      {
-        "title": "Lost",
-        "duration": "03:15"
-      },
-      {
-        "title": "New World",
-        "duration": "02:15"
-      },
-      {
-        "title": "No Time",
-        "duration": "01:41"
-      },
-      {
-        "title": "Raise The Curtain",
-        "duration": "03:27"
-      },
-      {
-        "title": "Tear It Up",
-        "duration": "01:07"
-      },
-      {
-        "title": "Vietnam Syndrome",
-        "duration": "01:44"
-      }
-    ]
-  },
-  {
-    "id": "no-policy",
-    "title": "No Policy",
-    "artist": "S.O.A.",
-    "year": 1981,
-    "genre": "Hardcore Punk",
-    "city": "Washington, D.C.",
-    "country": "USA",
-    "label": "Dischord Records",
-    "bitrate": "320 kbps",
-    "img": "img/SOA - No Policy (1981).jpg",
-    "download": "https://www.mediafire.com/file/kpt41vp422pyd03/No_Policy_%25281981%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Blackout",
-        "duration": "00:45"
-      },
-      {
-        "title": "Draw Blank",
-        "duration": "00:36"
-      },
-      {
-        "title": "Gang Fight",
-        "duration": "00:59"
-      },
-      {
-        "title": "Gate Crashers",
-        "duration": "01:04"
-      },
-      {
-        "title": "Girl Problems",
-        "duration": "00:49"
-      },
-      {
-        "title": "Gonna Have To Fight",
-        "duration": "00:44"
-      },
-      {
-        "title": "Lost In Space",
-        "duration": "00:43"
-      },
-      {
-        "title": "Public Defender",
-        "duration": "01:12"
-      },
-      {
-        "title": "Riot",
-        "duration": "00:42"
-      },
-      {
-        "title": "Warzone",
-        "duration": "00:51"
-      }
-    ]
-  },
-  {
-    "id": "flex-your-head",
-    "title": "Flex Your Head",
-    "artist": "SOA",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Washington, D.C.",
-    "country": "USA",
-    "label": "Dischord Records",
-    "bitrate": "320 kbps",
-    "img": "img/SOA - Flex Your Head (1982).jpg",
-    "download": "https://www.mediafire.com/file/sndo84cqs6tt5t3/Flex_Your_Head_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Disease",
-        "duration": "00:28"
-      },
-      {
-        "title": "I Hate The Kids",
-        "duration": "00:40"
-      },
-      {
-        "title": "Stepping Stone Party",
-        "duration": "01:50"
-      }
-    ]
-  },
-  {
-    "id": "gi",
-    "title": "(GI)",
-    "artist": "Germs",
-    "year": 1979,
-    "genre": "Punk Rock",
-    "city": "Los Angeles, CA",
-    "country": "USA",
-    "label": "Slash Records",
-    "bitrate": "320 kbps",
-    "img": "img/The Germs - (GI) (1979).jpg",
-    "download": "https://www.mediafire.com/file/dm4tq3nooal1ri4/%2528GI%2529_%25281979%2529.zip/file",
-    "tracks": [
-      {
-        "title": "American Leather",
-        "duration": "01:11"
-      },
-      {
-        "title": "Caught In My Eye (Unreleased Album Mix)",
-        "duration": "03:25"
-      },
-      {
-        "title": "Communist Eyes",
-        "duration": "02:16"
-      },
-      {
-        "title": "Dragon Lady",
-        "duration": "01:39"
-      },
-      {
-        "title": "Land Of Treason",
-        "duration": "02:10"
-      },
-      {
-        "title": "Let's Pretend",
-        "duration": "02:35"
-      },
-      {
-        "title": "Lexicon Devil",
-        "duration": "01:44"
-      },
-      {
-        "title": "Manimal",
-        "duration": "02:11"
-      },
-      {
-        "title": "Media Blitz",
-        "duration": "01:30"
-      },
-      {
-        "title": "Our Way",
-        "duration": "01:57"
-      },
-      {
-        "title": "Richie Dagger's Crime",
-        "duration": "01:57"
-      },
-      {
-        "title": "Shut Down (Live)",
-        "duration": "09:39"
-      },
-      {
-        "title": "Strange Notes",
-        "duration": "01:53"
-      },
-      {
-        "title": "The Other Newest One",
-        "duration": "02:48"
-      },
-      {
-        "title": "The Slave",
-        "duration": "01:02"
-      },
-      {
-        "title": "We Must Bleed",
-        "duration": "03:05"
-      },
-      {
-        "title": "What We Do Is Secret",
-        "duration": "00:44"
-      }
-    ]
-  },
-  {
-    "id": "negative-approach",
-    "title": "Negative Approach",
-    "artist": "Negative Approach",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Detroit, MI",
-    "country": "USA",
-    "label": "Touch and Go Records",
-    "bitrate": "320 kbps",
-    "img": "img/Negative Approach - Negative Approach (1982).jpg",
-    "download": "https://www.mediafire.com/file/n44w24e75wds69h/Negative_Approach_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Can't Tell No One",
-        "duration": "01:25"
-      },
-      {
-        "title": "Fair Warning",
-        "duration": "00:37"
-      },
-      {
-        "title": "Lead Song",
-        "duration": "01:25"
-      },
-      {
+        "artist": "Jerry's Kids",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "X-Claim! Records",
+        "bitrate": "320 kbps",
+        "img": "img/Jerry's Kids - Is This My World (1983).jpg",
+        "download": "https://www.mediafire.com/file/1s3okukg97rwifi/Is_This_My_World_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR I Don't Belong",
+                "duration": "01:47"
+            },
+            {
+                "title": "SR Cracks In The Wall",
+                "duration": "01:19"
+            },
+            {
+                "title": "Tear It Up",
+                "duration": "01:07"
+            },
+            {
+                "title": "Crucify Me",
+                "duration": "01:59"
+            },
+            {
+                "title": "Break The Mold",
+                "duration": "01:36"
+            },
+            {
+                "title": "SR Raise The Curtain",
+                "duration": "03:27"
+            },
+            {
+                "title": "Vietnam Syndrome",
+                "duration": "01:44"
+            },
+            {
+                "title": "SR Build Me A Bomb",
+                "duration": "02:01"
+            },
+            {
+                "title": "New World",
+                "duration": "02:15"
+            },
+            {
+                "title": "Lost",
+                "duration": "03:15"
+            },
+            {
+                "title": "No Time",
+                "duration": "01:41"
+            },
+            {
+                "title": "SR Is This My World?",
+                "duration": "02:04"
+            }
+        ]
+    },
+    {
+        "id": "no-policy",
+        "title": "No Policy",
+        "artist": "S.O.A.",
+        "year": 1981,
+        "genre": "Hardcore Punk",
+        "city": "Washington, D.C.",
+        "country": "USA",
+        "label": "Dischord Records",
+        "bitrate": "320 kbps",
+        "img": "img/SOA - No Policy (1981).jpg",
+        "download": "https://www.mediafire.com/file/kpt41vp422pyd03/No_Policy_%25281981%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Lost In Space",
+                "duration": "00:43"
+            },
+            {
+                "title": "Draw Blank",
+                "duration": "00:36"
+            },
+            {
+                "title": "Girl Problems",
+                "duration": "00:49"
+            },
+            {
+                "title": "Blackout",
+                "duration": "00:45"
+            },
+            {
+                "title": "Gate Crashers",
+                "duration": "01:04"
+            },
+            {
+                "title": "SR Warzone",
+                "duration": "00:51"
+            },
+            {
+                "title": "Riot",
+                "duration": "00:42"
+            },
+            {
+                "title": "Gang Fight",
+                "duration": "00:59"
+            },
+            {
+                "title": "Public Defender",
+                "duration": "01:12"
+            },
+            {
+                "title": "SR Gonna Have To Fight",
+                "duration": "00:44"
+            }
+        ]
+    },
+    {
+        "id": "flex-your-head",
+        "title": "Flex Your Head",
+        "artist": "SOA",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Washington, D.C.",
+        "country": "USA",
+        "label": "Dischord Records",
+        "bitrate": "320 kbps",
+        "img": "img/SOA - Flex Your Head (1982).jpg",
+        "download": "https://www.mediafire.com/file/sndo84cqs6tt5t3/Flex_Your_Head_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Disease",
+                "duration": "00:28"
+            },
+            {
+                "title": "SR I Hate The Kids",
+                "duration": "00:40"
+            },
+            {
+                "title": "SR Stepping Stone Party",
+                "duration": "01:50"
+            }
+        ]
+    },
+    {
+        "id": "gi",
+        "title": "(GI)",
+        "artist": "Germs",
+        "year": 1979,
+        "genre": "Punk Rock",
+        "city": "Los Angeles, CA",
+        "country": "USA",
+        "label": "Slash Records",
+        "bitrate": "320 kbps",
+        "img": "img/The Germs - (GI) (1979).jpg",
+        "download": "https://www.mediafire.com/file/dm4tq3nooal1ri4/%2528GI%2529_%25281979%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR What We Do Is Secret",
+                "duration": "00:44"
+            },
+            {
+                "title": "Communist Eyes",
+                "duration": "02:16"
+            },
+            {
+                "title": "Land Of Treason",
+                "duration": "02:10"
+            },
+            {
+                "title": "SR Richie Dagger's Crime",
+                "duration": "01:57"
+            },
+            {
+                "title": "Strange Notes",
+                "duration": "01:53"
+            },
+            {
+                "title": "American Leather",
+                "duration": "01:11"
+            },
+            {
+                "title": "SR Lexicon Devil",
+                "duration": "01:44"
+            },
+            {
+                "title": "Manimal",
+                "duration": "02:11"
+            },
+            {
+                "title": "Our Way",
+                "duration": "01:57"
+            },
+            {
+                "title": "SR We Must Bleed",
+                "duration": "03:05"
+            },
+            {
+                "title": "Media Blitz",
+                "duration": "01:30"
+            },
+            {
+                "title": "SR The Other Newest One",
+                "duration": "02:48"
+            },
+            {
+                "title": "Let's Pretend",
+                "duration": "02:35"
+            },
+            {
+                "title": "Dragon Lady",
+                "duration": "01:39"
+            },
+            {
+                "title": "SR The Slave",
+                "duration": "01:02"
+            },
+            {
+                "title": "Shut Down (Live)",
+                "duration": "09:39"
+            },
+            {
+                "title": "Caught In My Eye (Unreleased Album Mix)",
+                "duration": "03:25"
+            }
+        ]
+    },
+    {
+        "id": "negative-approach",
         "title": "Negative Approach",
-        "duration": "00:53"
-      },
-      {
-        "title": "Nothing",
-        "duration": "01:51"
-      },
-      {
-        "title": "Pressure",
-        "duration": "00:14"
-      },
-      {
-        "title": "Ready to Fight",
-        "duration": "01:02"
-      },
-      {
-        "title": "Sick of Talk",
-        "duration": "00:34"
-      },
-      {
-        "title": "Whatever I Do",
-        "duration": "00:58"
-      },
-      {
-        "title": "Why Be Something That You're Not",
-        "duration": "00:41"
-      }
-    ]
-  },
-  {
-    "id": "tied-down",
-    "title": "Tied Down",
-    "artist": "Negative Approach",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Detroit, MI",
-    "country": "USA",
-    "label": "Touch and Go Records",
-    "bitrate": "320 kbps",
-    "img": "img/Negative Approach - Tied Down (1983).jpg",
-    "download": "https://www.mediafire.com/file/ohve0xozarqb1h8/Tied_Down_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Dead Stop",
-        "duration": "02:40"
-      },
-      {
-        "title": "Evacuate",
-        "duration": "02:35"
-      },
-      {
-        "title": "Friend or Foe",
-        "duration": "01:12"
-      },
-      {
-        "title": "Hypocrite",
-        "duration": "01:47"
-      },
-      {
-        "title": "I'll Survive",
-        "duration": "01:01"
-      },
-      {
-        "title": "Live Your Life",
-        "duration": "01:06"
-      },
-      {
-        "title": "Nothing",
-        "duration": "02:20"
-      },
-      {
-        "title": "Said and Done",
-        "duration": "00:50"
-      },
-      {
+        "artist": "Negative Approach",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Detroit, MI",
+        "country": "USA",
+        "label": "Touch and Go Records",
+        "bitrate": "320 kbps",
+        "img": "img/Negative Approach - Negative Approach (1982).jpg",
+        "download": "https://www.mediafire.com/file/n44w24e75wds69h/Negative_Approach_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Can't Tell No One",
+                "duration": "01:25"
+            },
+            {
+                "title": "SR Sick of Talk",
+                "duration": "00:34"
+            },
+            {
+                "title": "SR Pressure",
+                "duration": "00:14"
+            },
+            {
+                "title": "Why Be Something That You're Not",
+                "duration": "00:41"
+            },
+            {
+                "title": "SR Nothing",
+                "duration": "01:51"
+            },
+            {
+                "title": "Fair Warning",
+                "duration": "00:37"
+            },
+            {
+                "title": "SR Ready to Fight",
+                "duration": "01:02"
+            },
+            {
+                "title": "Lead Song",
+                "duration": "01:25"
+            },
+            {
+                "title": "Whatever I Do",
+                "duration": "00:58"
+            },
+            {
+                "title": "SR Negative Approach",
+                "duration": "00:53"
+            }
+        ]
+    },
+    {
+        "id": "tied-down",
         "title": "Tied Down",
-        "duration": "01:33"
-      },
-      {
-        "title": "Your Mistake",
-        "duration": "01:48"
-      }
-    ]
-  },
-  {
-    "id": "the-speed-of-twisted-thought",
-    "title": "The Speed of Twisted Thought",
-    "artist": "The Fix",
-    "year": 2006,
-    "genre": "Hardcore Punk",
-    "city": "Lansing, MI",
-    "country": "USA",
-    "label": "Touch and Go Records",
-    "bitrate": "320 kbps",
-    "img": "img/The Fix - The Speed of Twisted Thought (2006).jpg",
-    "download": "https://www.mediafire.com/file/qu9qtjfkan6egrt/The_Speed_of_Twisted_Thought_%25282006%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Candy Store",
-        "duration": "01:15"
-      },
-      {
-        "title": "Candy Store - Live",
-        "duration": "01:12"
-      },
-      {
-        "title": "Celebre - Outtakes from Jan's Room Sessions",
-        "duration": "01:41"
-      },
-      {
-        "title": "Cos the Elite",
-        "duration": "01:20"
-      },
-      {
-        "title": "Cos The Elite - Live",
-        "duration": "01:32"
-      },
-      {
-        "title": "Famous",
-        "duration": "01:46"
-      },
-      {
-        "title": "Famous - Live",
-        "duration": "01:41"
-      },
-      {
-        "title": "In This Town",
-        "duration": "01:21"
-      },
-      {
-        "title": "In This Town - Live",
-        "duration": "01:28"
-      },
-      {
-        "title": "Media Blitz - Live",
-        "duration": "01:37"
-      },
-      {
-        "title": "No Idols",
-        "duration": "01:37"
-      },
-      {
-        "title": "Off to War",
-        "duration": "01:34"
-      },
-      {
-        "title": "Off To War - Live",
-        "duration": "01:40"
-      },
-      {
-        "title": "Rat Patrol - Live",
-        "duration": "01:42"
-      },
-      {
-        "title": "Rat Patrol - Outtakes from Jan's Room Sessions",
-        "duration": "01:42"
-      },
-      {
-        "title": "Signals",
-        "duration": "03:37"
-      },
-      {
-        "title": "Statement - Live",
-        "duration": "01:17"
-      },
-      {
-        "title": "Teenage Drugs - Live",
-        "duration": "00:55"
-      },
-      {
-        "title": "The Letter - Live",
-        "duration": "00:49"
-      },
-      {
-        "title": "Truth Right Now",
-        "duration": "01:31"
-      },
-      {
-        "title": "Vengeance",
-        "duration": "01:27"
-      },
-      {
-        "title": "Vengeance - Outtakes from Jan's Room Sessions",
-        "duration": "01:21"
-      },
-      {
-        "title": "Waiting For Eviction - Live",
-        "duration": "02:15"
-      },
-      {
-        "title": "You - Live",
-        "duration": "00:49"
-      }
-    ]
-  },
-  {
-    "id": "cause-for-alarm",
-    "title": "Cause for Alarm",
-    "artist": "Cause for Alarm",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "New York, NY",
-    "country": "USA",
-    "label": "Rat Cage Records",
-    "bitrate": "320 kbps",
-    "img": "img/Cause for Alarm - Cause for Alarm (1982).jpg",
-    "download": "https://www.mediafire.com/file/asknlyuq0d9cry7/Cause_For_Alarm_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "In Search Of",
-        "duration": "00:43"
-      },
-      {
-        "title": "Parasite",
-        "duration": "00:44"
-      },
-      {
-        "title": "Poison In The Machine",
-        "duration": "00:53"
-      },
-      {
-        "title": "Second Chance",
-        "duration": "00:59"
-      },
-      {
-        "title": "Stand As One",
-        "duration": "00:56"
-      },
-      {
-        "title": "Time To Try",
-        "duration": "01:05"
-      },
-      {
-        "title": "Time Will Tell",
-        "duration": "01:59"
-      },
-      {
-        "title": "True Colors",
-        "duration": "01:03"
-      },
-      {
-        "title": "United Races",
-        "duration": "01:25"
-      }
-    ]
-  },
-  {
-    "id": "the-kids-will-have-their-say",
-    "title": "The Kids Will Have Their Say",
-    "artist": "SS Decontrol",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "X-Claim! Records",
-    "bitrate": "320 kbps",
-    "img": "img/SS Decontrol - The Kids Will Have Their Say (1982).jpg",
-    "download": "https://www.mediafire.com/file/xi9gue6tcytpjtz/The_Kids_Will_Have_Their_Say_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Forced down your throat",
-        "duration": "02:42"
-      },
-      {
-        "title": "Get it away",
-        "duration": "01:29"
-      },
-      {
-        "title": "Glue",
-        "duration": "01:17"
-      },
-      {
-        "title": "No reply",
-        "duration": "02:03"
-      },
-      {
-        "title": "Nothing done",
-        "duration": "01:05"
-      },
-      {
-        "title": "Under the influence",
-        "duration": "01:30"
-      },
-      {
-        "title": "Xclaim",
-        "duration": "01:25"
-      },
-      {
-        "title": "Boiling Point",
-        "duration": "00:55"
-      },
-      {
-        "title": "Do You Even Care",
-        "duration": "00:37"
-      },
-      {
-        "title": "Fight Them",
-        "duration": "01:06"
-      },
-      {
-        "title": "Fun to You",
-        "duration": "00:38"
-      },
-      {
-        "title": "Headed Straight",
-        "duration": "01:32"
-      },
-      {
-        "title": "How Much Art",
-        "duration": "03:04"
-      },
-      {
-        "title": "Jock Itch",
-        "duration": "00:49"
-      },
-      {
-        "title": "Not Normal",
-        "duration": "00:55"
-      },
-      {
-        "title": "Police Beat",
-        "duration": "02:02"
-      },
-      {
-        "title": "Screw",
-        "duration": "00:26"
-      },
-      {
-        "title": "Teach Me Violence",
-        "duration": "00:41"
-      },
-      {
-        "title": "The End",
-        "duration": "01:32"
-      },
-      {
+        "artist": "Negative Approach",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Detroit, MI",
+        "country": "USA",
+        "label": "Touch and Go Records",
+        "bitrate": "320 kbps",
+        "img": "img/Negative Approach - Tied Down (1983).jpg",
+        "download": "https://www.mediafire.com/file/ohve0xozarqb1h8/Tied_Down_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Tied Down",
+                "duration": "01:33"
+            },
+            {
+                "title": "Hypocrite",
+                "duration": "01:47"
+            },
+            {
+                "title": "Evacuate",
+                "duration": "02:35"
+            },
+            {
+                "title": "Said and Done",
+                "duration": "00:50"
+            },
+            {
+                "title": "Nothing",
+                "duration": "02:20"
+            },
+            {
+                "title": "Your Mistake",
+                "duration": "01:48"
+            },
+            {
+                "title": "SR Live Your Life",
+                "duration": "01:06"
+            },
+            {
+                "title": "Friend or Foe",
+                "duration": "01:12"
+            },
+            {
+                "title": "SR Dead Stop",
+                "duration": "02:40"
+            },
+            {
+                "title": "I'll Survive",
+                "duration": "01:01"
+            }
+        ]
+    },
+    {
+        "id": "the-speed-of-twisted-thought",
+        "title": "The Speed of Twisted Thought",
+        "artist": "The Fix",
+        "year": 2006,
+        "genre": "Hardcore Punk",
+        "city": "Lansing, MI",
+        "country": "USA",
+        "label": "Touch and Go Records",
+        "bitrate": "320 kbps",
+        "img": "img/The Fix - The Speed of Twisted Thought (2006).jpg",
+        "download": "https://www.mediafire.com/file/qu9qtjfkan6egrt/The_Speed_of_Twisted_Thought_%25282006%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Vengeance",
+                "duration": "01:27"
+            },
+            {
+                "title": "In This Town",
+                "duration": "01:21"
+            },
+            {
+                "title": "Cos the Elite",
+                "duration": "01:20"
+            },
+            {
+                "title": "Truth Right Now",
+                "duration": "01:31"
+            },
+            {
+                "title": "Signals",
+                "duration": "03:37"
+            },
+            {
+                "title": "SR Off to War",
+                "duration": "01:34"
+            },
+            {
+                "title": "No Idols",
+                "duration": "01:37"
+            },
+            {
+                "title": "SR Candy Store",
+                "duration": "01:15"
+            },
+            {
+                "title": "SR Famous",
+                "duration": "01:46"
+            },
+            {
+                "title": "SR Vengeance - Outtakes from Jan's Room Sessions",
+                "duration": "01:21"
+            },
+            {
+                "title": "Celebre - Outtakes from Jan's Room Sessions",
+                "duration": "01:41"
+            },
+            {
+                "title": "Rat Patrol - Outtakes from Jan's Room Sessions",
+                "duration": "01:42"
+            },
+            {
+                "title": "Cos The Elite - Live",
+                "duration": "01:32"
+            },
+            {
+                "title": "The Letter - Live",
+                "duration": "00:49"
+            },
+            {
+                "title": "SR Famous - Live",
+                "duration": "01:41"
+            },
+            {
+                "title": "SR Off To War - Live",
+                "duration": "01:40"
+            },
+            {
+                "title": "In This Town - Live",
+                "duration": "01:28"
+            },
+            {
+                "title": "Rat Patrol - Live",
+                "duration": "01:42"
+            },
+            {
+                "title": "Statement - Live",
+                "duration": "01:17"
+            },
+            {
+                "title": "SR Candy Store - Live",
+                "duration": "01:12"
+            },
+            {
+                "title": "You - Live",
+                "duration": "00:49"
+            },
+            {
+                "title": "Teenage Drugs - Live",
+                "duration": "00:55"
+            },
+            {
+                "title": "Waiting For Eviction - Live",
+                "duration": "02:15"
+            },
+            {
+                "title": "SR Media Blitz - Live",
+                "duration": "01:37"
+            }
+        ]
+    },
+    {
+        "id": "cause-for-alarm",
+        "title": "Cause for Alarm",
+        "artist": "Cause for Alarm",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "New York, NY",
+        "country": "USA",
+        "label": "Rat Cage Records",
+        "bitrate": "320 kbps",
+        "img": "img/Cause for Alarm - Cause for Alarm (1982).jpg",
+        "download": "https://www.mediafire.com/file/asknlyuq0d9cry7/Cause_For_Alarm_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Parasite",
+                "duration": "00:44"
+            },
+            {
+                "title": "SR Second Chance",
+                "duration": "00:59"
+            },
+            {
+                "title": "SR Time To Try",
+                "duration": "01:05"
+            },
+            {
+                "title": "SR United Races",
+                "duration": "01:25"
+            },
+            {
+                "title": "In Search Of",
+                "duration": "00:43"
+            },
+            {
+                "title": "Poison In The Machine",
+                "duration": "00:53"
+            },
+            {
+                "title": "SR True Colors",
+                "duration": "01:03"
+            },
+            {
+                "title": "Stand As One",
+                "duration": "00:56"
+            },
+            {
+                "title": "Time Will Tell",
+                "duration": "01:59"
+            }
+        ]
+    },
+    {
+        "id": "the-kids-will-have-their-say",
         "title": "The Kids Will Have Their Say",
-        "duration": "01:25"
-      },
-      {
-        "title": "United",
-        "duration": "00:48"
-      },
-      {
-        "title": "V.A.",
-        "duration": "01:03"
-      },
-      {
-        "title": "War Threat",
-        "duration": "01:31"
-      },
-      {
-        "title": "Wasted Youth",
-        "duration": "00:37"
-      },
-      {
-        "title": "Who's to Judge",
-        "duration": "01:29"
-      }
-    ]
-  },
-  {
-    "id": "get-it-away",
-    "title": "Get It Away",
-    "artist": "SS Decontrol",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "X-Claim! Records",
-    "bitrate": "320 kbps",
-    "img": "img/SS Decontrol - Get It Away (1983).jpg",
-    "download": "https://www.mediafire.com/file/9yh7nzseuguid0n/Get_It_Away_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "SR Glue",
-        "duration": "01:17"
-      },
-      {
-        "title": "Forced Down Your Throat",
-        "duration": "02:42"
-      },
-      {
-        "title": "SR Get It Away",
-        "duration": "01:29"
-      },
-      {
-        "title": "SR Under The Influence",
-        "duration": "01:30"
-      },
-      {
-        "title": "Nothing Done",
-        "duration": "01:05"
-      },
-      {
-        "title": "Xclaim!",
-        "duration": "01:25"
-      },
-      {
-        "title": "SR No Reply",
-        "duration": "02:03"
-      }
-    ]
-  },
-  {
-    "id": "incorrect-thoughts",
-    "title": "Incorrect Thoughts",
-    "artist": "Subhumans",
-    "year": 1980,
-    "genre": "Hardcore Punk",
-    "city": "Vancouver, BC",
-    "country": "Canada",
-    "label": "Friends Records",
-    "bitrate": "320 kbps",
-    "img": "img/Subhumans - Incorrect Thoughts (1980).jpg",
-    "download": "https://www.mediafire.com/file/s1ydbpndkssrprf/Incorrect_Thoughts_%25281980%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Behind My Smile",
-        "duration": "02:54"
-      },
-      {
-        "title": "Big Picture",
-        "duration": "02:12"
-      },
-      {
-        "title": "Dead at Birth",
-        "duration": "03:05"
-      },
-      {
-        "title": "Death to the Sickoids",
-        "duration": "01:48"
-      },
-      {
-        "title": "Firing Squad",
-        "duration": "03:05"
-      },
-      {
-        "title": "Greaser Boy",
-        "duration": "03:17"
-      },
-      {
-        "title": "Let's Go Down to Hollywood (& Shoot People)",
-        "duration": "03:56"
-      },
-      {
-        "title": "Model of Stupidity",
-        "duration": "02:33"
-      },
-      {
-        "title": "New Order",
-        "duration": "02:45"
-      },
-      {
-        "title": "Out of Line",
-        "duration": "01:37"
-      },
-      {
-        "title": "Refugee",
-        "duration": "03:32"
-      },
-      {
-        "title": "Slave to My Dick",
-        "duration": "02:38"
-      },
-      {
-        "title": "The Scheme",
-        "duration": "03:16"
-      },
-      {
-        "title": "Urban Guerillas",
-        "duration": "03:10"
-      },
-      {
-        "title": "War in the Head",
-        "duration": "03:09"
-      },
-      {
-        "title": "We're Alive",
-        "duration": "01:28"
-      }
-    ]
-  },
-  {
-    "id": "group-sex",
-    "title": "Group Sex",
-    "artist": "Circle Jerks",
-    "year": 1980,
-    "genre": "Hardcore Punk",
-    "city": "Los Angeles, CA",
-    "country": "USA",
-    "label": "Frontier Records",
-    "bitrate": "320 kbps",
-    "img": "img/Circle Jerks - Group Sex (1980).jpg",
-    "download": "https://www.mediafire.com/file/zwei9jadnwwupf6/Group_Sex_%25281980%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Back Against the Wall",
-        "duration": "01:35"
-      },
-      {
-        "title": "Behind the Door",
-        "duration": "01:26"
-      },
-      {
-        "title": "Beverly Hills",
-        "duration": "01:05"
-      },
-      {
-        "title": "Deny Everything",
-        "duration": "00:31"
-      },
-      {
-        "title": "Don't Care",
-        "duration": "00:35"
-      },
-      {
+        "artist": "SS Decontrol",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "X-Claim! Records",
+        "bitrate": "320 kbps",
+        "img": "img/SS Decontrol - The Kids Will Have Their Say (1982).jpg",
+        "download": "https://www.mediafire.com/file/xi9gue6tcytpjtz/The_Kids_Will_Have_Their_Say_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Boiling Point",
+                "duration": "00:55"
+            },
+            {
+                "title": "Fight Them",
+                "duration": "01:06"
+            },
+            {
+                "title": "Do You Even Care",
+                "duration": "00:37"
+            },
+            {
+                "title": "Not Normal",
+                "duration": "00:55"
+            },
+            {
+                "title": "Wasted Youth",
+                "duration": "00:37"
+            },
+            {
+                "title": "Jock Itch",
+                "duration": "00:49"
+            },
+            {
+                "title": "Fun to You",
+                "duration": "00:38"
+            },
+            {
+                "title": "V.A.",
+                "duration": "01:03"
+            },
+            {
+                "title": "How Much Art",
+                "duration": "03:04"
+            },
+            {
+                "title": "The Kids Will Have Their Say",
+                "duration": "01:25"
+            },
+            {
+                "title": "Headed Straight",
+                "duration": "01:32"
+            },
+            {
+                "title": "War Threat",
+                "duration": "01:31"
+            },
+            {
+                "title": "Teach Me Violence",
+                "duration": "00:41"
+            },
+            {
+                "title": "Screw",
+                "duration": "00:26"
+            },
+            {
+                "title": "Who's to Judge",
+                "duration": "01:29"
+            },
+            {
+                "title": "Police Beat",
+                "duration": "02:02"
+            },
+            {
+                "title": "United",
+                "duration": "00:48"
+            },
+            {
+                "title": "The End",
+                "duration": "01:32"
+            }
+        ]
+    },
+    {
+        "id": "get-it-away",
+        "title": "Get It Away",
+        "artist": "SS Decontrol",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "X-Claim! Records",
+        "bitrate": "320 kbps",
+        "img": "img/SS Decontrol - Get It Away (1983).jpg",
+        "download": "https://www.mediafire.com/file/9yh7nzseuguid0n/Get_It_Away_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Glue",
+                "duration": "01:17"
+            },
+            {
+                "title": "Forced Down Your Throat",
+                "duration": "02:42"
+            },
+            {
+                "title": "SR Get It Away",
+                "duration": "01:29"
+            },
+            {
+                "title": "SR Under The Influence",
+                "duration": "01:30"
+            },
+            {
+                "title": "Nothing Done",
+                "duration": "01:05"
+            },
+            {
+                "title": "Xclaim!",
+                "duration": "01:25"
+            },
+            {
+                "title": "SR No Reply",
+                "duration": "02:03"
+            }
+        ]
+    },
+    {
+        "id": "incorrect-thoughts",
+        "title": "Incorrect Thoughts",
+        "artist": "Subhumans",
+        "year": 1980,
+        "genre": "Hardcore Punk",
+        "city": "Vancouver, BC",
+        "country": "Canada",
+        "label": "Friends Records",
+        "bitrate": "320 kbps",
+        "img": "img/Subhumans - Incorrect Thoughts (1980).jpg",
+        "download": "https://www.mediafire.com/file/s1ydbpndkssrprf/Incorrect_Thoughts_%25281980%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR The Scheme",
+                "duration": "03:16"
+            },
+            {
+                "title": "New Order",
+                "duration": "02:45"
+            },
+            {
+                "title": "SR Behind My Smile",
+                "duration": "02:54"
+            },
+            {
+                "title": "Out of Line",
+                "duration": "01:37"
+            },
+            {
+                "title": "SR Big Picture",
+                "duration": "02:12"
+            },
+            {
+                "title": "Dead at Birth",
+                "duration": "03:05"
+            },
+            {
+                "title": "Urban Guerillas",
+                "duration": "03:10"
+            },
+            {
+                "title": "SR War in the Head",
+                "duration": "03:09"
+            },
+            {
+                "title": "Firing Squad",
+                "duration": "03:05"
+            },
+            {
+                "title": "SR Slave to My Dick",
+                "duration": "02:38"
+            },
+            {
+                "title": "Death to the Sickoids",
+                "duration": "01:48"
+            },
+            {
+                "title": "Greaser Boy",
+                "duration": "03:17"
+            },
+            {
+                "title": "Model of Stupidity",
+                "duration": "02:33"
+            },
+            {
+                "title": "We're Alive",
+                "duration": "01:28"
+            },
+            {
+                "title": "SR Refugee",
+                "duration": "03:32"
+            },
+            {
+                "title": "Let's Go Down to Hollywood (& Shoot People)",
+                "duration": "03:56"
+            }
+        ]
+    },
+    {
+        "id": "group-sex",
         "title": "Group Sex",
-        "duration": "01:04"
-      },
-      {
-        "title": "I Just Want Some Skank",
-        "duration": "01:10"
-      },
-      {
-        "title": "Live Fast Die Young",
-        "duration": "01:34"
-      },
-      {
-        "title": "Operation",
-        "duration": "01:30"
-      },
-      {
-        "title": "Paid Vacation",
-        "duration": "01:29"
-      },
-      {
-        "title": "Red Tape",
-        "duration": "00:58"
-      },
-      {
-        "title": "Wasted",
-        "duration": "00:43"
-      },
-      {
-        "title": "What's Your Problem",
-        "duration": "00:57"
-      },
-      {
-        "title": "World up My Ass",
-        "duration": "01:17"
-      }
-    ]
-  },
-  {
-    "id": "youth-anthems-for-the-new-order",
-    "title": "Youth Anthems for the New Order",
-    "artist": "Reagan Youth",
-    "year": 1984,
-    "genre": "Hardcore Punk",
-    "city": "New York, NY",
-    "country": "USA",
-    "label": "New Red Archives",
-    "bitrate": "320 kbps",
-    "img": "img/Reagan Youth - Youth Anthems for the New Order (1984).jpg",
-    "download": "https://www.mediafire.com/file/f0cippjenkhoixp/Youth_Anthems_for_the_New_Order_%25281984%2529.zip/file",
-    "tracks": [
-      {
-        "title": "(Are You Really) Happy",
-        "duration": "01:42"
-      },
-      {
-        "title": "(You're a) Gonowhere",
-        "duration": "01:20"
-      },
-      {
-        "title": "Degenerated",
-        "duration": "02:18"
-      },
-      {
-        "title": "I Hate Hate",
-        "duration": "01:57"
-      },
-      {
-        "title": "New Aryans",
-        "duration": "01:17"
-      },
-      {
-        "title": "Reagan Youth",
-        "duration": "01:16"
-      },
-      {
-        "title": "U.S.A.",
-        "duration": "01:21"
-      }
-    ]
-  },
-  {
-    "id": "let-them-eat-jellybeans",
-    "title": "Let Them Eat Jellybeans",
-    "artist": "Various Artists",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Various",
-    "country": "Various",
-    "label": "Alternative Tentacles",
-    "bitrate": "256 kbps",
-    "img": "img/Various Artists - Let Them Eat Jellybeans (1982).jpg",
-    "download": "https://www.mediafire.com/file/povixv6q5zkxidy/Let_Them_Eat_Jellybeans.zip/file",
-    "tracks": [
-      {
-        "title": "Corporate Food",
-        "duration": "02:15"
-      },
-      {
-        "title": "Pay to Cum",
-        "duration": "01:27"
-      },
-      {
-        "title": "Police Story",
-        "duration": "01:24"
-      },
-      {
-        "title": "Persecution - That's My Song",
-        "duration": "02:11"
-      },
-      {
-        "title": "Joke's On You",
-        "duration": "03:24"
-      },
-      {
-        "title": "Paid Vacation",
-        "duration": "01:24"
-      },
-      {
-        "title": "The Prisoner",
-        "duration": "01:48"
-      },
-      {
-        "title": "Nazi Punks Fuck Off",
-        "duration": "00:58"
-      },
-      {
-        "title": "Jesus Entering From The Rear",
-        "duration": "02:43"
-      },
-      {
-        "title": "Ha Ha Ha",
-        "duration": "02:12"
-      },
-      {
-        "title": "Isotope Soap",
-        "duration": "02:16"
-      },
-      {
-        "title": "Fun Again",
-        "duration": "01:52"
-      },
-      {
-        "title": "Everyone's A Bigot",
-        "duration": "03:26"
-      },
-      {
-        "title": "Prostitution",
-        "duration": "01:16"
-      },
-      {
-        "title": "Slave To My Dick",
-        "duration": "02:33"
-      },
-      {
-        "title": "Sleep",
-        "duration": "02:43"
-      },
-      {
-        "title": "An Object",
-        "duration": "02:39"
-      }
-    ]
-  },
-  {
-    "id": "beware-all-eps-collection",
-    "title": "Beware: All EPs Collection",
-    "artist": "Misfits",
-    "year": "Non-Official",
-    "genre": "Horror Punk",
-    "city": "Lodi, NJ",
-    "country": "USA",
-    "label": "Non-Official",
-    "bitrate": "",
-    "img": "img/Misfits - Beware - All EPs Collection (Non-Official).jpg",
-    "download": "https://www.mediafire.com/file/fui74qocagfy9tv/Beware_All_EPs_Collection_%25281984%2529.zip/file",
-    "tracks": [
-      {
-        "title": "She",
-        "duration": "01:19"
-      },
-      {
-        "title": "Cough/Cool",
-        "duration": "02:09"
-      },
-      {
-        "title": "We Are 138",
-        "duration": "01:42"
-      },
-      {
-        "title": "Hollywood Babylon",
-        "duration": "02:24"
-      },
-      {
-        "title": "SR Bullet",
-        "duration": "01:39"
-      },
-      {
-        "title": "Attitude",
-        "duration": "01:37"
-      },
-      {
-        "title": "Children In Heat",
-        "duration": "02:10"
-      },
-      {
-        "title": "SR Horror Business",
-        "duration": "01:34"
-      },
-      {
-        "title": "Teenagers From Mars",
-        "duration": "02:40"
-      },
-      {
-        "title": "SR Night Of The Living Dead",
-        "duration": "01:42"
-      },
-      {
-        "title": "Rat Fink",
-        "duration": "01:50"
-      },
-      {
-        "title": "SR Where Eagles Dare",
-        "duration": "03:09"
-      },
-      {
-        "title": "SR Spook City USA",
-        "duration": "02:50"
-      },
-      {
-        "title": "Who Killed Marilyn?",
-        "duration": "01:56"
-      },
-      {
-        "title": "SR Ghouls Night Out",
-        "duration": "02:04"
-      },
-      {
-        "title": "Horror Hotel",
-        "duration": "01:34"
-      },
-      {
-        "title": "London Dungeon",
-        "duration": "02:38"
-      },
-      {
-        "title": "Die Die My Darling",
-        "duration": "03:09"
-      },
-      {
-        "title": "Mommy, Can I Go Out And Kill Tonight?",
-        "duration": "02:03"
-      },
-      {
-        "title": "SR We Bite",
-        "duration": "01:51"
-      }
-    ]
-  },
-  {
-    "id": "legacy-of-brutality",
-    "title": "Legacy Of Brutality",
-    "artist": "Misfits",
-    "year": 1985,
-    "genre": "Horror Punk",
-    "city": "Lodi, NJ",
-    "country": "USA",
-    "label": "Plan 9 Records",
-    "bitrate": "320 kbps",
-    "img": "img/Misfits - Legacy Of Brutality (1985).jpg",
-    "download": "https://www.mediafire.com/file/gq7rkwckcyydojx/Legacy_Of_Brutality_%25281985%2529.zip/file",
-    "tracks": [
-      {
-        "title": "American Nightmare",
-        "duration": "01:43"
-      },
-      {
-        "title": "Angelfuck",
-        "duration": "01:35"
-      },
-      {
-        "title": "Come Back",
-        "duration": "05:00"
-      },
-      {
-        "title": "Halloween",
-        "duration": "01:47"
-      },
-      {
-        "title": "Hybrid Moments",
-        "duration": "01:40"
-      },
-      {
-        "title": "She",
-        "duration": "01:22"
-      },
-      {
-        "title": "Some Kinda Hate",
-        "duration": "02:09"
-      },
-      {
-        "title": "Spinal Remains",
-        "duration": "01:24"
-      },
-      {
-        "title": "Static Age",
-        "duration": "01:47"
-      },
-      {
-        "title": "Theme For A Jackal",
-        "duration": "02:37"
-      },
-      {
-        "title": "TV Casualty",
-        "duration": "02:34"
-      },
-      {
-        "title": "Where Eagles Dare",
-        "duration": "01:59"
-      },
-      {
-        "title": "Who Killed Marilyn?",
-        "duration": "01:56"
-      }
-    ]
-  },
-  {
-    "id": "damaged",
-    "title": "Damaged",
-    "artist": "Black Flag",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Hermosa Beach, CA",
-    "country": "USA",
-    "label": "SST Records",
-    "bitrate": "320 kbps",
-    "img": "img/Black Flag - Damaged (1982).jpg",
-    "download": "https://www.mediafire.com/file/chzfxjzg60o45oo/Damaged_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Damaged I",
-        "duration": "03:51"
-      },
-      {
-        "title": "Damaged II",
-        "duration": "03:23"
-      },
-      {
-        "title": "Depression",
-        "duration": "02:29"
-      },
-      {
-        "title": "Gimmie Gimmie Gimmie",
-        "duration": "01:47"
-      },
-      {
-        "title": "Life Of Pain",
-        "duration": "02:51"
-      },
-      {
-        "title": "No More",
-        "duration": "02:26"
-      },
-      {
-        "title": "Padded Cell",
-        "duration": "01:47"
-      },
-      {
-        "title": "Police Story",
-        "duration": "01:33"
-      },
-      {
-        "title": "Rise Above",
-        "duration": "02:27"
-      },
-      {
-        "title": "Room 13",
-        "duration": "02:05"
-      },
-      {
-        "title": "Six Pack",
-        "duration": "02:21"
-      },
-      {
-        "title": "Spray Paint",
-        "duration": "00:34"
-      },
-      {
-        "title": "Thirsty And Miserable",
-        "duration": "02:06"
-      },
-      {
-        "title": "TV Party",
-        "duration": "03:31"
-      },
-      {
-        "title": "What I See",
-        "duration": "01:56"
-      }
-    ]
-  },
-  {
-    "id": "lexicon-devil",
-    "title": "Lexicon Devil",
-    "artist": "The Germs",
-    "year": 1978,
-    "genre": "Punk Rock",
-    "city": "Los Angeles, CA",
-    "country": "USA",
-    "label": "What? Records",
-    "bitrate": "320 kbps",
-    "img": "img/The Germs - Lexicon Devil (1978).jpg",
-    "download": "https://www.mediafire.com/file/f16c64tr06y667i/Lexicon_Devil_%25281978%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Circle One",
-        "duration": "01:49"
-      },
-      {
+        "artist": "Circle Jerks",
+        "year": 1980,
+        "genre": "Hardcore Punk",
+        "city": "Los Angeles, CA",
+        "country": "USA",
+        "label": "Frontier Records",
+        "bitrate": "320 kbps",
+        "img": "img/Circle Jerks - Group Sex (1980).jpg",
+        "download": "https://www.mediafire.com/file/zwei9jadnwwupf6/Group_Sex_%25281980%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Deny Everything",
+                "duration": "00:31"
+            },
+            {
+                "title": "I Just Want Some Skank",
+                "duration": "01:10"
+            },
+            {
+                "title": "Beverly Hills",
+                "duration": "01:05"
+            },
+            {
+                "title": "Operation",
+                "duration": "01:30"
+            },
+            {
+                "title": "SR Back Against the Wall",
+                "duration": "01:35"
+            },
+            {
+                "title": "SR Wasted",
+                "duration": "00:43"
+            },
+            {
+                "title": "Behind the Door",
+                "duration": "01:26"
+            },
+            {
+                "title": "SR World up My Ass",
+                "duration": "01:17"
+            },
+            {
+                "title": "Paid Vacation",
+                "duration": "01:29"
+            },
+            {
+                "title": "SR Don't Care",
+                "duration": "00:35"
+            },
+            {
+                "title": "Live Fast Die Young",
+                "duration": "01:34"
+            },
+            {
+                "title": "SR What's Your Problem",
+                "duration": "00:57"
+            },
+            {
+                "title": "SR Group Sex",
+                "duration": "01:04"
+            },
+            {
+                "title": "Red Tape",
+                "duration": "00:58"
+            }
+        ]
+    },
+    {
+        "id": "youth-anthems-for-the-new-order",
+        "title": "Youth Anthems for the New Order",
+        "artist": "Reagan Youth",
+        "year": 1984,
+        "genre": "Hardcore Punk",
+        "city": "New York, NY",
+        "country": "USA",
+        "label": "New Red Archives",
+        "bitrate": "320 kbps",
+        "img": "img/Reagan Youth - Youth Anthems for the New Order (1984).jpg",
+        "download": "https://www.mediafire.com/file/f0cippjenkhoixp/Youth_Anthems_for_the_New_Order_%25281984%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR New Aryans",
+                "duration": "01:17"
+            },
+            {
+                "title": "SR Reagan Youth",
+                "duration": "01:16"
+            },
+            {
+                "title": "(Are You Really) Happy",
+                "duration": "01:42"
+            },
+            {
+                "title": "SR I Hate Hate",
+                "duration": "01:57"
+            },
+            {
+                "title": "Degenerated",
+                "duration": "02:18"
+            },
+            {
+                "title": "SR U.S.A.",
+                "duration": "01:21"
+            },
+            {
+                "title": "(You're A) Gonowhere",
+                "duration": "01:20"
+            }
+        ]
+    },
+    {
+        "id": "let-them-eat-jellybeans",
+        "title": "Let Them Eat Jellybeans",
+        "artist": "Various Artists",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Various",
+        "country": "Various",
+        "label": "Alternative Tentacles",
+        "bitrate": "256 kbps",
+        "img": "img/Various Artists - Let Them Eat Jellybeans (1982).jpg",
+        "download": "https://www.mediafire.com/file/povixv6q5zkxidy/Let_Them_Eat_Jellybeans.zip/file",
+        "tracks": [
+            {
+                "title": "Ha Ha Ha (Flipper)",
+                "duration": "02:12"
+            },
+            {
+                "title": "SR The Prisoner (D.O.A.)",
+                "duration": "01:48"
+            },
+            {
+                "title": "Police Story (Black Flag)",
+                "duration": "01:24"
+            },
+            {
+                "title": "SR Pay to Cum (Bad Brains)",
+                "duration": "01:27"
+            },
+            {
+                "title": "SR Nazi Punks Fuck Off (Dead Kennedys)",
+                "duration": "00:58"
+            },
+            {
+                "title": "Paid Vacation (Circle Jerks)",
+                "duration": "01:24"
+            },
+            {
+                "title": "Prostitution (Really Red)",
+                "duration": "01:16"
+            },
+            {
+                "title": "SR Jesus Entering From The Rear (Feederz)",
+                "duration": "02:43"
+            },
+            {
+                "title": "SR Slave To My Dick (Subhumans)",
+                "duration": "02:33"
+            },
+            {
+                "title": "Isotope Soap (Geza X)",
+                "duration": "02:16"
+            },
+            {
+                "title": "Persecution - That's My Song (BPeople)",
+                "duration": "02:11"
+            },
+            {
+                "title": "An Object (Wounds)",
+                "duration": "02:39"
+            },
+            {
+                "title": "Everyone's A Bigot (Offs)",
+                "duration": "03:26"
+            },
+            {
+                "title": "Corporate Food (Anonymous)",
+                "duration": "02:15"
+            },
+            {
+                "title": "Fun Again (Half Japanese)",
+                "duration": "01:52"
+            },
+            {
+                "title": "SR Joke's On You (Christian Lunch)",
+                "duration": "03:24"
+            },
+            {
+                "title": "Sleep (Voice Farm)",
+                "duration": "02:43"
+            }
+        ]
+    },
+    {
+        "id": "beware-all-eps-collection",
+        "title": "Beware: All EPs Collection",
+        "artist": "Misfits",
+        "year": "Non-Official",
+        "genre": "Horror Punk",
+        "city": "Lodi, NJ",
+        "country": "USA",
+        "label": "Non-Official",
+        "bitrate": "",
+        "img": "img/Misfits - Beware - All EPs Collection (Non-Official).jpg",
+        "download": "https://www.mediafire.com/file/fui74qocagfy9tv/Beware_All_EPs_Collection_%25281984%2529.zip/file",
+        "tracks": [
+            {
+                "title": "She",
+                "duration": "01:19"
+            },
+            {
+                "title": "Cough/Cool",
+                "duration": "02:09"
+            },
+            {
+                "title": "We Are 138",
+                "duration": "01:42"
+            },
+            {
+                "title": "Hollywood Babylon",
+                "duration": "02:24"
+            },
+            {
+                "title": "SR Bullet",
+                "duration": "01:39"
+            },
+            {
+                "title": "Attitude",
+                "duration": "01:37"
+            },
+            {
+                "title": "Children In Heat",
+                "duration": "02:10"
+            },
+            {
+                "title": "SR Horror Business",
+                "duration": "02:50"
+            },
+            {
+                "title": "Teenagers From Mars",
+                "duration": "02:40"
+            },
+            {
+                "title": "SR Night Of The Living Dead",
+                "duration": "02:04"
+            },
+            {
+                "title": "Rat Fink",
+                "duration": "01:50"
+            },
+            {
+                "title": "SR Where Eagles Dare",
+                "duration": "01:51"
+            },
+            {
+                "title": "SR Spook City USA",
+                "duration": "02:12"
+            },
+            {
+                "title": "Who Killed Marilyn?",
+                "duration": "01:56"
+            },
+            {
+                "title": "SR Ghouls Night Out",
+                "duration": "02:02"
+            },
+            {
+                "title": "Horror Hotel",
+                "duration": "01:34"
+            },
+            {
+                "title": "London Dungeon",
+                "duration": "02:38"
+            },
+            {
+                "title": "Die Die My Darling",
+                "duration": "03:09"
+            },
+            {
+                "title": "Mommy, Can I Go Out And Kill Tonight?",
+                "duration": "02:03"
+            },
+            {
+                "title": "SR We Bite",
+                "duration": "01:17"
+            }
+        ]
+    },
+    {
+        "id": "legacy-of-brutality",
+        "title": "Legacy Of Brutality",
+        "artist": "Misfits",
+        "year": 1985,
+        "genre": "Horror Punk",
+        "city": "Lodi, NJ",
+        "country": "USA",
+        "label": "Plan 9 Records",
+        "bitrate": "320 kbps",
+        "img": "img/Misfits - Legacy Of Brutality (1985).jpg",
+        "download": "https://www.mediafire.com/file/gq7rkwckcyydojx/Legacy_Of_Brutality_%25281985%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Static Age",
+                "duration": "01:47"
+            },
+            {
+                "title": "TV Casualty",
+                "duration": "02:34"
+            },
+            {
+                "title": "Hybrid Moments",
+                "duration": "01:40"
+            },
+            {
+                "title": "SR Spinal Remains",
+                "duration": "01:24"
+            },
+            {
+                "title": "SR Come Back",
+                "duration": "05:00"
+            },
+            {
+                "title": "Some Kinda Hate",
+                "duration": "02:09"
+            },
+            {
+                "title": "Theme For A Jackal",
+                "duration": "02:37"
+            },
+            {
+                "title": "Angelfuck",
+                "duration": "01:35"
+            },
+            {
+                "title": "Who Killed Marilyn?",
+                "duration": "01:56"
+            },
+            {
+                "title": "SR Where Eagles Dare",
+                "duration": "01:59"
+            },
+            {
+                "title": "She",
+                "duration": "01:22"
+            },
+            {
+                "title": "SR Halloween",
+                "duration": "01:47"
+            },
+            {
+                "title": "SR American Nightmare",
+                "duration": "01:43"
+            }
+        ]
+    },
+    {
+        "id": "damaged",
+        "title": "Damaged",
+        "artist": "Black Flag",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Hermosa Beach, CA",
+        "country": "USA",
+        "label": "SST Records",
+        "bitrate": "320 kbps",
+        "img": "img/Black Flag - Damaged (1982).jpg",
+        "download": "https://www.mediafire.com/file/chzfxjzg60o45oo/Damaged_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Rise Above",
+                "duration": "02:27"
+            },
+            {
+                "title": "Spray Paint",
+                "duration": "00:34"
+            },
+            {
+                "title": "SR Six Pack",
+                "duration": "02:21"
+            },
+            {
+                "title": "What I See",
+                "duration": "01:56"
+            },
+            {
+                "title": "SR TV Party",
+                "duration": "03:31"
+            },
+            {
+                "title": "Thirsty and Miserable",
+                "duration": "02:06"
+            },
+            {
+                "title": "SR Police Story",
+                "duration": "01:33"
+            },
+            {
+                "title": "SR Gimmie Gimmie Gimmie",
+                "duration": "01:47"
+            },
+            {
+                "title": "Depression",
+                "duration": "02:29"
+            },
+            {
+                "title": "Room 13",
+                "duration": "02:05"
+            },
+            {
+                "title": "Damaged II",
+                "duration": "03:23"
+            },
+            {
+                "title": "No More",
+                "duration": "02:26"
+            },
+            {
+                "title": "Padded Cell",
+                "duration": "01:47"
+            },
+            {
+                "title": "Life of Pain",
+                "duration": "02:51"
+            },
+            {
+                "title": "Damaged I",
+                "duration": "03:51"
+            }
+        ]
+    },
+    {
+        "id": "lexicon-devil",
         "title": "Lexicon Devil",
-        "duration": "02:07"
-      },
-      {
-        "title": "No God",
-        "duration": "01:54"
-      }
-    ]
-  },
-  {
-    "id": "straight-edge-revenge",
-    "title": "Straight Edge Revenge",
-    "artist": "Project X",
-    "year": 1987,
-    "genre": "Hardcore Punk",
-    "city": "New York, NY",
-    "country": "USA",
-    "label": "Schism Records",
-    "bitrate": "320 kbps",
-    "img": "img/Project X - Straight Edge Revenge (1987).jpg",
-    "download": "https://www.mediafire.com/file/fa9rw96j7oy54xk/Straight_Edge_Revenge_%25281987%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Cross Me",
-        "duration": "00:09"
-      },
-      {
-        "title": "Dance Floor Justice",
-        "duration": "01:31"
-      },
-      {
-        "title": "Live @ The Anthrax, March 18th, 1988",
-        "duration": "01:54"
-      },
-      {
-        "title": "Shutdown",
-        "duration": "01:15"
-      },
-      {
+        "artist": "The Germs",
+        "year": 1978,
+        "genre": "Punk Rock",
+        "city": "Los Angeles, CA",
+        "country": "USA",
+        "label": "What? Records",
+        "bitrate": "320 kbps",
+        "img": "img/The Germs - Lexicon Devil (1978).jpg",
+        "download": "https://www.mediafire.com/file/f16c64tr06y667i/Lexicon_Devil_%25281978%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Lexicon Devil",
+                "duration": "02:07"
+            },
+            {
+                "title": "Circle One",
+                "duration": "01:49"
+            },
+            {
+                "title": "No God",
+                "duration": "01:54"
+            }
+        ]
+    },
+    {
+        "id": "straight-edge-revenge",
         "title": "Straight Edge Revenge",
-        "duration": "01:21"
-      },
-      {
-        "title": "Where It Ends",
-        "duration": "02:17"
-      }
-    ]
-  },
-  {
-    "id": "no-wishes-no-prayers",
-    "title": "No Wishes, No Prayers",
-    "artist": "Subhumans",
-    "year": 1983,
-    "genre": "Punk Rock",
-    "city": "Vancouver, BC",
-    "country": "Canada",
-    "label": "SST Records",
-    "bitrate": "320 kbps",
-    "img": "img/Subhumans - No Wishes, No Prayers (1983).jpg",
-    "download": "https://www.mediafire.com/file/iimkfjlm1zm0oui/No_Wishes%252C_No_Prayers_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "America Commits Suicide",
-        "duration": "02:48"
-      },
-      {
-        "title": "Breaking Point",
-        "duration": "02:25"
-      },
-      {
-        "title": "Canada's Favorite Sport",
-        "duration": "02:08"
-      },
-      {
-        "title": "For the Common Good",
-        "duration": "02:13"
-      },
-      {
-        "title": "Googolplex",
-        "duration": "02:41"
-      },
-      {
-        "title": "Helicopter",
-        "duration": "01:33"
-      },
-      {
-        "title": "Hiroshima",
-        "duration": "03:18"
-      },
-      {
-        "title": "Mobile Electric Chair",
-        "duration": "02:05"
-      },
-      {
-        "title": "Moron Majority",
-        "duration": "02:25"
-      },
-      {
+        "artist": "Project X",
+        "year": 1987,
+        "genre": "Hardcore Punk",
+        "city": "New York, NY",
+        "country": "USA",
+        "label": "Schism Records",
+        "bitrate": "320 kbps",
+        "img": "img/Project X - Straight Edge Revenge (1987).jpg",
+        "download": "https://www.mediafire.com/file/fa9rw96j7oy54xk/Straight_Edge_Revenge_%25281987%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Straight Edge Revenge",
+                "duration": "01:21"
+            },
+            {
+                "title": "Shutdown",
+                "duration": "01:15"
+            },
+            {
+                "title": "Cross Me",
+                "duration": "00:09"
+            },
+            {
+                "title": "Dance Floor Justice",
+                "duration": "01:31"
+            },
+            {
+                "title": "Where It Ends",
+                "duration": "02:17"
+            },
+            {
+                "title": "Live @ The Anthrax, March 18th, 1988",
+                "duration": "01:54"
+            }
+        ]
+    },
+    {
+        "id": "no-wishes-no-prayers",
         "title": "No Wishes, No Prayers",
-        "duration": "02:38"
-      },
-      {
-        "title": "Screwed Up",
-        "duration": "02:05"
-      },
-      {
-        "title": "Slap in the Face",
-        "duration": "01:33"
-      }
-    ]
-  },
-  {
-    "id": "subhumans",
-    "title": "Subhumans",
-    "artist": "Subhumans",
-    "year": 1979,
-    "genre": "Punk Rock",
-    "city": "Vancouver, BC",
-    "country": "Canada",
-    "label": "Quintessence Records",
-    "bitrate": "160 kbps",
-    "img": "img/Subhumans - Subhumans (1979).jpg",
-    "download": "https://www.mediafire.com/file/k5idny2fgkp36ep/Subhumans_%25281979%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Death Was Too Kind",
-        "duration": "01:50"
-      },
-      {
-        "title": "Fuck You",
-        "duration": "02:08"
-      },
-      {
-        "title": "Inquisition Day",
-        "duration": "01:51"
-      },
-      {
-        "title": "Slave To My Dick",
-        "duration": "02:41"
-      }
-    ]
-  },
-  {
-    "id": "deep-wound",
-    "title": "Deep Wound",
-    "artist": "Deep Wound",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Westfield, MA",
-    "country": "USA",
-    "label": "Radiobeat Records",
-    "bitrate": "320 kbps",
-    "img": "img/Deep Wound - Deep Wound (1983).jpg",
-    "download": "https://www.mediafire.com/file/o2h3xtlty8iiqju/Deep_Wound_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "7 Don't Need",
-        "duration": "00:58"
-      },
-      {
-        "title": "Dead Babies",
-        "duration": "01:13"
-      },
-      {
+        "artist": "Subhumans",
+        "year": 1983,
+        "genre": "Punk Rock",
+        "city": "Vancouver, BC",
+        "country": "Canada",
+        "label": "SST Records",
+        "bitrate": "320 kbps",
+        "img": "img/Subhumans - No Wishes, No Prayers (1983).jpg",
+        "download": "https://www.mediafire.com/file/iimkfjlm1zm0oui/No_Wishes%252C_No_Prayers_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Canada's Favorite Sport",
+                "duration": "02:08"
+            },
+            {
+                "title": "Moron Majority",
+                "duration": "02:25"
+            },
+            {
+                "title": "SR Helicopter",
+                "duration": "01:33"
+            },
+            {
+                "title": "For the Common Good",
+                "duration": "02:13"
+            },
+            {
+                "title": "Slap in the Face",
+                "duration": "01:33"
+            },
+            {
+                "title": "SR Screwed Up",
+                "duration": "02:05"
+            },
+            {
+                "title": "SR America Commits Suicide",
+                "duration": "02:48"
+            },
+            {
+                "title": "SR Hiroshima",
+                "duration": "03:18"
+            },
+            {
+                "title": "No Wishes, No Prayers",
+                "duration": "02:38"
+            },
+            {
+                "title": "Mobile Electric Chair",
+                "duration": "02:05"
+            },
+            {
+                "title": "SR Breaking Point",
+                "duration": "02:25"
+            },
+            {
+                "title": "Googolplex",
+                "duration": "02:41"
+            }
+        ]
+    },
+    {
+        "id": "subhumans",
+        "title": "Subhumans",
+        "artist": "Subhumans",
+        "year": 1979,
+        "genre": "Punk Rock",
+        "city": "Vancouver, BC",
+        "country": "Canada",
+        "label": "Quintessence Records",
+        "bitrate": "160 kbps",
+        "img": "img/Subhumans - Subhumans (1979).jpg",
+        "download": "https://www.mediafire.com/file/k5idny2fgkp36ep/Subhumans_%25281979%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Dead Was Too Kind",
+                "duration": "01:50"
+            },
+            {
+                "title": "Fuck You",
+                "duration": "02:08"
+            },
+            {
+                "title": "Inquisition Day",
+                "duration": "02:41"
+            },
+            {
+                "title": "SR Slave To My Dick",
+                "duration": "01:51"
+            }
+        ]
+    },
+    {
+        "id": "deep-wound",
         "title": "Deep Wound",
-        "duration": "01:10"
-      },
-      {
-        "title": "I Saw It",
-        "duration": "01:09"
-      },
-      {
-        "title": "In My Room",
-        "duration": "01:08"
-      },
-      {
-        "title": "Lou's Anxiety Song",
-        "duration": "00:57"
-      },
-      {
-        "title": "Sick of Fun",
-        "duration": "00:48"
-      },
-      {
-        "title": "Sisters",
-        "duration": "00:38"
-      },
-      {
-        "title": "Video Prick",
-        "duration": "01:33"
-      }
-    ]
-  },
-  {
-    "id": "possible-ep",
-    "title": "Possible EP",
-    "artist": "Youth Brigade",
-    "year": 1981,
-    "genre": "Hardcore Punk",
-    "city": "Washington, D.C.",
-    "country": "USA",
-    "label": "Dischord Records",
-    "bitrate": "320 kbps",
-    "img": "img/Youth Brigade - Possible EP (1983).jpg",
-    "download": "https://www.mediafire.com/file/d8phpgtijuy53vt/Possible_EP_%25281981%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Barbed Wire",
-        "duration": "01:42"
-      },
-      {
-        "title": "Full Speed Ahead",
-        "duration": "01:28"
-      },
-      {
-        "title": "It's About Time That We Had a Change",
-        "duration": "01:19"
-      },
-      {
-        "title": "No Song",
-        "duration": "02:25"
-      },
-      {
-        "title": "No Song II",
-        "duration": "00:06"
-      },
-      {
-        "title": "Pay No Attention",
-        "duration": "00:56"
-      },
-      {
-        "title": "Point of View",
-        "duration": "00:48"
-      },
-      {
-        "title": "Wrong Decision",
-        "duration": "01:32"
-      }
-    ]
-  },
-  {
-    "id": "screaming-for-change",
-    "title": "Screaming for Change",
-    "artist": "Uniform Choice",
-    "year": 1986,
-    "genre": "Hardcore Punk",
-    "city": "Orange County, CA",
-    "country": "USA",
-    "label": "Wishingwell Records",
-    "bitrate": "320 kbps",
-    "img": "img/Uniform Choice - Screaming for Change (1986).jpg",
-    "download": "https://www.mediafire.com/file/ehcrv4bggguzhsq/Screaming_for_Change_%25281986%2529.zip/file",
-    "tracks": [
-      {
-        "title": "A Choice",
-        "duration": "02:25"
-      },
-      {
-        "title": "Big Man, Small Mind",
-        "duration": "01:32"
-      },
-      {
-        "title": "Build to Break",
-        "duration": "01:14"
-      },
-      {
-        "title": "Don't Quit",
-        "duration": "01:24"
-      },
-      {
-        "title": "In Time",
-        "duration": "02:51"
-      },
-      {
-        "title": "My Own Mind",
-        "duration": "02:17"
-      },
-      {
-        "title": "No Thanks",
-        "duration": "02:13"
-      },
-      {
-        "title": "Once I Cry",
-        "duration": "02:22"
-      },
-      {
-        "title": "Scream to Say",
-        "duration": "01:22"
-      },
-      {
-        "title": "Screaming for a Change",
-        "duration": "01:40"
-      },
-      {
-        "title": "Silenced",
-        "duration": "01:13"
-      },
-      {
-        "title": "Sometimes",
-        "duration": "01:17"
-      },
-      {
-        "title": "Straight and Alert",
-        "duration": "03:09"
-      },
-      {
-        "title": "Use Your Head",
-        "duration": "01:23"
-      }
-    ]
-  },
-  {
-    "id": "kill-for-christ",
-    "title": "Kill for Christ",
-    "artist": "F.U.'s",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "Posh Boy Records",
-    "bitrate": "320 kbps",
-    "img": "img/FUs - Kill for Christ (1982).jpg",
-    "download": "https://www.mediafire.com/file/jceukdiifik85i1/Kill_for_Christ_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "CETA Suckers",
-        "duration": "00:59"
-      },
-      {
-        "title": "Civil Defense",
-        "duration": "01:25"
-      },
-      {
-        "title": "Daisy Chain",
-        "duration": "01:49"
-      },
-      {
-        "title": "Death Wish",
-        "duration": "02:12"
-      },
-      {
-        "title": "Die for God",
-        "duration": "05:48"
-      },
-      {
-        "title": "Drug of Choice",
-        "duration": "01:46"
-      },
-      {
-        "title": "F.U.",
-        "duration": "01:06"
-      },
-      {
-        "title": "Fucking Advice",
-        "duration": "00:10"
-      },
-      {
-        "title": "Green Beret",
-        "duration": "01:40"
-      },
-      {
-        "title": "Me Generation",
-        "duration": "01:17"
-      },
-      {
-        "title": "No Change",
-        "duration": "01:02"
-      },
-      {
-        "title": "Peer Police",
-        "duration": "01:15"
-      },
-      {
-        "title": "Preskool Dropouts",
-        "duration": "01:33"
-      },
-      {
-        "title": "Radio Unix U.S.A.",
-        "duration": "01:03"
-      },
-      {
-        "title": "Rock and Roll Mutha",
-        "duration": "01:25"
-      },
-      {
-        "title": "T Sucks - Original Version",
-        "duration": "00:42"
-      },
-      {
-        "title": "T Sux",
-        "duration": "00:36"
-      },
-      {
-        "title": "Time Is Money",
-        "duration": "00:22"
-      },
-      {
-        "title": "Trendy Nazi Hypocrites",
-        "duration": "00:45"
-      }
-    ]
-  },
-  {
-    "id": "1980-1986",
-    "title": "1980-1986",
-    "artist": "Dicks",
-    "year": 1997,
-    "genre": "Punk",
-    "city": "Austin, TX",
-    "country": "USA",
-    "label": "Alternative Tentacles",
-    "bitrate": "320 kbps",
-    "img": "img/Dicks - 1980-1986.jpg",
-    "download": "https://www.mediafire.com/file/a8aqmhu013xi8iz/1980-1986_%25281997%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Anti-Klan (Part 1)",
-        "duration": "01:53"
-      },
-      {
-        "title": "Anti-Klan (Part 2)",
-        "duration": "03:17"
-      },
-      {
-        "title": "Dead In A Motel Room",
-        "duration": "01:50"
-      },
-      {
-        "title": "Decent And Clean",
-        "duration": "03:29"
-      },
-      {
-        "title": "Dicks Hate The Police",
-        "duration": "01:59"
-      },
-      {
-        "title": "Executive Dive",
-        "duration": "02:56"
-      },
-      {
-        "title": "Fake Bands",
-        "duration": "01:25"
-      },
-      {
-        "title": "George Jackson",
-        "duration": "03:29"
-      },
-      {
-        "title": "Gilbeau",
-        "duration": "03:19"
-      },
-      {
-        "title": "I Hope You Get Drafted",
-        "duration": "01:27"
-      },
-      {
-        "title": "Kill From The Heart",
-        "duration": "01:56"
-      },
-      {
-        "title": "Lifetime Problems",
-        "duration": "01:53"
-      },
-      {
-        "title": "No Fuckin' War",
-        "duration": "04:46"
-      },
-      {
-        "title": "No Nazi's Friend",
-        "duration": "03:09"
-      },
-      {
-        "title": "Off-Duty Sailor",
-        "duration": "02:44"
-      },
-      {
-        "title": "Rich Daddy",
-        "duration": "02:30"
-      },
-      {
-        "title": "Saturday Night At The Bookstore",
-        "duration": "04:43"
-      },
-      {
-        "title": "Shit On Me",
-        "duration": "02:04"
-      },
-      {
-        "title": "Sidewalk Begging",
-        "duration": "03:50"
-      },
-      {
-        "title": "The Police (Force)",
-        "duration": "02:27"
-      },
-      {
-        "title": "Wheelchair Epidemic",
-        "duration": "02:18"
-      }
-    ]
-  },
-  {
-    "id": "faith",
-    "title": "Faith",
-    "artist": "Faith",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Washington, D.C.",
-    "country": "USA",
-    "label": "Dischord Records",
-    "bitrate": "320 kbps",
-    "img": "img/Faith - Faith.jpg",
-    "download": "https://www.mediafire.com/file/n3bjpt4e0s5tw2d/Faith_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Another Victim",
-        "duration": "00:41"
-      },
-      {
-        "title": "Confusion",
-        "duration": "01:33"
-      },
-      {
-        "title": "Don't Tell Me",
-        "duration": "00:57"
-      },
-      {
-        "title": "Face to Face",
-        "duration": "01:02"
-      },
-      {
-        "title": "In Control",
-        "duration": "01:10"
-      },
-      {
-        "title": "In The Black",
-        "duration": "02:04"
-      },
-      {
-        "title": "It's Time",
-        "duration": "00:59"
-      },
-      {
-        "title": "Nightmare",
-        "duration": "01:11"
-      },
-      {
-        "title": "Trapped",
-        "duration": "00:47"
-      },
-      {
-        "title": "What You Think",
-        "duration": "00:49"
-      },
-      {
-        "title": "What's Wrong With Me?",
-        "duration": "00:42"
-      },
-      {
-        "title": "You're X'd",
-        "duration": "01:06"
-      }
-    ]
-  },
-  {
-    "id": "brotherhood",
-    "title": "Brotherhood",
-    "artist": "DYS",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "X-Claim! Records",
-    "bitrate": "320 kbps",
-    "img": "img/DYS - Brotherhood.jpg",
-    "download": "https://www.mediafire.com/file/hunk6jq4u7r9pe2/Brotherhood_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "(The Girl's Got) Limits",
-        "duration": "01:10"
-      },
-      {
+        "artist": "Deep Wound",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Westfield, MA",
+        "country": "USA",
+        "label": "Radiobeat Records",
+        "bitrate": "320 kbps",
+        "img": "img/Deep Wound - Deep Wound (1983).jpg",
+        "download": "https://www.mediafire.com/file/o2h3xtlty8iiqju/Deep_Wound_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "I Saw It",
+                "duration": "01:09"
+            },
+            {
+                "title": "SR Sisters",
+                "duration": "00:38"
+            },
+            {
+                "title": "In My Room",
+                "duration": "01:08"
+            },
+            {
+                "title": "7 Don't Need",
+                "duration": "00:58"
+            },
+            {
+                "title": "Lou's Anxiety Song",
+                "duration": "00:57"
+            },
+            {
+                "title": "SR Video Prick",
+                "duration": "01:33"
+            },
+            {
+                "title": "Sick of Fun",
+                "duration": "00:48"
+            },
+            {
+                "title": "SR Deep Wound",
+                "duration": "01:10"
+            },
+            {
+                "title": "SR Dead Babies",
+                "duration": "01:13"
+            }
+        ]
+    },
+    {
+        "id": "possible-ep",
+        "title": "Possible EP",
+        "artist": "Youth Brigade",
+        "year": 1981,
+        "genre": "Hardcore Punk",
+        "city": "Washington, D.C.",
+        "country": "USA",
+        "label": "Dischord Records",
+        "bitrate": "320 kbps",
+        "img": "img/Youth Brigade - Possible EP (1983).jpg",
+        "download": "https://www.mediafire.com/file/d8phpgtijuy53vt/Possible_EP_%25281981%2529.zip/file",
+        "tracks": [
+            {
+                "title": "It's About Time That We Had a Change",
+                "duration": "01:19"
+            },
+            {
+                "title": "Full Speed Ahead",
+                "duration": "01:28"
+            },
+            {
+                "title": "Point of View",
+                "duration": "00:48"
+            },
+            {
+                "title": "Barbed Wire",
+                "duration": "01:42"
+            },
+            {
+                "title": "Pay No Attention",
+                "duration": "00:56"
+            },
+            {
+                "title": "Wrong Decision",
+                "duration": "01:32"
+            },
+            {
+                "title": "No Song",
+                "duration": "02:25"
+            },
+            {
+                "title": "No Song II",
+                "duration": "00:06"
+            }
+        ]
+    },
+    {
+        "id": "screaming-for-change",
+        "title": "Screaming for Change",
+        "artist": "Uniform Choice",
+        "year": 1986,
+        "genre": "Hardcore Punk",
+        "city": "Orange County, CA",
+        "country": "USA",
+        "label": "Wishingwell Records",
+        "bitrate": "320 kbps",
+        "img": "img/Uniform Choice - Screaming for Change (1986).jpg",
+        "download": "https://www.mediafire.com/file/ehcrv4bggguzhsq/Screaming_for_Change_%25281986%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Use Your Head",
+                "duration": "01:23"
+            },
+            {
+                "title": "My Own Mind",
+                "duration": "02:17"
+            },
+            {
+                "title": "Straight and Alert",
+                "duration": "03:09"
+            },
+            {
+                "title": "SR Build to Break",
+                "duration": "01:14"
+            },
+            {
+                "title": "Scream to Say",
+                "duration": "01:22"
+            },
+            {
+                "title": "Once I Cry",
+                "duration": "02:22"
+            },
+            {
+                "title": "Sometimes",
+                "duration": "01:17"
+            },
+            {
+                "title": "Screaming for a Change",
+                "duration": "01:40"
+            },
+            {
+                "title": "No Thanks",
+                "duration": "02:13"
+            },
+            {
+                "title": "SR A Choice",
+                "duration": "02:25"
+            },
+            {
+                "title": "Big Man, Small Mind",
+                "duration": "01:32"
+            },
+            {
+                "title": "Don't Quit",
+                "duration": "01:24"
+            },
+            {
+                "title": "In Time",
+                "duration": "02:51"
+            },
+            {
+                "title": "Silenced",
+                "duration": "01:13"
+            }
+        ]
+    },
+    {
+        "id": "kill-for-christ",
+        "title": "Kill for Christ",
+        "artist": "F.U.'s",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "Posh Boy Records",
+        "bitrate": "320 kbps",
+        "img": "img/FUs - Kill for Christ (1982).jpg",
+        "download": "https://www.mediafire.com/file/jceukdiifik85i1/Kill_for_Christ_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Civil Defense",
+                "duration": "01:25"
+            },
+            {
+                "title": "SR Me Generation",
+                "duration": "01:17"
+            },
+            {
+                "title": "SR Daisy Chain",
+                "duration": "01:49"
+            },
+            {
+                "title": "SR Peer Police",
+                "duration": "01:15"
+            },
+            {
+                "title": "Rock and Roll Mutha",
+                "duration": "01:25"
+            },
+            {
+                "title": "T Sux",
+                "duration": "00:36"
+            },
+            {
+                "title": "SR Trendy Nazi Hypocrites",
+                "duration": "00:45"
+            },
+            {
+                "title": "SR Die for God",
+                "duration": "05:48"
+            },
+            {
+                "title": "F.U.",
+                "duration": "01:06"
+            },
+            {
+                "title": "Preskool Dropouts",
+                "duration": "01:33"
+            },
+            {
+                "title": "Radio Unix U.S.A.",
+                "duration": "01:03"
+            },
+            {
+                "title": "Green Beret",
+                "duration": "01:40"
+            },
+            {
+                "title": "Time Is Money",
+                "duration": "00:22"
+            },
+            {
+                "title": "CETA Suckers",
+                "duration": "00:59"
+            },
+            {
+                "title": "Death Wish",
+                "duration": "02:12"
+            },
+            {
+                "title": "Fucking Advice",
+                "duration": "00:10"
+            },
+            {
+                "title": "No Change",
+                "duration": "01:02"
+            },
+            {
+                "title": "Drug of Choice",
+                "duration": "01:46"
+            },
+            {
+                "title": "SR T Sucks - Original Version",
+                "duration": "00:42"
+            }
+        ]
+    },
+    {
+        "id": "1980-1986",
+        "title": "1980-1986",
+        "artist": "Dicks",
+        "year": 1997,
+        "genre": "Punk",
+        "city": "Austin, TX",
+        "country": "USA",
+        "label": "Alternative Tentacles",
+        "bitrate": "320 kbps",
+        "img": "img/Dicks - 1980-1986.jpg",
+        "download": "https://www.mediafire.com/file/a8aqmhu013xi8iz/1980-1986_%25281997%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Dicks Hate The Police",
+                "duration": "01:59"
+            },
+            {
+                "title": "Lifetime Problems",
+                "duration": "01:53"
+            },
+            {
+                "title": "Saturday Night At The Bookstore",
+                "duration": "04:43"
+            },
+            {
+                "title": "Dead In A Motel Room",
+                "duration": "01:50"
+            },
+            {
+                "title": "Fake Bands",
+                "duration": "01:25"
+            },
+            {
+                "title": "Wheelchair Epidemic",
+                "duration": "02:18"
+            },
+            {
+                "title": "SR Shit On Me",
+                "duration": "02:04"
+            },
+            {
+                "title": "Anti-Klan (Part 1)",
+                "duration": "01:53"
+            },
+            {
+                "title": "No Nazi's Friend",
+                "duration": "03:09"
+            },
+            {
+                "title": "Rich Daddy",
+                "duration": "02:30"
+            },
+            {
+                "title": "Kill From The Heart",
+                "duration": "01:56"
+            },
+            {
+                "title": "Anti-Klan (Part 2)",
+                "duration": "03:17"
+            },
+            {
+                "title": "No Fuckin' War",
+                "duration": "04:46"
+            },
+            {
+                "title": "I Hope You Get Drafted",
+                "duration": "01:27"
+            },
+            {
+                "title": "Sidewalk Begging",
+                "duration": "03:50"
+            },
+            {
+                "title": "George Jackson",
+                "duration": "03:29"
+            },
+            {
+                "title": "The Police (Force)",
+                "duration": "02:27"
+            },
+            {
+                "title": "Off-Duty Sailor",
+                "duration": "02:44"
+            },
+            {
+                "title": "Executive Dive",
+                "duration": "02:56"
+            },
+            {
+                "title": "Decent And Clean",
+                "duration": "03:29"
+            },
+            {
+                "title": "Gilbeau",
+                "duration": "03:19"
+            }
+        ]
+    },
+    {
+        "id": "faith",
+        "title": "Faith",
+        "artist": "Faith",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Washington, D.C.",
+        "country": "USA",
+        "label": "Dischord Records",
+        "bitrate": "320 kbps",
+        "img": "img/Faith - Faith.jpg",
+        "download": "https://www.mediafire.com/file/n3bjpt4e0s5tw2d/Faith_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR It's Time",
+                "duration": "00:59"
+            },
+            {
+                "title": "SR Face to Face",
+                "duration": "01:02"
+            },
+            {
+                "title": "SR Trapped",
+                "duration": "00:47"
+            },
+            {
+                "title": "In Control",
+                "duration": "01:10"
+            },
+            {
+                "title": "Another Victim",
+                "duration": "00:41"
+            },
+            {
+                "title": "What's Wrong With Me?",
+                "duration": "00:42"
+            },
+            {
+                "title": "SR What You Think",
+                "duration": "00:49"
+            },
+            {
+                "title": "Confusion",
+                "duration": "01:33"
+            },
+            {
+                "title": "You're X'd",
+                "duration": "01:06"
+            },
+            {
+                "title": "Nightmare",
+                "duration": "01:11"
+            },
+            {
+                "title": "Don't Tell Me",
+                "duration": "00:57"
+            },
+            {
+                "title": "SR In The Black",
+                "duration": "02:04"
+            }
+        ]
+    },
+    {
+        "id": "brotherhood",
         "title": "Brotherhood",
-        "duration": "01:02"
-      },
-      {
-        "title": "Circle Storm",
-        "duration": "00:35"
-      },
-      {
-        "title": "City To City",
-        "duration": "01:27"
-      },
-      {
-        "title": "Escape",
-        "duration": "02:18"
-      },
-      {
-        "title": "Insurance Risk",
-        "duration": "00:49"
-      },
-      {
-        "title": "More Than Fashion",
-        "duration": "01:29"
-      },
-      {
-        "title": "Open Up",
-        "duration": "01:24"
-      },
-      {
-        "title": "Stand Proud",
-        "duration": "00:56"
-      },
-      {
-        "title": "Yellow",
-        "duration": "01:16"
-      }
-    ]
-  },
-  {
-    "id": "my-america",
-    "title": "My America",
-    "artist": "F.U.'s",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "X-Claim! Records",
-    "bitrate": "320 kbps",
-    "img": "img/FU's - My America.jpg",
-    "download": "https://www.mediafire.com/file/o9pzcv7ye6bd5lg/My_America_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "American Band",
-        "duration": "02:38"
-      },
-      {
-        "title": "Boston's Finest",
-        "duration": "01:17"
-      },
-      {
-        "title": "Choir Boy",
-        "duration": "01:26"
-      },
-      {
+        "artist": "DYS",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "X-Claim! Records",
+        "bitrate": "320 kbps",
+        "img": "img/DYS - Brotherhood.jpg",
+        "download": "https://www.mediafire.com/file/hunk6jq4u7r9pe2/Brotherhood_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Open Up",
+                "duration": "01:24"
+            },
+            {
+                "title": "SR More Than Fashion",
+                "duration": "01:29"
+            },
+            {
+                "title": "SR Circle Storm",
+                "duration": "00:35"
+            },
+            {
+                "title": "City To City",
+                "duration": "01:27"
+            },
+            {
+                "title": "(The Girl's Got) Limits",
+                "duration": "01:10"
+            },
+            {
+                "title": "SR Brotherhood",
+                "duration": "01:02"
+            },
+            {
+                "title": "Yellow",
+                "duration": "01:16"
+            },
+            {
+                "title": "SR Stand Proud",
+                "duration": "00:56"
+            },
+            {
+                "title": "SR Insurance Risk",
+                "duration": "00:49"
+            },
+            {
+                "title": "Escape",
+                "duration": "02:18"
+            }
+        ]
+    },
+    {
+        "id": "my-america",
         "title": "My America",
-        "duration": "01:21"
-      },
-      {
-        "title": "Outcast",
-        "duration": "00:53"
-      },
-      {
-        "title": "Poor, Poor, Pitiful You",
-        "duration": "01:17"
-      },
-      {
-        "title": "Rifle",
-        "duration": "01:13"
-      },
-      {
-        "title": "The Grinder",
-        "duration": "01:03"
-      },
-      {
-        "title": "This Is Your Life",
-        "duration": "01:20"
-      },
-      {
-        "title": "Unite Or Lose",
-        "duration": "01:32"
-      },
-      {
-        "title": "What You Pay For",
-        "duration": "01:30"
-      }
-    ]
-  },
-  {
-    "id": "land-of-the-lost",
-    "title": "Land Of The Lost",
-    "artist": "Freeze",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Boston, MA",
-    "country": "USA",
-    "label": "Modern Method Records",
-    "bitrate": "320 kbps",
-    "img": "img/Freeze - Land Of The Lost.jpg",
-    "download": "https://www.mediafire.com/file/ypkys50ju5uk5sm/Land_Of_The_Lost_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "American Town",
-        "duration": "02:12"
-      },
-      {
-        "title": "Days Of Desperation",
-        "duration": "01:27"
-      },
-      {
-        "title": "Duh Family",
-        "duration": "01:49"
-      },
-      {
-        "title": "Food Lava",
-        "duration": "02:32"
-      },
-      {
-        "title": "Gardener And The Maid",
-        "duration": "01:19"
-      },
-      {
-        "title": "Go Team Go",
-        "duration": "01:49"
-      },
-      {
-        "title": "Nazi Fun",
-        "duration": "02:49"
-      },
-      {
-        "title": "No Exposure",
-        "duration": "01:54"
-      },
-      {
-        "title": "Pig Hunt",
-        "duration": "01:44"
-      },
-      {
-        "title": "Sickly Sweet",
-        "duration": "02:01"
-      },
-      {
-        "title": "So Long Ago",
-        "duration": "01:54"
-      },
-      {
-        "title": "The Megawaki Cult",
-        "duration": "01:55"
-      },
-      {
-        "title": "Won't Come Back Alive",
-        "duration": "01:24"
-      }
-    ]
-  },
-  {
-    "id": "terveet-kadet",
-    "title": "Terveet Kädet",
-    "artist": "Terveet Kädet",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Tornio",
-    "country": "Finland",
-    "label": "Propaganda Records",
-    "bitrate": "320 kbps",
-    "img": "img/Terveet Kädet - Terveet Kädet.jpg",
-    "download": "https://www.mediafire.com/file/3lui7l5d4ciudvc/Terveet_K%25C3%25A4det_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "A.L.I.E.N",
-        "duration": "00:59"
-      },
-      {
-        "title": "Black",
-        "duration": "00:29"
-      },
-      {
-        "title": "Halloween",
-        "duration": "00:30"
-      },
-      {
-        "title": "I Want So Much",
-        "duration": "00:38"
-      },
-      {
-        "title": "N.O.W",
-        "duration": "00:58"
-      },
-      {
-        "title": "Never",
-        "duration": "00:32"
-      },
-      {
-        "title": "Not Right Pt.1+2",
-        "duration": "02:12"
-      },
-      {
-        "title": "Searching For The End Of The World",
-        "duration": "00:45"
-      },
-      {
-        "title": "The Devil Christ",
-        "duration": "01:20"
-      },
-      {
-        "title": "The Free North",
-        "duration": "00:39"
-      },
-      {
-        "title": "The Unknown",
-        "duration": "00:49"
-      },
-      {
-        "title": "The War",
-        "duration": "00:34"
-      },
-      {
-        "title": "To The Hand",
-        "duration": "00:52"
-      },
-      {
-        "title": "Tomorrow",
-        "duration": "00:37"
-      },
-      {
-        "title": "Transvestite",
-        "duration": "01:01"
-      },
-      {
-        "title": "Up",
-        "duration": "00:48"
-      },
-      {
-        "title": "Whip Me",
-        "duration": "00:36"
-      }
-    ]
-  },
-  {
-    "id": "ristiinnaulittu-kaaos",
-    "title": "Ristiinnaulittu Kaaos",
-    "artist": "Kaaos",
-    "year": 1984,
-    "genre": "Hardcore Punk",
-    "city": "Tampere",
-    "country": "Finland",
-    "label": "Propaganda Records",
-    "bitrate": "320 kbps",
-    "img": "img/Kaaos - Ristiinnaulittu Kaaos.jpg",
-    "download": "https://www.mediafire.com/file/z8l4thcifk6uocm/Ristiinnaulittu_Kaaos_%25281984%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Ei Ulospaasya",
-        "duration": "02:07"
-      },
-      {
-        "title": "Kohti Tuhoa...",
-        "duration": "02:09"
-      },
-      {
-        "title": "Kuka Kuolee Kenen Puolesta",
-        "duration": "02:52"
-      },
-      {
-        "title": "Kuolleet Sankarit",
-        "duration": "01:16"
-      },
-      {
-        "title": "Odotan Maailmanloppua",
-        "duration": "02:37"
-      },
-      {
-        "title": "Pelko Kasvattaa Vihaa",
-        "duration": "01:39"
-      },
-      {
-        "title": "Sun Valinta",
-        "duration": "02:21"
-      },
-      {
-        "title": "Syntynyt Haviaan",
-        "duration": "02:40"
-      },
-      {
-        "title": "Syyton Sivustakatsoja",
-        "duration": "02:28"
-      },
-      {
-        "title": "Vaihtoehto",
-        "duration": "02:04"
-      },
-      {
-        "title": "Vakivallan Uhrit",
-        "duration": "01:57"
-      },
-      {
-        "title": "Vanki",
-        "duration": "02:10"
-      }
-    ]
-  },
-  {
-    "id": "subject-to-change",
-    "title": "Subject To Change",
-    "artist": "Faith",
-    "year": 1983,
-    "genre": "Hardcore Punk",
-    "city": "Washington, D.C.",
-    "country": "USA",
-    "label": "Dischord Records",
-    "bitrate": "320 kbps",
-    "img": "img/Faith - Subject to Change.jpg",
-    "download": "https://www.mediafire.com/file/wf8kjk8ojg8jjxc/Subject_To_Change_%25281983%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Aware",
-        "duration": "01:41"
-      },
-      {
-        "title": "Limitations",
-        "duration": "01:26"
-      },
-      {
-        "title": "More of the Same",
-        "duration": "01:34"
-      },
-      {
-        "title": "No Choice",
-        "duration": "01:08"
-      },
-      {
-        "title": "Say No More",
-        "duration": "01:30"
-      },
-      {
-        "title": "Slowdown",
-        "duration": "02:59"
-      },
-      {
-        "title": "Subject to Change",
-        "duration": "01:34"
-      },
-      {
-        "title": "Untitled",
-        "duration": "01:08"
-      }
-    ]
-  },
-  {
-    "id": "aareton-joulu",
-    "title": "Ääretön Joulu",
-    "artist": "Terveet Kädet",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Tornio",
-    "country": "Finland",
-    "label": "Poko Rekords",
-    "bitrate": "256 kbps",
-    "img": "img/Terveet Kädet - Ääretön Joulu.jpg",
-    "download": "https://www.mediafire.com/file/w03rnd5ttg25aw7/%25C3%2584%25C3%25A4ret%25C3%25B6n_Joulu_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Halstelljat",
-        "duration": "00:44"
-      },
-      {
-        "title": "Musta Jumala",
-        "duration": "01:12"
-      },
-      {
-        "title": "Onnellisia Kytkentoja",
-        "duration": "00:38"
-      },
-      {
-        "title": "Outo Maa",
-        "duration": "00:47"
-      },
-      {
-        "title": "Pissaa Ja Paskaa",
-        "duration": "00:31"
-      },
-      {
-        "title": "T. Tuho",
-        "duration": "00:34"
-      },
-      {
-        "title": "Tornion Kevat",
-        "duration": "00:41"
-      },
-      {
-        "title": "Utopia",
-        "duration": "01:01"
-      }
-    ]
-  },
-  {
-    "id": "american-style",
-    "title": "American Style",
-    "artist": "Deep Wound",
-    "year": 1982,
-    "genre": "Hardcore Punk",
-    "city": "Westfield, MA",
-    "country": "USA",
-    "label": "Not on label",
-    "bitrate": "320 kbps",
-    "img": "img/Deep Wound - American Style.jpg",
-    "download": "https://www.mediafire.com/file/3sn50h6tlqceuam/American_Style_%25281982%2529.zip/file",
-    "tracks": [
-      {
-        "title": "Adult",
-        "duration": "00:42"
-      },
-      {
-        "title": "Deep Wound",
-        "duration": "01:32"
-      },
-      {
-        "title": "Don't Need",
-        "duration": "01:18"
-      },
-      {
-        "title": "Let's Go To The Mall",
-        "duration": "07:16"
-      },
-      {
-        "title": "Never Let You In",
-        "duration": "00:41"
-      },
-      {
-        "title": "Patriots",
-        "duration": "00:32"
-      },
-      {
-        "title": "Pressure",
-        "duration": "01:13"
-      },
-      {
-        "title": "Psyched To Die",
-        "duration": "02:40"
-      },
-      {
-        "title": "Sister",
-        "duration": "01:05"
-      },
-      {
-        "title": "Training Ground",
-        "duration": "01:14"
-      },
-      {
-        "title": "Video Prick",
-        "duration": "02:11"
-      },
-      {
-        "title": "Your Hand Is In Your Crotch",
-        "duration": "00:27"
-      },
-      {
-        "title": "You're False",
-        "duration": "00:55"
-      }
-    ]
-  }
+        "artist": "F.U.'s",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "X-Claim! Records",
+        "bitrate": "320 kbps",
+        "img": "img/FU's - My America.jpg",
+        "download": "https://www.mediafire.com/file/o9pzcv7ye6bd5lg/My_America_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR What You Pay For",
+                "duration": "01:30"
+            },
+            {
+                "title": "SR Outcast",
+                "duration": "00:53"
+            },
+            {
+                "title": "Poor, Poor, Pitiful You",
+                "duration": "01:17"
+            },
+            {
+                "title": "The Grinder",
+                "duration": "01:03"
+            },
+            {
+                "title": "SR Unite Or Lose",
+                "duration": "01:32"
+            },
+            {
+                "title": "SR This Is Your Life",
+                "duration": "01:20"
+            },
+            {
+                "title": "My America",
+                "duration": "01:21"
+            },
+            {
+                "title": "Choir Boy",
+                "duration": "01:26"
+            },
+            {
+                "title": "Boston's Finest",
+                "duration": "01:17"
+            },
+            {
+                "title": "Rifle",
+                "duration": "01:13"
+            },
+            {
+                "title": "American Band",
+                "duration": "02:38"
+            }
+        ]
+    },
+    {
+        "id": "land-of-the-lost",
+        "title": "Land Of The Lost",
+        "artist": "Freeze",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Boston, MA",
+        "country": "USA",
+        "label": "Modern Method Records",
+        "bitrate": "320 kbps",
+        "img": "img/Freeze - Land Of The Lost.jpg",
+        "download": "https://www.mediafire.com/file/ypkys50ju5uk5sm/Land_Of_The_Lost_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "American Town",
+                "duration": "02:12"
+            },
+            {
+                "title": "Gardener And The Maid",
+                "duration": "01:19"
+            },
+            {
+                "title": "Food Lava",
+                "duration": "02:32"
+            },
+            {
+                "title": "No Exposure",
+                "duration": "01:54"
+            },
+            {
+                "title": "Days Of Desperation",
+                "duration": "01:27"
+            },
+            {
+                "title": "Go Team Go",
+                "duration": "01:49"
+            },
+            {
+                "title": "Nazi Fun",
+                "duration": "02:49"
+            },
+            {
+                "title": "Won't Come Back Alive",
+                "duration": "01:24"
+            },
+            {
+                "title": "So Long Ago",
+                "duration": "01:54"
+            },
+            {
+                "title": "Duh Family",
+                "duration": "01:49"
+            },
+            {
+                "title": "Sickly Sweet",
+                "duration": "02:01"
+            },
+            {
+                "title": "The Megawaki Cult",
+                "duration": "01:55"
+            },
+            {
+                "title": "Pig Hunt",
+                "duration": "01:44"
+            }
+        ]
+    },
+    {
+        "id": "terveet-kadet",
+        "title": "Terveet Kädet",
+        "artist": "Terveet Kädet",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Tornio",
+        "country": "Finland",
+        "label": "Propaganda Records",
+        "bitrate": "320 kbps",
+        "img": "img/Terveet Kädet - Terveet Kädet.jpg",
+        "download": "https://www.mediafire.com/file/3lui7l5d4ciudvc/Terveet_K%25C3%25A4det_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Halloween",
+                "duration": "00:30"
+            },
+            {
+                "title": "The Free North",
+                "duration": "00:39"
+            },
+            {
+                "title": "I Want So Much",
+                "duration": "00:38"
+            },
+            {
+                "title": "The War",
+                "duration": "00:34"
+            },
+            {
+                "title": "Transvestite",
+                "duration": "01:01"
+            },
+            {
+                "title": "Black",
+                "duration": "00:29"
+            },
+            {
+                "title": "Up",
+                "duration": "00:48"
+            },
+            {
+                "title": "A.L.I.E.N",
+                "duration": "00:59"
+            },
+            {
+                "title": "N.O.W",
+                "duration": "00:58"
+            },
+            {
+                "title": "The Devil Christ",
+                "duration": "01:20"
+            },
+            {
+                "title": "To The Hand",
+                "duration": "00:52"
+            },
+            {
+                "title": "Searching For The End Of The World",
+                "duration": "00:45"
+            },
+            {
+                "title": "The Unknown",
+                "duration": "00:49"
+            },
+            {
+                "title": "Whip Me",
+                "duration": "00:36"
+            },
+            {
+                "title": "Tomorrow",
+                "duration": "00:37"
+            },
+            {
+                "title": "Never",
+                "duration": "00:32"
+            },
+            {
+                "title": "Not Right Pt.1+2",
+                "duration": "02:12"
+            }
+        ]
+    },
+    {
+        "id": "ristiinnaulittu-kaaos",
+        "title": "Ristiinnaulittu Kaaos",
+        "artist": "Kaaos",
+        "year": 1984,
+        "genre": "Hardcore Punk",
+        "city": "Tampere",
+        "country": "Finland",
+        "label": "Propaganda Records",
+        "bitrate": "320 kbps",
+        "img": "img/Kaaos - Ristiinnaulittu Kaaos.jpg",
+        "download": "https://www.mediafire.com/file/z8l4thcifk6uocm/Ristiinnaulittu_Kaaos_%25281984%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Kuolleet Sankarit",
+                "duration": "01:16"
+            },
+            {
+                "title": "Väkivallan Uhrit",
+                "duration": "01:57"
+            },
+            {
+                "title": "Syytön Sivustakatsoja",
+                "duration": "02:28"
+            },
+            {
+                "title": "Vaihtoehto",
+                "duration": "02:04"
+            },
+            {
+                "title": "Odotan Maailmanloppua",
+                "duration": "02:37"
+            },
+            {
+                "title": "SR Vanki",
+                "duration": "02:10"
+            },
+            {
+                "title": "Pelko Kasvattaa Vihaa",
+                "duration": "01:39"
+            },
+            {
+                "title": "Sun Valinta",
+                "duration": "02:21"
+            },
+            {
+                "title": "Syntynyt Häviään",
+                "duration": "02:40"
+            },
+            {
+                "title": "Kohti Tuhoa...",
+                "duration": "02:09"
+            },
+            {
+                "title": "Kuka Kuolee Kenen Puolesta",
+                "duration": "02:52"
+            },
+            {
+                "title": "SR Ei Ulospääsyä",
+                "duration": "02:07"
+            }
+        ]
+    },
+    {
+        "id": "subject-to-change",
+        "title": "Subject To Change",
+        "artist": "Faith",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Washington, D.C.",
+        "country": "USA",
+        "label": "Dischord Records",
+        "bitrate": "320 kbps",
+        "img": "img/Faith - Subject to Change.jpg",
+        "download": "https://www.mediafire.com/file/wf8kjk8ojg8jjxc/Subject_To_Change_%25281983%2529.zip/file",
+        "tracks": [
+            {
+                "title": "SR Aware",
+                "duration": "01:41"
+            },
+            {
+                "title": "SR Say No More",
+                "duration": "01:30"
+            },
+            {
+                "title": "Limitations",
+                "duration": "01:26"
+            },
+            {
+                "title": "SR No Choice",
+                "duration": "01:08"
+            },
+            {
+                "title": "Untitled",
+                "duration": "01:08"
+            },
+            {
+                "title": "SR Subject to Change",
+                "duration": "01:34"
+            },
+            {
+                "title": "More of the Same",
+                "duration": "01:34"
+            },
+            {
+                "title": "Slowdown",
+                "duration": "02:59"
+            }
+        ]
+    },
+    {
+        "id": "aareton-joulu",
+        "title": "Ääretön Joulu",
+        "artist": "Terveet Kädet",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Tornio",
+        "country": "Finland",
+        "label": "Poko Rekords",
+        "bitrate": "256 kbps",
+        "img": "img/Terveet Kädet - Ääretön Joulu.jpg",
+        "download": "https://www.mediafire.com/file/w03rnd5ttg25aw7/%25C3%2584%25C3%25A4ret%25C3%25B6n_Joulu_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Halstelljat",
+                "duration": "00:44"
+            },
+            {
+                "title": "Musta Jumala",
+                "duration": "01:12"
+            },
+            {
+                "title": "Onnellisia Kytkentöjä",
+                "duration": "00:38"
+            },
+            {
+                "title": "Outo Maa",
+                "duration": "00:47"
+            },
+            {
+                "title": "Pissaa Ja Paskaa",
+                "duration": "00:31"
+            },
+            {
+                "title": "T. Tuho",
+                "duration": "00:34"
+            },
+            {
+                "title": "Tornion Kevät",
+                "duration": "00:41"
+            },
+            {
+                "title": "Utopia",
+                "duration": "01:01"
+            }
+        ]
+    },
+    {
+        "id": "american-style",
+        "title": "American Style",
+        "artist": "Deep Wound",
+        "year": 1982,
+        "genre": "Hardcore Punk",
+        "city": "Westfield, MA",
+        "country": "USA",
+        "label": "Not on label",
+        "bitrate": "320 kbps",
+        "img": "img/Deep Wound - American Style.jpg",
+        "download": "https://www.mediafire.com/file/3sn50h6tlqceuam/American_Style_%25281982%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Pressure",
+                "duration": "01:13"
+            },
+            {
+                "title": "Training Ground",
+                "duration": "01:14"
+            },
+            {
+                "title": "Deep Wound",
+                "duration": "01:32"
+            },
+            {
+                "title": "You're False",
+                "duration": "00:55"
+            },
+            {
+                "title": "Your Hand Is In Your Crotch",
+                "duration": "00:27"
+            },
+            {
+                "title": "Psyched To Die",
+                "duration": "02:40"
+            },
+            {
+                "title": "Sister",
+                "duration": "01:05"
+            },
+            {
+                "title": "Patriots",
+                "duration": "00:32"
+            },
+            {
+                "title": "Never Let You In",
+                "duration": "00:41"
+            },
+            {
+                "title": "Adult",
+                "duration": "00:42"
+            },
+            {
+                "title": "Don't Need",
+                "duration": "01:18"
+            },
+            {
+                "title": "Video Prick",
+                "duration": "02:11"
+            },
+            {
+                "title": "Let's Go To The Mall",
+                "duration": "07:16"
+            }
+        ]
+    }
 ]
