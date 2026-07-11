@@ -439,6 +439,7 @@ function renderCollectionVersions() {
     versionsContainer.innerHTML = '';
 
     const collectionVersions = [
+        { version: "v6.0.0", date: "13.05.2026", file: "https://www.mediafire.com/file/yxzjxlchrotw26k/Collection_v6_0_0.zip/file" },
         { version: "v5.5.0", date: "07.05.2026", file: "https://www.mediafire.com/file/bwpijt88xf8fr0a/Collection_v5_5_0.zip/file" }
     ];
 
