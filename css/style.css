@@ -123,15 +123,15 @@ strong {
 }
 
 .album-meta .bitrate-high {
-    color: #88BA7F;
+    color: #7FD97F;
 }
 
 .album-meta .bitrate-medium {
-    color: #E7BE66;
+    color: #EFC866;
 }
 
 .album-meta .bitrate-low {
-    color: #C66565;
+    color: #D97A7A;
 }
 
 a.link {
