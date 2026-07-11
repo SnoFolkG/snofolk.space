@@ -118,6 +118,21 @@ strong {
     color: #b35d5d;
 }
 
+.album-meta .bitrate-na {
+    color: var(--text-light);
+}
+
+.album-meta .bitrate-high {
+    color: #88BA7F;
+}
+
+.album-meta .bitrate-medium {
+    color: #E7BE66;
+}
+
+.album-meta .bitrate-low {
+    color: #C66565;
+}
 
 a.link {
     display: inline-flex;
