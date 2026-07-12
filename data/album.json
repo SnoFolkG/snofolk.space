@@ -2972,5 +2972,71 @@
                 "duration": "07:16"
             }
         ]
+    },
+    {
+        "id": "nervous-breakdown",
+        "title": "Nervous Breakdown",
+        "artist": "Black Flag",
+        "year": 1979,
+        "genre": "Hardcore Punk",
+        "city": "Hermosa Beach, CA",
+        "country": "USA",
+        "label": "SST Rekords",
+        "bitrate": "320 kbps",
+        "img": "img/Black Flag - Nervous Breakdown.jpg",
+        "download": "https://www.mediafire.com/file/gf79chqd7mfywqy/Nervous_Breakdown_%25281979%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Nervous Breakdown",
+                "duration": "02:09"
+            },
+            {
+                "title": "Fix Me",
+                "duration": "00:58"
+            },
+            {
+                "title": "I've Had It",
+                "duration": "01:26"
+            },
+            {
+                "title": "Wasted",
+                "duration": "00:51"
+            }
+        ]
+    },
+    {
+        "id": "jealous-again",
+        "title": "Jealous Again",
+        "artist": "Black Flag",
+        "year": 1980,
+        "genre": "Hardcore Punk",
+        "city": "Hermosa Beach, CA",
+        "country": "USA",
+        "label": "SST Rekords",
+        "bitrate": "320 kbps",
+        "img": "img/Black Flag - Jealous Again.jpg",
+        "download": "https://www.mediafire.com/file/akkcdgv6nh4z65t/Jealous_Again_%25281980%2529.zip/file",
+        "tracks": [
+            {
+                "title": "Jealous Again",
+                "duration": "01:53"
+            },
+            {
+                "title": "Revenge",
+                "duration": "01:00"
+            },
+            {
+                "title": "White Minority",
+                "duration": "01:03"
+            },
+            {
+                "title": "No Values",
+                "duration": "01:46"
+            },
+            {
+                "title": "You Bet We've Got Something Against You!",
+                "duration": "00:53"
+            }
+        ]
     }
 ]
