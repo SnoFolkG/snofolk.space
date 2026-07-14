@@ -2981,7 +2981,7 @@
         "genre": "Hardcore Punk",
         "city": "Hermosa Beach, CA",
         "country": "USA",
-        "label": "SST Rekords",
+        "label": "SST Reсords",
         "bitrate": "320 kbps",
         "img": "img/Black Flag - Nervous Breakdown.jpg",
         "download": "https://www.mediafire.com/file/gf79chqd7mfywqy/Nervous_Breakdown_%25281979%2529.zip/file",
@@ -3012,7 +3012,7 @@
         "genre": "Hardcore Punk",
         "city": "Hermosa Beach, CA",
         "country": "USA",
-        "label": "SST Rekords",
+        "label": "SST Reсords",
         "bitrate": "320 kbps",
         "img": "img/Black Flag - Jealous Again.jpg",
         "download": "https://www.mediafire.com/file/akkcdgv6nh4z65t/Jealous_Again_%25281980%2529.zip/file",
@@ -3036,6 +3036,159 @@
             {
                 "title": "You Bet We've Got Something Against You!",
                 "duration": "00:53"
+            }
+        ]
+    },
+    {
+        "id": "six-pack",
+        "title": "Six Pack",
+        "artist": "Black Flag",
+        "year": 1981,
+        "genre": "Hardcore Punk",
+        "city": "Hermosa Beach, CA",
+        "country": "USA",
+        "label": "SST Records",
+        "bitrate": "320 kbps",
+        "img": "img/Black Flag - Six Pack.jpg",
+        "download": "",
+        "tracks": [
+            {
+                "title": "Six Pack",
+                "duration": "02:21"
+            },
+            {
+                "title": "I've Heard It Before",
+                "duration": "01:40"
+            },
+            {
+                "title": "American Waste",
+                "duration": "01:33"
+            }
+        ]
+    },
+    {
+        "id": "dehumanization",
+        "title": "Dehumanization",
+        "artist": "Crucifix",
+        "year": 1983,
+        "genre": "Hardcore Punk",
+        "city": "Berkeley, CA",
+        "country": "USA",
+        "label": "Corpus Christi Records",
+        "bitrate": "320 kbps",
+        "img": "img/Crucifix - Dehumanization.jpg",
+        "download": "",
+        "tracks": [
+            {
+                "title": "Annihilation",
+                "duration": "01:27"
+            },
+            {
+                "title": "How When And Where",
+                "duration": "01:36"
+            },
+            {
+                "title": "Skinned Alive",
+                "duration": "00:49"
+            },
+            {
+                "title": "Prejudice",
+                "duration": "02:07"
+            },
+            {
+                "title": "No Limbs",
+                "duration": "01:36"
+            },
+            {
+                "title": "Another Mouth To Feed",
+                "duration": "01:50"
+            },
+            {
+                "title": "Search For The Sun",
+                "duration": "01:35"
+            },
+            {
+                "title": "Indo China",
+                "duration": "02:23"
+            },
+            {
+                "title": "Three Miles To Oblivion",
+                "duration": "01:02"
+            },
+            {
+                "title": "See Through Their Lies",
+                "duration": "01:42"
+            },
+            {
+                "title": "Death Toll",
+                "duration": "02:38"
+            },
+            {
+                "title": "Blind Destruction",
+                "duration": "01:39"
+            },
+            {
+                "title": "Rise And Fall",
+                "duration": "00:43"
+            },
+            {
+                "title": "Stop Torture",
+                "duration": "01:50"
+            }
+        ]
+    },
+    {
+        "id": "rabid-reaction",
+        "title": "Rabid Reaction",
+        "artist": "Freeze",
+        "year": 1985,
+        "genre": "Hardcore Punk",
+        "city": "Cape Cod, MA",
+        "country": "USA",
+        "label": "Modern Method Records",
+        "bitrate": "320 kbps",
+        "img": "img/Freeze - Rabid Reaction.jpg",
+        "download": "",
+        "tracks": [
+            {
+                "title": "Warped Confessional",
+                "duration": "01:40"
+            },
+            {
+                "title": "Nothing Left",
+                "duration": "03:05"
+            },
+            {
+                "title": "Misguided Memories",
+                "duration": "03:16"
+            },
+            {
+                "title": "Extremities",
+                "duration": "02:25"
+            },
+            {
+                "title": "No One's Coming Home",
+                "duration": "01:43"
+            },
+            {
+                "title": "Trouble If You Hide",
+                "duration": "02:36"
+            },
+            {
+                "title": "Insanity",
+                "duration": "02:09"
+            },
+            {
+                "title": "Echoes",
+                "duration": "03:04"
+            },
+            {
+                "title": "Princess Die",
+                "duration": "01:59"
+            },
+            {
+                "title": "Before I Hit The Rubber Room",
+                "duration": "02:29"
             }
         ]
     }
