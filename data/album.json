@@ -2987,7 +2987,7 @@
         "download": "https://www.mediafire.com/file/gf79chqd7mfywqy/Nervous_Breakdown_%25281979%2529.zip/file",
         "tracks": [
             {
-                "title": "Nervous Breakdown",
+                "title": "SR Nervous Breakdown",
                 "duration": "02:09"
             },
             {
@@ -2999,7 +2999,7 @@
                 "duration": "01:26"
             },
             {
-                "title": "Wasted",
+                "title": "SR Wasted",
                 "duration": "00:51"
             }
         ]
@@ -3096,7 +3096,7 @@
                 "duration": "02:07"
             },
             {
-                "title": "No Limbs",
+                "title": "SR No Limbs",
                 "duration": "01:36"
             },
             {
@@ -3159,7 +3159,7 @@
                 "duration": "03:05"
             },
             {
-                "title": "Misguided Memories",
+                "title": "SR Misguided Memories",
                 "duration": "03:16"
             },
             {
@@ -3191,5 +3191,81 @@
                 "duration": "02:29"
             }
         ]
-    }
+    },
+
+    {
+    "id": "no-illusions",
+    "title": "No Illusions",
+    "artist": "State",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Ann Arbor, MI",
+    "country": "USA",
+    "label": "Statement Records",
+    "bitrate": "320 kbps",
+    "img": "img/State - No Illusions.jpg",
+    "download": "https://www.mediafire.com/file/ul5n9wiezum6a5x/No_Illusions_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "SR Subvert", "duration": "00:59" },
+        { "title": "New Right", "duration": "00:37" },
+        { "title": "SR Attention", "duration": "01:08" },
+        { "title": "SR Hard Line", "duration": "01:07" },
+        { "title": "No Illusions", "duration": "01:24" },
+        { "title": "Police State", "duration": "01:05" },
+        { "title": "Girl Violence", "duration": "01:56" }
+    ]
+},
+
+{
+    "id": "a-place-in-the-sun",
+    "title": "A Place in the Sun",
+    "artist": "YDI",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Philadelphia, PA",
+    "country": "USA",
+    "label": "Blood Bubble Records",
+    "bitrate": "320 kbps",
+    "img": "img/YDI - A Place in the Sun.jpg",
+    "download": "https://www.mediafire.com/file/xa610sew7sn3qzg/A_Place_in_the_Sun_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "SR Not Shit", "duration": "00:38" },
+        { "title": "1983", "duration": "00:51" },
+        { "title": "SR Friends", "duration": "00:33" },
+        { "title": "Mad at the World", "duration": "01:42" },
+        { "title": "Out for Blood", "duration": "01:43" },
+        { "title": "Categorized", "duration": "01:05" },
+        { "title": "SR Another Day", "duration": "01:23" },
+        { "title": "SR Get Up and Fight + Zombie Youth", "duration": "01:45" },
+        { "title": "SR Why Die", "duration": "01:39" }
+    ]
+},
+
+{
+    "id": "chemotherapy",
+    "title": "Chemotherapy",
+    "artist": "Chemotherapy",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Indianapolis, IN",
+    "country": "USA",
+    "label": "Uprising Records",
+    "bitrate": "160 kbps",
+    "img": "img/Chemotherapy - Chemotherapy.jpg",
+    "download": "https://www.mediafire.com/file/bkou1tcyfbiym46/Chemotherapy_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "Resist", "duration": "00:18" },
+        { "title": "I Don't Want To Be Watched", "duration": "00:34" },
+        { "title": "Let's Die", "duration": "00:21" },
+        { "title": "Living Your Life", "duration": "00:16" },
+        { "title": "Who Cares", "duration": "00:26" },
+        { "title": "All My Friends Are Dead", "duration": "01:03" },
+        { "title": "Smart, Tough And Catholic", "duration": "00:12" },
+        { "title": "Why Should I", "duration": "00:22" },
+        { "title": "Big Bad Man With Your Silver Badge", "duration": "00:38" },
+        { "title": "Pledge", "duration": "00:47" },
+        { "title": "Suicidal Tendencies", "duration": "00:35" },
+        { "title": "Distorted View", "duration": "00:43" }
+    ]
+}
 ]
