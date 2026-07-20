@@ -4,7 +4,7 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '4.10.3';
+const SITE_VERSION = '5.0.0';
 const COLLECTION_VERSION = '7.5.0';
 
 
@@ -299,17 +299,23 @@ function renderDownloadsGrid(albumsToRender) {
 
     albumsToRender.forEach(album => {
         const div = document.createElement("div");
-        div.className = "album";
+        div.className = "album-mini";
         div.innerHTML = `
-          <a href="album.html?id=${album.id}" class="album-link">
-            <img src="${album.img}" alt="${album.title}" loading="lazy">
-            <h3>${album.title}</h3>
-            <p>${album.artist} &bull; ${album.year}</p>
-          </a>
+            <a href="album.html?id=${album.id}" class="album-mini-link">
+                <div class="album-mini-cover">
+                    <img src="${album.img}" alt="${album.title}" loading="lazy">
+                </div>
+                <div class="album-mini-info">
+                    <p class="album-mini-title">${album.title}</p>
+                    <p class="album-mini-artist">${album.artist} • ${album.year}</p>
+                </div>
+            </a>
         `;
         container.appendChild(div);
     });
 }
+
+
 
 function sortDownloadsAlbums(albums, sort = downloadsState.sort) {
     const direction = sort === 'artist-desc' ? -1 : 1;
