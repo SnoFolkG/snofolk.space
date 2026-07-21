@@ -1,7 +1,6 @@
 # snofolk.space
 
-![Version](https://img.shields.io/badge/version-5.0.0-red?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-5.0.3-red?style=for-the-badge)
 
 SnoFolk.Space is a static archive of classic and rare **Hardcore Punk**, **Horror Punk**, and **Punk Rock** albums.
 
