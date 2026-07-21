@@ -4,7 +4,7 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '5.0.1';
+const SITE_VERSION = '5.0.2';
 const COLLECTION_VERSION = '7.5.0';
 
 
@@ -398,7 +398,7 @@ async function renderNewsTeaser() {
                     ${summary ? `<p>${escapeHTML(summary)}</p>` : ""}
                 </div>
             `;
-        }).join("") + `<a href="news.html" class="all-news-btn">All news &rarr;</a>`;
+        }).join("") + `<a href="news.html" class="other-like-btn">All news &rarr;</a>`;
     } catch (error) {
         console.warn("Could not load latest news teaser:", error);
     }
