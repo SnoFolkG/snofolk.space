@@ -4,7 +4,7 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '5.0.3';
+const SITE_VERSION = '5.0.4';
 const COLLECTION_VERSION = '7.5.0';
 
 
