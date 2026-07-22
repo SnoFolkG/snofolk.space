@@ -8,7 +8,7 @@
   --accent: #1a6cb5;
   --button-color: #232323;
   --blocks-color: #111111;
-  --border: #2a2a2a;
+  --border-color: #2a2a2a;
 
   --transition: 0.22s cubic-bezier(0.25, 0.8, 0.25, 1);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -120,6 +120,24 @@ strong {
   color: #b35d5d;
 }
 
+
+
+.album-meta .bitrate-na {
+  color: var(--text-light);
+}
+
+.album-meta .bitrate-high {
+  color: #44c72d;
+}
+
+.bitrate-medium {
+  color: #dfa52a;
+}
+
+.album-meta .bitrate-low {
+  color: #ce2727;
+}
+
 a.link {
   display: inline-flex;
   align-items: center;
@@ -151,7 +169,8 @@ main {
   margin: 30px auto;
   padding: 28px;
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
+  margin-block-end: 1px;
 }
 
 section {
@@ -161,6 +180,7 @@ section {
 section:last-child {
   margin-bottom: 0;
 }
+
 
 /* === HEADER === */
 
@@ -172,7 +192,7 @@ header {
   padding: 20px;
   text-align: center;
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   box-shadow: none;
 }
 
@@ -316,7 +336,7 @@ nav a.active .nav-icon {
   text-align: center;
   padding: 9px 0;
   font-size: 13px;
-  border-color: var(--accent-border);
+  border-color: var(--accent);
   letter-spacing: 0.5px;
 }
 
@@ -327,7 +347,7 @@ nav a.active .nav-icon {
 
 .other-like-btn {
   display: inline-block;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   padding: 0.5rem 1.2rem;
   color: #fff;
   text-decoration: none;
@@ -338,9 +358,46 @@ nav a.active .nav-icon {
 }
 
 .other-like-btn:hover {
-  border-color: var(--accent-);
+  border-color: var(--accent);
   color: var(--accent);
 }
+
+
+
+/* === CONTACT === */
+
+.contact-section {
+  border: 1px solid var(--border-color);
+  background: var(--blocks-color);
+  padding: 2rem;
+  margin: 2rem 0;
+  margin-top: -2px;
+  text-align: center;
+}
+
+.fckn-up-text {
+  font-size: 16px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1px;
+  margin-top: 16px;
+}
+
+
+/* === ALBUMS LIST === */
+
+.albums-list {
+  display: inline-block;
+  columns: 2;
+  gap: 1px;
+  margin-top: -5px;
+}
+
+
+
 
 /* === NEWS === */
 
@@ -351,7 +408,7 @@ nav a.active .nav-icon {
 .news {
   padding: 18px;
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   margin-bottom: 15px;
   transition: background var(--transition);
 }
@@ -411,7 +468,7 @@ nav a.active .nav-icon {
 .album-mini,
 .album {
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   padding: 10px;
   cursor: pointer;
   transition:
@@ -479,6 +536,7 @@ nav a.active .nav-icon {
   margin: 0 0 3px;
 }
 
+
 /* === CARD GRID & NEW === */
 
 .new-albums-grid,
@@ -519,6 +577,18 @@ nav a.active .nav-icon {
   margin: 0 auto 16px;
 }
 
+
+/* === MODALS=== */
+
+.modal {
+  border: 1px solid var(--border-color);
+  background: var(--blocks-color);
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+
 /* === UPDATE HISTORY === */
 
 .update-history {
@@ -530,7 +600,7 @@ nav a.active .nav-icon {
 .update {
   padding: 16px;
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   transition: background var(--transition);
 }
 
@@ -564,8 +634,8 @@ nav a.active .nav-icon {
 footer {
   text-align: center;
   padding: 18px;
-  font-size: 12px;
-  color: #666;
+  font-size: 13px;
+  color: var(--text-dim);
 }
 
 /* === COLLECTION DOWNLOAD AREA === */
@@ -593,7 +663,7 @@ footer {
   gap: 16px;
   padding: 10px 14px;
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   margin-bottom: 8px;
   transition: background var(--transition);
 }
@@ -713,7 +783,7 @@ footer {
   align-items: baseline;
   gap: 10px;
   padding: 6px 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--border-color);
   margin: 0;
 }
 
@@ -797,7 +867,7 @@ footer {
   gap: 10px;
   padding: 10px;
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   transition: background var(--transition);
 }
 
@@ -854,7 +924,7 @@ footer {
   letter-spacing: 0.5px;
   color: var(--text-main);
   background: var(--button-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   outline: none;
   transition: var(--transition);
   box-shadow: 4px 4px 0px var(--accent);
@@ -886,7 +956,7 @@ footer {
 
 .stat-card {
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   padding: 1.2rem 1rem;
   text-align: center;
   display: flex;
@@ -909,7 +979,7 @@ footer {
 
 /* ==== LUCKY SECTION === */
 .lucky-section {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   background: var(--blocks-color);
   padding: 2rem;
   text-align: center;
@@ -932,7 +1002,7 @@ footer {
 
 .news-item-preview {
   background: var(--blocks-color);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   padding: 1rem 1.1rem;
 }
 

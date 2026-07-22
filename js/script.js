@@ -4,7 +4,7 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '5.0.4';
+const SITE_VERSION = '5.1.3';
 const COLLECTION_VERSION = '7.5.0';
 
 
@@ -245,7 +245,7 @@ function renderAlbumDetail(albums) {
                     <li><span>City</span>${album.city}</li>
                     <li><span>Country</span>${album.country || 'N/A'}</li>
                     <li><span>Label</span>${album.label || 'N/A'}</li>
-                    <li><span>Bitrate</span><span class="bitrate ${getBitrateColorClass(album.bitrate || '')}">${album.bitrate || 'N/A'}</span></li>
+                    <li><span>Bitrate</span><span class="bitrate" ${getBitrateColorClass(album.bitrate || '')}">${album.bitrate || 'N/A'}</span></li>
                 </ul>
                 ${tracklistHTML}
                 ${similarHTML('is-mobile')}

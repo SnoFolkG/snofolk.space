@@ -8,6 +8,8 @@
   <link rel="manifest" href="/icons/site.webmanifest">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+
   <title>Info | snofolk.space</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,16 +48,27 @@
 
     <section>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:s8wuo0hp6@mozmail.com" class="link">s8wuo0hp6@mozmail.com</a></p>
-      <p>Anarcho-punk.net: <a href="https://www.anarcho-punk.net/members/snofolk.31102/" class="link" target="_blank"
-          rel="noopener noreferrer">@SnoFolk</a></p>
-      <p>You can write to request an album addition or report a bug.</p>
+
+      <section class="contact-section">
+
+        <p class="fckn-up-text"><strong>Found a Bug</strong> or Want to <strong>Request an Album</strong>? Contact me!</p>
+
+        <setion class="contact">
+          <p>Email: <a href="mailto:s8wuo0hp6@mozmail.com" class="link">contact@snofolk.space</a></p>
+          <p>Telegram: <a href="https://t.me/snofolk" class="link" target="_blank"
+              rel="noopener noreferrer">@SnoFolk</a>
+          </p>
+          <p>Anarcho-punk.net: <a href="https://www.anarcho-punk.net/members/snofolk.31102/" class="link"
+              target="_blank" rel="noopener noreferrer">@SnoFolk</a></p>
+        </setion>
+
+      </section>
 
     </section>
 
     <section>
       <h2>Album List</h2>
-      <ul id="album-list"></ul>
+      <ul id="album-list" class="albums-list"></ul>
     </section>
 
     <section class="update-history">
@@ -351,7 +364,7 @@
 
   </main>
 
-    <footer>Made by SnoFolk. Site version: <span id="site-version"></span></footer>
+  <footer>Made by SnoFolk. Site version: <span id="site-version"></span></footer>
 
   <script src="js/script.js"></script>
 </body>
