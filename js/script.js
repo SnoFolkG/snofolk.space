@@ -4,7 +4,7 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '5.2.0';
+const SITE_VERSION = '5.2.1';
 const COLLECTION_VERSION = '7.5.0';
 
 
@@ -157,7 +157,7 @@ function renderAlbumDetail(albums) {
     let downloadHTML = '';
     if (album.download) {
         downloadHTML = `
-        <a href="${album.download}" class="download-btn download-btn-cover" download>Download Album (.zip)</a>
+        <a href="${album.download}" target="_blank" class="download-btn download-btn-cover" download>Download Album (.zip)</a>
     `;
     } else {
         downloadHTML = `<p class="no-download">Download link coming soon</p>`;
