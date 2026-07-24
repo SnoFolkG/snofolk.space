@@ -3267,5 +3267,51 @@
         { "title": "Suicidal Tendencies", "duration": "00:35" },
         { "title": "Distorted View", "duration": "00:43" }
     ]
+},
+
+{
+    "id": "totaalinen-kaaos",
+    "title": "Totaalinen Kaaos",
+    "artist": "Kaaos",
+    "year": 1982,
+    "genre": "Hardcore Punk",
+    "city": "Tampere",
+    "country": "Finland",
+    "label": "Propaganda Records",
+    "bitrate": "320 kbps",
+    "img": "img/Kaaos - Totaalinen Kaaos.jpg",
+    "download": "hhttps://www.mediafire.com/file/820f90tktfr6vfw/Totaalinen_Kaaos_%25281982%2529.zip/file",
+    "tracks": [
+        { "title": "Mellakka", "duration": "01:47" },
+        { "title": "Natsit Ja Kommunistit", "duration": "01:21" },
+        { "title": "Ootsä Valmis Kuolemaan?", "duration": "01:06" },
+        { "title": "Sekasortoa", "duration": "01:29" },
+        { "title": "Todellisuus", "duration": "02:20" },
+        { "title": "Ei Enää Koskaan", "duration": "02:00" },
+        { "title": "Sotatila", "duration": "01:11" },
+        { "title": "Hyvinvoinnin Toinen Puoli", "duration": "01:34" },
+        { "title": "Uskonsota", "duration": "02:22" }
+    ]
+},
+
+{
+    "id": "crucifix",
+    "title": "Crucifix",
+    "artist": "Crucifix",
+    "year": 1981,
+    "genre": "Hardcore Punk",
+    "city": "Berkeley, CA",
+    "country": "USA",
+    "label": "Universal Records",
+    "bitrate": "320 kbps",
+    "img": "img/Crucifix - Crucifix.jpg",
+    "download": "https://www.mediafire.com/file/ks49dpo663xn0v1/Crucifix_%25281981%2529.zip/file",
+    "tracks": [
+        { "title": "Capitulation", "duration": "02:07" },
+        { "title": "You're Too Old", "duration": "00:55" },
+        { "title": "Religion Kills", "duration": "01:15" },
+        { "title": "Permanently Damaged", "duration": "02:37" },
+        { "title": "Brazen Hell", "duration": "03:36" }
+    ]
 }
 ]

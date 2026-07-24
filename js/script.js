@@ -5,7 +5,7 @@ const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
 const SITE_VERSION = '5.2.0';
-const COLLECTION_VERSION = '7.5.0';
+const COLLECTION_VERSION = '7.6.0';
 
 
 let allAlbumsData = [];
