@@ -4,7 +4,7 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '5.2.1';
+const SITE_VERSION = '5.3.0';
 const COLLECTION_VERSION = '7.6.0';
 
 
@@ -245,7 +245,7 @@ function renderAlbumDetail(albums) {
                     <li><span>City</span>${album.city}</li>
                     <li><span>Country</span>${album.country || 'N/A'}</li>
                     <li><span>Label</span>${album.label || 'N/A'}</li>
-                    <li><span>Bitrate</span><span class="bitrate" ${getBitrateColorClass(album.bitrate || '')}">${album.bitrate || 'N/A'}</span></li>
+                    <li><span>Bitrate</span>${album.bitrate || 'N/A'}</li>
                 </ul>
                 ${tracklistHTML}
                 ${similarHTML('is-mobile')}
@@ -387,7 +387,7 @@ async function renderNewsTeaser() {
         if (latestNews.length === 0) return;
 
         container.innerHTML = latestNews.map(news => {
-                    const title = news.querySelector("h3")?.textContent?.trim() || "Untitled news";
+                    const title = news.querySelector(".news-header")?.textContent?.trim() || "Untitled news";
                     const date = getNewsDate(news);
                     const summary = getNewsSummary(news);
 
@@ -406,10 +406,10 @@ async function renderNewsTeaser() {
 
 function getNewsDate(news) {
     const dateParagraph = Array.from(news.querySelectorAll("p"))
-        .find(p => p.textContent.trim().startsWith("Date:"));
+        .find(p => p.textContent.trim().startsWith("ㅤ"));
 
     return dateParagraph
-        ? dateParagraph.textContent.replace(/^Date:\s*/i, "").trim()
+        ? dateParagraph.textContent.replace(/^ㅤ\s*/i, "").trim()
         : "";
 }
 
@@ -418,7 +418,7 @@ function getNewsSummary(news) {
     if (firstListItem) return firstListItem.textContent.trim();
 
     const summaryParagraph = Array.from(news.querySelectorAll("p"))
-        .find(p => !p.textContent.trim().startsWith("Date:"));
+        .find(p => !p.textContent.trim().startsWith("ㅤ"));
 
     return summaryParagraph ? summaryParagraph.textContent.trim() : "";
 }
@@ -553,37 +553,12 @@ var t = setInterval(function () {
                 document.querySelector('#counter').textContent =
                     `You are visitor #${count} on snofolk.space`;
             }
-        });
+        });А
     }
 }, 100);
 
-// 12. FAVORITE ALBUMS
-function renderFavoriteAlbums(albums) {
-    // Edit this array with your favorite album IDs from album.json
-    const favoriteIds = [
-        'smoke-signals',
-        'incorrect-thoughts',
-        'cause-for-alarm',
-        'the-speed-of-twisted-thought'
-    ];
 
-    const favoriteAlbums = albums.filter(album => favoriteIds.includes(album.id));
 
-    const container = document.getElementById('favorite-albums');
-    container.innerHTML = favoriteAlbums.map(album => `
-        <a class="album-mini-link" href="album.html?id=${album.id}">
-            <article class="album-mini">
-                <div class="album-mini-cover">
-                    <img src="${album.img}" alt="${album.title} cover">
-                </div>
-                <div class="album-mini-info">
-                    <h3 class="album-mini-title">${album.title}</h3>
-                    <p class="album-mini-artist">${album.artist}</p>
-                </div>
-            </article>
-        </a>
-    `).join('');
-}
 
 // START
 init();

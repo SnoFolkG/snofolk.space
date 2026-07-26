@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 
-<link rel="manifest" href="/icons/site.webmanifest">
-  
+  <link rel="manifest" href="/icons/site.webmanifest">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
@@ -15,14 +16,19 @@
   <title>Downloads | snofolk.space</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v35/yMJRMIlzdpvBhQQL_Qq7dy0.woff2" as="font" type="font/woff2" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font"
+    type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v35/yMJRMIlzdpvBhQQL_Qq7dy0.woff2" as="font"
+    type="font/woff2" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="preload" href="https://images.pexels.com/photos/4547587/pexels-photo-4547587.jpeg" as="image">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-   <header>
+  <header>
     <a>
       <h1>SnoFolk.Space</h1>
     </a>
@@ -45,9 +51,9 @@
       </a>
     </nav>
   </header>
-  
+
   <main>
-    
+
     <section>
       <h2>Download Full Collection</h2>
       <div class="collection-download">
@@ -55,39 +61,36 @@
           <p><strong>Latest version: v7.2.1</strong></p>
           <p>46 albums · 27+ artists · 571 tracks</p>
         </div>
-        <a href="https://www.mediafire.com/file/4pd3dfoj1u1kzsv/Collection_Version_7_2_1.zip/file" class="download-btn download-btn-big">
+        <a href="https://www.mediafire.com/file/4pd3dfoj1u1kzsv/Collection_Version_7_2_1.zip/file"
+          class="download-btn download-btn-big">
           Download Collection
         </a>
       </div>
     </section>
-    
-<section>
-  <h2>Older Versions</h2>
-    <div id="old-versions"></div>
-</section>
-    
+
+    <section>
+      <h2>Older Versions</h2>
+      <div id="old-versions"></div>
+    </section>
+
     <section>
       <h2>Albums</h2>
-<div class="search-wrap"> 
-    <input 
-        type="text" 
-        id="search-input" 
-        class="search-input" 
-        placeholder="Search by artist, album, year, city or country..." 
-        autocomplete="off"
-    >
-    <select id="sort-select" class="sort-select" aria-label="Sort albums">
-        <option value="artist-asc">Artist A-Z</option>
-        <option value="artist-desc">Artist Z-A</option>
-    </select>
-</div>
+      <div class="search-wrap">
+        <input type="text" id="search-input" class="search-input"
+          placeholder="Search by artist, album, year, city or country..." autocomplete="off">
+        <select id="sort-select" class="sort-select" aria-label="Sort albums">
+          <option value="artist-asc">Artist A-Z</option>
+          <option value="artist-desc">Artist Z-A</option>
+        </select>
+      </div>
       <div class="albums" id="albums"></div>
     </section>
-    
+
   </main>
 
-    <footer>Stay punk, stay core. Made by SnoFolk. Site version: <span id="collection-version"></span></footer>
-    
+  <footer>Stay punk, stay core. Made by SnoFolk. Site version: <span id="collection-version"></span></footer>
+
   <script src="js/script.js"></script>
 </body>
+
 </html>

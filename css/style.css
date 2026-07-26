@@ -76,7 +76,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
   margin-bottom: 14px;
   letter-spacing: 0.5px;
@@ -120,22 +120,6 @@ strong {
   color: #b35d5d;
 }
 
-.album-meta .bitrate-na {
-  color: var(--text-light);
-}
-
-.album-meta .bitrate-high {
-  color: #44c72d;
-}
-
-.bitrate-medium {
-  color: #dfa52a;
-}
-
-.album-meta .bitrate-low {
-  color: #ce2727;
-}
-
 a.link {
   display: inline-flex;
   align-items: center;
@@ -151,7 +135,7 @@ a.link {
 
 a.link:hover,
 a.link:focus-visible {
-  color: #ffffff;
+  color: var(--text-main);
   opacity: 1;
   border-color: var(--accent);
 }
@@ -250,6 +234,7 @@ nav a.active .nav-icon {
 
 /* === BUTTONS === */
 
+.just-btn,
 .download-btn,
 .download-btn-big,
 .download-btn-cover,
@@ -260,7 +245,7 @@ nav a.active .nav-icon {
   text-transform: uppercase;
   text-align: center;
   background: var(--button-color);
-  color: #ffffff;
+  color: var(--text-main);
   border: none;
   cursor: pointer;
   box-shadow: 4px 4px 0px var(--accent);
@@ -273,15 +258,17 @@ nav a.active .nav-icon {
   min-height: 40px;
 }
 
+.just-btn:hover,
 .download-btn:hover,
 .download-btn-big:hover,
 .download-btn-cover:hover,
 .random-btn:hover {
   box-shadow: 0px 0px 0px var(--accent);
   background: var(--accent);
-  color: #ffffff;
+  color: var(--text-main);
 }
 
+.just-btn:active,
 .download-btn:active,
 .download-btn-big:active,
 .download-btn-cover:active,
@@ -304,7 +291,7 @@ nav a.active .nav-icon {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   text-align: center;
-  color: #aaaaaa;
+  color: var(--text-dim);
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
@@ -337,7 +324,8 @@ nav a.active .nav-icon {
   letter-spacing: 0.5px;
 }
 
-.random-btn {
+.random-btn,
+.just-btn {
   padding: 10px 18px;
   font-size: 12px;
 }
@@ -346,7 +334,7 @@ nav a.active .nav-icon {
   display: inline-block;
   border: 1px solid var(--border-color);
   padding: 0.5rem 1.2rem;
-  color: #fff;
+  color: var(--text-main);
   text-decoration: none;
   font-size: 0.9rem;
   transition:
@@ -390,11 +378,48 @@ nav a.active .nav-icon {
   margin-top: -5px;
 }
 
-/* === NEWS === */
+/* === SUPPORT SECTION ===*/
 
-.aboutme h2 {
+.support-section {
+  border: 1px solid var(--border-color);
+  background: var(--blocks-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.support-section p {
+  color: var(--text-dim);
+  margin-bottom: 1.2rem;
+}
+
+.support-section p a {
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+.support-section p a:hover {
   color: var(--text-main);
 }
+
+/* === SUPPORTERS PAGE ===*/
+
+.supporters-names-section {
+  text-align: center;
+  gap: 1px;
+  margin-top: -5px;
+}
+
+.supporters-names-section ol {
+  display: inline-block;
+  columns: 3;
+  font-size: 17;
+}
+
+.nobody {
+  color: var(--text-dim);
+}
+
+/* === NEWS === */
 
 .news {
   padding: 18px;
@@ -402,6 +427,10 @@ nav a.active .nav-icon {
   border: 1px solid var(--border-color);
   margin-bottom: 15px;
   transition: background var(--transition);
+}
+
+.aboutme h2 {
+  color: var(--text-main);
 }
 
 .news h3 {
@@ -416,6 +445,20 @@ nav a.active .nav-icon {
   margin: 4px 0 10px 0;
 }
 
+.news-date {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-family: monospace;
+  margin-bottom: 5px;
+}
+
+.news-header {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
 /* === POPULAR ALBUMS (I DONT KNOW, BUT...) === */
 
 .popular-albums {
@@ -424,20 +467,6 @@ nav a.active .nav-icon {
   gap: 14px;
   margin-top: 16px;
   justify-content: space-between;
-}
-
-.album-mini img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.album-mini p {
-  font-size: 11px;
-  margin-top: 5px;
-  margin-bottom: 0;
-  color: var(--text-light);
 }
 
 /* === NEW ALBUMS & ALBUM CARDS === */
@@ -503,28 +532,18 @@ nav a.active .nav-icon {
 
 .album-mini-artist,
 .album p {
-  font-size: 13px;
-  color: var(--text-muted);
+  font-size: 11px;
+  color: var(--text-dim);
   letter-spacing: 0.04em;
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .album-mini-title,
 .album h3 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 750;
-  color: #fff;
-  line-height: 1.5;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  line-clamp: 2;
-
-  overflow: hidden;
-  margin: 0 0 3px;
+  color: var(--text-main);
+  margin: 0 0 2px;
 }
 
 /* === CARD GRID & NEW === */
@@ -622,6 +641,7 @@ nav a.active .nav-icon {
 footer {
   text-align: center;
   padding: 18px;
+  padding-bottom: 25px;
   font-size: 13px;
   color: var(--text-dim);
 }
@@ -976,7 +996,7 @@ footer {
 }
 
 .lucky-inner p {
-  color: #888;
+  color: var(--text-dim);
   margin-bottom: 1.2rem;
 }
 
@@ -1070,7 +1090,6 @@ footer {
     width: 100%;
   }
 }
-
 
 @media (max-width: 600px) {
   main {
