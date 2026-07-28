@@ -1089,6 +1089,10 @@ footer {
   .album-info-col {
     width: 100%;
   }
+
+  .supporters-names-section ol {
+    display: grid;
+  }
 }
 
 @media (max-width: 600px) {
