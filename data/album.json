@@ -715,7 +715,7 @@
         "country": "USA",
         "label": "X-Claim! Records",
         "bitrate": "192 kbps",
-        "img": "img/Jerry's Kids - Unreleased EP (1982).jpg",
+        "img": "img/~NoArtworkAvailable.jpg",
         "download": "https://www.mediafire.com/file/jq1thc1srh64nrx/Unreleased_EP_%25281982%2529.zip/file",
         "tracks": [
             {
@@ -3352,7 +3352,7 @@
     "country": "USA",
     "label": "Not on label",
     "bitrate": "320 kbps",
-    "img": "img/Pent-Up Aggression - Unreleased LP.jpg",
+    "img": "img/~NoArtworkAvailable.jpg",
     "download": "https://www.mediafire.com/file/33vl682mkw385tg/Unreleased_LP_%25281985%2529.zip/file",
 "tracks": [
     { "title": "Society", "length": "1:12" },

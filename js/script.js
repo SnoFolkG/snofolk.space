@@ -5,7 +5,7 @@ const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
 const SITE_VERSION = '5.3.1';
-const COLLECTION_VERSION = '7.7.0';
+const COLLECTION_VERSION = '7.7.1';
 
 
 let allAlbumsData = [];
@@ -445,8 +445,7 @@ function renderCollectionVersions() {
     versionsContainer.innerHTML = '';
 
     const collectionVersions = [
-        { version: "v6.0.0", date: "13.05.2026", file: "https://www.mediafire.com/file/yxzjxlchrotw26k/Collection_v6_0_0.zip/file" },
-        { version: "v5.5.0", date: "07.05.2026", file: "https://www.mediafire.com/file/bwpijt88xf8fr0a/Collection_v5_5_0.zip/file" }
+        { version: "v6.0.0", date: "13.05.2026", file: "https://www.mediafire.com/file/yxzjxlchrotw26k/Collection_v6_0_0.zip/file" }
     ];
 
     collectionVersions.forEach(v => {
