@@ -3327,7 +3327,7 @@
     "bitrate": "320 kbps",
     "img": "img/Pent-Up Aggression - Defining The Problem.jpg",
     "download": "https://www.mediafire.com/file/nswee3o750tcwfm/Defining_The_Problem_%25281986%2529.zip/file",
-"tracks": [
+    "tracks": [
     { "title": "Elitest Scenes", "length": "1:50" },
     { "title": "Relationshit", "length": "1:06" },
     { "title": "Hardcore Meat Department", "length": "1:11" },
@@ -3354,7 +3354,7 @@
     "bitrate": "320 kbps",
     "img": "img/~NoArtworkAvailable.jpg",
     "download": "https://www.mediafire.com/file/33vl682mkw385tg/Unreleased_LP_%25281985%2529.zip/file",
-"tracks": [
+    "tracks": [
     { "title": "Society", "length": "1:12" },
     { "title": "Elitist Scenes", "length": "1:42" },
     { "title": "Track 3", "length": "0:56" },
@@ -3374,5 +3374,50 @@
     { "title": "Apathy", "length": "1:16" },
     { "title": "Track 18", "length": "1:26" }
 ]
+},
+
+{
+    "id": "double-o",
+    "title": "Double-O",
+    "artist": "Double-O",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Washington, D.C.",
+    "country": "USA",
+    "label": "R&B / Dischord Records",
+    "bitrate": "160 kbps",
+    "img": "img/Double-O - Double-O.jpg",
+    "download": "https://www.mediafire.com/file/mx75aygnj9lxego/Double-O_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "You've Lost", "duration": "01:44" },
+        { "title": "Is It Better", "duration": "02:23" },
+        { "title": "Grey To Black", "duration": "01:38" },
+        { "title": "Death Of A Friend", "duration": "04:24" },
+        { "title": "There's No Reasoning", "duration": "01:36" }
+    ]
+},
+
+{
+    "id": "kicked-out-of-the-scene",
+    "title": "Kicked Out Of The Scene",
+    "artist": "Graven Image",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Richmond, Virginia",
+    "country": "USA",
+    "label": "Eskimo Records",
+    "bitrate": "256 kbps",
+    "img": "img/Graven Image - Kicked Out Of The Scene.jpg",
+    "download": "https://www.mediafire.com/file/nw3ewl08hl29glj/Kicked_Out_of_the_Scene_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "Day After", "duration": "01:19" },
+        { "title": "Close Your Eyes", "duration": "02:00" },
+        { "title": "Operation Shrink", "duration": "02:02" },
+        { "title": "Wrong way to Utopia", "duration": "01:28" },
+        { "title": "Double Life", "duration": "01:27" },
+        { "title": "Dear Abby", "duration": "01:13" },
+        { "title": "Nails and Thorns", "duration": "01:31" }
+    ]
 }
+
 ]
