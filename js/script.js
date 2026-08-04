@@ -4,8 +4,8 @@
 const DATA_URL = '/data/album.json';
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = '5.3.1';
-const COLLECTION_VERSION = '7.7.1';
+const SITE_VERSION = '5.3.0';
+const COLLECTION_VERSION = '7.8.0';
 
 
 let allAlbumsData = [];
@@ -315,8 +315,6 @@ function renderDownloadsGrid(albumsToRender) {
     });
 }
 
-
-
 function sortDownloadsAlbums(albums, sort = downloadsState.sort) {
     const direction = sort === 'artist-desc' ? -1 : 1;
 
@@ -338,6 +336,7 @@ function getFilteredDownloadsAlbums(albums) {
         String(a.year).includes(q) ||
         (a.city && a.city.toLowerCase().includes(q)) ||
         (a.country && a.country.toLowerCase().includes(q))
+        (a.label && a.label.toLowerCase().includes(q))
     );
 }
 
@@ -523,6 +522,7 @@ function initDownloadsControls(albums) {
             updateDownloadsGrid(albums);
         });
     }
+
 }
 
 // 11. STATS
