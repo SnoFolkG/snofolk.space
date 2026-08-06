@@ -735,7 +735,8 @@ footer {
   margin-bottom: 1rem;
 }
 
-.album-meta {
+.album-meta,
+.album-extra {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
@@ -744,12 +745,21 @@ footer {
   gap: 0.5rem;
 }
 
-.album-meta li span {
+.album-meta li span,
+.album-extra li span {
   display: block;
   font-size: 0.7rem;
   text-transform: uppercase;
   opacity: 0.5;
   letter-spacing: 0.1em;
+}
+
+.album-extra li span {
+  display: grid;
+}
+
+.album-extra {
+    grid-template-columns: none;
 }
 
 .album-link {
@@ -1071,11 +1081,18 @@ footer {
     display: inline-block;
   }
 
-  .album-meta {
+  .album-meta,
+  .album-extra {
     display: inline-block;
     columns: 2;
     text-align: center;
     width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .album-extra {
+    display: grid;
+    columns: none;
   }
 
   .album-meta li {

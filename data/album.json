@@ -1676,6 +1676,7 @@
         "country": "USA",
         "label": "Non-Official",
         "bitrate": "",
+        "extra": "Collected by me",
         "img": "img/Misfits - Beware - All EPs Collection (Non-Official).jpg",
         "download": "https://www.mediafire.com/file/fui74qocagfy9tv/Beware_All_EPs_Collection_%25281984%2529.zip/file",
         "tracks": [
@@ -3323,8 +3324,9 @@
     "genre": "Hardcore Punk",
     "city": "Des Moines, Iowa",
     "country": "USA",
-    "label": "Not on label (Probably, I dont know)",
+    "label": "",
     "bitrate": "320 kbps",
+    "extra": "I don't know is it album on label or not, so I write nothing",
     "img": "img/Pent-Up Aggression - Defining The Problem.jpg",
     "download": "https://www.mediafire.com/file/nswee3o750tcwfm/Defining_The_Problem_%25281986%2529.zip/file",
     "tracks": [
@@ -3407,6 +3409,7 @@
     "country": "USA",
     "label": "Eskimo Records",
     "bitrate": "256 kbps",
+    "extra": "",
     "img": "img/Graven Image - Kicked Out of the Scene.jpg",
     "download": "https://www.mediafire.com/file/nw3ewl08hl29glj/Kicked_Out_of_the_Scene_%25281983%2529.zip/file",
     "tracks": [
