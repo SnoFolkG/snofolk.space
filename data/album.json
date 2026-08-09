@@ -3322,7 +3322,7 @@
     "artist": "Pent-Up Aggression",
     "year": 1986,
     "genre": "Hardcore Punk",
-    "city": "Des Moines, Iowa",
+    "city": "Des Moines, IA",
     "country": "USA",
     "label": "",
     "bitrate": "320 kbps",
@@ -3350,7 +3350,7 @@
     "artist": "Pent-Up Aggression",
     "year": 1986,
     "genre": "Hardcore Punk",
-    "city": "Des Moines, Iowa",
+    "city": "Des Moines, IA",
     "country": "USA",
     "label": "Not on label",
     "bitrate": "320 kbps",
@@ -3405,7 +3405,7 @@
     "artist": "Graven Image",
     "year": 1983,
     "genre": "Hardcore Punk",
-    "city": "Richmond, Virginia",
+    "city": "Richmond, VA",
     "country": "USA",
     "label": "Eskimo Records",
     "bitrate": "256 kbps",
@@ -3420,6 +3420,200 @@
         { "title": "Double Life", "duration": "01:27" },
         { "title": "Dear Abby", "duration": "01:13" },
         { "title": "Nails and Thorns", "duration": "01:31" }
+    ]
+},
+
+
+
+
+{
+    "id": "your-skull-is-my-bowl",
+    "title": "Your Skull Is My Bowl!",
+    "artist": "Graven Image / Honor Role",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Richmond, VA",
+    "country": "USA",
+    "label": "Not on label",
+    "bitrate": "320 kbps",
+    "extra": "Cassette self-release; my cover",
+    "img": "img/Split - Your Skull Is My Bowl.jpg",
+    "download": "https://www.mediafire.com/file/oedmjd9s5jziuar/Your_Skull_Is_My_Bowl_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "Living in the 60's (Honor Role)", "duration": "00:35" },
+        { "title": "Bowling for Bibles (Honor Role)", "duration": "01:25" },
+        { "title": "War (Honor Role)", "duration": "00:54" },
+        { "title": "Southern Lifestyle (Honor Role)", "duration": "00:20" },
+        { "title": "I'm a Nerd (Honor Role)", "duration": "00:39" },
+        { "title": "Uptown (Honor Role)", "duration": "00:25" },
+        { "title": "Infanticide (Honor Role)", "duration": "01:02" },
+        { "title": "Profit Prophets (Honor Role)", "duration": "00:30" },
+        { "title": "Cap and Gown (Honor Role)", "duration": "00:26" },
+        { "title": "Child Abuse (Graven Image)", "duration": "00:56" },   
+        { "title": "Fascist State (Graven Image)", "duration": "01:19" },
+        { "title": "Uncomfortable Environment (Graven Image)", "duration": "00:54" },
+        { "title": "My World (Graven Image)", "duration": "00:53" },
+        { "title": "Double Life (Graven Image)", "duration": "01:26" },
+        { "title": "Trigger Happy (Graven Image)", "duration": "01:59" }
+    ]
+},
+
+{
+    "id": "live-at-hard-times",
+    "title": "Live at Hard Times",
+    "artist": "Graven Image",
+    "year": 2020,
+    "genre": "Hardcore Punk",
+    "city": "Richmond, VA",
+    "country": "USA",
+    "label": "",
+    "bitrate": "320 kbps",
+    "extra": "Live; recorded at Hard Times, Richmond, Virginia, 1983",
+    "img": "img/Graven Image - Live at Hard Times.jpg",
+    "download": "https://www.mediafire.com/file/0ix8gbiun6kz5j0/Live_At_Hard_Times_%25282020%2529.zip/file",
+    "tracks": [
+       { "title": "Narrow Minded", "duration": "01:28" },
+       { "title": "Prep Wavers", "duration": "01:23" },
+       { "title": "Social Shitz/Tri Lateral Commission", "duration": "02:41" },
+       { "title": "Sunday School", "duration": "01:14" },
+       { "title": "Uncomfortable Environment", "duration": "01:03" },
+       { "title": "Don't Axe Me", "duration": "01:26" },
+       { "title": "Operation Shrink", "duration": "02:15" },
+       { "title": "Constant Struggle", "duration": "02:40" },
+       { "title": "Facist Sate", "duration": "01:25" },
+       { "title": "Burnt Offerings", "duration": "01:16" },
+       { "title": "The Day After", "duration": "02:07" },
+       { "title": "Close Your Eyes", "duration": "01:44" },
+       { "title": "Meaning", "duration": "01:22" },
+       { "title": "The Shelters", "duration": "01:31" },
+       { "title": "Dear Abby", "duration": "01:40" },
+       { "title": "Nails And Thorns", "duration": "01:44" },
+       { "title": "Wrong Way To Utopia", "duration": "01:58" },
+       { "title": "Double Life", "duration": "02:31" }
+    ]
+},
+
+{
+    "id": "it-bled-like-a-stuck-pig",
+    "title": "It bled Like a Stuck Pig",
+    "artist": "Honor Role",
+    "year": 1984,
+    "genre": "Hardcore Punk",
+    "city": "Richmond, VA",
+    "country": "USA",
+    "label": "Eskimo Records",
+    "bitrate": "320 kbps",
+    "extra": "",
+    "img": "img/Honor Role - It bled Like a Stuck Pig.jpg",
+    "download": "https://www.mediafire.com/file/lgqxueoeero4kyl/It_Bled_Like_A_Stuck_Pig_%25281984%2529.zip/file",
+    "tracks": [
+        { "title": "An Hour Behind", "duration": "00:40" },
+        { "title": "New Hope", "duration": "00:55" },
+        { "title": "Bowling For Bibles", "duration": "01:14" },
+        { "title": "Chocolate Milk", "duration": "00:54" },
+        { "title": "I'm A Nerd", "duration": "00:46" },
+        { "title": "Vance Picked Up Dot Over A Bush By The Tail", "duration": "00:55" },
+        { "title": "Early Grave", "duration": "01:31" },
+        { "title": "B.D.K.O.", "duration": "00:41" },
+        { "title": "Dot Is In Your Car & Boy, Does She Smell Bad", "duration": "01:17" }
+    ]
+},
+
+{
+    "id": "contradiction",
+    "title": "Contradiction",
+    "artist": "Sluggo",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Cincinnati, OH",
+    "country": "USA",
+    "label": "Shag Dog Records",
+    "bitrate": "320 kbps",
+    "extra": "",
+    "img": "img/Sluggo - Contradiction.jpg",
+    "download": "https://www.mediafire.com/file/77zpuc72fof4jec/Contradiction_%25281983%2529.zip/file",
+    "tracks": [
+{ "title": "Stitch", "duration": "01:07" },
+{ "title": "Erase The Thought", "duration": "02:02" },
+{ "title": "Suburban Haven", "duration": "01:20" },
+{ "title": "Of It", "duration": "01:32" },
+{ "title": "Figure It Out", "duration": "01:00" },
+{ "title": "Contradiction", "duration": "01:12" },
+{ "title": "Up & Over", "duration": "01:10" },
+{ "title": "Too Bad", "duration": "00:42" }
+    ]
+},
+
+{
+    "id": "eighty-four",
+    "title": "Eighty-Four",
+    "artist": "Sluggo",
+    "year": 2021,
+    "genre": "Hardcore Punk",
+    "city": "Cincinnati, OH",
+    "country": "USA",
+    "label": "",
+    "bitrate": "320 kbps",
+    "extra": "Recorded August 25, 1984 at Group Effort Sound Studio, Erlanger, KY",
+    "img": "img/Sluggo - Eighty-Four.jpg",
+    "download": "https://www.mediafire.com/file/6chunm38qss4sam/Eighty-Four_%25282021%2529.zip/file",
+    "tracks": [
+       { "title": "First Step", "duration": "01:39" },
+{ "title": "Put It Off", "duration": "01:28" },
+{ "title": "Daktari", "duration": "01:30" },
+{ "title": "Demise", "duration": "02:30" },
+{ "title": "Friends I've Made", "duration": "03:06" },
+{ "title": "What Happens Next?", "duration": "01:26" }
+    ]
+},
+
+{
+    "id": "white-pigs",
+    "title": "White Pigs",
+    "artist": "White Pigs",
+    "year": 1984,
+    "genre": "Hardcore Punk",
+    "city": "Hartford, CT",
+    "country": "USA",
+    "label": "Swinch Kwilsen Record Productions",
+    "bitrate": "160 kbps",
+    "extra": "",
+    "img": "img/White Pigs - White Pigs.jpg",
+    "download": "https://www.mediafire.com/file/zs7x1c2ssj0r9n4/White_Pigs_%25281984%2529.zip/file",
+    "tracks": [
+{ "title": "Victims", "duration": "01:26" },
+{ "title": "Dropout", "duration": "00:20" },
+{ "title": "New Life", "duration": "02:26" },
+{ "title": "Screamer", "duration": "00:31" },
+{ "title": "Pigs Theme", "duration": "01:50" },
+{ "title": "Early Grave", "duration": "01:54" },
+{ "title": "Fukfukfuk", "duration": "00:30" },
+{ "title": "White Pigs", "duration": "02:03" }
+    ]
+},
+
+{
+    "id": "expect-the-worst",
+    "title": "Expect The Worst",
+    "artist": "Worst",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "NJ",
+    "country": "USA",
+    "label": "Mutha Records",
+    "bitrate": "320 kbps",
+    "extra": "",
+    "img": "img/Worst - Expect The Worst.jpg",
+    "download": "https://www.mediafire.com/file/zziud6lc3o8fo3z/Expect_the_Worst_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "We Are Those", "duration": "00:56" },
+        { "title": "Emergency Room", "duration": "01:17" },
+        { "title": "I Don't Know / Going To New York", "duration": "02:32" },
+        { "title": "Go to Hell", "duration": "01:33" },
+        { "title": "Face", "duration": "01:07" },
+        { "title": "City of Sin", "duration": "00:55" },
+        { "title": "Loud & Fast", "duration": "01:21" },
+        { "title": "I Wanna Stop", "duration": "01:15" }
     ]
 }
 
