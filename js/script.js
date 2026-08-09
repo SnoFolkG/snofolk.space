@@ -2,8 +2,8 @@
 const DATA_URL = "/data/album.json";
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = "5.4.0";
-const COLLECTION_VERSION = "7.8.0";
+const SITE_VERSION = "5.4.1";
+const COLLECTION_VERSION = "7.9.0";
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = "snofolk-what-access";
@@ -241,11 +241,15 @@ function renderAlbumDetail(albums) {
                     <li><span>Bitrate</span>${album.bitrate || "N/A"}</li>
                 </ul>
 
-                ${album.extra ? `
+                ${
+                  album.extra
+                    ? `
                 <ul class="album-extra">
                     <li><span>Extra Info</span>${album.extra}</li>
                 </ul>
-                ` : ""}
+                `
+                    : ""
+                }
 
                 ${tracklistHTML}
                 ${similarHTML("is-mobile")}
@@ -331,15 +335,15 @@ function getFilteredDownloadsAlbums(albums) {
   const q = downloadsState.query.trim().toLowerCase();
   if (!q) return albums;
 
-return albums.filter(
-  (a) =>
-    a.title.toLowerCase().includes(q) ||
-    a.artist.toLowerCase().includes(q) ||
-    String(a.year).includes(q) ||
-    (a.city && a.city.toLowerCase().includes(q)) ||
-    (a.country && a.country.toLowerCase().includes(q)) ||
-    (a.label && a.label.toLowerCase().includes(q))
-)
+  return albums.filter(
+    (a) =>
+      a.title.toLowerCase().includes(q) ||
+      a.artist.toLowerCase().includes(q) ||
+      String(a.year).includes(q) ||
+      (a.city && a.city.toLowerCase().includes(q)) ||
+      (a.country && a.country.toLowerCase().includes(q)) ||
+      (a.label && a.label.toLowerCase().includes(q)),
+  );
 }
 
 function updateDownloadsGrid(albums) {
@@ -558,13 +562,16 @@ function renderStats(albums) {
     (sum, a) => sum + (a.tracks?.length || 0),
     0,
   );
-  const artists = new Set(albums.map((a) => a.artist)).size;
+  const artists =
+    new Set(
+      albums.flatMap((a) => (Array.isArray(a.artist) ? a.artist : [a.artist])),
+    ).size - 2;
   const years = albums.map((a) => Number(a.year)).filter((y) => !isNaN(y));
   const yearRange = Math.min(...years) + "-" + Math.max(...years);
 
   nums[0].textContent = totalTracks;
   nums[1].textContent = albums.length;
-  nums[2].textContent = artists;
+  nums[2].textContent = artists + "+";
   nums[3].textContent = yearRange;
 }
 
