@@ -745,6 +745,10 @@ footer {
   gap: 0.5rem;
 }
 
+.album-meta {
+  margin-bottom: 5%;
+}
+
 .album-meta li span,
 .album-extra li span {
   display: block;
@@ -1109,6 +1113,10 @@ footer {
 
   .supporters-names-section ol {
     display: grid;
+  }
+ 
+  .album-meta {
+    margin-bottom: 10px;
   }
 }
 

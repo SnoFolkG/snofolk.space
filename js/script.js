@@ -2,7 +2,7 @@
 const DATA_URL = "/data/album.json";
 
 // Site and Collection version (semantic version strings)
-const SITE_VERSION = "5.4.1";
+const SITE_VERSION = "5.4.2";
 const COLLECTION_VERSION = "7.9.0";
 
 let allAlbumsData = [];
@@ -233,12 +233,12 @@ function renderAlbumDetail(albums) {
                 </h2>
                 <p class="album-artist">${album.artist}</p>
                 <ul class="album-meta">
-                    <li><span>Year</span>${album.year}</li>
-                    <li><span>Genre</span>${album.genre}</li>
-                    <li><span>City</span>${album.city || "N/A"}</li>
-                    <li><span>Country</span>${album.country || "N/A"}</li>
-                    <li><span>Label</span>${album.label || "N/A"}</li>
-                    <li><span>Bitrate</span>${album.bitrate || "N/A"}</li>
+                    <li class="album-single-meta"><span>Year</span>${album.year}</li>
+                    <li class="album-single-meta"><span>Genre</span>${album.genre}</li>
+                    <li class="album-single-meta"><span>City</span>${album.city || "N/A"}</li>
+                    <li class="album-single-meta"><span>Country</span>${album.country || "N/A"}</li>
+                    <li class="album-single-meta"><span>Label</span>${album.label || "N/A"}</li>
+                    <li class="album-single-meta"><span>Bitrate</span>${album.bitrate || "N/A"}</li>
                 </ul>
 
                 ${
