@@ -3,7 +3,7 @@ const DATA_URL = "/data/album.json";
 
 // Site and Collection version (semantic version strings)
 const SITE_VERSION = "5.4.2";
-const COLLECTION_VERSION = "7.9.0";
+const COLLECTION_VERSION = "7.9.0 (Part Two)";
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = "snofolk-what-access";

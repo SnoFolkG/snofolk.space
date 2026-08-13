@@ -1548,9 +1548,9 @@
         "genre": "Hardcore Punk",
         "city": "New York, NY",
         "country": "USA",
-        "label": "New Red Archives",
+        "label": "R Radical Records",
         "bitrate": "320 kbps",
-        "img": "img/Reagan Youth - Youth Anthems for the New Order (1984).jpg",
+        "img": "img/Reagan Youth - Youth Anthems for the New Order.jpg",
         "download": "https://www.mediafire.com/file/f0cippjenkhoixp/Youth_Anthems_for_the_New_Order_%25281984%2529.zip/file",
         "tracks": [
             {
@@ -3615,6 +3615,44 @@
         { "title": "Loud & Fast", "duration": "01:21" },
         { "title": "I Wanna Stop", "duration": "01:15" }
     ]
-}
+},
+
+    {
+        "id": "a-collection-of-pop-classics",
+        "title": "A Collection Of Pop Classics",
+        "artist": "Reagan Youth",
+        "year": 1994,
+        "genre": "Hardcore Punk",
+        "city": "New York, NY",
+        "country": "USA",
+        "label": "New Red Archives",
+        "bitrate": "320 kbps",
+        "img": "img/Reagan Youth - A Collection Of Pop Classics.jpg",
+        "download": "https://www.mediafire.com/file/rqvjeyn9sd7ww49/A_Collection_Of_Pop_Classics_%25281994%2529.zip/file",
+        "tracks": [
+            { "title": "(Are You) Happy?", "duration": "01:34" },
+            { "title": "Acid Rain", "duration": "01:55" },
+        { "title": "Anytown", "duration": "02:00" },
+        { "title": "Back To The Garden (Parts I-Iv)", "duration": "04:07" },
+        { "title": "Brave New World", "duration": "04:30" },
+        { "title": "Degenerated", "duration": "02:22" },
+        { "title": "Get The Ruler Out", "duration": "02:25" },
+        { "title": "Go Nowhere", "duration": "01:22" },
+        { "title": "Heavy Metal Shuffle", "duration": "04:38" },
+        { "title": "I Hate Hate", "duration": "02:01" },
+        { "title": "In Dog We Trust", "duration": "02:51" },
+        { "title": "It's A Beautiful Day", "duration": "03:53" },
+        { "title": "Jesus Was A Communist", "duration": "01:44" },
+        { "title": "Miss Teen America", "duration": "02:46" },
+        { "title": "New Aryans", "duration": "01:17" },
+        { "title": "No Class", "duration": "01:35" },
+        { "title": "One Holy Bible", "duration": "06:12" },
+        { "title": "Queen Babylon", "duration": "05:12" },
+        { "title": "Reagan Youth", "duration": "01:16" },
+        { "title": "U.S.A.", "duration": "01:23" },
+        { "title": "Urban Savages", "duration": "01:24" },
+        { "title": "What Will The Neighbors Think?", "duration": "03:50" }
+    ]
+    }
 
 ]
