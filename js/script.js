@@ -3,7 +3,7 @@ const DATA_URL = "/data/album.json";
 
 // Site and Collection version (semantic version strings)
 const SITE_VERSION = "5.4.2";
-const COLLECTION_VERSION = "7.9.0 (Part Two)";
+const COLLECTION_VERSION = "8.0.0";
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = "snofolk-what-access";
@@ -463,7 +463,12 @@ function renderCollectionVersions() {
 
   const collectionVersions = [
     {
-      version: "v6.0.0",
+      version: "v7.2.1 (not recomended)",
+      date: "10.07.2026",
+      file: "https://www.mediafire.com/file/4pd3dfoj1u1kzsv/Collection_Version_7_2_1.zip/file",
+    },
+    {
+      version: "v6.0.0 (not recomended)",
       date: "13.05.2026",
       file: "https://www.mediafire.com/file/yxzjxlchrotw26k/Collection_v6_0_0.zip/file",
     },
