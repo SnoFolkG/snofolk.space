@@ -1,7 +1,7 @@
 // 1. DATA PATH
 const DATA_URL = "/data/album.json";
 
-const SITE_VERSION = "5.4.3";
+const SITE_VERSION = "5.5.1";
 const COLLECTION_VERSION = "8.0.0 (ID3v2.3)";
 
 let allAlbumsData = [];
