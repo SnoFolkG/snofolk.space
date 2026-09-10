@@ -3665,9 +3665,9 @@
     "country": "USA",
     "label": "Flipside Records",
     "bitrate": "192 kbps",
-    "extra": "https://www.mediafire.com/file/z6lbri4dafg07gw/Iconoclast_%25281985%2529.zip/file",
+    "extra": "https://www.mediafire.com/file/z4lbri4dafg07gw/Iconoclast_%25281985%2529.zip/file",
     "img": "img/Iconoclast - Iconoclast.jpg",
-    "download": "",
+    "download": "https://www.mediafire.com/file/z6lbri4dafg07gw/Iconoclast_%25281985%2529.zip/file",
     "tracks": [
         { "title": "Prisoners Of Existence", "duration": "03:08" },
         { "title": "Battlefields / Things Of Beauty", "duration": "03:04" },
@@ -3686,7 +3686,7 @@
     "label": "Not on label",
     "bitrate": "192 kbps",
     "extra": "Demo-cassete; the cover isn't original; title isn't original",
-    "img": "img/Iconoclast - After The Massacre.jpg",
+    "img": "img/Iconoclast - After the Massacre.jpg",
     "download": "https://www.mediafire.com/file/42ppr9lm0e7ucdf/After_the_Massacre_%25281983%2529.zip/file",
     "tracks": [
         { "title": "After The Massacre", "duration": "01:56" },
