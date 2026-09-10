@@ -3653,6 +3653,49 @@
         { "title": "Urban Savages", "duration": "01:24" },
         { "title": "What Will The Neighbors Think?", "duration": "03:50" }
     ]
-    }
+    },
 
+    {
+    "id": "iconoclast",
+    "title": "Iconoclast",
+    "artist": "Iconoclast",
+    "year": 1985,
+    "genre": "Hardcore Punk",
+    "city": "Sylmar, CA",
+    "country": "USA",
+    "label": "Flipside Records",
+    "bitrate": "192 kbps",
+    "extra": "https://www.mediafire.com/file/z6lbri4dafg07gw/Iconoclast_%25281985%2529.zip/file",
+    "img": "img/Iconoclast - Iconoclast.jpg",
+    "download": "",
+    "tracks": [
+        { "title": "Prisoners Of Existence", "duration": "03:08" },
+        { "title": "Battlefields / Things Of Beauty", "duration": "03:04" },
+        { "title": "In These Times...", "duration": "03:34" }
+    ]
+},
+
+{
+    "id": "after-the-massacre",
+    "title": "After The Massacre",
+    "artist": "Iconoclast",
+    "year": 1983,
+    "genre": "Hardcore Punk",
+    "city": "Sylmar, CA",
+    "country": "USA",
+    "label": "Not on label",
+    "bitrate": "192 kbps",
+    "extra": "Demo-cassete; the cover isn't original; title isn't original",
+    "img": "img/Iconoclast - After The Massacre.jpg",
+    "download": "https://www.mediafire.com/file/42ppr9lm0e7ucdf/After_the_Massacre_%25281983%2529.zip/file",
+    "tracks": [
+        { "title": "After The Massacre", "duration": "01:56" },
+        { "title": "The End", "duration": "01:50" },
+        { "title": "Death Race", "duration": "02:32" },
+        { "title": "Bodies, Bones And Skulls", "duration": "01:48" },
+        { "title": "Battlefields", "duration": "01:43" },
+        { "title": "Things Of Beauty", "duration": "01:16" },
+        { "title": "Not Me", "duration": "01:38" }
+    ]
+}
 ]

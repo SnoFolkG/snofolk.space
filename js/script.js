@@ -2,7 +2,7 @@
 const DATA_URL = "/data/album.json";
 
 const SITE_VERSION = "5.5.1";
-const COLLECTION_VERSION = "8.0.0 (ID3v2.3)";
+const COLLECTION_VERSION = "8.1.0 (ID3v2.3)";
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = "snofolk-what-access";
