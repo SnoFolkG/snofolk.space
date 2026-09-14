@@ -3697,5 +3697,26 @@
         { "title": "Things Of Beauty", "duration": "01:16" },
         { "title": "Not Me", "duration": "01:38" }
     ]
+},
+
+{
+    "id": "out-of-vogue",
+    "title": "Out of Vogue",
+    "artist": "Middle Class",
+    "year": 1978,
+    "genre": "Punk Rock",
+    "city": "Santa Ana, CA",
+    "country": "USA",
+    "label": "Joke Records",
+    "bitrate": "320 kbps",
+    "extra": "",
+    "img": "img/Middle Class - Out of Vogue.jpg",
+    "download": "",
+    "tracks": [
+        { "title": "Out of Vogue", "duration": "01:00" },
+        { "title": "You Belong", "duration": "01:07" },
+        { "title": "Situations", "duration": "01:44" },
+        { "title": "Insurgence", "duration": "01:01" }
+    ]
 }
 ]

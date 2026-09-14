@@ -1,8 +1,8 @@
 // 1. DATA PATH
 const DATA_URL = "/data/album.json";
 
-const SITE_VERSION = "5.5.1";
-const COLLECTION_VERSION = "8.1.0 (ID3v2.3)";
+const SITE_VERSION = "5.5.2";
+const COLLECTION_VERSION = "8.2.0";
 
 let allAlbumsData = [];
 const WHAT_ACCESS_KEY = "snofolk-what-access";
