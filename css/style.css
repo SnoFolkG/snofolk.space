@@ -638,12 +638,16 @@ nav a.active .nav-icon {
 
 /* === FOOTER === */
 
-footer {
+footer,
+.lower-footer {
   text-align: center;
   padding: 18px;
-  padding-bottom: 25px;
   font-size: 13px;
   color: var(--text-dim);
+}
+
+.lower-footer {
+  padding-top: 0px;
 }
 
 /* === COLLECTION DOWNLOAD AREA === */
@@ -665,7 +669,7 @@ footer {
 
 /* === OLD COLLECTIONS DOWNLOAD AREA === */
 
-.version-row {
+.older-version-card {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -691,7 +695,7 @@ footer {
 
 /* === ALBUM DETAILS PAGE === */
 
-.album-detail-wrap {
+.album-detail-page {
   display: flex;
   gap: 2rem;
   max-width: 900px;
@@ -699,7 +703,7 @@ footer {
   align-items: flex-start;
 }
 
-.album-cover-col {
+.album-links-side {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -709,14 +713,14 @@ footer {
   max-width: 100%;
 }
 
-.album-cover-big {
+.album-page-cover {
   width: 280px;
   height: 280px;
   object-fit: cover;
   display: block;
 }
 
-.album-info-col {
+.album-info-side {
   flex: 1;
   min-width: 0;
 }
@@ -795,7 +799,7 @@ footer {
 }
 
 .tracklist ol {
-  list-style: none;
+  list-style: 1;
   padding: 0;
   margin: 0;
 }
@@ -813,20 +817,6 @@ footer {
   border-bottom: none;
 }
 
-.track-index {
-  width: 24px;
-  flex-shrink: 0;
-  text-align: right;
-  font-size: 12px;
-  color: var(--text-dim);
-  line-height: 1;
-}
-
-.track-index.is-star {
-  color: var(--accent);
-  font-size: 13px;
-}
-
 .track-name {
   flex: 1;
   min-width: 0;
@@ -834,10 +824,6 @@ footer {
   color: #ddd;
   line-height: 1.4;
   overflow-wrap: anywhere;
-}
-
-.tracklist li.is-star .track-name {
-  color: var(--accent);
 }
 
 .track-duration {
@@ -879,47 +865,52 @@ footer {
   line-height: 1.4;
 }
 
-.similar-grid {
+.similar-albums-grid {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.album-mini-card {
+.similar-album-card {
   display: flex;
   gap: 10px;
   padding: 10px;
   background: var(--blocks-color);
   border: 1px solid var(--border-color);
-  transition: background var(--transition);
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
-.album-mini-card:hover {
+.similar-album-card:hover {
   border-color: var(--accent);
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
-.album-mini-card img {
+.similar-album-card img {
   width: 60px;
   height: 60px;
   object-fit: cover;
   flex-shrink: 0;
 }
 
-.album-mini-card p {
+.similar-album-card p {
   font-size: 11px;
   line-height: 1;
   margin: 0;
   color: var(--text-dim);
 }
 
-.album-mini-card strong {
+.similar-album-card strong {
   font-size: 16px;
   display: block;
   margin-bottom: 2px;
   color: var(--text-light);
 }
 
-.album-mini-card a {
+.similar-album-card a {
   display: flex;
   gap: 10px;
   text-decoration: none;

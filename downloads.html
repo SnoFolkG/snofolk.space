@@ -1,97 +1,944 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
 
-<head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest" />
 
-  <link rel="manifest" href="/icons/site.webmanifest">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark">
+    <title>Downloads | snofolk.space</title>
 
-  <title>Downloads | snofolk.space</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font"
-    type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v35/yMJRMIlzdpvBhQQL_Qq7dy0.woff2" as="font"
-    type="font/woff2" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="preload" href="https://images.pexels.com/photos/4547587/pexels-photo-4547587.jpeg" as="image">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v35/yMJRMIlzdpvBhQQL_Qq7dy0.woff2" as="font" type="font/woff2" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 
-<body>
-  <header>
-    <a>
-      <h1>SnoFolk.Space</h1>
-    </a>
-    <nav>
-      <a href="index.html">
-        <img class="nav-icon" src="img/icons/home.png" alt="" aria-hidden="true">
-        <span class="nav-label">Homepage</span>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a>
+        <h1>SnoFolk.Space</h1>
       </a>
-      <a href="downloads.html" class="active">
-        <img class="nav-icon" src="img/icons/down.png" alt="" aria-hidden="true">
-        <span class="nav-label"><strong>Downloads</strong></span>
-      </a>
-      <a href="news.html">
-        <img class="nav-icon" src="img/icons/news.png" alt="" aria-hidden="true">
-        <span class="nav-label">News</span>
-      </a>
-      <a href="info.html">
-        <img class="nav-icon" src="img/icons/info.png" alt="" aria-hidden="true">
-        <span class="nav-label">Info</span>
-      </a>
-    </nav>
-  </header>
-
-  <main>
-
-    <section>
-      <h2>Download Full Collection</h2>
-      <div class="collection-download">
-        <div class="collection-info">
-          <p><strong>Latest version: v8.0.0 (ID3v1 + ID3v2.3)</strong></p>
-          <p>68 albums · 37+ artists · 784 tracks</p>
-        </div>
-        <a href="https://www.mediafire.com/file/v0jwluk82j74pjr/Collection_v8_0_0.zip/file"
-          class="download-btn download-btn-big">
-          Download Collection
+      <nav>
+        <a href="index.html">
+          <img class="nav-icon" src="img/icons/home.png" alt="" aria-hidden="true" />
+          <span class="nav-label">Homepage</span>
         </a>
-      </div>
-    </section>
+        <a href="downloads.html" class="active">
+          <img class="nav-icon" src="img/icons/down.png" alt="" aria-hidden="true" />
+          <span class="nav-label"><strong>Downloads</strong></span>
+        </a>
+        <a href="news.html">
+          <img class="nav-icon" src="img/icons/news.png" alt="" aria-hidden="true" />
+          <span class="nav-label">News</span>
+        </a>
+        <a href="info.html">
+          <img class="nav-icon" src="img/icons/info.png" alt="" aria-hidden="true" />
+          <span class="nav-label">Info</span>
+        </a>
+      </nav>
+    </header>
 
-    <section>
-      <h2>Older Versions</h2>
-      <div id="old-versions"></div>
-    </section>
+    <main>
+      <!-- LAST COLLECTION -->
+      <section>
+        <h2>Download Full Collection</h2>
+        <div class="collection-download">
+          <div class="collection-info">
+            <p><strong>Latest version: v8.0.0 (ID3v1 + ID3v2.3)</strong></p>
+            <p>68 albums · 37+ artists · 784 tracks</p>
+          </div>
+          <a href="https://www.mediafire.com/file/v0jwluk82j74pjr/Collection_v8_0_0.zip/file" class="download-btn download-btn-big"> Download Collection </a>
+        </div>
+      </section>
 
-    <section>
-      <h2>Albums</h2>
-      <div class="search-wrap">
-        <input type="text" id="search-input" class="search-input"
-          placeholder="Search by artist, album, label, year, city or country..." autocomplete="off">
-        <select id="sort-select" class="sort-select" aria-label="Sort albums">
-          <option value="artist-asc">Artist A-Z</option>
-          <option value="artist-desc">Artist Z-A</option>
-        </select>
-      </div>
-      <div class="albums" id="albums"></div>
-    </section>
+      <!-- OLDER VERSIONS -->
+      <section>
+        <h2>Older Versions</h2>
+        <div class="older-version-card">
+          <span class="version-tag">v7.2.1 (not recomended)</span>
+          <span class="version-date">10.07.2026</span>
+          <a href="https://www.mediafire.com/file/4pd3dfoj1u1kzsv/Collection_Version_7_2_1.zip/file" class="download-btn">Download</a>
+        </div>
 
-  </main>
+        <div class="older-version-card">
+          <span class="version-tag">v6.0.0 (not recomended)</span>
+          <span class="version-date">13.05.2026</span>
+          <a href="https://www.mediafire.com/file/yxzjxlchrotw26k/Collection_v6_0_0.zip/file" class="download-btn">Download</a>
+        </div>
+      </section>
 
-    <footer>Stay punk, stay core. Made by SnoFolk. Site version: <span id="site-version"></span></footer>
-    <footer><a class="link" href="manifesto.html">Manifesto</a></footer>
+      <!-- ALBUMS (OH SHIT, THAT'S A LOT) -->
+      <section>
+        <h2>Albums</h2>
+        <section class="albums">
+          <div class="album-mini">
+            <a href="downloads/damaged.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Black Flag - Damaged (1982).jpg" alt="Damaged" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Damaged</p>
+                <p class="album-mini-artist">Black Flag • 1982</p>
+              </div>
+            </a>
+          </div>
 
-  <script src="js/script.js"></script>
-</body>
+          <div class="album-mini">
+            <a href="downloads/jealous-again.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Black Flag - Jealous Again.jpg" alt="Jealous Again" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Jealous Again</p>
+                <p class="album-mini-artist">Black Flag • 1980</p>
+              </div>
+            </a>
+          </div>
 
+          <div class="album-mini">
+            <a href="downloads/nervous-breakdown.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Black Flag - Nervous Breakdown.jpg" alt="Nervous Breakdown" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Nervous Breakdown</p>
+                <p class="album-mini-artist">Black Flag • 1979</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/six-pack.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Black Flag - Six Pack.jpg" alt="Six Pack" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Six Pack</p>
+                <p class="album-mini-artist">Black Flag • 1981</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/cause-for-alarm.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Cause for Alarm - Cause for Alarm (1982).jpg" alt="Cause for Alarm" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Cause for Alarm</p>
+                <p class="album-mini-artist">Cause for Alarm • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/chemotherapy.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Chemotherapy - Chemotherapy.jpg" alt="Chemotherapy" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Chemotherapy</p>
+                <p class="album-mini-artist">Chemotherapy • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/group-sex.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Circle Jerks - Group Sex (1980).jpg" alt="Group Sex" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Group Sex</p>
+                <p class="album-mini-artist">Circle Jerks • 1980</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/crucifix.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Crucifix - Crucifix.jpg" alt="Crucifix" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Crucifix</p>
+                <p class="album-mini-artist">Crucifix • 1981</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/dehumanization.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Crucifix - Dehumanization.jpg" alt="Dehumanization" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Dehumanization</p>
+                <p class="album-mini-artist">Crucifix • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/hardcore-81.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/DOA - Hardcore '81 (1981).jpg" alt="Hardcore '81" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Hardcore '81</p>
+                <p class="album-mini-artist">D.O.A. • 1981</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/something-better-change.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/DOA - Something Better Change (1980).jpg" alt="Something Better Change" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Something Better Change</p>
+                <p class="album-mini-artist">D.O.A. • 1980</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/war-on-45.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/DOA - War on 45 (1982).jpg" alt="War On 45" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">War On 45</p>
+                <p class="album-mini-artist">D.O.A. • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/american-style.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Deep Wound - American Style.jpg" alt="American Style" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">American Style</p>
+                <p class="album-mini-artist">Deep Wound • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/deep-wound.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Deep Wound - Deep Wound (1983).jpg" alt="Deep Wound" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Deep Wound</p>
+                <p class="album-mini-artist">Deep Wound • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/1980-1986.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Dicks - 1980-1986.jpg" alt="1980-1986" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">1980-1986</p>
+                <p class="album-mini-artist">Dicks • 1997</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/double-o.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Double-O - Double-O.jpg" alt="Double-O" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Double-O</p>
+                <p class="album-mini-artist">Double-O • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/brotherhood.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/DYS - Brotherhood.jpg" alt="Brotherhood" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Brotherhood</p>
+                <p class="album-mini-artist">DYS • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/kill-for-christ.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/FUs - Kill for Christ (1982).jpg" alt="Kill for Christ" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Kill for Christ</p>
+                <p class="album-mini-artist">F.U.'s • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/my-america.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/FU's - My America.jpg" alt="My America" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">My America</p>
+                <p class="album-mini-artist">F.U.'s • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/faith.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Faith - Faith.jpg" alt="Faith" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Faith</p>
+                <p class="album-mini-artist">Faith • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/subject-to-change.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Faith - Subject to Change.jpg" alt="Subject To Change" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Subject To Change</p>
+                <p class="album-mini-artist">Faith • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/land-of-the-lost.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Freeze - Land Of The Lost.jpg" alt="Land Of The Lost" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Land Of The Lost</p>
+                <p class="album-mini-artist">Freeze • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/rabid-reaction.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Freeze - Rabid Reaction.jpg" alt="Rabid Reaction" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Rabid Reaction</p>
+                <p class="album-mini-artist">Freeze • 1985</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/gi.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/The Germs - (GI) (1979).jpg" alt="(GI)" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">(GI)</p>
+                <p class="album-mini-artist">Germs • 1979</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/lexicon-devil.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/The Germs - Lexicon Devil (1978).jpg" alt="Lexicon Devil" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Lexicon Devil</p>
+                <p class="album-mini-artist">Germs • 1978</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/kicked-out-of-the-scene.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Graven Image - Kicked Out of the Scene.jpg" alt="Kicked Out Of The Scene" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Kicked Out Of The Scene</p>
+                <p class="album-mini-artist">Graven Image • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/live-at-hard-times.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Graven Image - Live at Hard Times.jpg" alt="Live at Hard Times" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Live at Hard Times</p>
+                <p class="album-mini-artist">Graven Image • 2020</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/your-skull-is-my-bowl.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Split - Your Skull Is My Bowl.jpg" alt="Your Skull Is My Bowl!" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Your Skull Is My Bowl!</p>
+                <p class="album-mini-artist">Graven Image / Honor Role • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/it-bled-like-a-stuck-pig.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Honor Role - It Bled Like a Stuck Pig.jpg" alt="It bled Like a Stuck Pig" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">It bled Like a Stuck Pig</p>
+                <p class="album-mini-artist">Honor Role • 1984</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/after-the-massacre.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Iconoclast - After the Massacre.jpg" alt="After The Massacre" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">After The Massacre</p>
+                <p class="album-mini-artist">Iconoclast • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/iconoclast.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Iconoclast - Iconoclast.jpg" alt="Iconoclast" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Iconoclast</p>
+                <p class="album-mini-artist">Iconoclast • 1985</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/is-this-my-world.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Jerry's Kids - Is This My World (1983).jpg" alt="Is This My World?" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Is This My World?</p>
+                <p class="album-mini-artist">Jerry's Kids • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/unreleased-ep.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/~NoArtworkAvailable.jpg" alt="Unreleased EP" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Unreleased EP</p>
+                <p class="album-mini-artist">Jerry's Kids • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/ristiinnaulittu-kaaos.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Kaaos - Ristiinnaulittu Kaaos.jpg" alt="Ristiinnaulittu Kaaos" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Ristiinnaulittu Kaaos</p>
+                <p class="album-mini-artist">Kaaos • 1984</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/totaalinen-kaaos.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Kaaos - Totaalinen Kaaos.jpg" alt="Totaalinen Kaaos" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Totaalinen Kaaos</p>
+                <p class="album-mini-artist">Kaaos • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/hey-cop-if-i-had-a-face-like-yours.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/MDC - Hey Cop!! If I Had A Face Like Yours… (1991).jpg" alt="Hey Cop!!! If I Had A Face Like Yours..." loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Hey Cop!!! If I Had A Face Like Yours...</p>
+                <p class="album-mini-artist">MDC • 1991</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/metal-devil-cokes.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/MDC - Metal Devil Cokes (1989).jpg" alt="Metal Devil Cokes" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Metal Devil Cokes</p>
+                <p class="album-mini-artist">MDC • 1989</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/millions-of-dead-cops.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/MDC - Millions Of Dead Cops (1982).jpg" alt="Millions Of Dead Cops" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Millions Of Dead Cops</p>
+                <p class="album-mini-artist">MDC • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/smoke-signals.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/MDC - Smoke Signals (1986).jpg" alt="Smoke Signals" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Smoke Signals</p>
+                <p class="album-mini-artist">MDC • 1986</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/out-of-vogue.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Middle Class - Out of Vogue.jpg" alt="Out of Vogue" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Out of Vogue</p>
+                <p class="album-mini-artist">Middle Class • 1978</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/beware-all-eps-collection.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Misfits - Beware - All EPs Collection (Non-Official).jpg" alt="Beware: All EPs Collection" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Beware: All EPs Collection</p>
+                <p class="album-mini-artist">Misfits • Non-Official</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/earth-ad-wolfs-blood.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Misfits - Earth A.D. - Wolfs Blood (1983).jpg" alt="Earth A.D. / Wolfs Blood" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Earth A.D. / Wolfs Blood</p>
+                <p class="album-mini-artist">Misfits • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/legacy-of-brutality.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Misfits - Legacy Of Brutality (1985).jpg" alt="Legacy Of Brutality" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Legacy Of Brutality</p>
+                <p class="album-mini-artist">Misfits • 1985</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/static-age.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Misfits - Static Age (1996).jpg" alt="Static Age" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Static Age</p>
+                <p class="album-mini-artist">Misfits • 1996</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/walk-among-us.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Misfits - Walk Among Us (1982).jpg" alt="Walk Among Us" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Walk Among Us</p>
+                <p class="album-mini-artist">Misfits • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/negative-approach.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Negative Approach - Negative Approach (1982).jpg" alt="Negative Approach" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Negative Approach</p>
+                <p class="album-mini-artist">Negative Approach • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/tied-down.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Negative Approach - Tied Down (1983).jpg" alt="Tied Down" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Tied Down</p>
+                <p class="album-mini-artist">Negative Approach • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/defining-the-problem.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Pent-Up Aggression - Defining The Problem.jpg" alt="Defining The Problem" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Defining The Problem</p>
+                <p class="album-mini-artist">Pent-Up Aggression • 1986</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/unreleased-lp.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/~NoArtworkAvailable.jpg" alt="Unreleased LP" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Unreleased LP</p>
+                <p class="album-mini-artist">Pent-Up Aggression • 1986</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/straight-edge-revenge.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Project X - Straight Edge Revenge (1987).jpg" alt="Straight Edge Revenge" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Straight Edge Revenge</p>
+                <p class="album-mini-artist">Project X • 1987</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/a-collection-of-pop-classics.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Reagan Youth - A Collection Of Pop Classics.jpg" alt="A Collection Of Pop Classics" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">A Collection Of Pop Classics</p>
+                <p class="album-mini-artist">Reagan Youth • 1994</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/youth-anthems-for-the-new-order.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Reagan Youth - Youth Anthems For The New Order.jpg" alt="Youth Anthems for the New Order" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Youth Anthems for the New Order</p>
+                <p class="album-mini-artist">Reagan Youth • 1984</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/no-policy.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/SOA - No Policy (1981).jpg" alt="No Policy" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">No Policy</p>
+                <p class="album-mini-artist">S.O.A. • 1981</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/flex-your-head.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/SOA - Flex Your Head (1982).jpg" alt="Flex Your Head" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Flex Your Head</p>
+                <p class="album-mini-artist">S.O.A. • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/contradiction.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Sluggo - Contradiction.jpg" alt="Contradiction" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Contradiction</p>
+                <p class="album-mini-artist">Sluggo • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/eighty-four.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Sluggo - Eighty-Four.jpg" alt="Eighty-Four" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Eighty-Four</p>
+                <p class="album-mini-artist">Sluggo • 2021</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/get-it-away.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/SS Decontrol - Get It Away (1983).jpg" alt="Get It Away" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Get It Away</p>
+                <p class="album-mini-artist">SS Decontrol • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/the-kids-will-have-their-say.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/SS Decontrol - The Kids Will Have Their Say (1982).jpg" alt="The Kids Will Have Their Say" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">The Kids Will Have Their Say</p>
+                <p class="album-mini-artist">SS Decontrol • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/no-illusions.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/State - No illusions.jpg" alt="No Illusions" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">No Illusions</p>
+                <p class="album-mini-artist">State • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/incorrect-thoughts.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Subhumans - Incorrect Thoughts (1980).jpg" alt="Incorrect Thoughts" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Incorrect Thoughts</p>
+                <p class="album-mini-artist">Subhumans • 1980</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/no-wishes-no-prayers.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Subhumans - No Wishes, No Prayers (1983).jpg" alt="No Wishes, No Prayers" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">No Wishes, No Prayers</p>
+                <p class="album-mini-artist">Subhumans • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/subhumans.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Subhumans - Subhumans (1979).jpg" alt="Subhumans" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Subhumans</p>
+                <p class="album-mini-artist">Subhumans • 1979</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/aareton-joulu.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Terveet Kädet - Ääretön Joulu.jpg" alt="Ääretön Joulu" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Ääretön Joulu</p>
+                <p class="album-mini-artist">Terveet Kädet • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/terveet-kadet.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Terveet Kädet - Terveet Kädet.jpg" alt="Terveet Kädet" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Terveet Kädet</p>
+                <p class="album-mini-artist">Terveet Kädet • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/the-speed-of-twisted-thought.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/The Fix - The Speed of Twisted Thought (2006).jpg" alt="The Speed of Twisted Thought" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">The Speed of Twisted Thought</p>
+                <p class="album-mini-artist">The Fix • 2006</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/screaming-for-change.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Uniform Choice - Screaming for Change (1986).jpg" alt="Screaming for Change" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Screaming for Change</p>
+                <p class="album-mini-artist">Uniform Choice • 1986</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/let-them-eat-jellybeans.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Various Artists - Let Them Eat Jellybeans (1982).jpg" alt="Let Them Eat Jellybeans" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Let Them Eat Jellybeans</p>
+                <p class="album-mini-artist">Various Artists • 1982</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/white-pigs.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/White Pigs - White Pigs.jpg" alt="White Pigs" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">White Pigs</p>
+                <p class="album-mini-artist">White Pigs • 1984</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/expect-the-worst.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Worst - Expect the Worst.jpg" alt="Expect The Worst" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Expect The Worst</p>
+                <p class="album-mini-artist">Worst • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/a-place-in-the-sun.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/YDI - A Place In The Sun.jpg" alt="A Place in the Sun" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">A Place in the Sun</p>
+                <p class="album-mini-artist">YDI • 1983</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="album-mini">
+            <a href="downloads/possible-ep.html" class="album-mini-link">
+              <div class="album-mini-cover">
+                <img src="img/Youth Brigade - Possible EP (1983).jpg" alt="Possible EP" loading="lazy" />
+              </div>
+              <div class="album-mini-info">
+                <p class="album-mini-title">Possible EP</p>
+                <p class="album-mini-artist">Youth Brigade • 1981</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>Stay punk, stay core. Made by SnoFolk. Collection version: 8.2.0</footer>
+    <footer class="lower-footer"><a class="link" href="manifesto.html">Manifesto</a></footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -1,444 +1,503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
 
-<head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/site.webmanifest">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark">
+    <title>Info | snofolk.space</title>
 
-  <title>Info | snofolk.space</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 
-<body>
-  <header>
-    <a>
-      <h1>SnoFolk.Space</h1>
-    </a>
-    <nav>
-      <a href="index.html">
-        <img class="nav-icon" src="img/icons/home.png" alt="" aria-hidden="true">
-        <span class="nav-label">Homepage</span>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a>
+        <h1>SnoFolk.Space</h1>
       </a>
-      <a href="downloads.html">
-        <img class="nav-icon" src="img/icons/down.png" alt="" aria-hidden="true">
-        <span class="nav-label">Downloads</span>
-      </a>
-      <a href="news.html">
-        <img class="nav-icon" src="img/icons/news.png" alt="" aria-hidden="true">
-        <span class="nav-label">News</span>
-      </a>
-      <a href="info.html" class="active">
-        <img class="nav-icon" src="img/icons/info.png" alt="" aria-hidden="true">
-        <span class="nav-label"><strong>Info</strong></span>
-      </a>
-    </nav>
-  </header>
+      <nav>
+        <a href="index.html">
+          <img class="nav-icon" src="img/icons/home.png" alt="" aria-hidden="true" />
+          <span class="nav-label">Homepage</span>
+        </a>
+        <a href="downloads.html">
+          <img class="nav-icon" src="img/icons/down.png" alt="" aria-hidden="true" />
+          <span class="nav-label">Downloads</span>
+        </a>
+        <a href="news.html">
+          <img class="nav-icon" src="img/icons/news.png" alt="" aria-hidden="true" />
+          <span class="nav-label">News</span>
+        </a>
+        <a href="info.html" class="active">
+          <img class="nav-icon" src="img/icons/info.png" alt="" aria-hidden="true" />
+          <span class="nav-label"><strong>Info</strong></span>
+        </a>
+      </nav>
+    </header>
 
-  <main>
+    <main>
 
-    <section>
-      <h2>Contact</h2>
-
-      <section class="contact-section">
-
-        <p class="fckn-up-text"><strong>Found a Bug</strong> or Want to <strong>Request an Album</strong>? Contact me!
-        </p>
-
-        <setion class="contact">
-          <p>Email: <a href="mailto:snowfolkg@gmail.com" class="link">contact@snofolk.space</a></p>
-          <p>Telegram: <a href="https://t.me/snofolk" class="link" target="_blank"
-              rel="noopener noreferrer">@SnoFolk</a>
-          </p>
-          <p>Anarcho-punk.net: <a href="https://www.anarcho-punk.net/members/snofolk.31102/" class="link"
-              target="_blank" rel="noopener noreferrer">@SnoFolk</a></p>
-        </setion>
-
+      <!-- CONTACT ME -->
+      <section>
+        <h2>Contact</h2>
+        <section class="contact-section">
+          <p class="fckn-up-text"><strong>Found a Bug</strong> or Want to <strong>Request an Album</strong>? Contact me!</p>
+          <setion class="contact">
+            <p>Email: <a href="mailto:snowfolkg@gmail.com" class="link">contact@snofolk.space</a></p>
+            <p>Telegram: <a href="https://t.me/snofolk" class="link" target="_blank" rel="noopener noreferrer">@SnoFolk</a></p>
+            <p>Anarcho-punk.net: <a href="https://www.anarcho-punk.net/members/snofolk.31102/" class="link" target="_blank" rel="noopener noreferrer">@SnoFolk</a></p>
+          </setion>
+        </section>
       </section>
 
-    </section>
-
-    <section>
-      <h2>Album List</h2>
-      <ul id="album-list" class="albums-list"></ul>
-    </section>
-
-    <section class="update-history">
-      <h2>Update History of the Collection</h2>
-
-      <div class="update">
-        <div class="update-date">14.09.2026 — v8.2.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Middle Class "Out of Vogue"</li>
+      <!-- ALBUMS LIST -->
+      <section>
+        <h2>Album List</h2>
+        <ul class="albums-list">
+          <ul>
+            <li>Black Flag - Damaged (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Black Flag - Jealous Again (1980) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Black Flag - Nervous Breakdown (1979) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Black Flag - Six Pack (1981) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Cause for Alarm - Cause for Alarm (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Chemotherapy - Chemotherapy (1983) [<span class="bitrate bitrate-low">160 kbps</span>]</li>
+            <li>Circle Jerks - Group Sex (1980) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Crucifix - Crucifix (1981) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Crucifix - Dehumanization (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>D.O.A. - Hardcore '81 (1981) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>D.O.A. - Something Better Change (1980) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>D.O.A. - War On 45 (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Deep Wound - American Style (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Deep Wound - Deep Wound (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Dicks - 1980-1986 (1997) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Double-O - Double-O (1983) [<span class="bitrate bitrate-low">160 kbps</span>]</li>
+            <li>DYS - Brotherhood (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>F.U.'s - Kill for Christ (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>F.U.'s - My America (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Faith - Faith (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Faith - Subject To Change (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Freeze - Land Of The Lost (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Freeze - Rabid Reaction (1985) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Germs - (GI) (1979) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Germs - Lexicon Devil (1978) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Graven Image - Kicked Out Of The Scene (1983) [<span class="bitrate bitrate-medium">256 kbps</span>]</li>
+            <li>Graven Image - Live at Hard Times (2020) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Graven Image / Honor Role - Your Skull Is My Bowl! (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Honor Role - It bled Like a Stuck Pig (1984) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Iconoclast - After The Massacre (1983) [<span class="bitrate bitrate-medium">192 kbps</span>]</li>
+            <li>Iconoclast - Iconoclast (1985) [<span class="bitrate bitrate-medium">192 kbps</span>]</li>
+            <li>Jerry's Kids - Is This My World? (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Jerry's Kids - Unreleased EP (1982) [<span class="bitrate bitrate-medium">192 kbps</span>]</li>
+            <li>Kaaos - Ristiinnaulittu Kaaos (1984) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Kaaos - Totaalinen Kaaos (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>MDC - Hey Cop!!! If I Had A Face Like Yours... (1991) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>MDC - Metal Devil Cokes (1989) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>MDC - Millions Of Dead Cops (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>MDC - Smoke Signals (1986) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Middle Class - Out of Vogue (1978) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Misfits - Beware: All EPs Collection (Non-Official) [<span class="bitrate bitrate-na">N/A</span>]</li>
+            <li>Misfits - Earth A.D. / Wolfs Blood (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Misfits - Legacy Of Brutality (1985) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Misfits - Static Age (1996) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Misfits - Walk Among Us (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Negative Approach - Negative Approach (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Negative Approach - Tied Down (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Pent-Up Aggression - Defining The Problem (1986) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Pent-Up Aggression - Unreleased LP (1986) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Project X - Straight Edge Revenge (1987) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Reagan Youth - A Collection Of Pop Classics (1994) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Reagan Youth - Youth Anthems for the New Order (1984) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>S.O.A. - No Policy (1981) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Sluggo - Contradiction (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Sluggo - Eighty-Four (2021) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>SOA - Flex Your Head (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>SS Decontrol - Get It Away (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>SS Decontrol - The Kids Will Have Their Say (1982) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>State - No Illusions (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Subhumans - Incorrect Thoughts (1980) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Subhumans - No Wishes, No Prayers (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Subhumans - Subhumans (1979) [<span class="bitrate bitrate-low">160 kbps</span>]</li>
+            <li>Terveet Kädet - Ääretön Joulu (1982) [<span class="bitrate bitrate-medium">256 kbps</span>]</li>
+            <li>Terveet Kädet - Terveet Kädet (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>The Fix - The Speed of Twisted Thought (2006) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Uniform Choice - Screaming for Change (1986) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Various Artists - Let Them Eat Jellybeans (1982) [<span class="bitrate bitrate-medium">256 kbps</span>]</li>
+            <li>White Pigs - White Pigs (1984) [<span class="bitrate bitrate-low">160 kbps</span>]</li>
+            <li>Worst - Expect The Worst (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>YDI - A Place in the Sun (1983) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+            <li>Youth Brigade - Possible EP (1981) [<span class="bitrate bitrate-high">320 kbps</span>]</li>
+          </ul>
         </ul>
-      </div>
+      </section>
 
-      <div class="update">
-        <div class="update-date">10.09.2026 — v8.1.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Iconoclast "Iconoclast" and "After The Massacre"</li>
-        </ul>
-      </div>
+      <!-- UPDATE HISTORY -->
+      <section class="update-history">
+        <h2>Update History of the Collection</h2>
 
-      <div class="update">
-        <div class="update-date">06.09.2026 — v8.0.0</div>
-        <div class="update-title">ID3v2.3 | Major Update</div>
-        <ul>
-          <li><strong>Improved:</strong> All tags now is ID3v2.3 with UTC-16 (I keep ID3v1)</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">14.09.2026 — v8.2.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Middle Class "Out of Vogue"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">09.08.2026 — v7.9.0 (part one & two)</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added (part one):</strong> White Pigs "White Pigs", Sluggo "Contradiction" and "Eighty-Four",
-            Graven Image "Live at Hard Times", Worst "Expect The Worst", Honor Role "It Bled Like a Stuck Pig", Split
-            "Your Skull Is My Bowl"</li>
-          <li></li>
-          <li><strong>Added (part two):</strong> Reagan Youth "A Collection Of Pop Classics"</li>
-          <li><strong>Improved (part two):</strong> Reagan Youth "Youth Anthems For The New Order" and cover for it</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">10.09.2026 — v8.1.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Iconoclast "Iconoclast" and "After The Massacre"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">01.08.2026 — v7.8.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Double-O "Double-O", Graven Image "Kicked Out of the Scene"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">06.09.2026 — v8.0.0</div>
+          <div class="update-title">ID3v2.3 | Major Update</div>
+          <ul>
+            <li><strong>Improved:</strong> All tags now is ID3v2.3 with UTC-16 (I keep ID3v1)</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">30.07.2026 — v7.7.1</div>
-        <div class="update-title">Tags & Covers | Patch</div>
-        <ul>
-          <li><strong>Changed:</strong> Tags in mp3s</li>
-          <li><strong>Added:</strong> Cover for albums that dont have official one</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">09.08.2026 — v7.9.0 (part one & two)</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li>
+              <strong>Added (part one):</strong> White Pigs "White Pigs", Sluggo "Contradiction" and "Eighty-Four", Graven Image "Live at Hard Times", Worst "Expect The Worst", Honor Role "It Bled
+              Like a Stuck Pig", Split "Your Skull Is My Bowl"
+            </li>
+            <li></li>
+            <li><strong>Added (part two):</strong> Reagan Youth "A Collection Of Pop Classics"</li>
+            <li><strong>Improved (part two):</strong> Reagan Youth "Youth Anthems For The New Order" and cover for it</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">28.07.2026 — v7.7.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Pent-Up Aggression "Unreleased LP", "Defining The Problem"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">01.08.2026 — v7.8.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Double-O "Double-O", Graven Image "Kicked Out of the Scene"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">24.07.2026 — v7.6.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Crucifix "Crucifix", Kaaos "Totaalinen Kaaos"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">30.07.2026 — v7.7.1</div>
+          <div class="update-title">Tags & Covers | Patch</div>
+          <ul>
+            <li><strong>Changed:</strong> Tags in mp3s</li>
+            <li><strong>Added:</strong> Cover for albums that dont have official one</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">18.07.2026 — v7.5.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> YDI "A Place in the Sun", State "No Illusions", Chemotherapy "Chemotherapy"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">28.07.2026 — v7.7.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Pent-Up Aggression "Unreleased LP", "Defining The Problem"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">14.07.2026 — v7.4.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Black Flag "Six Pack", Freeze "Rabid Reaction", Crucifix "Dehumanization"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">24.07.2026 — v7.6.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Crucifix "Crucifix", Kaaos "Totaalinen Kaaos"</li>
+          </ul>
+        </div>
 
+        <div class="update">
+          <div class="update-date">18.07.2026 — v7.5.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> YDI "A Place in the Sun", State "No Illusions", Chemotherapy "Chemotherapy"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">12.07.2026 — v7.3.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Black Flag "Jealous Again", "Nervous Breakdown"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">14.07.2026 — v7.4.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Black Flag "Six Pack", Freeze "Rabid Reaction", Crucifix "Dehumanization"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">10.07.2026 — v7.2.1</div>
-        <div class="update-title">CBR Bitrate update | Patch</div>
-        <ul>
-          <li><strong>Improved:</strong> DOA "Hardcore 81"</li>
-          <li><strong>Rewrote:</strong> AlbumList, UpdateHistory</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">12.07.2026 — v7.3.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Black Flag "Jealous Again", "Nervous Breakdown"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">03.07.2026 — v7.2.0</div>
-        <div class="update-title">CBR Bitrate update | Minor Update</div>
-        <ul>
-          <li><strong>Improved:</strong> MDC "Smoke Signals", "Metal Devil Cokes" and "Hey Cop!!! If I Had A Face Like
-            Yours...", Germs "(GI)", Deep Wound "Deep Wound", Faith "Faith", S.O.A. "No Policy", SS Decontrol "The Kids
-            Will Have Their Say"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">10.07.2026 — v7.2.1</div>
+          <div class="update-title">CBR Bitrate update | Patch</div>
+          <ul>
+            <li><strong>Improved:</strong> DOA "Hardcore 81"</li>
+            <li><strong>Rewrote:</strong> AlbumList, UpdateHistory</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">01.07.2026 — v7.1.0</div>
-        <div class="update-title">CBR Bitrate update | Minor Update</div>
-        <ul>
-          <li><strong>Improved:</strong> DOA "Something Better Change", "War On 45" and "Hardcore 81", Subhumans "No
-            Wishes, No Prayers"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">03.07.2026 — v7.2.0</div>
+          <div class="update-title">CBR Bitrate update | Minor Update</div>
+          <ul>
+            <li>
+              <strong>Improved:</strong> MDC "Smoke Signals", "Metal Devil Cokes" and "Hey Cop!!! If I Had A Face Like Yours...", Germs "(GI)", Deep Wound "Deep Wound", Faith "Faith", S.O.A. "No
+              Policy", SS Decontrol "The Kids Will Have Their Say"
+            </li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">30.06.2026 — v7.0.0</div>
-        <div class="update-title">CBR Bitrate update | Major Update</div>
-        <ul>
-          <li><strong>Improved:</strong> Dicks "1980 - 1986", DYS "Brotherhood", Faith "Subject to Change", Freeze "Land
-            Of The Lost", F.U.'s "My America", Negative Approach "Negative Approach" and "Tied Down", Terveet Kädet
-            "Terveet Kädet", Uniform Choice "Screaming For Change", Youth Brigade "Possible EP"</li>
-          <li><strong>Removed:</strong> Germs "Cat's Clause"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">01.07.2026 — v7.1.0</div>
+          <div class="update-title">CBR Bitrate update | Minor Update</div>
+          <ul>
+            <li><strong>Improved:</strong> DOA "Something Better Change", "War On 45" and "Hardcore 81", Subhumans "No Wishes, No Prayers"</li>
+          </ul>
+        </div>
 
+        <div class="update">
+          <div class="update-date">30.06.2026 — v7.0.0</div>
+          <div class="update-title">CBR Bitrate update | Major Update</div>
+          <ul>
+            <li>
+              <strong>Improved:</strong> Dicks "1980 - 1986", DYS "Brotherhood", Faith "Subject to Change", Freeze "Land Of The Lost", F.U.'s "My America", Negative Approach "Negative Approach" and
+              "Tied Down", Terveet Kädet "Terveet Kädet", Uniform Choice "Screaming For Change", Youth Brigade "Possible EP"
+            </li>
+            <li><strong>Removed:</strong> Germs "Cat's Clause"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">25.06.2026 — v6.9.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Deep Wound "American Style"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">25.06.2026 — v6.9.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Deep Wound "American Style"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">15.06.2026 — v6.8.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Terveet Kädet "Ääretön Joulu"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">15.06.2026 — v6.8.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Terveet Kädet "Ääretön Joulu"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">11.06.2026 — v6.7.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Faith "Subject to Change"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">11.06.2026 — v6.7.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Faith "Subject to Change"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">05.06.2026 — v6.6.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Kaaos "Ristiinnaulittu Kaaos"; Terveet Kädet "Terveet Kädet"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">05.06.2026 — v6.6.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Kaaos "Ristiinnaulittu Kaaos"; Terveet Kädet "Terveet Kädet"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">30.05.2026 — v6.5.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Freeze "Land Of The Lost"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">30.05.2026 — v6.5.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Freeze "Land Of The Lost"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">28.05.2026 — v6.4.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> F.U.'s "My America"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">28.05.2026 — v6.4.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> F.U.'s "My America"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">26.05.2026 — v6.3.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> DYS "Brotherhood"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">26.05.2026 — v6.3.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> DYS "Brotherhood"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">24.05.2026 — v6.2.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Faith "Faith"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">24.05.2026 — v6.2.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Faith "Faith"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">21.05.2026 — v6.1.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Dicks "1980-1986"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">21.05.2026 — v6.1.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Dicks "1980-1986"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">13.05.2026 — v6.0.0</div>
-        <div class="update-title">Cover Update | Major Update</div>
-        <ul>
-          <li><strong>Changed:</strong> Cover filename format (now «artist - album»)</li>
-          <li><strong>Rename:</strong> old README file renamed to "About"</li>
-          <li><strong>Added:</strong> F.U.'s "Kill For Christ"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">13.05.2026 — v6.0.0</div>
+          <div class="update-title">Cover Update | Major Update</div>
+          <ul>
+            <li><strong>Changed:</strong> Cover filename format (now «artist - album»)</li>
+            <li><strong>Rename:</strong> old README file renamed to "About"</li>
+            <li><strong>Added:</strong> F.U.'s "Kill For Christ"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">07.05.2026 — v5.5.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Uniform Choice "Screaming For Change"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">07.05.2026 — v5.5.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Uniform Choice "Screaming For Change"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">29.04.2026 — v5.4.0</div>
-        <div class="update-title">New Album | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Youth Brigade "Possible EP"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">29.04.2026 — v5.4.0</div>
+          <div class="update-title">New Album | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Youth Brigade "Possible EP"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">28.04.2026 — v5.3.0</div>
-        <div class="update-title">Folders | Minor Update (only for full collection)</div>
-        <ul>
-          <li><strong>Deleted:</strong> /~~~Other/covers/non-used</li>
-          <li><strong>Changed:</strong> album folder name format (now «album (year)»)</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">28.04.2026 — v5.3.0</div>
+          <div class="update-title">Folders | Minor Update (only for full collection)</div>
+          <ul>
+            <li><strong>Deleted:</strong> /~~~Other/covers/non-used</li>
+            <li><strong>Changed:</strong> album folder name format (now «album (year)»)</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">19.04.2026 — v5.2.1</div>
-        <div class="update-title">New Cover | Patch</div>
-        <ul>
-          <li><strong>Changed:</strong> cover for Germs' "Lexicon Devil"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">19.04.2026 — v5.2.1</div>
+          <div class="update-title">New Cover | Patch</div>
+          <ul>
+            <li><strong>Changed:</strong> cover for Germs' "Lexicon Devil"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">10.04.2026 — v5.1.0</div>
-        <div class="update-title">New Albums | Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Subhumans "No Wishes, No Prayers", Subhumans "Subhumans", Deep Wound "Deep Wound"
-          </li>
-          <li><strong>Improved:</strong> SS Decontrol "Get It Away", Black Flag "Damaged" </li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">10.04.2026 — v5.1.0</div>
+          <div class="update-title">New Albums | Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Subhumans "No Wishes, No Prayers", Subhumans "Subhumans", Deep Wound "Deep Wound"</li>
+            <li><strong>Improved:</strong> SS Decontrol "Get It Away", Black Flag "Damaged"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">01.04.2026 — v5.0.0</div>
-        <div class="update-title">Hardcore Collection Cleanup & Core Refinement</div>
-        <ul>
-          <li><strong>Removed:</strong> 7Seconds "The Crew", Circle Jerks "Wonderful", DOA "Let's Wreck the Party",
-            "Don't Turn Yer Back", Danzig "I/II/III", MDC "Magnus Dominus Corpus", "Shades of Brown", Misfits "Evilive",
-            Sex
-            Pistols "Never Mind the Bollocks", Suicidal Tendencies "Suicidal Tendencies", Various Artists "Save Me From
-            Ordinary"</li>
-          <li><strong>Changed:</strong> Folder "Musik" → "Music"; updated folder icons (Compilation, Music)</li>
-          <li><strong>Renamed:</strong> Jerry's Kids "S/T" → "Unreleased EP"; SOA "Flex Your Head EP" → "Flex Your Head"
-          </li>
-          <li><strong>Tags:</strong> "SnoFolk's Collection | HD covers | From ..." → "SnoFolk's Hardcore Collection |
-            Core"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">01.04.2026 — v5.0.0</div>
+          <div class="update-title">Hardcore Collection Cleanup & Core Refinement</div>
+          <ul>
+            <li>
+              <strong>Removed:</strong> 7Seconds "The Crew", Circle Jerks "Wonderful", DOA "Let's Wreck the Party", "Don't Turn Yer Back", Danzig "I/II/III", MDC "Magnus Dominus Corpus", "Shades of
+              Brown", Misfits "Evilive", Sex Pistols "Never Mind the Bollocks", Suicidal Tendencies "Suicidal Tendencies", Various Artists "Save Me From Ordinary"
+            </li>
+            <li><strong>Changed:</strong> Folder "Musik" → "Music"; updated folder icons (Compilation, Music)</li>
+            <li><strong>Renamed:</strong> Jerry's Kids "S/T" → "Unreleased EP"; SOA "Flex Your Head EP" → "Flex Your Head"</li>
+            <li><strong>Tags:</strong> "SnoFolk's Collection | HD covers | From ..." → "SnoFolk's Hardcore Collection | Core"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">29.03.2026 — v4.2.0</div>
-        <div class="update-title">Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Black Flag "Damaged"</li>
-          <li><strong>Fixed:</strong> Errors in the album list</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">29.03.2026 — v4.2.0</div>
+          <div class="update-title">Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Black Flag "Damaged"</li>
+            <li><strong>Fixed:</strong> Errors in the album list</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">28.03.2026 — v4.1.0</div>
-        <div class="update-title">Minor Update</div>
-        <ul>
-          <li><strong>Improved:</strong> Misfits "Beware: All EPs Collection" now shows disc number</li>
-          <li><strong>Added:</strong> Misfits "Legacy Of Brutality"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">28.03.2026 — v4.1.0</div>
+          <div class="update-title">Minor Update</div>
+          <ul>
+            <li><strong>Improved:</strong> Misfits "Beware: All EPs Collection" now shows disc number</li>
+            <li><strong>Added:</strong> Misfits "Legacy Of Brutality"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">26.03.2026 — v4.0.1</div>
-        <div class="update-title">Patch</div>
-        <ul>
-          <li><strong>Fixed:</strong> Genre tag in Misfits "Beware: All EPs Collection"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">26.03.2026 — v4.0.1</div>
+          <div class="update-title">Patch</div>
+          <ul>
+            <li><strong>Fixed:</strong> Genre tag in Misfits "Beware: All EPs Collection"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">26.03.2026 — v4.0.0</div>
-        <div class="update-title">Major Update</div>
-        <ul>
-          <li><strong>Fixed:</strong> Text errors</li>
-          <li><strong>Added:</strong> Misfits "Beware: All EPs Collection"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">26.03.2026 — v4.0.0</div>
+          <div class="update-title">Major Update</div>
+          <ul>
+            <li><strong>Fixed:</strong> Text errors</li>
+            <li><strong>Added:</strong> Misfits "Beware: All EPs Collection"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">09.03.2026 — v3.1</div>
-        <div class="update-title">Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Germs "Lexicon Devil"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">09.03.2026 — v3.1</div>
+          <div class="update-title">Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Germs "Lexicon Devil"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">06.03.2026 — v3.0.0</div>
-        <div class="update-title">Major Update</div>
-        <ul>
-          <li><strong>Reworked:</strong> Folders and tags; </li>
-          <li><strong>Fixed:</strong> Errors in tags and folders</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">06.03.2026 — v3.0.0</div>
+          <div class="update-title">Major Update</div>
+          <ul>
+            <li><strong>Reworked:</strong> Folders and tags;</li>
+            <li><strong>Fixed:</strong> Errors in tags and folders</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">05.03.2026 — v2.2</div>
-        <div class="update-title">Minor Update</div>
-        <ul>
-          <li><strong>Added:</strong> Project X "Straight Edge Revenge", Jerry's Kids "Unreleased EP"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">05.03.2026 — v2.2</div>
+          <div class="update-title">Minor Update</div>
+          <ul>
+            <li><strong>Added:</strong> Project X "Straight Edge Revenge", Jerry's Kids "Unreleased EP"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">17.02.2026 — v2.1</div>
-        <div class="update-title">Minor Update</div>
-        <ul>
-          <li><strong>Deleted:</strong> Subhumans (UK)</li>
-          <li><strong>Added:</strong> Subhumans (Canada) "Incorrect Thoughts", Reagan Youth "Youth Anthems for the New
-            Order"</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">17.02.2026 — v2.1</div>
+          <div class="update-title">Minor Update</div>
+          <ul>
+            <li><strong>Deleted:</strong> Subhumans (UK)</li>
+            <li><strong>Added:</strong> Subhumans (Canada) "Incorrect Thoughts", Reagan Youth "Youth Anthems for the New Order"</li>
+          </ul>
+        </div>
 
-      <div class="update">
-        <div class="update-date">06.02.2026 — v2.0.0</div>
-        <div class="update-title">Major Update</div>
-        <ul>
-          <li><strong>Added:</strong> Various Artists "Let Them Eat Jellybeans", UpdateHistory, AlbumList</li>
-          <li><strong>Rewrote:</strong> ReadMe</li>
-        </ul>
-      </div>
+        <div class="update">
+          <div class="update-date">06.02.2026 — v2.0.0</div>
+          <div class="update-title">Major Update</div>
+          <ul>
+            <li><strong>Added:</strong> Various Artists "Let Them Eat Jellybeans", UpdateHistory, AlbumList</li>
+            <li><strong>Rewrote:</strong> ReadMe</li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-    </section>
+    <footer>Stay punk, stay core. Made by SnoFolk. Site version: 6.0.0</footer>
+    <footer class="lower-footer"><a class="link" href="manifesto.html">Manifesto</a></footer>
 
-  </main>
-
-    <footer>Stay punk, stay core. Made by SnoFolk. Site version: <span id="site-version"></span></footer>
-    <footer><a class="link" href="manifesto.html">Manifesto</a></footer>
-
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>

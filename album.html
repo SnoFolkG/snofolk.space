@@ -1,72 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+    <link rel="manifest" href="/icons/site.webmanifest" />
 
-<head>
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <meta name="color-scheme" content="dark" />
 
-  <link rel="manifest" href="/icons/site.webmanifest">
+    <title>| snofolk.space</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
 
-  <meta name="color-scheme" content="dark">
+    <meta property="og:type" content="music.album"/>
+    <meta property="og:title" content=" | snofolk.space"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content="https://snofolk.space/.html"/>
 
-  <title>Album Details | snofolk.space</title>
-  <meta name="description"
-    content="View album details, full tracklist, and download links for punk rock classics on snofolk.space.">
+    <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v35/yMJRMIlzdpvBhQQL_Qq7dy0.woff2" as="font" type="font/woff2" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-  <meta property="og:type" content="music.album">
-  <meta property="og:title" content="Album Details | snofolk.space">
-  <meta property="og:description" content="Punk rock album archive and downloads.">
-  <meta property="og:url" content="https://snofolk.space/album.html">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" as="font"
-    type="font/woff2" crossorigin>
-  <link rel="preload" href="https://fonts.gstatic.com/s/orbitron/v35/yMJRMIlzdpvBhQQL_Qq7dy0.woff2" as="font"
-    type="font/woff2" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Orbitron:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <header>
-    <a class="site-title">
-      <h1>SnoFolk.Space</h1>
-    </a>
-    <nav>
-      <a href="index.html">
-        <img class="nav-icon" src="img/icons/home.png" alt="" aria-hidden="true">
-        <span class="nav-label">Homepage</span>
+  <body>
+    <header>
+      <a class="site-title">
+        <h1>SnoFolk.Space</h1>
       </a>
-      <a href="downloads.html" class="active">
-        <img class="nav-icon" src="img/icons/down.png" alt="" aria-hidden="true">
-        <span class="nav-label"><strong>Downloads</strong></span>
-      </a>
-      <a href="news.html">
-        <img class="nav-icon" src="img/icons/news.png" alt="" aria-hidden="true">
-        <span class="nav-label">News</span>
-      </a>
-      <a href="info.html">
-        <img class="nav-icon" src="img/icons/info.png" alt="" aria-hidden="true">
-        <span class="nav-label">Info</span>
-      </a>
-    </nav>
-  </header>
-  <main id="album-page">
-    <div id="album-detail"></div>
-  </main>
+      <nav>
+        <a href="index.html">
+          <img class="nav-icon" src="../img/icons/home.png" alt="" aria-hidden="true" />
+          <span class="nav-label">Homepage</span>
+        </a>
+        <a href="downloads.html" class="active">
+          <img class="nav-icon" src="../img/icons/down.png" alt="" aria-hidden="true" />
+          <span class="nav-label"><strong>Downloads</strong></span>
+        </a>
+        <a href="news.html">
+          <img class="nav-icon" src="../img/icons/news.png" alt="" aria-hidden="true" />
+          <span class="nav-label">News</span>
+        </a>
+        <a href="info.html">
+          <img class="nav-icon" src="../img/icons/info.png" alt="" aria-hidden="true" />
+          <span class="nav-label">Info</span>
+        </a>
+      </nav>
+    </header>
 
-    <footer>Stay punk, stay core. Made by SnoFolk. Site version: <span id="site-version"></span></footer>
-    <footer><a class="link" href="manifesto.html">Manifesto</a></footer>
+    <main class="album-detail-page">
+      <!-- COVER, DOWNLOAD BUTTON, SIMILAR ALBUMS -->
+      <section class="album-links-side">
+        <img class="album-page-cover" src="../img/*.jpg" alt="*" />
 
-  <script src="js/script.js"></script>
-</body>
+        <a class="download-btn download-cover-btn" href="" target="_blank">Download Album (.zip)</a>
 
+        <section class="similar-albums">
+          <h3>Similar Albums</h3>
+          <div class="similar-albums-grid">
+            <div class="similar-album-card">
+              <a href="*.html">
+                <img src="../img/*.jpg" alt="*" />
+                <p><strong>*</strong><br />*</p></a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- INFO, META, TRACKLIST -->
+      <section class="album-info-side">
+        <h2 class="album-title">*</h2>
+        <p class="album-artist">*</p>
+
+        <ul class="album-meta">
+          <li><span>Year</span>*</li>
+          <li><span>Genre</span>*</li>
+          <li><span>City</span>*</li>
+          <li><span>County</span>*</li>
+          <li><span>Label</span>*</li>
+          <li><span>Bitrate</span>*</li>
+        </ul>
+
+        <section class="tracklist">
+          <h3>Tracklist</h3>
+          <ol>
+            <li><span class="track-name">*</span> <span class="track-duration">*</span></li>
+          </ol>
+        </section>
+      </section>
+    </main>
+
+    <footer>Stay punk, stay core. Made by SnoFolk. Site version: 6.0.0</footer>
+    <footer class="lower-footer"><a class="link" href="manifesto.html">Manifesto</a></footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

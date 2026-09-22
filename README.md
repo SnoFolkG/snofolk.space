@@ -1,5 +1,5 @@
 # snofolk.space
-![Static Badge](https://img.shields.io/badge/site_version-5.5.2-blue) ![Static Badge](https://img.shields.io/badge/collection_version-8.2.0-green) ![Static Badge](https://img.shields.io/badge/license-MIT-red)
+![Static Badge](https://img.shields.io/badge/site_version-6.0.0-blue) ![Static Badge](https://img.shields.io/badge/collection_version-8.2.0-green) ![Static Badge](https://img.shields.io/badge/license-MIT-red)
 
 Thanx you for supporting me!
 
