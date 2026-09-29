@@ -48,7 +48,7 @@ async function renderNewsTeaser() {
   if (!container) return;
 
   try {
-    const response = await fetch("news.html");
+    const response = await fetch("/news.html");
     if (!response.ok) throw new Error(`NEWS LOADING ERROR: ${response.status}`);
 
     const html = await response.text();
@@ -75,7 +75,7 @@ async function renderNewsTeaser() {
             `;
         })
         .join("") +
-      `<a href="news.html" class="other-like-btn">All news &rarr;</a>`;
+      `<a href="/news.html" class="other-like-btn">All news &rarr;</a>`;
   } catch (error) {
     console.warn("Could not load latest news teaser:", error);
   }
