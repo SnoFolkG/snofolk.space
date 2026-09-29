@@ -799,7 +799,7 @@ footer,
 }
 
 .tracklist ol {
-  list-style: 1;
+  list-style: decimal;
   padding: 0;
   margin: 0;
 }

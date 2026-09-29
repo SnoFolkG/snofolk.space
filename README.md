@@ -8,9 +8,6 @@ Thanx you for supporting me!
 ## Project Overview
 This is a site with punk music. Browse albums, tracklists, labels and much more! 
 
-## Data Source
-The archive is driven by `data/album.json`. Albums lists, latest news, album pages is generating with JS.
-
 ## License
 Do anything you want with code, but all texts at site is mine.
 
