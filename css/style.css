@@ -716,8 +716,8 @@ footer,
 
 .album-detail-page {
   display: flex;
+  max-width: 950px;
   gap: 2rem;
-  max-width: 900px;
   margin: 0 auto;
   align-items: flex-start;
 }
@@ -770,6 +770,10 @@ footer,
 
 .album-meta {
   margin-bottom: 5%;
+}
+
+.album-meta-extra {
+  width: 100%;
 }
 
 .album-meta li span,
@@ -1134,6 +1138,8 @@ footer,
   .album-meta {
     margin-bottom: 10px;
   }
+
+
 }
 
 @media (max-width: 600px) {
@@ -1289,6 +1295,16 @@ footer,
   .sort-select {
     min-height: 42px;
     font-size: 12px;
+  }
+
+  .album-detail-page {
+     display: block;
+  }
+
+  .album-page-cover,
+  .album-links-side {
+    width: 100%;
+    height: auto;
   }
 }
 
