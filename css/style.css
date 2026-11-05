@@ -357,7 +357,8 @@ nav a.active .nav-icon {
 
 .to-top-btn {
   color: var(--text-dim);
-  
+  grid-column: 1;
+
 }
 
 .other-like-btn:hover,
@@ -395,47 +396,6 @@ nav a.active .nav-icon {
   columns: 2;
   gap: 1px;
   margin-top: -5px;
-}
-
-/* === SUPPORT SECTION ===*/
-
-.support-section {
-  border: 1px solid var(--border-color);
-  background: var(--blocks-color);
-  padding: 2rem;
-  text-align: center;
-}
-
-.support-section p {
-  color: var(--text-dim);
-  margin-bottom: 1.2rem;
-}
-
-.support-section p a {
-  color: var(--text-light);
-  cursor: pointer;
-}
-
-.support-section p a:hover {
-  color: var(--text-main);
-}
-
-/* === SUPPORTERS PAGE ===*/
-
-.supporters-names-section {
-  text-align: center;
-  gap: 1px;
-  margin-top: -5px;
-}
-
-.supporters-names-section ol {
-  display: inline-block;
-  columns: 3;
-  font-size: 17;
-}
-
-.nobody {
-  color: var(--text-dim);
 }
 
 /* === NEWS === */
@@ -478,15 +438,7 @@ nav a.active .nav-icon {
   margin-bottom: 8px;
 }
 
-/* === POPULAR ALBUMS (I DONT KNOW, BUT...) === */
 
-.popular-albums {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 16px;
-  justify-content: space-between;
-}
 
 /* === NEW ALBUMS & ALBUM CARDS === */
 
@@ -603,16 +555,6 @@ nav a.active .nav-icon {
   text-transform: uppercase;
   max-width: 960px;
   margin: 0 auto 16px;
-}
-
-/* === MODALS=== */
-
-.modal {
-  border: 1px solid var(--border-color);
-  background: var(--blocks-color);
-  padding: 2rem;
-  text-align: center;
-  margin: 2rem 0;
 }
 
 /* === UPDATE HISTORY === */
@@ -769,7 +711,7 @@ footer,
 }
 
 .album-meta {
-  margin-bottom: 5%;
+  margin-bottom: 20px;
 }
 
 .album-meta-extra {
@@ -809,6 +751,10 @@ footer,
 
 .medal-icon {
   margin-right: 8px;
+}
+
+.album-meta .full-width {
+  grid-column: 1 / -1;
 }
 
 /* === TRACKLIST === */
@@ -938,54 +884,6 @@ footer,
   gap: 10px;
   text-decoration: none;
   color: inherit;
-}
-
-/* === SEARCH === */
-
-.search-wrap {
-  margin: 0 auto 20px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 170px;
-  gap: 12px;
-  align-items: center;
-}
-
-.search-input,
-.sort-select {
-  width: 100%;
-  padding: 10px 14px;
-  font-family: var(--main-font);
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--text-main);
-  background: var(--button-color);
-  border: 1px solid var(--border-color);
-  outline: none;
-  transition: var(--transition);
-  box-shadow: 4px 4px 0px var(--accent);
-}
-
-.sort-select {
-  cursor: pointer;
-}
-
-.search-input::placeholder {
-  color: var(--text-dim);
-}
-
-.search-input:focus,
-.sort-select:focus {
-  background: var(--glass-hover);
-  border-color: var(--accent);
-  box-shadow: 0px 0px 0px var(--accent);
-}
-
-.search-tip {
-  color: var(--text-dim);
-  font-family: var(--text-main);
-  margin-bottom: 20px;
 }
 
 /* === STATISTICS === */
